@@ -1,0 +1,63 @@
+{
+  "name": "evolve-ga",
+  "version": "2.0.1",
+  "description": "Genetic Algorithm",
+  "main": "dist/evolve-ga.cjs.js",
+  "module": "dist/evolve-ga.esm.js",
+  "browser": "dist/evolve-ga.iife.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build": "npm run build:types && npm run build:js",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "rollup -c",
+    "lint": "eslint src/**/*.{ts,js}",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "files": [
+    "/dist",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoenKamman/evolve-ga.git"
+  },
+  "keywords": [
+    "genetic",
+    "algorithm"
+  ],
+  "author": "Koen Kamman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KoenKamman/evolve-ga/issues"
+  },
+  "homepage": "https://github.com/KoenKamman/evolve-ga#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/jest": "^24.0.12",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2",
+    "husky": "^2.2.0",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  }
+}
