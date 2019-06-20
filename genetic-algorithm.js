@@ -1,7 +1,9 @@
 "use strict";
 exports.__esModule = true;
 var evolve_ga_1 = require("evolve-ga");
+var json = require("./champions.json");
 var solved = false;
+var finalChromosome;
 var totalChampions = 141;
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
@@ -37,11 +39,20 @@ var fitnessFunction = function (chromosome) {
     var fitvalue = 0;
     var attack = 0;
     var movspeed = 0;
-    console.log(chromosome);
-    attack = attack + chromosome['stats']['attackdamage'];
-    movspeed = movspeed + chromosome['stats']['movespeed'];
-    fitvalue = attack + movspeed;
-    fitvalue = (fitvalue * 100 / 210).toFixed(2);
+    chromosome.genes.map(function (gene) {
+        json.map(function (champion) {
+            if (gene === champion.id) {
+                attack = attack + champion.stats.attackdamage;
+                movspeed = movspeed + champion.stats.movespeed;
+                fitvalue = attack + movspeed;
+                fitvalue = (fitvalue * 100 / 210).toFixed(2);
+            }
+        });
+    });
+    if (fitvalue > 988) {
+        solved = true;
+        finalChromosome = chromosome;
+    }
     return fitvalue;
 };
 var algorithm = evolve_ga_1.evolve({
@@ -54,6 +65,10 @@ var algorithm = evolve_ga_1.evolve({
     crossOverFunction: crossOverFunction,
     mutationFunction: mutationFunction
 });
+var showCompositionInfo = function () {
+    console.log(finalChromosome);
+};
 while (!solved) {
     algorithm.run();
 }
+showCompositionInfo();

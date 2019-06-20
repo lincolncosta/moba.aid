@@ -1,7 +1,8 @@
 import { evolve, Chromosome } from "evolve-ga";
 import * as json from './champions.json';
 
-const solved = false;
+let solved = false;
+let finalChromosome: Chromosome;
 const totalChampions = 141;
 
 const mutationFunction = (chromosome: Chromosome, possibleGenes: (number | string)[]): Chromosome => {
@@ -44,14 +45,22 @@ const fitnessFunction = (chromosome: Chromosome) : number => {
     let attack = 0;
     let movspeed = 0;
 
-    console.log(chromosome);
+    chromosome.genes.map(gene => {
+        json.map(champion => {
+            if(gene === champion.id){
+                attack = attack + champion.stats.attackdamage;
+                movspeed = movspeed + champion.stats.movespeed;
 
-    attack = attack + chromosome['stats']['attackdamage'];
-    movspeed = movspeed + chromosome['stats']['movespeed'];
+                fitvalue = attack + movspeed;
+                fitvalue = (fitvalue * 100 / 210).toFixed(2);
+            }
+        })        
+    })  
 
-    fitvalue = attack + movspeed;
-    fitvalue = (fitvalue * 100 / 210).toFixed(2);
-
+    if(fitvalue > 988){
+        solved = true;
+        finalChromosome = chromosome;
+    }
 
     return fitvalue;
 }
@@ -67,6 +76,12 @@ const algorithm = evolve({
     mutationFunction: mutationFunction
 });
 
+const showCompositionInfo = () => {
+    console.log(finalChromosome);
+}
+
 while (!solved) {
     algorithm.run();
 }
+
+showCompositionInfo();
