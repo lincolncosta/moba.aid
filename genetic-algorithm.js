@@ -27,15 +27,18 @@ var crossOverFunction = function (chromosomes) {
             fitness: 0,
             genes: parentA.genes.slice(0, crossOverPoint).concat(parentB.genes.slice(crossOverPoint))
         };
+        offspring[i] = validateChromosome(offspring[i]);
     }
-    console.log('offspring: ');
-    console.log(offspring);
     return offspring;
 };
 var selectionFunction = function (chromosomes) {
-    return chromosomes
+    chromosomes = chromosomes
         .sort(function (a, b) { return b.fitness - a.fitness; })
         .slice(0, Math.ceil(chromosomes.length / 2));
+    chromosomes.map(function (chromosome, i) {
+        chromosome[i] = validateChromosome(chromosome);
+    });
+    return chromosomes;
 };
 var fitnessFunction = function (chromosome) {
     var fitvalue = 0;
@@ -57,6 +60,10 @@ var fitnessFunction = function (chromosome) {
     }
     return fitvalue;
 };
+var validateChromosome = function (chromosome) {
+    console.log(chromosome);
+    return chromosome;
+};
 var algorithm = evolve_ga_1.evolve({
     populationSize: 10000,
     chromosomeLength: 5,
@@ -68,7 +75,15 @@ var algorithm = evolve_ga_1.evolve({
     mutationFunction: mutationFunction
 });
 var showCompositionInfo = function () {
-    console.log(finalChromosome);
+    console.log('COMPOSIÇÃO FINAL');
+    finalChromosome.genes.map(function (gene) {
+        json.map(function (champion) {
+            if (gene === champion.id) {
+                console.log(champion.localized_name);
+            }
+        });
+    });
+    console.log('----------------');
 };
 while (!solved) {
     algorithm.run();

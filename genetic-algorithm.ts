@@ -32,8 +32,6 @@ const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
         }
         offspring[i] = validateChromosome(offspring[i]);
     }
-    console.log('offspring: ');
-    console.log(offspring);
     return offspring;
 }
 
@@ -74,8 +72,8 @@ const fitnessFunction = (chromosome: Chromosome) : number => {
 }
 
 const validateChromosome = (chromosome: Chromosome): Chromosome => {
-
-    return null;
+    console.log(chromosome);
+    return chromosome;
 }
 
 const algorithm = evolve({
@@ -90,7 +88,15 @@ const algorithm = evolve({
 });
 
 const showCompositionInfo = () => {
-    console.log(finalChromosome);
+    console.log('COMPOSIÇÃO FINAL');
+    finalChromosome.genes.map(gene => {
+        json.map(champion => {
+            if(gene === champion.id){
+                console.log(champion.localized_name);
+            }
+        })
+    })
+    console.log('----------------');
 }
 
 while (!solved) {
