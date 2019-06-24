@@ -28,6 +28,8 @@ var crossOverFunction = function (chromosomes) {
             genes: parentA.genes.slice(0, crossOverPoint).concat(parentB.genes.slice(crossOverPoint))
         };
     }
+    console.log('offspring: ');
+    console.log(offspring);
     return offspring;
 };
 var selectionFunction = function (chromosomes) {

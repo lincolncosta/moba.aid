@@ -30,14 +30,22 @@ const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
             fitness: 0,
             genes: [...parentA.genes.slice(0, crossOverPoint), ...parentB.genes.slice(crossOverPoint)]
         }
+        offspring[i] = validateChromosome(offspring[i]);
     }
+    console.log('offspring: ');
+    console.log(offspring);
     return offspring;
 }
 
 const selectionFunction = (chromosomes: Chromosome[]): Chromosome[] => {
-    return chromosomes
+    chromosomes = chromosomes
         .sort((a: Chromosome, b: Chromosome): number => b.fitness - a.fitness)
         .slice(0, Math.ceil(chromosomes.length / 2));
+    
+        chromosomes.map((chromosome, i) => {
+            chromosome[i] = validateChromosome(chromosome);
+        })
+    return chromosomes;
 }
 
 const fitnessFunction = (chromosome: Chromosome) : number => {
@@ -63,6 +71,11 @@ const fitnessFunction = (chromosome: Chromosome) : number => {
     }
 
     return fitvalue;
+}
+
+const validateChromosome = (chromosome: Chromosome): Chromosome => {
+
+    return null;
 }
 
 const algorithm = evolve({
