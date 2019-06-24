@@ -3,7 +3,9 @@ exports.__esModule = true;
 var evolve_ga_1 = require("evolve-ga");
 var json = require("./champions.json");
 var solved = false;
+var generation = 0;
 var finalChromosome;
+var maxGenerations = 500;
 var totalChampions = 141;
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
@@ -54,10 +56,10 @@ var fitnessFunction = function (chromosome) {
             }
         });
     });
-    if (fitvalue > 988) {
-        solved = true;
-        finalChromosome = chromosome;
-    }
+    // if(fitvalue > 988){
+    //     solved = true;
+    //     finalChromosome = chromosome;
+    // }
     return fitvalue;
 };
 var validateChromosome = function (chromosome) {
@@ -68,7 +70,7 @@ var algorithm = evolve_ga_1.evolve({
     populationSize: 10000,
     chromosomeLength: 5,
     possibleGenes: Array.apply(null, { length: totalChampions }).map(Number.call, Number),
-    mutationChance: 0.1,
+    mutationChance: 0.7,
     fitnessFunction: fitnessFunction,
     selectionFunction: selectionFunction,
     crossOverFunction: crossOverFunction,
@@ -85,7 +87,8 @@ var showCompositionInfo = function () {
     });
     console.log('----------------');
 };
-while (!solved) {
+while (!solved && generation < maxGenerations) {
+    generation++;
     algorithm.run();
 }
 showCompositionInfo();

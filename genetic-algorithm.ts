@@ -2,7 +2,9 @@ import { evolve, Chromosome } from "evolve-ga";
 import * as json from './champions.json';
 
 let solved = false;
+let generation = 0;
 let finalChromosome: Chromosome;
+const maxGenerations = 500;
 const totalChampions = 141;
 
 const mutationFunction = (chromosome: Chromosome, possibleGenes: (number | string)[]): Chromosome => {
@@ -63,10 +65,10 @@ const fitnessFunction = (chromosome: Chromosome) : number => {
         })        
     })  
 
-    if(fitvalue > 988){
-        solved = true;
-        finalChromosome = chromosome;
-    }
+    // if(fitvalue > 988){
+    //     solved = true;
+    //     finalChromosome = chromosome;
+    // }
 
     return fitvalue;
 }
@@ -80,7 +82,7 @@ const algorithm = evolve({
     populationSize: 10000,
     chromosomeLength: 5,
     possibleGenes: Array.apply(null, {length: totalChampions}).map(Number.call, Number),
-    mutationChance: 0.1,
+    mutationChance: 0.7,
     fitnessFunction: fitnessFunction,
     selectionFunction: selectionFunction,
     crossOverFunction: crossOverFunction,
@@ -99,7 +101,8 @@ const showCompositionInfo = () => {
     console.log('----------------');
 }
 
-while (!solved) {
+while (!solved && generation < maxGenerations) {
+    generation++;
     algorithm.run();
 }
 
