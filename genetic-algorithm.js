@@ -29,7 +29,9 @@ var crossOverFunction = function (chromosomes) {
             fitness: 0,
             genes: parentA.genes.slice(0, crossOverPoint).concat(parentB.genes.slice(crossOverPoint))
         };
-        offspring[i] = validateChromosome(offspring[i]);
+        if (!validChromosome(offspring[i])) {
+            // remover offspring[i].
+        }
     }
     return offspring;
 };
@@ -38,7 +40,9 @@ var selectionFunction = function (chromosomes) {
         .sort(function (a, b) { return b.fitness - a.fitness; })
         .slice(0, Math.ceil(chromosomes.length / 2));
     chromosomes.map(function (chromosome, i) {
-        chromosome[i] = validateChromosome(chromosome);
+        if (!validChromosome(chromosomes[i])) {
+            // remover chromosomes[i].
+        }
     });
     return chromosomes;
 };
@@ -56,15 +60,20 @@ var fitnessFunction = function (chromosome) {
             }
         });
     });
-    // if(fitvalue > 988){
-    //     solved = true;
-    //     finalChromosome = chromosome;
-    // }
+    //criar critério de parada.
+    if (fitvalue > 988) {
+        solved = true;
+        finalChromosome = chromosome;
+    }
     return fitvalue;
 };
-var validateChromosome = function (chromosome) {
-    console.log(chromosome);
-    return chromosome;
+var validChromosome = function (chromosome) {
+    var isValid = true;
+    if (chromosome) {
+    }
+    else {
+    }
+    return isValid;
 };
 var algorithm = evolve_ga_1.evolve({
     populationSize: 10000,

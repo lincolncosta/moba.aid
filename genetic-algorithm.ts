@@ -70,11 +70,11 @@ const fitnessFunction = (chromosome: Chromosome) : number => {
         })        
     })  
 
-	// criar critério de parada.
-    // if(fitvalue > 988){
-    //     solved = true;
-    //     finalChromosome = chromosome;
-    // }
+	//criar critério de parada.
+    if(fitvalue > 988){
+        solved = true;
+        finalChromosome = chromosome;
+    }
 
     return fitvalue;
 }
