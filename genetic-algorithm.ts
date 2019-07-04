@@ -1,6 +1,7 @@
 import { evolve, Chromosome } from "evolve-ga";
 import * as json from "./champions.json";
 
+
 let solved = false;
 let generation = 0;
 let finalChromosome: Chromosome;
@@ -20,7 +21,7 @@ const mutationFunction = (
 	);
 	mutatedGenes[geneToMutateIndex] =
 		possibleGenesFiltered[
-			Math.floor(Math.random() * possibleGenesFiltered.length)
+		Math.floor(Math.random() * possibleGenesFiltered.length)
 		];
 	return {
 		fitness: chromosome.fitness,
@@ -30,13 +31,19 @@ const mutationFunction = (
 
 const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
 	let offspring: Chromosome[] = [];
+	let aux: Chromosome[] = [];
 	for (let i = 0; i < chromosomes.length; i++) {
 		const crossOverPoint = Math.floor(
 			Math.random() * chromosomes[i].genes.length
 		);
 		const parentA = chromosomes[Math.floor(Math.random() * chromosomes.length)];
 		const parentB = chromosomes[Math.floor(Math.random() * chromosomes.length)];
-		offspring[i] = {
+
+		const genesA = parentA.genes.slice(0, crossOverPoint);
+		const genesB = parentB.genes.slice(crossOverPoint);
+		const geneUnion = [...genesA, ...genesB];
+
+		aux[1] = {
 			fitness: 0,
 			genes: [
 				...parentA.genes.slice(0, crossOverPoint),
@@ -44,10 +51,19 @@ const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
 			]
 		};
 
-		if (!validChromosome(offspring[i])) {
-			// remover offspring[i].
+		if (!validChromosome(aux[1])) {
+			offspring.push({
+				fitness: 0,
+				genes: [
+					...parentA.genes.slice(0, crossOverPoint),
+					...parentB.genes.slice(crossOverPoint)
+				]
+			});
 		}
+
+
 	}
+
 	return offspring;
 };
 
@@ -57,8 +73,8 @@ const selectionFunction = (chromosomes: Chromosome[]): Chromosome[] => {
 		.slice(0, Math.ceil(chromosomes.length / 2));
 
 	chromosomes.map((chromosome, i) => {
-		if (!validChromosome(chromosomes[i])) {
-			// remover chromosomes[i].
+		if (validChromosome(chromosome)) {
+
 		}
 	});
 	return chromosomes;
@@ -81,16 +97,25 @@ const fitnessFunction = (chromosome: Chromosome): number => {
 		});
 	});
 
+<<<<<<< HEAD
+	// criar critério de parada.
+	if (fitvalue > 900) {
+		solved = true;
+		finalChromosome = chromosome;
+	}
+=======
 	//criar critério de parada.
     if(fitvalue > 988){
         solved = true;
         finalChromosome = chromosome;
     }
+>>>>>>> 6e9fcc2287da720b4f5df3b93143301ec29c45d4
 
 	return fitvalue;
 };
 
 const validChromosome = (chromosome: Chromosome): boolean => {
+	debugger;
 	let control = false;
 	const { genes } = chromosome;
 
@@ -121,12 +146,21 @@ const algorithm = evolve({
 
 const showCompositionInfo = () => {
 	console.log("COMPOSIÇÃO FINAL");
-	finalChromosome.genes.map(gene => {
-		json.map(champion => {
-			if (gene === champion.id) {
-				console.log(champion.localized_name);
-			}
-		});
+	// finalChromosome.genes.map(gene => {
+	// 	json.map(champion => {
+	// 		if (gene === champion.id) {
+	// 			console.log(champion.localized_name);
+	// 		}
+	// 	});
+	// });
+	const jsona = JSON.parse(JSON.stringify(json));
+	finalChromosome.genes.forEach(item => {
+		const aux = jsona.find(champion => champion.id === item);
+
+		if (aux) {
+			console.log(aux.localized_name);
+		}
+
 	});
 	console.log("----------------");
 };
