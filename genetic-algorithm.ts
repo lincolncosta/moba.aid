@@ -39,10 +39,6 @@ const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
 		const parentA = chromosomes[Math.floor(Math.random() * chromosomes.length)];
 		const parentB = chromosomes[Math.floor(Math.random() * chromosomes.length)];
 
-		const genesA = parentA.genes.slice(0, crossOverPoint);
-		const genesB = parentB.genes.slice(crossOverPoint);
-		const geneUnion = [...genesA, ...genesB];
-
 		aux[1] = {
 			fitness: 0,
 			genes: [
@@ -60,8 +56,6 @@ const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
 				]
 			});
 		}
-
-
 	}
 
 	return offspring;
@@ -97,7 +91,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
 		});
 	});
 
-	// criar critério de parada.
+	// Ajustar critério de parada conforme evolução.
 	if (fitvalue > 900) {
 		solved = true;
 		finalChromosome = chromosome;
@@ -113,7 +107,6 @@ const validChromosome = (chromosome: Chromosome): boolean => {
 
 	genes.forEach(item => {
 		let filteredArray = genes.filter(itemFilter => item === itemFilter);
-
 		if (filteredArray.length > 1) {
 			control = true;
 		}
@@ -138,17 +131,9 @@ const algorithm = evolve({
 
 const showCompositionInfo = () => {
 	console.log("COMPOSIÇÃO FINAL");
-	// finalChromosome.genes.map(gene => {
-	// 	json.map(champion => {
-	// 		if (gene === champion.id) {
-	// 			console.log(champion.localized_name);
-	// 		}
-	// 	});
-	// });
-	const jsona = JSON.parse(JSON.stringify(json));
+	const parsedJson = JSON.parse(JSON.stringify(json));
 	finalChromosome.genes.forEach(item => {
-		const aux = jsona.find(champion => champion.id === item);
-
+		const aux = parsedJson.find(champion => champion.id === item);
 		if (aux) {
 			console.log(aux.localized_name);
 		}

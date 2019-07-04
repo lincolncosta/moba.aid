@@ -13,7 +13,8 @@ var mutationFunction = function (chromosome, possibleGenes) {
     var possibleGenesFiltered = possibleGenes.filter(function (gene) {
         return gene !== mutatedGenes[geneToMutateIndex];
     });
-    mutatedGenes[geneToMutateIndex] = possibleGenesFiltered[Math.floor(Math.random() * possibleGenesFiltered.length)];
+    mutatedGenes[geneToMutateIndex] =
+        possibleGenesFiltered[Math.floor(Math.random() * possibleGenesFiltered.length)];
     return {
         fitness: chromosome.fitness,
         genes: mutatedGenes
@@ -21,16 +22,20 @@ var mutationFunction = function (chromosome, possibleGenes) {
 };
 var crossOverFunction = function (chromosomes) {
     var offspring = [];
+    var aux = [];
     for (var i = 0; i < chromosomes.length; i++) {
         var crossOverPoint = Math.floor(Math.random() * chromosomes[i].genes.length);
         var parentA = chromosomes[Math.floor(Math.random() * chromosomes.length)];
         var parentB = chromosomes[Math.floor(Math.random() * chromosomes.length)];
-        offspring[i] = {
+        aux[1] = {
             fitness: 0,
             genes: parentA.genes.slice(0, crossOverPoint).concat(parentB.genes.slice(crossOverPoint))
         };
-        if (!validChromosome(offspring[i])) {
-            // remover offspring[i].
+        if (!validChromosome(aux[1])) {
+            offspring.push({
+                fitness: 0,
+                genes: parentA.genes.slice(0, crossOverPoint).concat(parentB.genes.slice(crossOverPoint))
+            });
         }
     }
     return offspring;
@@ -40,8 +45,7 @@ var selectionFunction = function (chromosomes) {
         .sort(function (a, b) { return b.fitness - a.fitness; })
         .slice(0, Math.ceil(chromosomes.length / 2));
     chromosomes.map(function (chromosome, i) {
-        if (!validChromosome(chromosomes[i])) {
-            // remover chromosomes[i].
+        if (validChromosome(chromosome)) {
         }
     });
     return chromosomes;
@@ -56,24 +60,28 @@ var fitnessFunction = function (chromosome) {
                 attack = attack + champion.stats.attackdamage;
                 movspeed = movspeed + champion.stats.movespeed;
                 fitvalue = attack + movspeed;
-                fitvalue = (fitvalue * 100 / 210).toFixed(2);
+                fitvalue = ((fitvalue * 100) / 210).toFixed(2);
             }
         });
     });
-    //criar critério de parada.
-    if (fitvalue > 988) {
+    // Ajustar critério de parada conforme evolução.
+    if (fitvalue > 900) {
         solved = true;
         finalChromosome = chromosome;
     }
     return fitvalue;
 };
 var validChromosome = function (chromosome) {
-    var isValid = true;
-    if (chromosome) {
-    }
-    else {
-    }
-    return isValid;
+    debugger;
+    var control = false;
+    var genes = chromosome.genes;
+    genes.forEach(function (item) {
+        var filteredArray = genes.filter(function (itemFilter) { return item === itemFilter; });
+        if (filteredArray.length > 1) {
+            control = true;
+        }
+    });
+    return control;
 };
 var algorithm = evolve_ga_1.evolve({
     populationSize: 10000,
@@ -86,15 +94,15 @@ var algorithm = evolve_ga_1.evolve({
     mutationFunction: mutationFunction
 });
 var showCompositionInfo = function () {
-    console.log('COMPOSIÇÃO FINAL');
-    finalChromosome.genes.map(function (gene) {
-        json.map(function (champion) {
-            if (gene === champion.id) {
-                console.log(champion.localized_name);
-            }
-        });
+    console.log("COMPOSIÇÃO FINAL");
+    var parsedJson = JSON.parse(JSON.stringify(json));
+    finalChromosome.genes.forEach(function (item) {
+        var aux = parsedJson.find(function (champion) { return champion.id === item; });
+        if (aux) {
+            console.log(aux.localized_name);
+        }
     });
-    console.log('----------------');
+    console.log("----------------");
 };
 while (!solved && generation < maxGenerations) {
     generation++;
