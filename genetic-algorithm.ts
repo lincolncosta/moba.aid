@@ -32,7 +32,10 @@ const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
             fitness: 0,
             genes: [...parentA.genes.slice(0, crossOverPoint), ...parentB.genes.slice(crossOverPoint)]
         }
-        offspring[i] = validateChromosome(offspring[i]);
+
+        if(!validChromosome(offspring[i])) {
+            // remover offspring[i].
+        }
     }
     return offspring;
 }
@@ -43,7 +46,9 @@ const selectionFunction = (chromosomes: Chromosome[]): Chromosome[] => {
         .slice(0, Math.ceil(chromosomes.length / 2));
     
         chromosomes.map((chromosome, i) => {
-            chromosome[i] = validateChromosome(chromosome);
+            if(!validChromosome(chromosomes[i])) {
+                // remover chromosomes[i].
+            }
         })
     return chromosomes;
 }
@@ -65,6 +70,7 @@ const fitnessFunction = (chromosome: Chromosome) : number => {
         })        
     })  
 
+	// criar critério de parada.
     // if(fitvalue > 988){
     //     solved = true;
     //     finalChromosome = chromosome;
@@ -73,9 +79,16 @@ const fitnessFunction = (chromosome: Chromosome) : number => {
     return fitvalue;
 }
 
-const validateChromosome = (chromosome: Chromosome): Chromosome => {
-    console.log(chromosome);
-    return chromosome;
+const validChromosome = (chromosome: Chromosome): boolean => {
+    let isValid = true;
+    
+    if(chromosome) {
+
+    }else{
+
+    }
+
+    return isValid;
 }
 
 const algorithm = evolve({

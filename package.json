@@ -1,0 +1,24 @@
+{
+  "name": "mobator",
+  "version": "1.0.0",
+  "description": "O primeiro passo para executar o projeto é utilizar o comando `tsc genetic-algorithm.ts -resolveJsonModule`, ele criará o arquivo `genetic-algorithm.js` na pasta raíz do projeto.",
+  "main": "genetic-algorithm.js",
+  "dependencies": {
+    "evolve-ga": "^2.0.1",
+    "typescript": "^3.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tekpixo/mobator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tekpixo/mobator/issues"
+  },
+  "homepage": "https://github.com/tekpixo/mobator#readme"
+}
