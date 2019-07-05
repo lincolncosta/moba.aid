@@ -7,8 +7,8 @@ var solved = false;
 var generation = 0;
 var finalChromosome;
 var finalFitvalue = 0;
-var maxGenerations = 1000;
-var maxFitValue = 210;
+var maxGenerations = 2000;
+var maxFitValue = 2125;
 var totalChampions = 141;
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
@@ -18,10 +18,20 @@ var mutationFunction = function (chromosome, possibleGenes) {
     });
     mutatedGenes[geneToMutateIndex] =
         possibleGenesFiltered[Math.floor(Math.random() * possibleGenesFiltered.length)];
-    return {
-        fitness: chromosome.fitness,
+    var aux = [];
+    aux[1] = {
+        fitness: 0,
         genes: mutatedGenes
     };
+    if (!validChromosome(aux[1])) {
+        return {
+            fitness: chromosome.fitness,
+            genes: mutatedGenes
+        };
+    }
+    else {
+        return chromosome;
+    }
 };
 var crossOverFunction = function (chromosomes) {
     var offspring = [];
@@ -65,15 +75,15 @@ var fitnessFunction = function (chromosome) {
                 attack = attack + champion.stats.attackdamage;
                 movspeed = movspeed + champion.stats.movespeed;
             }
-            champion.roles.map(function (role) {
-                if (role == 'Fighter') {
-                    fighter = 10;
-                }
-            });
+            // champion.roles.map(role => {
+            // 	if(role == 'Fighter'){
+            // 		fighter = 0;
+            // 	}
+            // })
         });
     });
-    fitvalue = attack + movspeed + fighter;
-    fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
+    fitvalue = attack + movspeed;
+    //fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
     if (fitvalue > finalFitvalue) {
         finalFitvalue = fitvalue;
         finalChromosome = chromosome;
@@ -81,7 +91,6 @@ var fitnessFunction = function (chromosome) {
     return fitvalue;
 };
 var validChromosome = function (chromosome) {
-    debugger;
     var control = false;
     var genes = chromosome.genes;
     genes.forEach(function (item) {
@@ -96,7 +105,7 @@ var algorithm = evolve_ga_1.evolve({
     populationSize: 300,
     chromosomeLength: 5,
     possibleGenes: Array.apply(null, { length: totalChampions }).map(Number.call, Number),
-    mutationChance: 0.7,
+    mutationChance: 0.5,
     fitnessFunction: fitnessFunction,
     selectionFunction: selectionFunction,
     crossOverFunction: crossOverFunction,
@@ -117,11 +126,11 @@ var numberCompare = function (a, b) {
     return a - b;
 };
 for (var i = 0; i < 100; i++) {
-    while (finalFitvalue < 210 && generation < maxGenerations) {
+    while (finalFitvalue < maxFitValue && generation < maxGenerations) {
         generation++;
         algorithm.run();
     }
-    fs.appendFileSync('result.csv', finalChromosome.genes.sort(numberCompare).toString() + '\r\n');
+    fs.appendFileSync('result.csv', finalChromosome.genes.sort(numberCompare).toString() + '  fit = ' + finalFitvalue + '\r\n');
     finalChromosome = null;
     finalFitvalue = 0;
     generation = 0;

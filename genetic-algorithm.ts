@@ -2,8 +2,6 @@ import { evolve, Chromosome } from "evolve-ga";
 import * as json from "./champions.json";
 const fs = require('fs');
 
-
-let solved = false;
 let generation = 0;
 let finalChromosome: Chromosome;
 let finalFitvalue = 0;
@@ -100,17 +98,10 @@ const fitnessFunction = (chromosome: Chromosome): number => {
 				attack = attack + champion.stats.attackdamage;
 				movspeed = movspeed + champion.stats.movespeed;
 			}
-
-			// champion.roles.map(role => {
-			// 	if(role == 'Fighter'){
-			// 		fighter = 0;
-			// 	}
-			// })
 		});
 	});
 
 	fitvalue = attack + movspeed;
-	//fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
 
 	if (fitvalue > finalFitvalue) {
 		finalFitvalue = fitvalue;
