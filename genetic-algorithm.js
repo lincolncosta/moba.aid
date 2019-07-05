@@ -113,12 +113,15 @@ var showCompositionInfo = function () {
     });
     console.log("----------------");
 };
+var numberCompare = function (a, b) {
+    return a - b;
+};
 for (var i = 0; i < 100; i++) {
     while (finalFitvalue < 210 && generation < maxGenerations) {
         generation++;
         algorithm.run();
     }
-    fs.appendFileSync('result.txt', finalChromosome.genes.toString() + '\r\n');
+    fs.appendFileSync('result.csv', finalChromosome.genes.sort(numberCompare).toString() + '\r\n');
     finalChromosome = null;
     finalFitvalue = 0;
     generation = 0;

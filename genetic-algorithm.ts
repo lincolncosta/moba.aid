@@ -150,13 +150,17 @@ const showCompositionInfo = () => {
 	console.log("----------------");
 };
 
+const numberCompare = (a, b) => {
+	return a - b;
+}
+
 for(let i=0; i<100; i++){
 	while (finalFitvalue < 210 && generation < maxGenerations) {
 		generation++;
 		algorithm.run();
 	}
 
-	fs.appendFileSync('result.csv', finalChromosome.genes.toString() + '\r\n');
+	fs.appendFileSync('result.csv', finalChromosome.genes.sort(numberCompare).toString() + '\r\n');
 	finalChromosome = null;
 	finalFitvalue = 0;
 	generation = 0;
