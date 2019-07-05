@@ -7,8 +7,8 @@ let solved = false;
 let generation = 0;
 let finalChromosome: Chromosome;
 let finalFitvalue = 0;
-const maxGenerations = 1000;
-const maxFitValue = 210;
+const maxGenerations = 2000;
+const maxFitValue = 2125;
 const totalChampions = 141;
 
 const mutationFunction = (
@@ -26,10 +26,21 @@ const mutationFunction = (
 		possibleGenesFiltered[
 		Math.floor(Math.random() * possibleGenesFiltered.length)
 		];
-	return {
-		fitness: chromosome.fitness,
+		
+	let aux: Chromosome[] = [];
+	aux[1] = {
+		fitness: 0,
 		genes: mutatedGenes
-	};
+	}
+	if (!validChromosome(aux[1])) {
+		return {
+			fitness: chromosome.fitness,
+			genes: mutatedGenes
+		};
+	} else {
+		return chromosome;
+	}
+	
 };
 
 const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
@@ -49,7 +60,6 @@ const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
 				...parentB.genes.slice(crossOverPoint)
 			]
 		};
-
 		if (!validChromosome(aux[1])) {
 			offspring.push({
 				fitness: 0,
@@ -70,6 +80,7 @@ const selectionFunction = (chromosomes: Chromosome[]): Chromosome[] => {
 		.slice(0, Math.ceil(chromosomes.length / 2));
 
 	chromosomes.map((chromosome, i) => {
+		
 		if (validChromosome(chromosome)) {
 			chromosomes.splice(i, 1);
 		}
@@ -90,26 +101,28 @@ const fitnessFunction = (chromosome: Chromosome): number => {
 				movspeed = movspeed + champion.stats.movespeed;
 			}
 
-			champion.roles.map(role => {
-				if(role == 'Fighter'){
-					fighter = 10;
-				}
-			})
+			// champion.roles.map(role => {
+			// 	if(role == 'Fighter'){
+			// 		fighter = 0;
+			// 	}
+			// })
 		});
 	});
 
-	fitvalue = attack + movspeed + fighter;
-		fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
+	fitvalue = attack + movspeed;
+	//fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
 
-		if (fitvalue > finalFitvalue) {
-			finalFitvalue = fitvalue;
-			finalChromosome = chromosome;
-		}
+	if (fitvalue > finalFitvalue) {
+		finalFitvalue = fitvalue;
+		finalChromosome = chromosome;
+	}
+
+		
 	return fitvalue;
+	
 };
 
 const validChromosome = (chromosome: Chromosome): boolean => {
-	debugger;
 	let control = false;
 	const { genes } = chromosome;
 
@@ -130,7 +143,7 @@ const algorithm = evolve({
 		Number.call,
 		Number
 	),
-	mutationChance: 0.7,
+	mutationChance: 0.5,
 	fitnessFunction: fitnessFunction,
 	selectionFunction: selectionFunction,
 	crossOverFunction: crossOverFunction,
@@ -155,12 +168,12 @@ const numberCompare = (a, b) => {
 }
 
 for(let i=0; i<100; i++){
-	while (finalFitvalue < 210 && generation < maxGenerations) {
+	while (finalFitvalue < maxFitValue && generation < maxGenerations) {
 		generation++;
 		algorithm.run();
 	}
 
-	fs.appendFileSync('result.csv', finalChromosome.genes.sort(numberCompare).toString() + '\r\n');
+	fs.appendFileSync('result.csv', finalChromosome.genes.sort(numberCompare).toString() + '  fit = ' + finalFitvalue + '\r\n');
 	finalChromosome = null;
 	finalFitvalue = 0;
 	generation = 0;
