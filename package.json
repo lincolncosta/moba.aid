@@ -4,6 +4,7 @@
   "description": "O primeiro passo para executar o projeto é utilizar o comando `tsc genetic-algorithm.ts -resolveJsonModule`, ele criará o arquivo `genetic-algorithm.js` na pasta raíz do projeto.",
   "main": "genetic-algorithm.js",
   "dependencies": {
+    "@types/node": "^12.0.12",
     "evolve-ga": "^2.0.1",
     "typescript": "^3.5.2"
   },

@@ -1,11 +1,14 @@
 import { evolve, Chromosome } from "evolve-ga";
 import * as json from "./champions.json";
+const fs = require('fs');
 
 
 let solved = false;
 let generation = 0;
 let finalChromosome: Chromosome;
-const maxGenerations = 500;
+let finalFitvalue = 0;
+const maxGenerations = 1000;
+const maxFitValue = 210;
 const totalChampions = 141;
 
 const mutationFunction = (
@@ -68,7 +71,7 @@ const selectionFunction = (chromosomes: Chromosome[]): Chromosome[] => {
 
 	chromosomes.map((chromosome, i) => {
 		if (validChromosome(chromosome)) {
-
+			chromosomes.splice(i, 1);
 		}
 	});
 	return chromosomes;
@@ -78,25 +81,30 @@ const fitnessFunction = (chromosome: Chromosome): number => {
 	let fitvalue: any = 0;
 	let attack = 0;
 	let movspeed = 0;
+	let fighter = 0;
 
 	chromosome.genes.map(gene => {
 		json.map(champion => {
 			if (gene === champion.id) {
 				attack = attack + champion.stats.attackdamage;
 				movspeed = movspeed + champion.stats.movespeed;
-
-				fitvalue = attack + movspeed;
-				fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
 			}
+
+			champion.roles.map(role => {
+				if(role == 'Fighter'){
+					fighter = 10;
+				}
+			})
 		});
 	});
 
-	// Ajustar critério de parada conforme evolução.
-	if (fitvalue > 210) {
-		solved = true;
-		finalChromosome = chromosome;
-	}
+	fitvalue = attack + movspeed + fighter;
+		fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
 
+		if (fitvalue > finalFitvalue) {
+			finalFitvalue = fitvalue;
+			finalChromosome = chromosome;
+		}
 	return fitvalue;
 };
 
@@ -116,7 +124,7 @@ const validChromosome = (chromosome: Chromosome): boolean => {
 };
 
 const algorithm = evolve({
-	populationSize: 10000,
+	populationSize: 300,
 	chromosomeLength: 5,
 	possibleGenes: Array.apply(null, { length: totalChampions }).map(
 		Number.call,
@@ -142,12 +150,14 @@ const showCompositionInfo = () => {
 	console.log("----------------");
 };
 
-console.log('start');
-while (!solved && generation < maxGenerations) {
-	generation++;
-	algorithm.run();
-	console.log('middle');
-}
+for(let i=0; i<100; i++){
+	while (finalFitvalue < 210 && generation < maxGenerations) {
+		generation++;
+		algorithm.run();
+	}
 
-showCompositionInfo();
-console.log('end');
+	fs.appendFileSync('result.txt', finalChromosome.genes.toString() + '\r\n');
+	finalChromosome = null;
+	finalFitvalue = 0;
+	generation = 0;
+}

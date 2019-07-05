@@ -2,10 +2,13 @@
 exports.__esModule = true;
 var evolve_ga_1 = require("evolve-ga");
 var json = require("./champions.json");
+var fs = require('fs');
 var solved = false;
 var generation = 0;
 var finalChromosome;
-var maxGenerations = 500;
+var finalFitvalue = 0;
+var maxGenerations = 1000;
+var maxFitValue = 210;
 var totalChampions = 141;
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
@@ -46,6 +49,7 @@ var selectionFunction = function (chromosomes) {
         .slice(0, Math.ceil(chromosomes.length / 2));
     chromosomes.map(function (chromosome, i) {
         if (validChromosome(chromosome)) {
+            chromosomes.splice(i, 1);
         }
     });
     return chromosomes;
@@ -54,19 +58,24 @@ var fitnessFunction = function (chromosome) {
     var fitvalue = 0;
     var attack = 0;
     var movspeed = 0;
+    var fighter = 0;
     chromosome.genes.map(function (gene) {
         json.map(function (champion) {
             if (gene === champion.id) {
                 attack = attack + champion.stats.attackdamage;
                 movspeed = movspeed + champion.stats.movespeed;
-                fitvalue = attack + movspeed;
-                fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
             }
+            champion.roles.map(function (role) {
+                if (role == 'Fighter') {
+                    fighter = 10;
+                }
+            });
         });
     });
-    // Ajustar critério de parada conforme evolução.
-    if (fitvalue > 210) {
-        solved = true;
+    fitvalue = attack + movspeed + fighter;
+    fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
+    if (fitvalue > finalFitvalue) {
+        finalFitvalue = fitvalue;
         finalChromosome = chromosome;
     }
     return fitvalue;
@@ -84,7 +93,7 @@ var validChromosome = function (chromosome) {
     return control;
 };
 var algorithm = evolve_ga_1.evolve({
-    populationSize: 10000,
+    populationSize: 300,
     chromosomeLength: 5,
     possibleGenes: Array.apply(null, { length: totalChampions }).map(Number.call, Number),
     mutationChance: 0.7,
@@ -104,11 +113,13 @@ var showCompositionInfo = function () {
     });
     console.log("----------------");
 };
-console.log('start');
-while (!solved && generation < maxGenerations) {
-    generation++;
-    algorithm.run();
-    console.log('middle');
+for (var i = 0; i < 100; i++) {
+    while (finalFitvalue < 210 && generation < maxGenerations) {
+        generation++;
+        algorithm.run();
+    }
+    fs.appendFileSync('result.txt', finalChromosome.genes.toString() + '\r\n');
+    finalChromosome = null;
+    finalFitvalue = 0;
+    generation = 0;
 }
-showCompositionInfo();
-console.log('end');
