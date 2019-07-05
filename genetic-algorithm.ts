@@ -156,7 +156,7 @@ for(let i=0; i<100; i++){
 		algorithm.run();
 	}
 
-	fs.appendFileSync('result.txt', finalChromosome.genes.toString() + '\r\n');
+	fs.appendFileSync('result.csv', finalChromosome.genes.toString() + '\r\n');
 	finalChromosome = null;
 	finalFitvalue = 0;
 	generation = 0;
