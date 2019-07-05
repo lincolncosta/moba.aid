@@ -86,13 +86,13 @@ const fitnessFunction = (chromosome: Chromosome): number => {
 				movspeed = movspeed + champion.stats.movespeed;
 
 				fitvalue = attack + movspeed;
-				fitvalue = ((fitvalue * 100) / 210).toFixed(2);
+				fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
 			}
 		});
 	});
 
 	// Ajustar critério de parada conforme evolução.
-	if (fitvalue > 900) {
+	if (fitvalue > 210) {
 		solved = true;
 		finalChromosome = chromosome;
 	}
@@ -142,9 +142,12 @@ const showCompositionInfo = () => {
 	console.log("----------------");
 };
 
+console.log('start');
 while (!solved && generation < maxGenerations) {
 	generation++;
 	algorithm.run();
+	console.log('middle');
 }
 
 showCompositionInfo();
+console.log('end');
