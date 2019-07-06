@@ -1,171 +1,180 @@
 import { evolve, Chromosome } from "evolve-ga";
 import * as json from "./champions.json";
-const fs = require('fs');
+const fs = require("fs");
 
 let generation = 0;
 let finalChromosome: Chromosome;
 let finalFitvalue = 0;
-const maxGenerations = 2000;
 const maxFitValue = 2125;
+
 const totalChampions = 141;
+const POPULATION_SIZE = 700;
+const MUTATION_CHANCE = 0.5;
+const MAX_GENERATIONS = 25;
 
 const mutationFunction = (
-	chromosome: Chromosome,
-	possibleGenes: (number | string)[]
+  chromosome: Chromosome,
+  possibleGenes: (number | string)[]
 ): Chromosome => {
-	let mutatedGenes = [...chromosome.genes];
-	const geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
-	const possibleGenesFiltered = possibleGenes.filter(
-		(gene: number | string): boolean => {
-			return gene !== mutatedGenes[geneToMutateIndex];
-		}
-	);
-	mutatedGenes[geneToMutateIndex] =
-		possibleGenesFiltered[
-		Math.floor(Math.random() * possibleGenesFiltered.length)
-		];
-		
-	let aux: Chromosome[] = [];
-	aux[1] = {
-		fitness: 0,
-		genes: mutatedGenes
-	}
-	if (!validChromosome(aux[1])) {
-		return {
-			fitness: chromosome.fitness,
-			genes: mutatedGenes
-		};
-	} else {
-		return chromosome;
-	}
-	
+  let mutatedGenes = [...chromosome.genes];
+  const geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
+  const possibleGenesFiltered = possibleGenes.filter(
+    (gene: number | string): boolean => {
+      return gene !== mutatedGenes[geneToMutateIndex];
+    }
+  );
+  mutatedGenes[geneToMutateIndex] =
+    possibleGenesFiltered[
+      Math.floor(Math.random() * possibleGenesFiltered.length)
+    ];
+
+  let aux: Chromosome[] = [];
+  aux[1] = {
+    fitness: 0,
+    genes: mutatedGenes
+  };
+  if (!validChromosome(aux[1])) {
+    return {
+      fitness: chromosome.fitness,
+      genes: mutatedGenes
+    };
+  } else {
+    return chromosome;
+  }
 };
 
 const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
-	let offspring: Chromosome[] = [];
-	let aux: Chromosome[] = [];
-	for (let i = 0; i < chromosomes.length; i++) {
-		const crossOverPoint = Math.floor(
-			Math.random() * chromosomes[i].genes.length
-		);
-		const parentA = chromosomes[Math.floor(Math.random() * chromosomes.length)];
-		const parentB = chromosomes[Math.floor(Math.random() * chromosomes.length)];
+  let offspring: Chromosome[] = [];
+  let aux: Chromosome[] = [];
+  for (let i = 0; i < chromosomes.length; i++) {
+    const crossOverPoint = Math.floor(
+      Math.random() * chromosomes[i].genes.length
+    );
+    const parentA = chromosomes[Math.floor(Math.random() * chromosomes.length)];
+    const parentB = chromosomes[Math.floor(Math.random() * chromosomes.length)];
 
-		aux[1] = {
-			fitness: 0,
-			genes: [
-				...parentA.genes.slice(0, crossOverPoint),
-				...parentB.genes.slice(crossOverPoint)
-			]
-		};
-		if (!validChromosome(aux[1])) {
-			offspring.push({
-				fitness: 0,
-				genes: [
-					...parentA.genes.slice(0, crossOverPoint),
-					...parentB.genes.slice(crossOverPoint)
-				]
-			});
-		}
-	}
+    aux[1] = {
+      fitness: 0,
+      genes: [
+        ...parentA.genes.slice(0, crossOverPoint),
+        ...parentB.genes.slice(crossOverPoint)
+      ]
+    };
+    if (!validChromosome(aux[1])) {
+      offspring.push({
+        fitness: 0,
+        genes: [
+          ...parentA.genes.slice(0, crossOverPoint),
+          ...parentB.genes.slice(crossOverPoint)
+        ]
+      });
+    }
+  }
 
-	return offspring;
+  return offspring;
 };
 
 const selectionFunction = (chromosomes: Chromosome[]): Chromosome[] => {
-	chromosomes = chromosomes
-		.sort((a: Chromosome, b: Chromosome): number => b.fitness - a.fitness)
-		.slice(0, Math.ceil(chromosomes.length / 2));
+  chromosomes = chromosomes
+    .sort((a: Chromosome, b: Chromosome): number => b.fitness - a.fitness)
+    .slice(0, Math.ceil(chromosomes.length / 2));
 
-	chromosomes.map((chromosome, i) => {
-		
-		if (validChromosome(chromosome)) {
-			chromosomes.splice(i, 1);
-		}
-	});
-	return chromosomes;
+  chromosomes.map((chromosome, i) => {
+    if (validChromosome(chromosome)) {
+      chromosomes.splice(i, 1);
+    }
+  });
+  return chromosomes;
 };
 
 const fitnessFunction = (chromosome: Chromosome): number => {
-	let fitvalue: any = 0;
-	let attack = 0;
-	let movspeed = 0;
-	let fighter = 0;
+  let fitvalue: any = 0;
+  let attack = 0;
+  let movspeed = 0;
+  let fighter = 0;
 
-	chromosome.genes.map(gene => {
-		json.map(champion => {
-			if (gene === champion.id) {
-				attack = attack + champion.stats.attackdamage;
-				movspeed = movspeed + champion.stats.movespeed;
-			}
-		});
-	});
+  chromosome.genes.map(gene => {
+    json.map(champion => {
+      if (gene === champion.id) {
+        attack = attack + champion.stats.attackdamage;
+        movspeed = movspeed + champion.stats.movespeed;
+      }
+    });
+  });
 
-	fitvalue = attack + movspeed;
+  fitvalue = attack + movspeed;
 
-	if (fitvalue > finalFitvalue) {
-		finalFitvalue = fitvalue;
-		finalChromosome = chromosome;
-	}
+  if (fitvalue > finalFitvalue) {
+    finalFitvalue = fitvalue;
+    finalChromosome = chromosome;
+  }
 
-		
-	return fitvalue;
-	
+  return fitvalue;
 };
 
 const validChromosome = (chromosome: Chromosome): boolean => {
-	let control = false;
-	const { genes } = chromosome;
+  let control = false;
+  const { genes } = chromosome;
 
-	genes.forEach(item => {
-		let filteredArray = genes.filter(itemFilter => item === itemFilter);
-		if (filteredArray.length > 1) {
-			control = true;
-		}
-	});
+  genes.forEach(item => {
+    let filteredArray = genes.filter(itemFilter => item === itemFilter);
+    if (filteredArray.length > 1) {
+      control = true;
+    }
+  });
 
-	return control;
+  return control;
 };
 
 const algorithm = evolve({
-	populationSize: 300,
-	chromosomeLength: 5,
-	possibleGenes: Array.apply(null, { length: totalChampions }).map(
-		Number.call,
-		Number
-	),
-	mutationChance: 0.5,
-	fitnessFunction: fitnessFunction,
-	selectionFunction: selectionFunction,
-	crossOverFunction: crossOverFunction,
-	mutationFunction: mutationFunction
+  populationSize: POPULATION_SIZE,
+  chromosomeLength: 5,
+  possibleGenes: Array.apply(null, { length: totalChampions }).map(
+    Number.call,
+    Number
+  ),
+  mutationChance: MUTATION_CHANCE,
+  fitnessFunction: fitnessFunction,
+  selectionFunction: selectionFunction,
+  crossOverFunction: crossOverFunction,
+  mutationFunction: mutationFunction
 });
 
 const showCompositionInfo = () => {
-	console.log("COMPOSIÇÃO FINAL");
-	const parsedJson = JSON.parse(JSON.stringify(json));
-	finalChromosome.genes.forEach(item => {
-		const aux = parsedJson.find(champion => champion.id === item);
-		if (aux) {
-			console.log(aux.localized_name);
-		}
-
-	});
-	console.log("----------------");
+  console.log("COMPOSIÇÃO FINAL");
+  const parsedJson = JSON.parse(JSON.stringify(json));
+  finalChromosome.genes.forEach(item => {
+    const aux = parsedJson.find(champion => champion.id === item);
+    if (aux) {
+      console.log(aux.localized_name);
+    }
+  });
+  console.log("----------------");
 };
 
 const numberCompare = (a, b) => {
-	return a - b;
-}
+  return a - b;
+};
 
-for(let i=0; i<100; i++){
-	while (finalFitvalue < maxFitValue && generation < maxGenerations) {
-		generation++;
-		algorithm.run();
-	}
+const filePath = `reports/PS-${POPULATION_SIZE}__MC-${MUTATION_CHANCE}__MG-${MAX_GENERATIONS}.csv`;
+fs.writeFile(filePath, "", () => {
+  console.log("File manipulation end.");
+});
 
-	fs.appendFileSync('result.csv', finalChromosome.genes.sort(numberCompare).toString() + '  fit = ' + finalFitvalue + '\r\n');
-	finalChromosome = null;
-	finalFitvalue = 0;
-	generation = 0;
+for (let i = 0; i < 100; i++) {
+  while (finalFitvalue < maxFitValue && generation < MAX_GENERATIONS) {
+    generation++;
+    algorithm.run();
+  }
+
+  fs.appendFileSync(
+    filePath,
+    finalChromosome.genes.sort(numberCompare).toString() +
+      "  fit = " +
+      finalFitvalue +
+      "\r\n"
+  );
+  finalChromosome = null;
+  finalFitvalue = 0;
+  generation = 0;
 }

@@ -2,14 +2,15 @@
 exports.__esModule = true;
 var evolve_ga_1 = require("evolve-ga");
 var json = require("./champions.json");
-var fs = require('fs');
-var solved = false;
+var fs = require("fs");
 var generation = 0;
 var finalChromosome;
 var finalFitvalue = 0;
-var maxGenerations = 2000;
 var maxFitValue = 2125;
 var totalChampions = 141;
+var POPULATION_SIZE = 700;
+var MUTATION_CHANCE = 0.5;
+var MAX_GENERATIONS = 25;
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
     var geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
@@ -75,15 +76,9 @@ var fitnessFunction = function (chromosome) {
                 attack = attack + champion.stats.attackdamage;
                 movspeed = movspeed + champion.stats.movespeed;
             }
-            // champion.roles.map(role => {
-            // 	if(role == 'Fighter'){
-            // 		fighter = 0;
-            // 	}
-            // })
         });
     });
     fitvalue = attack + movspeed;
-    //fitvalue = ((fitvalue * 100) / 2075).toFixed(2);
     if (fitvalue > finalFitvalue) {
         finalFitvalue = fitvalue;
         finalChromosome = chromosome;
@@ -102,10 +97,10 @@ var validChromosome = function (chromosome) {
     return control;
 };
 var algorithm = evolve_ga_1.evolve({
-    populationSize: 300,
+    populationSize: POPULATION_SIZE,
     chromosomeLength: 5,
     possibleGenes: Array.apply(null, { length: totalChampions }).map(Number.call, Number),
-    mutationChance: 0.5,
+    mutationChance: MUTATION_CHANCE,
     fitnessFunction: fitnessFunction,
     selectionFunction: selectionFunction,
     crossOverFunction: crossOverFunction,
@@ -125,12 +120,19 @@ var showCompositionInfo = function () {
 var numberCompare = function (a, b) {
     return a - b;
 };
+var filePath = "reports/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
+fs.writeFile(filePath, "", function () {
+    console.log("File manipulation end.");
+});
 for (var i = 0; i < 100; i++) {
-    while (finalFitvalue < maxFitValue && generation < maxGenerations) {
+    while (finalFitvalue < maxFitValue && generation < MAX_GENERATIONS) {
         generation++;
         algorithm.run();
     }
-    fs.appendFileSync('result.csv', finalChromosome.genes.sort(numberCompare).toString() + '  fit = ' + finalFitvalue + '\r\n');
+    fs.appendFileSync(filePath, finalChromosome.genes.sort(numberCompare).toString() +
+        "  fit = " +
+        finalFitvalue +
+        "\r\n");
     finalChromosome = null;
     finalFitvalue = 0;
     generation = 0;
