@@ -8,6 +8,7 @@ let finalFitvalue = 0;
 const maxFitValue = 2125;
 
 const totalChampions = 141;
+
 const POPULATION_SIZE = 700;
 const MUTATION_CHANCE = 0.5;
 const MAX_GENERATIONS = 25;
