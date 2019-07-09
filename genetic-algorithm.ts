@@ -1,5 +1,5 @@
 import { evolve, Chromosome } from "evolve-ga";
-import * as json from "./champions.json";
+const json = require("./champions.json");
 const fs = require("fs");
 
 let generation = 0;

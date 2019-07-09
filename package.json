@@ -11,7 +11,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mobator": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js"
+    "mobator": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js",
+    "randomic": "tsc randomic-algorithm.ts -resolveJsonModule && node randomic-algorithm.js"
   },
   "repository": {
     "type": "git",
