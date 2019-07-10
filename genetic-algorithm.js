@@ -66,24 +66,62 @@ var selectionFunction = function (chromosomes) {
     return chromosomes;
 };
 var fitnessFunction = function (chromosome) {
-    var fitvalue = 0;
-    var attack = 0;
-    var movspeed = 0;
-    var fighter = 0;
-    chromosome.genes.map(function (gene) {
-        json.map(function (champion) {
-            if (gene === champion.id) {
-                attack = attack + champion.stats.attackdamage;
-                movspeed = movspeed + champion.stats.movespeed;
+    switch (strategy) {
+        case 'gank':
+            var fitvalueGank = 0;
+            var attack_1 = 0;
+            var movspeed_1 = 0;
+            chromosome.genes.map(function (gene) {
+                json.map(function (champion) {
+                    if (gene === champion.id) {
+                        attack_1 = attack_1 + champion.stats.attackdamage;
+                        movspeed_1 = movspeed_1 + champion.stats.movespeed;
+                    }
+                });
+            });
+            fitvalueGank = attack_1 + movspeed_1;
+            if (fitvalueGank > finalFitvalue) {
+                finalFitvalue = fitvalueGank;
+                finalChromosome = chromosome;
             }
-        });
-    });
-    fitvalue = attack + movspeed;
-    if (fitvalue > finalFitvalue) {
-        finalFitvalue = fitvalue;
-        finalChromosome = chromosome;
+            return fitvalueGank;
+        case 'teamfight':
+            var fitvalueTeamfight = 0;
+            var attackdamage_1 = 0;
+            var attackdamagelevel_1 = 0;
+            chromosome.genes.map(function (gene) {
+                json.map(function (champion) {
+                    if (gene === champion.id) {
+                        attackdamage_1 = attackdamage_1 + champion.stats.attackdamage;
+                        attackdamagelevel_1 = attackdamagelevel_1 + champion.stats.attackdamagelevel;
+                    }
+                });
+            });
+            fitvalueTeamfight = attackdamage_1 + attackdamagelevel_1;
+            if (fitvalueTeamfight > finalFitvalue) {
+                finalFitvalue = fitvalueTeamfight;
+                finalChromosome = chromosome;
+            }
+            return fitvalueTeamfight;
+        case 'pusher':
+            var fitvaluePusher = 0;
+            var attackdmg_1 = 0;
+            var attackrange_1 = 0;
+            chromosome.genes.map(function (gene) {
+                json.map(function (champion) {
+                    if (gene === champion.id) {
+                        attackdmg_1 = attackdmg_1 + champion.stats.attackdamage;
+                        attackrange_1 = attackrange_1 + champion.stats.attackrange;
+                    }
+                });
+            });
+            fitvaluePusher = attackdmg_1 + attackrange_1;
+            if (fitvaluePusher > finalFitvalue) {
+                finalFitvalue = fitvaluePusher;
+                finalChromosome = chromosome;
+            }
+            return fitvaluePusher;
     }
-    return fitvalue;
 };
 var validChromosome = function (chromosome) {
     var control = false;
@@ -106,6 +144,7 @@ var algorithm = evolve_ga_1.evolve({
     crossOverFunction: crossOverFunction,
     mutationFunction: mutationFunction
 });
+var strategy = process.argv[2];
 var showCompositionInfo = function () {
     console.log("COMPOSIÇÃO FINAL");
     var parsedJson = JSON.parse(JSON.stringify(json));
