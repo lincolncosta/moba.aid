@@ -6,11 +6,10 @@ var fs = require("fs");
 var generation = 0;
 var finalChromosome;
 var finalFitvalue = 0;
-var maxFitValue = 2125;
 var totalChampions = 141;
-var POPULATION_SIZE = 700;
-var MUTATION_CHANCE = 0.5;
-var MAX_GENERATIONS = 25;
+var POPULATION_SIZE = 10;
+var MUTATION_CHANCE = 0.3;
+var MAX_GENERATIONS = 10;
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
     var geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
@@ -65,7 +64,34 @@ var selectionFunction = function (chromosomes) {
     });
     return chromosomes;
 };
+var validCompositionFunction = function (chromosome) {
+    var validComposition = false;
+    var hasCarry = false;
+    var hasSupp = false;
+    chromosome.genes.map(function (gene) {
+        json.map(function (champion) {
+            if (gene === champion.id) {
+                champion.roles.map(function (role) {
+                    if (role === 'Support') {
+                        hasSupp = true;
+                    }
+                    if (role === 'Carry') {
+                        hasCarry = true;
+                    }
+                });
+            }
+            if (hasCarry && hasSupp) {
+                validComposition = true;
+            }
+        });
+    });
+    return validComposition;
+};
 var fitnessFunction = function (chromosome) {
+    var validComposition = validCompositionFunction(chromosome);
+    if (!validComposition) {
+        return 0;
+    }
     switch (strategy) {
         case 'gank':
             var fitvalueGank = 0;
@@ -79,7 +105,7 @@ var fitnessFunction = function (chromosome) {
                     }
                 });
             });
-            fitvalueGank = attack_1 + movspeed_1;
+            fitvalueGank = (attack_1 + movspeed_1) / maxFitValue;
             if (fitvalueGank > finalFitvalue) {
                 finalFitvalue = fitvalueGank;
                 finalChromosome = chromosome;
@@ -89,15 +115,18 @@ var fitnessFunction = function (chromosome) {
             var fitvalueTeamfight = 0;
             var attackdamage_1 = 0;
             var attackdamagelevel_1 = 0;
+            var healthpoints_1 = 0;
             chromosome.genes.map(function (gene) {
                 json.map(function (champion) {
                     if (gene === champion.id) {
                         attackdamage_1 = attackdamage_1 + champion.stats.attackdamage;
                         attackdamagelevel_1 = attackdamagelevel_1 + champion.stats.attackdamagelevel;
+                        healthpoints_1 = healthpoints_1 + champion.stats.hp;
                     }
                 });
             });
-            fitvalueTeamfight = attackdamage_1 + attackdamagelevel_1;
+            fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1 + healthpoints_1) / maxFitValue;
+            ;
             if (fitvalueTeamfight > finalFitvalue) {
                 finalFitvalue = fitvalueTeamfight;
                 finalChromosome = chromosome;
@@ -107,15 +136,17 @@ var fitnessFunction = function (chromosome) {
             var fitvaluePusher = 0;
             var attackdmg_1 = 0;
             var attackrange_1 = 0;
+            var attackspeed_1 = 0;
             chromosome.genes.map(function (gene) {
                 json.map(function (champion) {
                     if (gene === champion.id) {
                         attackdmg_1 = attackdmg_1 + champion.stats.attackdamage;
                         attackrange_1 = attackrange_1 + champion.stats.attackrange;
+                        attackspeed_1 = attackspeed_1 + champion.stats.attackspeedperlevel;
                     }
                 });
             });
-            fitvaluePusher = attackdmg_1 + attackrange_1;
+            fitvaluePusher = (attackdmg_1 + attackrange_1 + attackspeed_1) / maxFitValue;
             if (fitvaluePusher > finalFitvalue) {
                 finalFitvalue = fitvaluePusher;
                 finalChromosome = chromosome;
@@ -145,6 +176,7 @@ var algorithm = evolve_ga_1.evolve({
     mutationFunction: mutationFunction
 });
 var strategy = process.argv[2];
+var maxFitValue = parseInt(process.argv[3]);
 var showCompositionInfo = function () {
     console.log("COMPOSIÇÃO FINAL");
     var parsedJson = JSON.parse(JSON.stringify(json));
@@ -163,16 +195,14 @@ var filePath = "reports/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__
 fs.writeFile(filePath, "", function () {
     console.log("File manipulation end.");
 });
-for (var i = 0; i < 100; i++) {
-    while (finalFitvalue < maxFitValue && generation < MAX_GENERATIONS) {
-        generation++;
-        algorithm.run();
-    }
-    fs.appendFileSync(filePath, finalChromosome.genes.sort(numberCompare).toString() +
-        "  fit = " +
-        finalFitvalue +
-        "\r\n");
-    finalChromosome = null;
-    finalFitvalue = 0;
-    generation = 0;
+//for (let i = 0; i < 100; i++) {
+while (finalFitvalue < maxFitValue && generation < MAX_GENERATIONS) {
+    console.log(finalFitvalue);
+    generation++;
+    algorithm.run();
 }
+showCompositionInfo();
+finalChromosome = null;
+finalFitvalue = 0;
+generation = 0;
+//}
