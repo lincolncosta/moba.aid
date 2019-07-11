@@ -6,7 +6,6 @@ var fs = require("fs");
 var generation = 0;
 var finalChromosome;
 var finalFitvalue = 0;
-var maxFitValue = 2125;
 var totalChampions = 141;
 var POPULATION_SIZE = 700;
 var MUTATION_CHANCE = 0.5;
@@ -79,7 +78,7 @@ var fitnessFunction = function (chromosome) {
                     }
                 });
             });
-            fitvalueGank = attack_1 + movspeed_1;
+            fitvalueGank = (attack_1 + movspeed_1) / maxFitValue;
             if (fitvalueGank > finalFitvalue) {
                 finalFitvalue = fitvalueGank;
                 finalChromosome = chromosome;
@@ -145,6 +144,7 @@ var algorithm = evolve_ga_1.evolve({
     mutationFunction: mutationFunction
 });
 var strategy = process.argv[2];
+var maxFitValue = parseInt(process.argv[3]);
 var showCompositionInfo = function () {
     console.log("COMPOSIÇÃO FINAL");
     var parsedJson = JSON.parse(JSON.stringify(json));

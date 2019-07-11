@@ -5,10 +5,8 @@ const fs = require("fs");
 let generation = 0;
 let finalChromosome: Chromosome;
 let finalFitvalue = 0;
-const maxFitValue = 2125;
 
 const totalChampions = 141;
-
 const POPULATION_SIZE = 700;
 const MUTATION_CHANCE = 0.5;
 const MAX_GENERATIONS = 25;
@@ -104,7 +102,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
           });
         });
       
-        fitvalueGank = attack + movspeed;
+        fitvalueGank = (attack + movspeed) / maxFitValue;
       
         if (fitvalueGank > finalFitvalue) {
           finalFitvalue = fitvalueGank;
@@ -126,7 +124,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
           });
         });
       
-        fitvalueTeamfight = attackdamage + attackdamagelevel;
+        fitvalueTeamfight = (attackdamage + attackdamagelevel) / maxFitValue;;
       
         if (fitvalueTeamfight > finalFitvalue) {
           finalFitvalue = fitvalueTeamfight;
@@ -148,7 +146,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
           });
         });
       
-        fitvaluePusher = attackdmg + attackrange;
+        fitvaluePusher = (attackdmg + attackrange) / maxFitValue;
       
         if (fitvaluePusher > finalFitvalue) {
           finalFitvalue = fitvaluePusher;
@@ -188,6 +186,7 @@ const algorithm = evolve({
 });
 
 const strategy = process.argv[2];
+const maxFitValue = parseInt(process.argv[3]);
 
 const showCompositionInfo = () => {
   console.log("COMPOSIÇÃO FINAL");
