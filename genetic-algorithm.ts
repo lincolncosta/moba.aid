@@ -159,7 +159,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
           });
         });
       
-        fitvalueTeamfight = (attackdamage + attackdamagelevel + healthpoints) / maxFitValue;;
+        fitvalueTeamfight = (attackdamage + attackdamagelevel + healthpoints) / maxFitValue;
       
         if (fitvalueTeamfight > finalFitvalue) {
           finalFitvalue = fitvalueTeamfight;

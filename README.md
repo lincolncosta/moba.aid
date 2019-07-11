@@ -15,10 +15,12 @@ Os parâmetros utilizados para calcular o fitness máximo foram os seguintes:
 - Máximos de _attackdamage_: 70, 70, 65, 65, 65.
 - Máximos de _movespeed_: 355, 355, 350, 350, 350.
 - Máximos de _attackdamagelevel_: 5, 5, 5, 5, 5.
+- Máximos de _healthpoints_: 800, 625.6, 616.28, 616.28, 615.
 - Máximos de _attackrange_: 650, 600, 600, 575, 575.
+- Máximos de _attackspeedperlevel_: 6, 4, 3.75, 3.7, 3.5.
 
 Com isso, obtém-se que os máximos são:
 
 - Máximo na estratégia _gank_: **2095**.
-- Máximo na estratégia _teamfight_: **360**.
-- Máximo na estratégia _pusher_: **3335**.
+- Máximo na estratégia _teamfight_: **3633**.
+- Máximo na estratégia _pusher_: **3356**.
