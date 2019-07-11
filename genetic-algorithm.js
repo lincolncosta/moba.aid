@@ -7,9 +7,9 @@ var generation = 0;
 var finalChromosome;
 var finalFitvalue = 0;
 var totalChampions = 141;
-var POPULATION_SIZE = 700;
-var MUTATION_CHANCE = 0.5;
-var MAX_GENERATIONS = 25;
+var POPULATION_SIZE = 10;
+var MUTATION_CHANCE = 0.3;
+var MAX_GENERATIONS = 10;
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
     var geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
@@ -64,7 +64,34 @@ var selectionFunction = function (chromosomes) {
     });
     return chromosomes;
 };
+var validCompositionFunction = function (chromosome) {
+    var validComposition = false;
+    var hasCarry = false;
+    var hasSupp = false;
+    chromosome.genes.map(function (gene) {
+        json.map(function (champion) {
+            if (gene === champion.id) {
+                champion.roles.map(function (role) {
+                    if (role === 'Support') {
+                        hasSupp = true;
+                    }
+                    if (role === 'Carry') {
+                        hasCarry = true;
+                    }
+                });
+            }
+            if (hasCarry && hasSupp) {
+                validComposition = true;
+            }
+        });
+    });
+    return validComposition;
+};
 var fitnessFunction = function (chromosome) {
+    var validComposition = validCompositionFunction(chromosome);
+    if (!validComposition) {
+        return 0;
+    }
     switch (strategy) {
         case 'gank':
             var fitvalueGank = 0;
@@ -96,7 +123,8 @@ var fitnessFunction = function (chromosome) {
                     }
                 });
             });
-            fitvalueTeamfight = attackdamage_1 + attackdamagelevel_1;
+            fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1) / maxFitValue;
+            ;
             if (fitvalueTeamfight > finalFitvalue) {
                 finalFitvalue = fitvalueTeamfight;
                 finalChromosome = chromosome;
@@ -114,7 +142,7 @@ var fitnessFunction = function (chromosome) {
                     }
                 });
             });
-            fitvaluePusher = attackdmg_1 + attackrange_1;
+            fitvaluePusher = (attackdmg_1 + attackrange_1) / maxFitValue;
             if (fitvaluePusher > finalFitvalue) {
                 finalFitvalue = fitvaluePusher;
                 finalChromosome = chromosome;
@@ -163,16 +191,14 @@ var filePath = "reports/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__
 fs.writeFile(filePath, "", function () {
     console.log("File manipulation end.");
 });
-for (var i = 0; i < 100; i++) {
-    while (finalFitvalue < maxFitValue && generation < MAX_GENERATIONS) {
-        generation++;
-        algorithm.run();
-    }
-    fs.appendFileSync(filePath, finalChromosome.genes.sort(numberCompare).toString() +
-        "  fit = " +
-        finalFitvalue +
-        "\r\n");
-    finalChromosome = null;
-    finalFitvalue = 0;
-    generation = 0;
+//for (let i = 0; i < 100; i++) {
+while (finalFitvalue < maxFitValue && generation < MAX_GENERATIONS) {
+    console.log(finalFitvalue);
+    generation++;
+    algorithm.run();
 }
+showCompositionInfo();
+finalChromosome = null;
+finalFitvalue = 0;
+generation = 0;
+//}
