@@ -115,15 +115,17 @@ var fitnessFunction = function (chromosome) {
             var fitvalueTeamfight = 0;
             var attackdamage_1 = 0;
             var attackdamagelevel_1 = 0;
+            var healthpoints_1 = 0;
             chromosome.genes.map(function (gene) {
                 json.map(function (champion) {
                     if (gene === champion.id) {
                         attackdamage_1 = attackdamage_1 + champion.stats.attackdamage;
                         attackdamagelevel_1 = attackdamagelevel_1 + champion.stats.attackdamagelevel;
+                        healthpoints_1 = healthpoints_1 + champion.stats.hp;
                     }
                 });
             });
-            fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1) / maxFitValue;
+            fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1 + healthpoints_1) / maxFitValue;
             ;
             if (fitvalueTeamfight > finalFitvalue) {
                 finalFitvalue = fitvalueTeamfight;
@@ -134,15 +136,17 @@ var fitnessFunction = function (chromosome) {
             var fitvaluePusher = 0;
             var attackdmg_1 = 0;
             var attackrange_1 = 0;
+            var attackspeed_1 = 0;
             chromosome.genes.map(function (gene) {
                 json.map(function (champion) {
                     if (gene === champion.id) {
                         attackdmg_1 = attackdmg_1 + champion.stats.attackdamage;
                         attackrange_1 = attackrange_1 + champion.stats.attackrange;
+                        attackspeed_1 = attackspeed_1 + champion.stats.attackspeedperlevel;
                     }
                 });
             });
-            fitvaluePusher = (attackdmg_1 + attackrange_1) / maxFitValue;
+            fitvaluePusher = (attackdmg_1 + attackrange_1 + attackspeed_1) / maxFitValue;
             if (fitvaluePusher > finalFitvalue) {
                 finalFitvalue = fitvaluePusher;
                 finalChromosome = chromosome;
