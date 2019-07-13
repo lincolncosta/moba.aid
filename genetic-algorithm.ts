@@ -251,7 +251,8 @@ const showCompositionInfo = () => {
   createCollage(options)
     .then((canvas) => {
       const src = canvas.jpegStream();
-      const dest = fs.createWriteStream(strategy + ".png");
+      console.log(strategy);
+      const dest = fs.createWriteStream("composition.png");
       src.pipe(dest);
     });
 };

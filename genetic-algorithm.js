@@ -194,13 +194,14 @@ var showCompositionInfo = function () {
         sources: championsIcons,
         width: 5,
         height: 1,
-        imageWidth: 350,
-        imageHeight: 250
+        imageWidth: 120,
+        imageHeight: 120
     };
     createCollage(options)
         .then(function (canvas) {
         var src = canvas.jpegStream();
-        var dest = fs.createWriteStream("myFile.png");
+        console.log(strategy);
+        var dest = fs.createWriteStream(strategy + ".png");
         src.pipe(dest);
     });
 };
