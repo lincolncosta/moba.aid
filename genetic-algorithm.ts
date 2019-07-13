@@ -1,4 +1,5 @@
 import { evolve, Chromosome } from "evolve-ga";
+const createCollage = require("@settlin/collage");
 const json = require("./champions.json");
 const fs = require("fs");
 
@@ -226,15 +227,33 @@ const strategy = process.argv[2];
 const maxFitValue = parseInt(process.argv[3]);
 
 const showCompositionInfo = () => {
+  let championsIcons = [];
   console.log("COMPOSIÇÃO FINAL");
   const parsedJson = JSON.parse(JSON.stringify(json));
   finalChromosome.genes.forEach(item => {
     const aux = parsedJson.find(champion => champion.id === item);
     if (aux) {
-      console.log(aux.localized_name);
+      championsIcons.push(aux.icon);
+      console.log(aux.icon);
     }
   });
   console.log("----------------");
+  console.log(championsIcons);
+
+  const options = {
+    sources: championsIcons,
+    width: 5,
+    height: 1,
+    imageWidth: 120,
+    imageHeight: 120
+  };
+   
+  createCollage(options)
+    .then((canvas) => {
+      const src = canvas.jpegStream();
+      const dest = fs.createWriteStream(strategy + ".png");
+      src.pipe(dest);
+    });
 };
 
 const numberCompare = (a, b) => {

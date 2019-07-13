@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var evolve_ga_1 = require("evolve-ga");
+var createCollage = require("@settlin/collage");
 var json = require("./champions.json");
 var fs = require("fs");
 var generation = 0;
@@ -177,15 +178,31 @@ var algorithm = evolve_ga_1.evolve({
 var strategy = process.argv[2];
 var maxFitValue = parseInt(process.argv[3]);
 var showCompositionInfo = function () {
+    var championsIcons = [];
     console.log("COMPOSIÇÃO FINAL");
     var parsedJson = JSON.parse(JSON.stringify(json));
     finalChromosome.genes.forEach(function (item) {
         var aux = parsedJson.find(function (champion) { return champion.id === item; });
         if (aux) {
-            console.log(aux.localized_name);
+            championsIcons.push(aux.icon);
+            console.log(aux.icon);
         }
     });
     console.log("----------------");
+    console.log(championsIcons);
+    var options = {
+        sources: championsIcons,
+        width: 5,
+        height: 1,
+        imageWidth: 350,
+        imageHeight: 250
+    };
+    createCollage(options)
+        .then(function (canvas) {
+        var src = canvas.jpegStream();
+        var dest = fs.createWriteStream("myFile.png");
+        src.pipe(dest);
+    });
 };
 var numberCompare = function (a, b) {
     return a - b;
