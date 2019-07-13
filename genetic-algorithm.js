@@ -126,7 +126,6 @@ var fitnessFunction = function (chromosome) {
                 });
             });
             fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1 + healthpoints_1) / maxFitValue;
-            ;
             if (fitvalueTeamfight > finalFitvalue) {
                 finalFitvalue = fitvalueTeamfight;
                 finalChromosome = chromosome;
