@@ -228,17 +228,13 @@ const maxFitValue = parseInt(process.argv[3]);
 
 const showCompositionInfo = () => {
   let championsIcons = [];
-  console.log("COMPOSIÇÃO FINAL");
   const parsedJson = JSON.parse(JSON.stringify(json));
   finalChromosome.genes.forEach(item => {
     const aux = parsedJson.find(champion => champion.id === item);
     if (aux) {
       championsIcons.push(aux.icon);
-      console.log(aux.icon);
     }
   });
-  console.log("----------------");
-  console.log(championsIcons);
 
   const options = {
     sources: championsIcons,
@@ -251,7 +247,6 @@ const showCompositionInfo = () => {
   createCollage(options)
     .then((canvas) => {
       const src = canvas.jpegStream();
-      console.log(strategy);
       const dest = fs.createWriteStream("composition.png");
       src.pipe(dest);
     });
