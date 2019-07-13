@@ -4,13 +4,15 @@ var evolve_ga_1 = require("evolve-ga");
 var createCollage = require("@settlin/collage");
 var json = require("./champions.json");
 var fs = require("fs");
-var generation = 0;
+var generation = 1;
+var execution = 1;
 var finalChromosome;
 var finalFitvalue = 0;
 var totalChampions = 141;
 var POPULATION_SIZE = 10;
 var MUTATION_CHANCE = 0.3;
 var MAX_GENERATIONS = 10;
+var filePath = "reports/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
     var geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
@@ -179,17 +181,13 @@ var strategy = process.argv[2];
 var maxFitValue = parseInt(process.argv[3]);
 var showCompositionInfo = function () {
     var championsIcons = [];
-    console.log("COMPOSIÇÃO FINAL");
     var parsedJson = JSON.parse(JSON.stringify(json));
     finalChromosome.genes.forEach(function (item) {
         var aux = parsedJson.find(function (champion) { return champion.id === item; });
         if (aux) {
             championsIcons.push(aux.icon);
-            console.log(aux.icon);
         }
     });
-    console.log("----------------");
-    console.log(championsIcons);
     var options = {
         sources: championsIcons,
         width: 5,
@@ -200,26 +198,36 @@ var showCompositionInfo = function () {
     createCollage(options)
         .then(function (canvas) {
         var src = canvas.jpegStream();
-        console.log(strategy);
-        var dest = fs.createWriteStream(strategy + ".png");
+        var dest = fs.createWriteStream("composition.png");
         src.pipe(dest);
     });
 };
 var numberCompare = function (a, b) {
     return a - b;
 };
-var filePath = "reports/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
-fs.writeFile(filePath, "", function () {
-    console.log("File manipulation end.");
-});
-//for (let i = 0; i < 100; i++) {
-while (finalFitvalue < maxFitValue && generation < MAX_GENERATIONS) {
-    console.log(finalFitvalue);
-    generation++;
-    algorithm.run();
+var writeExecutionsOnFile = function () {
+    fs.appendFileSync(filePath, "---------------------------------- \r\n");
+    fs.appendFileSync(filePath, "EXECUTION " + execution + "\r\n");
+    fs.appendFileSync(filePath, "---------------------------------- \r\n");
+};
+var writeGenerationsOnFile = function () {
+    fs.appendFileSync(filePath, "GENERATION " + generation + "\r\n");
+    fs.appendFileSync(filePath, finalChromosome.genes.sort(numberCompare).toString() +
+        "  fit = " +
+        finalFitvalue +
+        "\r\n");
+};
+fs.writeFile(filePath, "", function () { });
+for (execution = 1; execution < 50; execution++) {
+    writeExecutionsOnFile();
+    algorithm.resetPopulation();
+    while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {
+        algorithm.run();
+        writeGenerationsOnFile();
+        generation++;
+    }
+    //showCompositionInfo();
+    finalChromosome = null;
+    finalFitvalue = 0;
+    generation = 0;
 }
-showCompositionInfo();
-finalChromosome = null;
-finalFitvalue = 0;
-generation = 0;
-//}

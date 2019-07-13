@@ -3,7 +3,8 @@ const createCollage = require("@settlin/collage");
 const json = require("./champions.json");
 const fs = require("fs");
 
-let generation = 0;
+let generation = 1;
+let execution = 1;
 let finalChromosome: Chromosome;
 let finalFitvalue = 0;
 
@@ -11,6 +12,7 @@ const totalChampions = 141;
 const POPULATION_SIZE = 10;
 const MUTATION_CHANCE = 0.3;
 const MAX_GENERATIONS = 10;
+const filePath = `reports/PS-${POPULATION_SIZE}__MC-${MUTATION_CHANCE}__MG-${MAX_GENERATIONS}.csv`;
 
 const mutationFunction = (
   chromosome: Chromosome,
@@ -70,7 +72,6 @@ const crossOverFunction = (chromosomes: Chromosome[]): Chromosome[] => {
       });
     }
   }
-
   return offspring;
 };
 
@@ -256,21 +257,48 @@ const numberCompare = (a, b) => {
   return a - b;
 };
 
-const filePath = `reports/PS-${POPULATION_SIZE}__MC-${MUTATION_CHANCE}__MG-${MAX_GENERATIONS}.csv`;
-fs.writeFile(filePath, "", () => {
-  console.log("File manipulation end.");
-});
+const writeExecutionsOnFile = () => {  
+  fs.appendFileSync(
+    filePath,
+    "---------------------------------- \r\n"
+  );
+  fs.appendFileSync(
+    filePath,
+    "EXECUTION " + execution + "\r\n"
+  );
+  fs.appendFileSync(
+    filePath,
+    "---------------------------------- \r\n"
+  );
+}
 
-//for (let i = 0; i < 100; i++) {
-  while (finalFitvalue < maxFitValue && generation < MAX_GENERATIONS) {
-    console.log(finalFitvalue);
-    generation++;
+const writeGenerationsOnFile = () => {      
+  fs.appendFileSync(
+    filePath,
+    "GENERATION " + generation + "\r\n"
+  );
+  fs.appendFileSync(
+    filePath,
+    finalChromosome.genes.sort(numberCompare).toString() +
+      "  fit = " +
+      finalFitvalue +
+      "\r\n"
+  );
+}
+
+fs.writeFile(filePath, "", () => {});
+for (execution = 1; execution < 50; execution++) {
+  writeExecutionsOnFile();
+  algorithm.resetPopulation();
+  while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {      
     algorithm.run();
+    writeGenerationsOnFile();
+    generation++;
   }
 
-  showCompositionInfo();
+  //showCompositionInfo();
 
   finalChromosome = null;
   finalFitvalue = 0;
   generation = 0;
-//}
+}
