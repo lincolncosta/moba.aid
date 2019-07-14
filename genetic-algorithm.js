@@ -8,6 +8,7 @@ var generation = 1;
 var execution = 1;
 var finalChromosome;
 var finalFitvalue = 0;
+var allChromosomes = [];
 var totalChampions = 141;
 var POPULATION_SIZE = 10;
 var MUTATION_CHANCE = 0.3;
@@ -91,6 +92,7 @@ var validCompositionFunction = function (chromosome) {
     return validComposition;
 };
 var fitnessFunction = function (chromosome) {
+    allChromosomes.push(chromosome);
     var validComposition = validCompositionFunction(chromosome);
     if (!validComposition) {
         return 0;
@@ -205,29 +207,27 @@ var showCompositionInfo = function () {
 var numberCompare = function (a, b) {
     return a - b;
 };
-var writeExecutionsOnFile = function () {
-    fs.appendFileSync(filePath, "---------------------------------- \r\n");
-    fs.appendFileSync(filePath, "EXECUTION " + execution + "\r\n");
-    fs.appendFileSync(filePath, "---------------------------------- \r\n");
+var writeFileHeader = function () {
+    fs.appendFileSync(filePath, "execution;generation;chromosome;fitness \r\n");
 };
 var writeGenerationsOnFile = function () {
-    fs.appendFileSync(filePath, "GENERATION " + generation + "\r\n");
-    fs.appendFileSync(filePath, finalChromosome.genes.sort(numberCompare).toString() +
-        "  fit = " +
-        finalFitvalue +
-        "\r\n");
+    allChromosomes.map(function (chromosome) {
+        fs.appendFileSync(filePath, execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + "\r\n");
+    });
 };
 fs.writeFile(filePath, "", function () { });
-for (execution = 1; execution < 50; execution++) {
-    writeExecutionsOnFile();
+writeFileHeader();
+for (execution = 1; execution <= 50; execution++) {
+    //writeExecutionsOnFile();
     algorithm.resetPopulation();
     while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {
         algorithm.run();
         writeGenerationsOnFile();
+        allChromosomes = [];
         generation++;
     }
     //showCompositionInfo();
     finalChromosome = null;
     finalFitvalue = 0;
-    generation = 0;
+    generation = 1;
 }

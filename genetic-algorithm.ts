@@ -8,6 +8,8 @@ let execution = 1;
 let finalChromosome: Chromosome;
 let finalFitvalue = 0;
 
+let allChromosomes: Chromosome[] = [];
+
 const totalChampions = 141;
 const POPULATION_SIZE = 10;
 const MUTATION_CHANCE = 0.3;
@@ -116,6 +118,7 @@ const validCompositionFunction = (chromosome: Chromosome): boolean => {
 }
 
 const fitnessFunction = (chromosome: Chromosome): number => {
+  allChromosomes.push(chromosome);
   let validComposition = validCompositionFunction(chromosome);
 
   if(!validComposition){
@@ -257,42 +260,33 @@ const numberCompare = (a, b) => {
   return a - b;
 };
 
-const writeExecutionsOnFile = () => {  
+const writeFileHeader = () => {  
   fs.appendFileSync(
     filePath,
-    "---------------------------------- \r\n"
-  );
-  fs.appendFileSync(
-    filePath,
-    "EXECUTION " + execution + "\r\n"
-  );
-  fs.appendFileSync(
-    filePath,
-    "---------------------------------- \r\n"
+    "execution;generation;chromosome;fitness \r\n"
   );
 }
 
 const writeGenerationsOnFile = () => {      
-  fs.appendFileSync(
-    filePath,
-    "GENERATION " + generation + "\r\n"
-  );
-  fs.appendFileSync(
-    filePath,
-    finalChromosome.genes.sort(numberCompare).toString() +
-      "  fit = " +
-      finalFitvalue +
-      "\r\n"
-  );
+
+  allChromosomes.map(chromosome => {
+    fs.appendFileSync(
+      filePath,
+      execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + "\r\n"
+    );
+  });
 }
 
 fs.writeFile(filePath, "", () => {});
-for (execution = 1; execution < 50; execution++) {
-  writeExecutionsOnFile();
+writeFileHeader();
+
+for (execution = 1; execution <= 50; execution++) {
+  //writeExecutionsOnFile();
   algorithm.resetPopulation();
   while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {      
     algorithm.run();
     writeGenerationsOnFile();
+    allChromosomes = [];
     generation++;
   }
 
@@ -300,5 +294,5 @@ for (execution = 1; execution < 50; execution++) {
 
   finalChromosome = null;
   finalFitvalue = 0;
-  generation = 0;
+  generation = 1;
 }
