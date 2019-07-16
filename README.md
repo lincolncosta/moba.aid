@@ -31,6 +31,6 @@ Ou seja, as possíveis execuções seriam:
 
 Os resultados obtidos após a execução da abordagem estarão disponíveis nas pastas `reports` e `time-reports`. A primeira conterá informações a respeito de cada uma das gerações e execuções e a segunda conterá informações a respeito da duração de processamento em cada uma dessas etapas. 
 
-**Novas Implementações**
+**Novas implementações**
 
 **TODAS AS ALTERAÇÕES DE CODIFICAÇÃO DEVEM SER REALIZADAS SOMENTE NO ARQUIVO `genetic-algorithm.ts`.**
