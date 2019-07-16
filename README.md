@@ -1,4 +1,6 @@
-**Informações gerais**
+# Mobator
+
+## Informações gerais
 
 Os parâmetros utilizados para calcular o fitness máximo foram os seguintes:
 
@@ -15,7 +17,7 @@ Com isso, obtém-se que os máximos são:
 - Máximo na estratégia _Team Fight_: **3633**.
 - Máximo na estratégia _Pusher_: **3356**.
 
-**Informações de execução**
+## Informações de execução
 
 Após realizar o download ou clone do projeto, execute o comando `npm install` para que todas as dependências de execução sejam instaladas em seu computador.
 
@@ -27,10 +29,10 @@ Ou seja, as possíveis execuções seriam:
 `npm run pusher`
 `npm run teamfight`
 
-**Resultados**
+## Resultados
 
 Os resultados obtidos após a execução da abordagem estarão disponíveis nas pastas `reports` e `time-reports`. A primeira conterá informações a respeito de cada uma das gerações e execuções e a segunda conterá informações a respeito da duração de processamento em cada uma dessas etapas. 
 
-**Novas implementações**
+## Novas implementações
 
 **TODAS AS ALTERAÇÕES DE CODIFICAÇÃO DEVEM SER REALIZADAS SOMENTE NO ARQUIVO `genetic-algorithm.ts`.**
