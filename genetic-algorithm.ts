@@ -266,7 +266,7 @@ const numberCompare = (a, b) => {
 const writeFileHeader = () => {  
   fs.appendFileSync(
     filePathReports,
-    "execution;generation;chromosome;fitness;timestamp \r\n"
+    "execution;generation;chromosome;fitness \r\n"
   );
 }
 
@@ -282,7 +282,7 @@ const writeGenerationsOnFile = () => {
   allChromosomes.map(chromosome => {
     fs.appendFileSync(
       filePathReports,
-      execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + ';' + new Date() + "\r\n"
+      execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + "\r\n"
     );
   });
 }

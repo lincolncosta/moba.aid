@@ -13,7 +13,11 @@ var totalChampions = 141;
 var POPULATION_SIZE = 30;
 var MUTATION_CHANCE = 0.7;
 var MAX_GENERATIONS = 1000;
-var filePath = "time-reports/teamfight/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
+var MAX_EXECUTIONS = 30;
+var strategy = process.argv[2];
+var maxFitValue = parseInt(process.argv[3]);
+var filePathReports = "reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
+var filePathTimeReports = "time-reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
     var geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
@@ -98,8 +102,8 @@ var fitnessFunction = function (chromosome) {
         return 0;
     }
     switch (strategy) {
-        case 'gank':
-            var fitvalueGank = 0;
+        case 'hardengage':
+            var fitvalueHardEngage = 0;
             var attack_1 = 0;
             var movspeed_1 = 0;
             chromosome.genes.map(function (gene) {
@@ -110,12 +114,12 @@ var fitnessFunction = function (chromosome) {
                     }
                 });
             });
-            fitvalueGank = (attack_1 + movspeed_1) / maxFitValue;
-            if (fitvalueGank > finalFitvalue) {
-                finalFitvalue = fitvalueGank;
+            fitvalueHardEngage = (attack_1 + movspeed_1) / maxFitValue;
+            if (fitvalueHardEngage > finalFitvalue) {
+                finalFitvalue = fitvalueHardEngage;
                 finalChromosome = chromosome;
             }
-            return fitvalueGank;
+            return fitvalueHardEngage;
         case 'teamfight':
             var fitvalueTeamfight = 0;
             var attackdamage_1 = 0;
@@ -179,8 +183,6 @@ var algorithm = evolve_ga_1.evolve({
     crossOverFunction: crossOverFunction,
     mutationFunction: mutationFunction
 });
-var strategy = process.argv[2];
-var maxFitValue = parseInt(process.argv[3]);
 var showCompositionInfo = function () {
     var championsIcons = [];
     var parsedJson = JSON.parse(JSON.stringify(json));
@@ -200,7 +202,7 @@ var showCompositionInfo = function () {
     createCollage(options)
         .then(function (canvas) {
         var src = canvas.jpegStream();
-        var dest = fs.createWriteStream("composition.png");
+        var dest = fs.createWriteStream(strategy + ".png");
         src.pipe(dest);
     });
 };
@@ -208,29 +210,32 @@ var numberCompare = function (a, b) {
     return a - b;
 };
 var writeFileHeader = function () {
-    fs.appendFileSync(filePath, "execution;generation;chromosome;fitness;timestamp \r\n");
+    fs.appendFileSync(filePathReports, "execution;generation;chromosome;fitness \r\n");
 };
 var writeFileSecondsHeader = function () {
-    fs.appendFileSync(filePath, "execution;start;end;duration \r\n");
+    fs.appendFileSync(filePathTimeReports, "execution;start;end;duration \r\n");
 };
 var writeGenerationsOnFile = function () {
     allChromosomes.map(function (chromosome) {
-        fs.appendFileSync(filePath, execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + ';' + new Date() + "\r\n");
+        fs.appendFileSync(filePathReports, execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + "\r\n");
     });
 };
 var writeSecondsOnFile = function (start, end, duration) {
-    fs.appendFileSync(filePath, execution + ";" + start + ";" + end + ";" + duration + " \r\n");
+    fs.appendFileSync(filePathTimeReports, execution + ";" + start + ";" + end + ";" + duration + " \r\n");
 };
-fs.writeFile(filePath, "", function () { });
-//writeFileHeader();
+var createReportFiles = function () {
+    fs.writeFile(filePathReports, "", function () { });
+    fs.writeFile(filePathTimeReports, "", function () { });
+};
+createReportFiles();
+writeFileHeader();
 writeFileSecondsHeader();
-for (execution = 1; execution <= 1; execution++) {
+for (execution = 1; execution <= MAX_EXECUTIONS; execution++) {
     var start = new Date();
-    //writeSecondsOnFile("start");  
     algorithm.resetPopulation();
     while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {
         algorithm.run();
-        //writeGenerationsOnFile();
+        writeGenerationsOnFile();
         allChromosomes = [];
         generation++;
     }
