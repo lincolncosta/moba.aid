@@ -1,14 +1,4 @@
-Após realizar o download ou clone do projeto, execute o comando `npm install` para que todas as dependências de execução sejam instaladas em seu computador.
-
-Para executar o projeto utilize o comando `npm run mobator` + um parâmetro de estratégia. Atualmente as estratégias disponíveis são `gank`, `pusher` e `teamfight`.
-
-Ou seja, as possíveis execuções seriam:
-
-`npm run mobator gank`
-`npm run mobator pusher`
-`npm run mobator teamfight`
-
-TODAS AS ALTERAÇÕES DE CODIFICAÇÃO DEVEM SER REALIZADAS SOMENTE NO ARQUIVO `genetic-algorithm.ts`.
+**Informações gerais**
 
 Os parâmetros utilizados para calcular o fitness máximo foram os seguintes:
 
@@ -24,3 +14,23 @@ Com isso, obtém-se que os máximos são:
 - Máximo na estratégia _gank_: **2095**.
 - Máximo na estratégia _teamfight_: **3633**.
 - Máximo na estratégia _pusher_: **3356**.
+
+**Informações de execução**
+
+Após realizar o download ou clone do projeto, execute o comando `npm install` para que todas as dependências de execução sejam instaladas em seu computador.
+
+Para executar o projeto utilize o comando `npm run` + um parâmetro de estratégia. Atualmente as estratégias disponíveis são `gank`, `pusher` e `teamfight`.
+
+Ou seja, as possíveis execuções seriam:
+
+`npm run gank`
+`npm run pusher`
+`npm run teamfight`
+
+**Resultados**
+
+Os resultados obtidos após a execução da abordagem estarão disponíveis nas pastas `reports` e `time-reports`. A primeira conterá informações a respeito de cada uma das gerações e execuções e a segunda conterá informações a respeito da duração de processamento em cada uma dessas etapas. 
+
+**Novas Implementações**
+
+**TODAS AS ALTERAÇÕES DE CODIFICAÇÃO DEVEM SER REALIZADAS SOMENTE NO ARQUIVO `genetic-algorithm.ts`.**
