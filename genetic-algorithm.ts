@@ -11,10 +11,16 @@ let finalFitvalue = 0;
 let allChromosomes: Chromosome[] = [];
 
 const totalChampions = 141;
-const POPULATION_SIZE = 10;
-const MUTATION_CHANCE = 0.3;
-const MAX_GENERATIONS = 10;
-const filePath = `reports/PS-${POPULATION_SIZE}__MC-${MUTATION_CHANCE}__MG-${MAX_GENERATIONS}.csv`;
+const POPULATION_SIZE = 30;
+const MUTATION_CHANCE = 0.7;
+const MAX_GENERATIONS = 1000;
+const MAX_EXECUTIONS = 30;
+
+const strategy = process.argv[2];
+const maxFitValue = parseInt(process.argv[3]);
+
+const filePathReports = `reports/${strategy}/PS-${POPULATION_SIZE}__MC-${MUTATION_CHANCE}__MG-${MAX_GENERATIONS}.csv`;
+const filePathTimeReports = `time-reports/${strategy}/PS-${POPULATION_SIZE}__MC-${MUTATION_CHANCE}__MG-${MAX_GENERATIONS}.csv`;
 
 const mutationFunction = (
   chromosome: Chromosome,
@@ -126,8 +132,8 @@ const fitnessFunction = (chromosome: Chromosome): number => {
   }
 
   switch(strategy){
-    case 'gank':        
-        let fitvalueGank: any = 0;
+    case 'hardengage':        
+        let fitvalueHardEngage: any = 0;
         let attack = 0;
         let movspeed = 0;
       
@@ -140,14 +146,14 @@ const fitnessFunction = (chromosome: Chromosome): number => {
           });
         });
       
-        fitvalueGank = (attack + movspeed) / maxFitValue;
+        fitvalueHardEngage = (attack + movspeed) / maxFitValue;
       
-        if (fitvalueGank > finalFitvalue) {
-          finalFitvalue = fitvalueGank;
+        if (fitvalueHardEngage > finalFitvalue) {
+          finalFitvalue = fitvalueHardEngage;
           finalChromosome = chromosome;
         }
       
-        return fitvalueGank;
+        return fitvalueHardEngage;
     case 'teamfight':
         let fitvalueTeamfight: any = 0;
         let attackdamage = 0;
@@ -158,7 +164,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
           json.map(champion => {
             if (gene === champion.id) {
               attackdamage = attackdamage + champion.stats.attackdamage;
-              attackdamagelevel = attackdamagelevel + champion.stats.attackdamagelevel;
+              attackdamagelevel = attackdamagelevel + champion.stats.attackdamageperlevel;
               healthpoints = healthpoints + champion.stats.hp;
             }
           });
@@ -227,9 +233,6 @@ const algorithm = evolve({
   mutationFunction: mutationFunction
 });
 
-const strategy = process.argv[2];
-const maxFitValue = parseInt(process.argv[3]);
-
 const showCompositionInfo = () => {
   let championsIcons = [];
   const parsedJson = JSON.parse(JSON.stringify(json));
@@ -251,7 +254,7 @@ const showCompositionInfo = () => {
   createCollage(options)
     .then((canvas) => {
       const src = canvas.jpegStream();
-      const dest = fs.createWriteStream("composition.png");
+      const dest = fs.createWriteStream(strategy + ".png");
       src.pipe(dest);
     });
 };
@@ -262,8 +265,15 @@ const numberCompare = (a, b) => {
 
 const writeFileHeader = () => {  
   fs.appendFileSync(
-    filePath,
-    "execution;generation;chromosome;fitness \r\n"
+    filePathReports,
+    "execution;generation;chromosome;fitness;timestamp \r\n"
+  );
+}
+
+const writeFileSecondsHeader = () => {  
+  fs.appendFileSync(
+    filePathTimeReports,
+    "execution;start;end;duration \r\n"
   );
 }
 
@@ -271,17 +281,30 @@ const writeGenerationsOnFile = () => {
 
   allChromosomes.map(chromosome => {
     fs.appendFileSync(
-      filePath,
-      execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + "\r\n"
+      filePathReports,
+      execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + ';' + new Date() + "\r\n"
     );
   });
 }
 
-fs.writeFile(filePath, "", () => {});
-writeFileHeader();
+const writeSecondsOnFile = (start: any, end: any, duration: any) => {
+  fs.appendFileSync(
+    filePathTimeReports,
+    execution + ";" + start + ";" + end + ";" + duration + " \r\n"
+  )
+} 
 
-for (execution = 1; execution <= 50; execution++) {
-  //writeExecutionsOnFile();
+const createReportFiles = () => {
+  fs.writeFile(filePathReports, "", () => {});
+  fs.writeFile(filePathTimeReports, "", () => {});
+}
+
+createReportFiles();
+writeFileHeader();
+writeFileSecondsHeader();
+
+for (execution = 1; execution <= MAX_EXECUTIONS; execution++) {
+  var start = new Date();  
   algorithm.resetPopulation();
   while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {      
     algorithm.run();
@@ -290,9 +313,10 @@ for (execution = 1; execution <= 50; execution++) {
     generation++;
   }
 
-  //showCompositionInfo();
-
+  showCompositionInfo();
   finalChromosome = null;
   finalFitvalue = 0;
   generation = 1;
+  var end = new Date();
+  writeSecondsOnFile(start, end, end.getTime() - start.getTime());
 }

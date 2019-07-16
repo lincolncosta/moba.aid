@@ -10,10 +10,10 @@ var finalChromosome;
 var finalFitvalue = 0;
 var allChromosomes = [];
 var totalChampions = 141;
-var POPULATION_SIZE = 10;
-var MUTATION_CHANCE = 0.3;
-var MAX_GENERATIONS = 10;
-var filePath = "reports/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
+var POPULATION_SIZE = 30;
+var MUTATION_CHANCE = 0.7;
+var MAX_GENERATIONS = 1000;
+var filePath = "time-reports/teamfight/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
     var geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
@@ -125,7 +125,7 @@ var fitnessFunction = function (chromosome) {
                 json.map(function (champion) {
                     if (gene === champion.id) {
                         attackdamage_1 = attackdamage_1 + champion.stats.attackdamage;
-                        attackdamagelevel_1 = attackdamagelevel_1 + champion.stats.attackdamagelevel;
+                        attackdamagelevel_1 = attackdamagelevel_1 + champion.stats.attackdamageperlevel;
                         healthpoints_1 = healthpoints_1 + champion.stats.hp;
                     }
                 });
@@ -208,26 +208,36 @@ var numberCompare = function (a, b) {
     return a - b;
 };
 var writeFileHeader = function () {
-    fs.appendFileSync(filePath, "execution;generation;chromosome;fitness \r\n");
+    fs.appendFileSync(filePath, "execution;generation;chromosome;fitness;timestamp \r\n");
+};
+var writeFileSecondsHeader = function () {
+    fs.appendFileSync(filePath, "execution;start;end;duration \r\n");
 };
 var writeGenerationsOnFile = function () {
     allChromosomes.map(function (chromosome) {
-        fs.appendFileSync(filePath, execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + "\r\n");
+        fs.appendFileSync(filePath, execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + ';' + new Date() + "\r\n");
     });
 };
+var writeSecondsOnFile = function (start, end, duration) {
+    fs.appendFileSync(filePath, execution + ";" + start + ";" + end + ";" + duration + " \r\n");
+};
 fs.writeFile(filePath, "", function () { });
-writeFileHeader();
-for (execution = 1; execution <= 50; execution++) {
-    //writeExecutionsOnFile();
+//writeFileHeader();
+writeFileSecondsHeader();
+for (execution = 1; execution <= 1; execution++) {
+    var start = new Date();
+    //writeSecondsOnFile("start");  
     algorithm.resetPopulation();
     while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {
         algorithm.run();
-        writeGenerationsOnFile();
+        //writeGenerationsOnFile();
         allChromosomes = [];
         generation++;
     }
-    //showCompositionInfo();
+    showCompositionInfo();
     finalChromosome = null;
     finalFitvalue = 0;
     generation = 1;
+    var end = new Date();
+    writeSecondsOnFile(start, end, end.getTime() - start.getTime());
 }

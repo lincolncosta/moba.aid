@@ -11,19 +11,19 @@ Os parâmetros utilizados para calcular o fitness máximo foram os seguintes:
 
 Com isso, obtém-se que os máximos são:
 
-- Máximo na estratégia _gank_: **2095**.
-- Máximo na estratégia _teamfight_: **3633**.
-- Máximo na estratégia _pusher_: **3356**.
+- Máximo na estratégia _Hard Engage_: **2095**.
+- Máximo na estratégia _Team Fight_: **3633**.
+- Máximo na estratégia _Pusher_: **3356**.
 
 **Informações de execução**
 
 Após realizar o download ou clone do projeto, execute o comando `npm install` para que todas as dependências de execução sejam instaladas em seu computador.
 
-Para executar o projeto utilize o comando `npm run` + um parâmetro de estratégia. Atualmente as estratégias disponíveis são `gank`, `pusher` e `teamfight`.
+Para executar o projeto utilize o comando `npm run` + um parâmetro de estratégia. Atualmente as estratégias disponíveis são `hardengage`, `pusher` e `teamfight`.
 
 Ou seja, as possíveis execuções seriam:
 
-`npm run gank`
+`npm run hardengage`
 `npm run pusher`
 `npm run teamfight`
 

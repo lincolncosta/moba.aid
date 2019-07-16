@@ -13,9 +13,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mobator": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js gank 2095",
-    "mobator gank": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js gank 2095",
-    "mobator teamfight": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js teamfight 3633",
-    "mobator pusher": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js pusher 3335",
+    "hardengage": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js hardengage 2095",
+    "teamfight": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js teamfight 3633",
+    "pusher": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js pusher 3335",
     "randomic": "tsc randomic-algorithm.ts -resolveJsonModule && node randomic-algorithm.js"
   },
   "repository": {
