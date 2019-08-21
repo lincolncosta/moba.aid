@@ -25,4 +25,10 @@ routes.get('/randomic', (req, res) => {
     res.send('ok')
 })
 
+routes.post('/result', (req, res) =>{
+    const { strategy, maxFitValue, populationSize, mutationChance, maxGenerations } = req.body;
+
+    return res.send(`${strategy, maxFitValue, populationSize, mutationChance, maxGenerations}`)
+})
+
 module.exports = routes
