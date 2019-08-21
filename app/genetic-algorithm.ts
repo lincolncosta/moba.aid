@@ -1,6 +1,6 @@
 import { evolve, Chromosome } from "evolve-ga";
 const createCollage = require("@settlin/collage");
-const json = require("./champions.json");
+const json = require("../champions.json");
 const fs = require("fs");
 
 let generation = 1;
