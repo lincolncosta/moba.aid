@@ -1,5 +1,5 @@
 const fs = require("fs");
-const json = require("./champions.json");
+const json = require("../champions.json");
 
 const generateRandomPosition = (): number => {
   return Math.floor(Math.random() * 141) + 1;
