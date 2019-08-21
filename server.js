@@ -3,6 +3,7 @@ const routes = require('./routes')
 
 const server = express();
 
-server.use(routes)
+server.use(express.json());
+server.use(routes);
 
 server.listen(3333)
