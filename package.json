@@ -9,18 +9,15 @@
     "child_process": "^1.0.2",
     "evolve-ga": "^2.0.1",
     "express": "^4.17.1",
-    "typescript": "^3.5.3"
   },
   "devDependencies": {},
   "scripts": {
-    "build": "tsc",
-    "start": "node server.js",
+    "start": "node ./app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "mobator": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js gank 2095",
     "hardengage": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js hardengage 2095",
     "teamfight": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js teamfight 3633",
     "pusher": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js pusher 3335",
-    "randomic": "tsc randomic-algorithm.ts -resolveJsonModule && node randomic-algorithm.js"
   },
   "repository": {
     "type": "git",
