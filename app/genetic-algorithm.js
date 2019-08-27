@@ -18,6 +18,7 @@ var strategy = process.argv[2];
 var maxFitValue = parseInt(process.argv[3]);
 var filePathReports = "reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
 var filePathTimeReports = "time-reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
+
 var mutationFunction = function (chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
     var geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
@@ -41,6 +42,7 @@ var mutationFunction = function (chromosome, possibleGenes) {
         return chromosome;
     }
 };
+
 var crossOverFunction = function (chromosomes) {
     var offspring = [];
     var aux = [];
@@ -61,6 +63,7 @@ var crossOverFunction = function (chromosomes) {
     }
     return offspring;
 };
+
 var selectionFunction = function (chromosomes) {
     chromosomes = chromosomes
         .sort(function (a, b) { return b.fitness - a.fitness; })
@@ -72,6 +75,7 @@ var selectionFunction = function (chromosomes) {
     });
     return chromosomes;
 };
+
 var validCompositionFunction = function (chromosome) {
     var validComposition = false;
     var hasCarry = false;
@@ -95,6 +99,7 @@ var validCompositionFunction = function (chromosome) {
     });
     return validComposition;
 };
+
 var fitnessFunction = function (chromosome) {
     allChromosomes.push(chromosome);
     var validComposition = validCompositionFunction(chromosome);
@@ -162,6 +167,7 @@ var fitnessFunction = function (chromosome) {
             return fitvaluePusher;
     }
 };
+
 var validChromosome = function (chromosome) {
     var control = false;
     var genes = chromosome.genes;
@@ -173,6 +179,7 @@ var validChromosome = function (chromosome) {
     });
     return control;
 };
+
 var algorithm = evolve_ga_1.evolve({
     populationSize: POPULATION_SIZE,
     chromosomeLength: 5,
@@ -183,6 +190,7 @@ var algorithm = evolve_ga_1.evolve({
     crossOverFunction: crossOverFunction,
     mutationFunction: mutationFunction
 });
+
 var showCompositionInfo = function () {
     var championsIcons = [];
     var parsedJson = JSON.parse(JSON.stringify(json));
@@ -206,23 +214,29 @@ var showCompositionInfo = function () {
         src.pipe(dest);
     });
 };
+
 var numberCompare = function (a, b) {
     return a - b;
 };
+
 var writeFileHeader = function () {
     fs.appendFileSync(filePathReports, "execution;generation;chromosome;fitness \r\n");
 };
+
 var writeFileSecondsHeader = function () {
     fs.appendFileSync(filePathTimeReports, "execution;start;end;duration \r\n");
 };
+
 var writeGenerationsOnFile = function () {
     allChromosomes.map(function (chromosome) {
         fs.appendFileSync(filePathReports, execution + ";" + generation + ";" + chromosome.genes.sort(numberCompare).toString() + ";" + chromosome.fitness + "\r\n");
     });
 };
+
 var writeSecondsOnFile = function (start, end, duration) {
     fs.appendFileSync(filePathTimeReports, execution + ";" + start + ";" + end + ";" + duration + " \r\n");
 };
+
 var createReportFiles = function () {
     fs.writeFile(filePathReports, "", function () { });
     fs.writeFile(filePathTimeReports, "", function () { });
@@ -230,7 +244,8 @@ var createReportFiles = function () {
 createReportFiles();
 writeFileHeader();
 writeFileSecondsHeader();
-for (execution = 1; execution <= MAX_EXECUTIONS; execution++) {
+
+var geneticAlgorithm = function () {
     var start = new Date();
     algorithm.resetPopulation();
     while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {
@@ -245,4 +260,8 @@ for (execution = 1; execution <= MAX_EXECUTIONS; execution++) {
     generation = 1;
     var end = new Date();
     writeSecondsOnFile(start, end, end.getTime() - start.getTime());
+}
+
+for (execution = 1; execution <= MAX_EXECUTIONS; execution++) {
+    geneticAlgorithm();
 }
