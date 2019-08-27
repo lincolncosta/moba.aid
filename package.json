@@ -6,27 +6,18 @@
   "dependencies": {
     "@settlin/collage": "^1.4.3",
     "@types/node": "^12.0.12",
+    "child_process": "^1.0.2",
     "evolve-ga": "^2.0.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "express": "^4.17.1"
   },
-  "devDependencies": {
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.8.5",
-    "source-map-loader": "^0.2.4",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.3",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "npx webpack",
+    "start": "node ./app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "mobator": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js gank 2095",
     "hardengage": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js hardengage 2095",
     "teamfight": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js teamfight 3633",
     "pusher": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js pusher 3335",
-    "randomic": "tsc randomic-algorithm.ts -resolveJsonModule && node randomic-algorithm.js"
   },
   "repository": {
     "type": "git",
