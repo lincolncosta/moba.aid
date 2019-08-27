@@ -1,6 +1,6 @@
 import { evolve, Chromosome } from "evolve-ga";
 const createCollage = require("@settlin/collage");
-const json = require("../champions.json");
+const json = require("./champions.json");
 const fs = require("fs");
 
 let generation = 1;
@@ -102,9 +102,9 @@ const validCompositionFunction = (chromosome: Chromosome): boolean => {
   let hasSupp = false;
 
   chromosome.genes.map(gene => {
-    json.map(champion => {
+    json.map((champion: any) => {
       if (gene === champion.id) {
-        champion.roles.map(role => {
+        champion.roles.map((role: any) => {
           if(role === 'Support'){
             hasSupp = true;
           }
@@ -138,7 +138,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
         let movspeed = 0;
       
         chromosome.genes.map(gene => {
-          json.map(champion => {
+          json.map((champion: any) => {
             if (gene === champion.id) {
               attack = attack + champion.stats.attackdamage;
               movspeed = movspeed + champion.stats.movespeed;
@@ -161,7 +161,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
         let healthpoints = 0;
       
         chromosome.genes.map(gene => {
-          json.map(champion => {
+          json.map((champion: any) => {
             if (gene === champion.id) {
               attackdamage = attackdamage + champion.stats.attackdamage;
               attackdamagelevel = attackdamagelevel + champion.stats.attackdamageperlevel;
@@ -185,7 +185,7 @@ const fitnessFunction = (chromosome: Chromosome): number => {
         let attackspeed = 0;
       
         chromosome.genes.map(gene => {
-          json.map(champion => {
+          json.map((champion: any) => {
             if (gene === champion.id) {
               attackdmg = attackdmg + champion.stats.attackdamage;
               attackrange = attackrange + champion.stats.attackrange;
@@ -234,10 +234,10 @@ const algorithm = evolve({
 });
 
 const showCompositionInfo = () => {
-  let championsIcons = [];
+  let championsIcons: any = [];
   const parsedJson = JSON.parse(JSON.stringify(json));
   finalChromosome.genes.forEach(item => {
-    const aux = parsedJson.find(champion => champion.id === item);
+    const aux = parsedJson.find((champion: any) => champion.id === item);
     if (aux) {
       championsIcons.push(aux.icon);
     }
@@ -252,14 +252,14 @@ const showCompositionInfo = () => {
   };
    
   createCollage(options)
-    .then((canvas) => {
+    .then((canvas: any) => {
       const src = canvas.jpegStream();
       const dest = fs.createWriteStream(strategy + ".png");
       src.pipe(dest);
     });
 };
 
-const numberCompare = (a, b) => {
+const numberCompare = (a: any, b: any) => {
   return a - b;
 };
 

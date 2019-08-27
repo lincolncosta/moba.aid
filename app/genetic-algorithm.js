@@ -1,17 +1,33 @@
+<<<<<<< HEAD
 var evolve_ga_1 = require("evolve-ga");
 var createCollage = require("@settlin/collage");
 var json = require("./assets/champions.json");
+=======
+"use strict";
+exports.__esModule = true;
+var evolve_ga_1 = require("evolve-ga");
+var createCollage = require("@settlin/collage");
+var json = require("../champions.json");
+>>>>>>> 2679ba9bf59a8805ffad3b2609f334e77d2b4776
 var fs = require("fs");
 var generation = 1;
 var execution = 1;
 var finalChromosome;
 var finalFitvalue = 0;
 var allChromosomes = [];
+<<<<<<< HEAD
 var totalChampions = 141;
 var POPULATION_SIZE = 30;
 var MUTATION_CHANCE = 0.7;
 var MAX_GENERATIONS = 1000;
 var MAX_EXECUTIONS = 30;
+=======
+var totalChampions = 14;
+var POPULATION_SIZE = 3;
+var MUTATION_CHANCE = 0.7;
+var MAX_GENERATIONS = 10;
+var MAX_EXECUTIONS = 3;
+>>>>>>> 2679ba9bf59a8805ffad3b2609f334e77d2b4776
 var strategy = process.argv[2];
 var maxFitValue = parseInt(process.argv[3]);
 var filePathReports = "reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
@@ -226,14 +242,23 @@ var createReportFiles = function () {
     fs.writeFile(filePathTimeReports, "", function () { });
 };
 createReportFiles();
+<<<<<<< HEAD
 // writeFileHeader();
 // writeFileSecondsHeader();
+=======
+writeFileHeader();
+writeFileSecondsHeader();
+>>>>>>> 2679ba9bf59a8805ffad3b2609f334e77d2b4776
 for (execution = 1; execution <= MAX_EXECUTIONS; execution++) {
     var start = new Date();
     algorithm.resetPopulation();
     while (finalFitvalue < maxFitValue && generation <= MAX_GENERATIONS) {
         algorithm.run();
+<<<<<<< HEAD
         // writeGenerationsOnFile();
+=======
+        writeGenerationsOnFile();
+>>>>>>> 2679ba9bf59a8805ffad3b2609f334e77d2b4776
         allChromosomes = [];
         generation++;
     }
@@ -242,5 +267,10 @@ for (execution = 1; execution <= MAX_EXECUTIONS; execution++) {
     finalFitvalue = 0;
     generation = 1;
     var end = new Date();
+<<<<<<< HEAD
     // writeSecondsOnFile(start, end, end.getTime() - start.getTime());
 }
+=======
+    writeSecondsOnFile(start, end, end.getTime() - start.getTime());
+}
+>>>>>>> 2679ba9bf59a8805ffad3b2609f334e77d2b4776
