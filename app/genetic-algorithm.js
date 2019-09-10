@@ -9,7 +9,7 @@ let allChromosomes = [];
 let totalChampions = 14;
 let POPULATION_SIZE = 3;
 let MUTATION_CHANCE = 0.7;
-let MAX_GENERATIONS = 10;
+let MAX_GENERATIONS = 50;
 let MAX_EXECUTIONS = 3;
 let strategy = 'teamfight';
 let maxFitValue = 3633;
@@ -19,7 +19,7 @@ let filePathTimeReports = "time-reports/" + strategy + "/PS-" + POPULATION_SIZE 
 class GeneticAlgorithm {
     
     constructor (){
-        this.geneticAlgorithm = this.genetic.bind(this);
+        this.genetic = this.genetic.bind(this);
 
         this.crossOverFunction = this.crossOverFunction.bind(this);
         this.mutationFunction = this.mutationFunction.bind(this);
@@ -29,6 +29,7 @@ class GeneticAlgorithm {
         this.numberCompare = this.numberCompare.bind(this);
         this.validChromosome = this.validChromosome.bind(this);
         this.validCompositionFunction = this.validCompositionFunction.bind(this);
+        this.showCompositionInfo = this.showCompositionInfo.bind(this);
 
         this.algorithm = evolveGa.evolve({
             populationSize: POPULATION_SIZE,
@@ -40,8 +41,6 @@ class GeneticAlgorithm {
             crossOverFunction: this.crossOverFunction,
             mutationFunction: this.mutationFunction
         });
-
-        this.finalChromosome = null;
     }
 
     validCompositionFunction(chromosome) {
@@ -155,7 +154,7 @@ class GeneticAlgorithm {
                 });
                 fitvalueHardEngage = (attack_1 + movspeed_1) / maxFitValue;
                 if (fitvalueHardEngage > finalFitvalue) {
-                    finalFitvalue = fitvalueHardEngage;
+                    this.finalFitvalue = fitvalueHardEngage;
                     this.finalChromosome = chromosome;
                 }
                 return fitvalueHardEngage;
@@ -175,7 +174,7 @@ class GeneticAlgorithm {
                 });
                 fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1 + healthpoints_1) / maxFitValue;
                 if (fitvalueTeamfight > finalFitvalue) {
-                    finalFitvalue = fitvalueTeamfight;
+                    this.finalFitvalue = fitvalueTeamfight;
                     this.finalChromosome = chromosome;
                 }
                 return fitvalueTeamfight;
@@ -185,7 +184,7 @@ class GeneticAlgorithm {
                 var attackrange_1 = 0;
                 var attackspeed_1 = 0;
 
-                chromosome.genes.map(function (gene) {
+                chromosome.genes.map(gene => {
                     json.map(function (champion) {
                         if (gene === champion.id) {
                             attackdmg_1 = attackdmg_1 + champion.stats.attackdamage;
@@ -197,8 +196,8 @@ class GeneticAlgorithm {
 
                 fitvaluePusher = (attackdmg_1 + attackrange_1 + attackspeed_1) / maxFitValue;
                 if (fitvaluePusher > finalFitvalue) {
-                    finalFitvalue = fitvaluePusher;
-                    finalChromosome = chromosome;
+                    this.finalFitvalue = fitvaluePusher;
+                    this.finalChromosome = chromosome;
                 }
                 return fitvaluePusher;
         }
@@ -222,12 +221,14 @@ class GeneticAlgorithm {
         var championsIcons = [];
         var parsedJson = JSON.parse(JSON.stringify(json));
 
-        this.finalChromosome.genes.forEach(function (item) {
-            var aux = parsedJson.find(function (champion) { return champion.id === item; });
-            if (aux) {
-                championsIcons.push(aux.icon);
-            }
-        });
+        if(this.finalChromosome){
+            this.finalChromosome.genes.forEach(function (item) {
+                var aux = parsedJson.find(function (champion) { return champion.id === item; });
+                if (aux) {
+                    championsIcons.push(aux.icon);
+                }
+            });
+        }
 
         var options = {
             sources: championsIcons,
@@ -284,13 +285,10 @@ class GeneticAlgorithm {
             this.algorithm.run();
             // this.writeGenerationsOnFile();
             this.allChromosomes = [];
-            this.generation = this.generation++;
-            console.log(finalFitvalue);
-            console.log(generation);
+            generation++;
         }
 
         this.showCompositionInfo();
-        this.finalChromosome = null;
         this.finalFitvalue = 0;
         var end = new Date();
         // this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
