@@ -11,7 +11,7 @@ routes.get('/randomic', (req, res) => {
     res.send('ok')
 })
 
-routes.post('/result', (req, res) =>{
+routes.get('/result', (req, res) =>{
     const { strategy, maxFitValue, populationSize, mutationChance, maxGenerations } = req.body;
     let fileName = GeneticAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations);
 
