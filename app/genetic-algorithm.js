@@ -15,6 +15,7 @@ let strategy = 'teamfight';
 let maxFitValue = 3633;
 let filePathReports = "reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
 let filePathTimeReports = "time-reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
+var fileName = '';
 
 class GeneticAlgorithm {
     
@@ -238,10 +239,10 @@ class GeneticAlgorithm {
             imageHeight: 120
         };
 
-        createCollage(options)
-            .then(function (canvas) {
-            var src = canvas.jpegStream();
-            var dest = fs.createWriteStream(strategy + ".png");
+        createCollage(options).then(canvas => {
+            var src = canvas.jpegStream();            
+            var dest = fs.createWriteStream(fileName + ".png");
+
             src.pipe(dest);
         });
     };
@@ -292,11 +293,12 @@ class GeneticAlgorithm {
         this.finalFitvalue = 0;
         var end = new Date();
         // this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
-
     }
     
     start(){
+        fileName = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
         this.genetic();
+        return fileName;
     }
 }
 

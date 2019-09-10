@@ -6,20 +6,8 @@ const GeneticAlgorithm = require('./genetic-algorithm')
 
 routes.get('/teamfight', (req, res) => {
 
-    GeneticAlgorithm.start();
-    res.send('ok')
-
-    // const command = 'node build/genetic-algorithm.js teamfight 3633'; 
-    // const child = exec(command,
-    // function (error, stdout, stderr) {
-
-    //     console.log('stdout: ' + stdout);
-    //     console.log('stderr: ' + stderr);
-    //     if (error !== null) {
-    //         console.log('exec error: ' + error);
-    //     }
-    //     return res.send('ok')
-    // });  
+    let fileName = GeneticAlgorithm.start();
+    res.send(fileName);  
 })
 
 routes.get('/randomic', (req, res) => {
