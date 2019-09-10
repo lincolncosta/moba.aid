@@ -27,6 +27,7 @@ class RandomicAlgorithm {
     }
     fs.appendFileSync("reports/randomic.csv", chromosome + "\t fit = " + finalFitness.toFixed(2) + "\r\n");
   };
+  
   start () {
     for (var x = 0; x < 100; x++) {
       this.randomic();
