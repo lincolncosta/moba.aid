@@ -11,10 +11,10 @@ let POPULATION_SIZE = 3;
 let MUTATION_CHANCE = 0.7;
 let MAX_GENERATIONS = 50;
 let MAX_EXECUTIONS = 3;
-let strategy = 'teamfight';
-let maxFitValue = 3633;
-let filePathReports = "reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
-let filePathTimeReports = "time-reports/" + strategy + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
+let COMPOSITION_STRATEGY = 'teamfight';
+let MAX_FIT_VALUE = 3633;
+let filePathReports = "reports/" + COMPOSITION_STRATEGY + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
+let filePathTimeReports = "time-reports/" + COMPOSITION_STRATEGY + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
 var fileName = '';
 
 class GeneticAlgorithm {
@@ -140,7 +140,7 @@ class GeneticAlgorithm {
             return 0;
         }
 
-        switch (strategy) {
+        switch (COMPOSITION_STRATEGY) {
             case 'hardengage':
                 var fitvalueHardEngage = 0;
                 var attack_1 = 0;
@@ -153,7 +153,7 @@ class GeneticAlgorithm {
                         }
                     });
                 });
-                fitvalueHardEngage = (attack_1 + movspeed_1) / maxFitValue;
+                fitvalueHardEngage = (attack_1 + movspeed_1) / MAX_FIT_VALUE;
                 if (fitvalueHardEngage > finalFitvalue) {
                     this.finalFitvalue = fitvalueHardEngage;
                     this.finalChromosome = chromosome;
@@ -173,7 +173,7 @@ class GeneticAlgorithm {
                         }
                     });
                 });
-                fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1 + healthpoints_1) / maxFitValue;
+                fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1 + healthpoints_1) / MAX_FIT_VALUE;
                 if (fitvalueTeamfight > finalFitvalue) {
                     this.finalFitvalue = fitvalueTeamfight;
                     this.finalChromosome = chromosome;
@@ -195,7 +195,7 @@ class GeneticAlgorithm {
                     });
                 });
 
-                fitvaluePusher = (attackdmg_1 + attackrange_1 + attackspeed_1) / maxFitValue;
+                fitvaluePusher = (attackdmg_1 + attackrange_1 + attackspeed_1) / MAX_FIT_VALUE;
                 if (fitvaluePusher > finalFitvalue) {
                     this.finalFitvalue = fitvaluePusher;
                     this.finalChromosome = chromosome;
@@ -295,7 +295,13 @@ class GeneticAlgorithm {
         // this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     }
     
-    start(){
+    start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations){
+        MAX_GENERATIONS = maxGenerations;
+        COMPOSITION_STRATEGY = strategy;
+        MAX_FIT_VALUE = maxFitValue;
+        POPULATION_SIZE = populationSize;
+        MUTATION_CHANCE = mutationChance;
+        
         fileName = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
         this.genetic();
         return fileName;
