@@ -241,7 +241,7 @@ class GeneticAlgorithm {
 
         createCollage(options).then(canvas => {
             var src = canvas.jpegStream();            
-            var dest = fs.createWriteStream(fileName + ".png");
+            var dest = fs.createWriteStream(`${fileName}.png`);
 
             src.pipe(dest);
         });

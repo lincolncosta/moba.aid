@@ -12,7 +12,7 @@
     "nodemon": "^1.19.2"
   },
   "scripts": {
-    "start": "nodemon ./app/server.js",
+    "start": "node ./app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "mobator": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js gank 2095",
     "hardengage": "tsc genetic-algorithm.ts -resolveJsonModule && node genetic-algorithm.js hardengage 2095",
