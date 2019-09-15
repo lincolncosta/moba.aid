@@ -11,13 +11,13 @@ routes.get('/randomic', (req, res) => {
     res.send('ok')
 })
 
-routes.get('/result', (req, res) =>{
-    const { strategy, maxFitValue, populationSize, mutationChance, maxGenerations } = req.body;
+routes.get('/result', (req, res) => {
+    const { strategy, maxFitValue, populationSize, mutationChance, maxGenerations } = req.query;
     let fileName = GeneticAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations);
 
     // res.send(fileName);
 
-    return res.send(`${strategy, maxFitValue, populationSize, mutationChance, maxGenerations, fileName}`)
+    return res.send(`${fileName}`)
 })
 
 module.exports = routes

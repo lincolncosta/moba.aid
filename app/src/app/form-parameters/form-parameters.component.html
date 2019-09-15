@@ -1,0 +1,32 @@
+<form [formGroup]="parametersForm">
+<app-select-strategy [parentForm]="parametersForm"></app-select-strategy>
+
+<mat-form-field>
+    <mat-label>Population size</mat-label>
+    <input
+      matInput
+      type="text"
+      formControlName="populationSize"
+    >  
+  </mat-form-field>
+  
+  <mat-form-field>
+    <mat-label>Mutation chance</mat-label>
+    <input
+      matInput
+      type="text"
+      formControlName="mutationChance"
+    >  
+  </mat-form-field>
+  
+  <mat-form-field>
+    <mat-label>Max generations</mat-label>
+    <input
+      matInput
+      type="text"
+      formControlName="maxGenerations"
+    >  
+  </mat-form-field>
+  
+  <button class="btn" type="submit" (click)="generateComposition()">Gerar composição</button>
+</form>
