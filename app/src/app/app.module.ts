@@ -49,12 +49,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SelectStrategyComponent } from './select-strategy/select-strategy.component';
 import { FormParametersComponent } from './form-parameters/form-parameters.component';
+import { SelectChampionsComponent } from './select-champions/select-champion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SelectStrategyComponent,
-    FormParametersComponent
+    FormParametersComponent,
+    SelectChampionsComponent
   ],
   imports: [
     AppRoutingModule,

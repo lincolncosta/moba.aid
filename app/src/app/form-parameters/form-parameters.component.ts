@@ -28,7 +28,8 @@ export class FormParametersComponent implements OnInit {
       strategy: ['', Validators.required],
       populationSize: ['', Validators.required],
       mutationChance: ['', Validators.required],
-      maxGenerations: ['', Validators.required]
+      maxGenerations: ['', Validators.required],
+      champions: ['']
     })
   }
 

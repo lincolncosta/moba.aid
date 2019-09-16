@@ -12,8 +12,9 @@ routes.get('/randomic', (req, res) => {
 })
 
 routes.get('/result', (req, res) => {
-    const { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedGenes } = req.query;
-    let fileName = GeneticAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedGenes);
+
+    const { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedChampions } = req.query;
+    let fileName = GeneticAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedChampions);
 
     // res.send(fileName);
 

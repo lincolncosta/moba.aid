@@ -12,6 +12,7 @@ export class ApiService {
   constructor(private httpClient: HttpClient) { }
 
   generateComposition(formValue) {
+
     return this.httpClient.get(this.API_URL, {
       params: {
         strategy: formValue.strategy.value,
@@ -19,6 +20,7 @@ export class ApiService {
         populationSize: formValue.populationSize,
         mutationChance: formValue.mutationChance,
         maxGenerations: formValue.maxGenerations,
+        bannedChampions: formValue.champions
       }
     });
   }

@@ -1,11 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-
-export class Strategy {
-  value: string;
-  viewValue: string;
-  maxFitValue: number;
-}
+import { Strategy } from './../dto/strategy.dto'
 
 @Component({
   selector: 'app-select-strategy',
@@ -17,9 +12,9 @@ export class SelectStrategyComponent implements OnInit {
   @Input() parentForm: FormGroup
 
   strategies: Strategy[] = [
-    {value: 'hardengage', viewValue: 'Hard Engage', maxFitValue: 3633},
-    {value: 'poke', viewValue: 'Poke', maxFitValue: 1},
-    {value: 'teamfight', viewValue: 'Team Fight', maxFitValue: 1}
+    { value: 'hardengage', viewValue: 'Hard Engage', maxFitValue: 2095 },
+    { value: 'poke', viewValue: 'Poke', maxFitValue: 3356 },
+    { value: 'teamfight', viewValue: 'Team Fight', maxFitValue: 3633 }
   ];
 
   strategy = new Strategy();
