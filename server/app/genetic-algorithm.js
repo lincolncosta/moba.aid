@@ -6,7 +6,7 @@ let generation = 1;
 let execution = 1;
 let finalFitvalue = 0;
 let allChromosomes = [];
-let totalChampions = 14;
+let totalChampions = 141;
 let POPULATION_SIZE = 3;
 let MUTATION_CHANCE = 0.7;
 let MAX_GENERATIONS = 50;
@@ -31,17 +31,6 @@ class GeneticAlgorithm {
         this.validChromosome = this.validChromosome.bind(this);
         this.validCompositionFunction = this.validCompositionFunction.bind(this);
         this.showCompositionInfo = this.showCompositionInfo.bind(this);
-
-        this.algorithm = evolveGa.evolve({
-            populationSize: POPULATION_SIZE,
-            chromosomeLength: 5,
-            possibleGenes: Array.apply(null, { length: totalChampions }).map(Number.call, Number),
-            mutationChance: MUTATION_CHANCE,
-            fitnessFunction: this.fitnessFunction,
-            selectionFunction: this.selectionFunction,
-            crossOverFunction: this.crossOverFunction,
-            mutationFunction: this.mutationFunction
-        });
     }
 
     validCompositionFunction(chromosome) {
@@ -222,6 +211,11 @@ class GeneticAlgorithm {
         var championsIcons = [];
         var parsedJson = JSON.parse(JSON.stringify(json));
 
+        // var objJson = Object.keys(parsedJson);
+        // delete objJson[0];
+
+        // console.log(objJson.filter(value => value != 14));
+
         if(this.finalChromosome){
             this.finalChromosome.genes.forEach(function (item) {
                 var aux = parsedJson.find(function (champion) { return champion.id === item; });
@@ -295,13 +289,29 @@ class GeneticAlgorithm {
         // this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     }
     
-    start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations){
+    start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedGenes){
         MAX_GENERATIONS = maxGenerations;
         COMPOSITION_STRATEGY = strategy;
         MAX_FIT_VALUE = maxFitValue;
         POPULATION_SIZE = populationSize;
         MUTATION_CHANCE = mutationChance;
         
+        var possibleGenes = Array.apply(null, { length: totalChampions }).map(Number.call, Number);        
+        var bannedGenes = bannedGenes;
+
+        possibleGenes = possibleGenes.filter(x => !bannedGenes.includes(x));
+
+        this.algorithm = evolveGa.evolve({
+            populationSize: POPULATION_SIZE,
+            chromosomeLength: 5,
+            possibleGenes: possibleGenes,
+            mutationChance: MUTATION_CHANCE,
+            fitnessFunction: this.fitnessFunction,
+            selectionFunction: this.selectionFunction,
+            crossOverFunction: this.crossOverFunction,
+            mutationFunction: this.mutationFunction
+        });
+
         fileName = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
         this.genetic();
         return fileName;
