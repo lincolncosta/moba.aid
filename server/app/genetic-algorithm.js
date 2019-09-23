@@ -7,9 +7,9 @@ let execution = 1;
 let finalFitvalue = 0;
 let allChromosomes = [];
 let totalChampions = 141;
-let POPULATION_SIZE = 3;
-let MUTATION_CHANCE = 0.7;
-let MAX_GENERATIONS = 50;
+let POPULATION_SIZE;
+let MUTATION_CHANCE;
+let MAX_GENERATIONS;
 let MAX_EXECUTIONS = 3;
 let COMPOSITION_STRATEGY = 'teamfight';
 let MAX_FIT_VALUE = 3633;
@@ -281,8 +281,10 @@ class GeneticAlgorithm {
             // this.writeGenerationsOnFile();
             this.allChromosomes = [];
             generation++;
+            // console.log(this.finalFitvalue);
         }
 
+        // console.log(this.finalFitvalue);
         this.showCompositionInfo();
         this.finalFitvalue = 0;
         var end = new Date();
@@ -296,15 +298,14 @@ class GeneticAlgorithm {
         POPULATION_SIZE = populationSize;
         MUTATION_CHANCE = mutationChance;
         
-        var possibleGenes = Array.apply(null, { length: totalChampions }).map(Number.call, Number);        
-        var bannedGenes = bannedGenes;
+        let possibleGenes = Array.apply(null, { length: totalChampions }).map(Number.call, Number);        
 
-        possibleGenes = possibleGenes.filter(x => !bannedGenes.includes(x));
+        let champions = possibleGenes.filter(x => !bannedGenes.includes(x));
 
         this.algorithm = evolveGa.evolve({
             populationSize: POPULATION_SIZE,
             chromosomeLength: 5,
-            possibleGenes: possibleGenes,
+            possibleGenes: champions,
             mutationChance: MUTATION_CHANCE,
             fitnessFunction: this.fitnessFunction,
             selectionFunction: this.selectionFunction,
