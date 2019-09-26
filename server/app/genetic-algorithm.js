@@ -11,15 +11,15 @@ let POPULATION_SIZE;
 let MUTATION_CHANCE;
 let MAX_GENERATIONS;
 let MAX_EXECUTIONS = 3;
-let COMPOSITION_STRATEGY = 'teamfight';
+let COMPOSITION_STRATEGY;
 let MAX_FIT_VALUE = 3633;
 let filePathReports = "reports/" + COMPOSITION_STRATEGY + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
 let filePathTimeReports = "time-reports/" + COMPOSITION_STRATEGY + "/PS-" + POPULATION_SIZE + "__MC-" + MUTATION_CHANCE + "__MG-" + MAX_GENERATIONS + ".csv";
 var fileName = '';
 
 class GeneticAlgorithm {
-    
-    constructor (){
+
+    constructor() {
         this.genetic = this.genetic.bind(this);
 
         this.crossOverFunction = this.crossOverFunction.bind(this);
@@ -85,7 +85,7 @@ class GeneticAlgorithm {
             return chromosome;
         }
     };
-    
+
     crossOverFunction(chromosomes) {
         var offspring = [];
         var aux = [];
@@ -105,22 +105,22 @@ class GeneticAlgorithm {
                 });
             }
         }
-        
+
         return offspring;
     };
-    
+
     selectionFunction(chromosomes) {
         chromosomes = chromosomes
             .sort(function (a, b) { return b.fitness - a.fitness; })
             .slice(0, Math.ceil(chromosomes.length / 2));
-        chromosomes.map( (chromosome, i) => {
+        chromosomes.map((chromosome, i) => {
             if (this.validChromosome(chromosome)) {
                 chromosomes.splice(i, 1);
             }
         });
         return chromosomes;
     };
-    
+
     fitnessFunction(chromosome) {
         allChromosomes.push(chromosome);
         let validComposition = this.validCompositionFunction(chromosome);
@@ -143,10 +143,12 @@ class GeneticAlgorithm {
                     });
                 });
                 fitvalueHardEngage = (attack_1 + movspeed_1) / MAX_FIT_VALUE;
+
                 if (fitvalueHardEngage > finalFitvalue) {
-                    this.finalFitvalue = fitvalueHardEngage;
+                    finalFitvalue = fitvalueHardEngage;
                     this.finalChromosome = chromosome;
                 }
+
                 return fitvalueHardEngage;
             case 'teamfight':
                 var fitvalueTeamfight = 0;
@@ -192,7 +194,7 @@ class GeneticAlgorithm {
                 return fitvaluePusher;
         }
     };
-    
+
     validChromosome(chromosome) {
         var control = false;
         var genes = chromosome.genes;
@@ -206,7 +208,7 @@ class GeneticAlgorithm {
 
         return control;
     };
-    
+
     showCompositionInfo() {
         var championsIcons = [];
         var parsedJson = JSON.parse(JSON.stringify(json));
@@ -216,7 +218,7 @@ class GeneticAlgorithm {
 
         // console.log(objJson.filter(value => value != 14));
 
-        if(this.finalChromosome){
+        if (this.finalChromosome) {
             this.finalChromosome.genes.forEach(function (item) {
                 var aux = parsedJson.find(function (champion) { return champion.id === item; });
                 if (aux) {
@@ -234,35 +236,35 @@ class GeneticAlgorithm {
         };
 
         createCollage(options).then(canvas => {
-            var src = canvas.jpegStream();            
+            var src = canvas.jpegStream();
             var dest = fs.createWriteStream(`${fileName}.png`);
 
             src.pipe(dest);
         });
     };
-    
+
     numberCompare(a, b) {
         return a - b;
     };
-    
+
     writeFileHeader() {
         fs.appendFileSync(filePathReports, "execution;generation;chromosome;fitness \r\n");
     };
-    
+
     writeFileSecondsHeader() {
         fs.appendFileSync(filePathTimeReports, "execution;start;end;duration \r\n");
     };
-    
+
     writeGenerationsOnFile() {
         allChromosomes.map(function (chromosome) {
             fs.appendFileSync(filePathReports, execution + ";" + generation + ";" + chromosome.genes.sort(this.numberCompare).toString() + ";" + chromosome.fitness + "\r\n");
         });
     };
-    
+
     writeSecondsOnFile(start, end, duration) {
         fs.appendFileSync(filePathTimeReports, execution + ";" + start + ";" + end + ";" + duration + " \r\n");
     };
-    
+
     createReportFiles() {
         fs.writeFile(filePathReports, "", function () { });
         fs.writeFile(filePathTimeReports, "", function () { });
@@ -271,12 +273,12 @@ class GeneticAlgorithm {
     // createReportFiles();
     // writeFileHeader();
     // writeFileSecondsHeader();
-    
+
     genetic() {
         var start = new Date();
         this.algorithm.resetPopulation();
 
-        while (generation <= MAX_GENERATIONS) {          
+        while (generation <= MAX_GENERATIONS) {
             this.algorithm.run();
             // this.writeGenerationsOnFile();
             this.allChromosomes = [];
@@ -290,17 +292,20 @@ class GeneticAlgorithm {
         var end = new Date();
         // this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     }
-    
-    start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedGenes){
+
+    start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedGenes) {
         MAX_GENERATIONS = maxGenerations;
         COMPOSITION_STRATEGY = strategy;
         MAX_FIT_VALUE = maxFitValue;
         POPULATION_SIZE = populationSize;
         MUTATION_CHANCE = mutationChance;
-        
-        let possibleGenes = Array.apply(null, { length: totalChampions }).map(Number.call, Number);        
 
-        let champions = possibleGenes.filter(x => !bannedGenes.includes(x));
+        let possibleGenes = Array.apply(null, { length: totalChampions }).map(Number.call, Number);
+        let champions = possibleGenes;
+
+        if (bannedGenes) {
+            champions = possibleGenes.filter(x => !bannedGenes.includes(x));
+        }
 
         this.algorithm = evolveGa.evolve({
             populationSize: POPULATION_SIZE,
