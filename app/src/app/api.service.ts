@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
 
   API_KEY = 'YOUR_API_KEY';
-  API_URL = 'localhost:3333/result';
+  API_URL = 'http://localhost:3333/result';
 
   constructor(private httpClient: HttpClient) { }
 

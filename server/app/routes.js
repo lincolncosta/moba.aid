@@ -28,7 +28,7 @@ routes.get('/result', (req, res) => {
 
     // res.send(fileName);
 
-    return res.send(`${fileName}`)
+    return res.json({ filename: fileName })
 })
 
 module.exports = routes
