@@ -3477,7 +3477,7 @@
          "Zac",
          "Maokai"
       ],
-      "id": 81,
+      "id": 82,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nunu.png"
    },
    {
@@ -3520,7 +3520,7 @@
          "Nunu",
          "Evelynn"
       ],
-      "id": 82,
+      "id": 83,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Olaf.png"
    },
    {
@@ -3562,7 +3562,7 @@
          "Aurelion Sol",
          "Karthus"
       ],
-      "id": 83,
+      "id": 84,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Orianna.png"
    },
    {
@@ -3604,7 +3604,7 @@
          "Fiora",
          "Jayce"
       ],
-      "id": 84,
+      "id": 85,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ornn.png"
    },
    {
@@ -3647,7 +3647,7 @@
          "Sion",
          "Olaf"
       ],
-      "id": 85,
+      "id": 86,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pantheon.png"
    },
    {
@@ -3690,7 +3690,7 @@
          "Teemo",
          "Akali"
       ],
-      "id": 86,
+      "id": 87,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Poppy.png"
    },
    {
@@ -3732,7 +3732,7 @@
          "Sion",
          "Sona"
       ],
-      "id": 87,
+      "id": 88,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pyke.png"
    },
    {
@@ -3775,7 +3775,7 @@
          "Karma",
          "Swain"
       ],
-      "id": 87,
+      "id": 89,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Qiyana.png"
    },
    {
@@ -3818,7 +3818,7 @@
          "Irelia",
          "Vladimir"
       ],
-      "id": 88,
+      "id": 90,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Quinn.png"
    },
    {
@@ -3860,7 +3860,7 @@
          "Sona",
          "Veigar"
       ],
-      "id": 89,
+      "id": 91,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rakan.png"
    },
    {
@@ -3903,7 +3903,7 @@
          "Fiddlesticks",
          "Ivern"
       ],
-      "id": 90,
+      "id": 92,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rammus.png"
    },
    {
@@ -3945,7 +3945,7 @@
          "",
          ""
       ],
-      "id": 91,
+      "id": 93,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/RekSai.png"
    },
    {
@@ -3987,7 +3987,7 @@
          "Talon",
          "Teemo"
       ],
-      "id": 92,
+      "id": 94,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Renekton.png"
    },
    {
@@ -4030,7 +4030,7 @@
          "Sejuani",
          "Amumu"
       ],
-      "id": 93,
+      "id": 95,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rengar.png"
    },
    {
@@ -4072,7 +4072,7 @@
          "Mordekaiser",
          "Tryndamere"
       ],
-      "id": 94,
+      "id": 96,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Riven.png"
    },
    {
@@ -4115,7 +4115,7 @@
          "Riven",
          "Tryndamere"
       ],
-      "id": 95,
+      "id": 97,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rumble.png"
    },
    {
@@ -4158,7 +4158,7 @@
          "Anivia",
          "Syndra"
       ],
-      "id": 96,
+      "id": 98,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ryze.png"
    },
    {
@@ -4200,7 +4200,7 @@
          "Nocturne",
          "Maokai"
       ],
-      "id": 97,
+      "id": 99,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sejuani.png"
    },
    {
@@ -4242,7 +4242,7 @@
          "Skarner",
          "Jarvan IV"
       ],
-      "id": 98,
+      "id": 100,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shaco.png"
    },
    {
@@ -4284,7 +4284,7 @@
          "Kayle",
          "Swain"
       ],
-      "id": 99,
+      "id": 101,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shen.png"
    },
    {
@@ -4326,7 +4326,7 @@
          "Evelynn",
          "Warwick"
       ],
-      "id": 100,
+      "id": 103,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shyvana.png"
    },
    {
@@ -4368,7 +4368,7 @@
          "Kayle",
          "Fiora"
       ],
-      "id": 101,
+      "id": 104,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Singed.png"
    },
    {
@@ -4410,7 +4410,7 @@
          "Tryndamere",
          "Akali"
       ],
-      "id": 102,
+      "id": 105,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sion.png"
    },
    {
@@ -4452,7 +4452,7 @@
          "Vayne",
          "Jinx"
       ],
-      "id": 103,
+      "id": 106,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sivir.png"
    },
    {
@@ -4494,7 +4494,7 @@
          "Warwick",
          "Zac"
       ],
-      "id": 104,
+      "id": 107,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Skarner.png"
    },
    {
@@ -4536,7 +4536,7 @@
          "Zilean",
          "Janna"
       ],
-      "id": 105,
+      "id": 108,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sona.png"
    },
    {
@@ -4578,7 +4578,7 @@
          "Trundle",
          "Maokai"
       ],
-      "id": 106,
+      "id": 109,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Soraka.png"
    },
    {
@@ -4621,7 +4621,7 @@
          "Jarvan IV",
          "Tryndamere"
       ],
-      "id": 107,
+      "id": 110,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Swain.png"
    },
    {
@@ -4665,7 +4665,7 @@
          "Garen",
          "Jax"
       ],
-      "id": 107,
+      "id": 111,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Swain.png"
    },
    {
@@ -4707,7 +4707,7 @@
          "Katarina",
          "Fizz"
       ],
-      "id": 108,
+      "id": 112,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Syndra.png"
    },
    {
@@ -4749,7 +4749,7 @@
          "Soraka",
          "Zilean"
       ],
-      "id": 109,
+      "id": 113,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/TahmKench.png"
    },
    {
@@ -4792,7 +4792,7 @@
          "Karthus",
          "Vel'Koz"
       ],
-      "id": 110,
+      "id": 114,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Taliyah.png"
    },
    {
@@ -4834,7 +4834,7 @@
          "Karthus",
          "Veigar"
       ],
-      "id": 111,
+      "id": 115,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Talon.png"
    },
    {
@@ -4876,7 +4876,7 @@
          "Sona",
          "Bard"
       ],
-      "id": 112,
+      "id": 116,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Taric.png"
    },
    {
@@ -4919,7 +4919,7 @@
          "Pantheon",
          "Olaf"
       ],
-      "id": 113,
+      "id": 117,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Teemo.png"
    },
    {
@@ -4961,7 +4961,7 @@
          "Maokai",
          "Janna"
       ],
-      "id": 114,
+      "id": 118,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Thresh.png"
    },
    {
@@ -5003,7 +5003,7 @@
          "Twitch",
          "Kog'Maw"
       ],
-      "id": 115,
+      "id": 119,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Tristana.png"
    },
    {
@@ -5046,7 +5046,7 @@
          "Mordekaiser",
          "Vladimir"
       ],
-      "id": 116,
+      "id": 120,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Trundle.png"
    },
    {
@@ -5088,7 +5088,7 @@
          "Darius",
          "Jayce"
       ],
-      "id": 117,
+      "id": 121,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Tryndamere.png"
    },
    {
@@ -5130,7 +5130,7 @@
          "Brand",
          "Malzahar"
       ],
-      "id": 118,
+      "id": 122,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/TwistedFate.png"
    },
    {
@@ -5172,7 +5172,7 @@
          "Miss Fortune",
          "Caitlyn"
       ],
-      "id": 119,
+      "id": 123,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Twitch.png"
    },
    {
@@ -5214,7 +5214,7 @@
          "Jax",
          "Shaco"
       ],
-      "id": 120,
+      "id": 124,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Udyr.png"
    },
    {
@@ -5257,7 +5257,7 @@
          "Riven",
          "Renekton"
       ],
-      "id": 121,
+      "id": 125,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Urgot.png"
    },
    {
@@ -5299,7 +5299,7 @@
          "Draven",
          "Kog'Maw"
       ],
-      "id": 122,
+      "id": 126,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Varus.png"
    },
    {
@@ -5341,7 +5341,7 @@
          "Caitlyn",
          "Twitch"
       ],
-      "id": 123,
+      "id": 127,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vayne.png"
    },
    {
@@ -5383,7 +5383,7 @@
          "Malzahar",
          "Lissandra"
       ],
-      "id": 124,
+      "id": 128,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Veigar.png"
    },
    {
@@ -5425,7 +5425,7 @@
          "",
          ""
       ],
-      "id": 125,
+      "id": 129,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Velkoz.png"
    },
    {
@@ -5467,7 +5467,7 @@
          "Fiddlesticks",
          "Ivern"
       ],
-      "id": 126,
+      "id": 130,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vi.png"
    },
    {
@@ -5509,7 +5509,7 @@
          "Annie",
          "Xerath"
       ],
-      "id": 127,
+      "id": 131,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Viktor.png"
    },
    {
@@ -5552,7 +5552,7 @@
          "Annie",
          "Swain"
       ],
-      "id": 128,
+      "id": 132,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vladimir.png"
    },
    {
@@ -5595,7 +5595,7 @@
          "Kha'Zix",
          "Warwick"
       ],
-      "id": 129,
+      "id": 133,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Volibear.png"
    },
    {
@@ -5637,7 +5637,7 @@
          "Pantheon",
          "Ivern"
       ],
-      "id": 130,
+      "id": 134,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Warwick.png"
    },
    {
@@ -5679,7 +5679,7 @@
          "Caitlyn",
          "Miss Fortune"
       ],
-      "id": 131,
+      "id": 135,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Xayah.png"
    },
    {
@@ -5721,7 +5721,7 @@
          "Zilean",
          "Katarina"
       ],
-      "id": 132,
+      "id": 136,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Xerath.png"
    },
    {
@@ -5763,7 +5763,7 @@
          "Jarvan IV",
          "Twitch"
       ],
-      "id": 133,
+      "id": 137,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/XinZhao.png"
    },
    {
@@ -5806,7 +5806,7 @@
          "Riven",
          "Xin Zhao"
       ],
-      "id": 134,
+      "id": 138,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yasuo.png"
    },
    {
@@ -5848,7 +5848,7 @@
          "Gnar",
          "Renekton"
       ],
-      "id": 135,
+      "id": 139,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yorick.png"
    },
    {
@@ -5890,7 +5890,7 @@
          "Nautilus",
          "Blitzcrank"
       ],
-      "id": 135,
+      "id": 140,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yorick.png"
    },
    {
@@ -5932,7 +5932,7 @@
          "Nunu",
          "Xin Zhao"
       ],
-      "id": 136,
+      "id": 141,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zac.png"
    },
    {
@@ -5974,7 +5974,7 @@
          "Morgana",
          "Kayle"
       ],
-      "id": 137,
+      "id": 142,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zed.png"
    },
    {
@@ -6016,7 +6016,7 @@
          "Ahri",
          "Taliyah"
       ],
-      "id": 138,
+      "id": 143,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ziggs.png"
    },
    {
@@ -6059,7 +6059,7 @@
          "Blitzcrank",
          "Vel'Koz"
       ],
-      "id": 139,
+      "id": 144,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zilean.png"
    },
    {
@@ -6101,7 +6101,7 @@
          "Katarina",
          "Lux"
       ],
-      "id": 140,
+      "id": 145,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zoe.png"
    },
    {
@@ -6144,7 +6144,7 @@
          "Sona",
          "Soraka"
       ],
-      "id": 141,
+      "id": 146,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zyra.png"
    }
 ]
