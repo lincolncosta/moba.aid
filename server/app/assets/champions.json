@@ -1200,6 +1200,9 @@
          "x": 240,
          "y": 96
       },
+      "roles": [
+         "Crowd Control"
+      ],
       "lanes": [
          "Jungler"
       ],
@@ -1242,6 +1245,9 @@
          "x": 288,
          "y": 96
       },
+      "roles": [
+         "Poke"
+      ],
       "lanes": [
          "Carry",
          "Mid"
@@ -1285,6 +1291,10 @@
          "x": 336,
          "y": 96
       },
+      "roles": [
+         "Hard Engage",
+         "Crowd Control"
+      ],
       "lanes": [
          "Support",
          "Jungler",
@@ -1329,6 +1339,9 @@
          "x": 384,
          "y": 96
       },
+      "roles": [
+         "Crowd Control"
+      ],
       "lanes": [
          "Top"
       ],
@@ -1371,6 +1384,9 @@
          "x": 432,
          "y": 96
       },
+      "roles": [
+         "Crowd Control"
+      ],
       "lanes": [
          "Mid"
       ],
@@ -1413,6 +1429,11 @@
          "x": 0,
          "y": 0
       },
+      "roles": [
+         "Tank",
+         "Hard Engage",
+         "Crowd Control"
+      ],
       "lanes": [
          "Support",
          "Mid"
@@ -1456,6 +1477,10 @@
          "x": 48,
          "y": 0
       },
+      "roles": [
+         "Poke",
+         "Waveclear"
+      ],
       "lanes": [
          "Top",
          "Mid"
@@ -1499,6 +1524,10 @@
          "x": 96,
          "y": 0
       },
+      "roles": [
+         "Tank",
+         "Crowd Control"
+      ],
       "lanes": [
          "Top"
       ],
@@ -1541,6 +1570,11 @@
          "x": 144,
          "y": 0
       },
+      "roles": [
+         "Tank",
+         "Hard Engage",
+         "Crowd Control"
+      ],
       "lanes": [
          "Top"
       ],
@@ -1583,6 +1617,12 @@
          "x": 192,
          "y": 0
       },
+      "roles": [
+         "Tank",
+         "Hard Engage",
+         "Disengage",
+         "Crowd Control"
+      ],
       "lanes": [
          "Jungler",
          "Mid",
@@ -1627,6 +1667,9 @@
          "x": 240,
          "y": 0
       },
+      "roles": [
+         "Waveclear"
+      ],
       "lanes": [
          "Jungler"
       ],
