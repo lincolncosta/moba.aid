@@ -2136,8 +2136,7 @@
          "x": 240,
          "y": 48
       },
-      "roles": [
-      ],
+      "roles": [],
       "lanes": [
          "Carry"
       ],
@@ -2221,8 +2220,7 @@
          "attackspeedperlevel": 1.8,
          "attackspeed": 0.644
       },
-      "roles": [
-      ],
+      "roles": [],
       "sprite": {
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
          "x": 336,
@@ -3287,8 +3285,7 @@
          "x": 0,
          "y": 48
       },
-      "roles": [
-      ],
+      "roles": [],
       "lanes": [
          "Jungler",
          "Top"
@@ -5556,6 +5553,10 @@
          "x": 0,
          "y": 0
       },
+      "roles": [
+         "Crowd Control",
+         "Hard Engage"
+      ],
       "lanes": [
          "Mid",
          "Top"
@@ -5599,6 +5600,12 @@
          "x": 48,
          "y": 0
       },
+      "roles": [
+         "Poke",
+         "Crowd Control",
+         "Waveclear",
+         "Hard Engage"
+      ],
       "lanes": [
          "Carry"
       ],
@@ -5641,6 +5648,7 @@
          "x": 96,
          "y": 0
       },
+      "roles": [],
       "lanes": [
          "Carry"
       ],
@@ -5683,6 +5691,11 @@
          "x": 144,
          "y": 0
       },
+      "roles": [
+         "Poke",
+         "Crowd Control",
+         "Waveclear"
+      ],
       "lanes": [
          "Mid"
       ],
@@ -5725,6 +5738,11 @@
          "x": 192,
          "y": 0
       },
+      "roles": [
+         "Poke",
+         "Crowd Control",
+         "Waveclear"
+      ],
       "lanes": [
          "Mid"
       ],
@@ -5767,6 +5785,10 @@
          "x": 240,
          "y": 0
       },
+      "roles": [
+         "Hard Engage",
+         "Crowd Control"
+      ],
       "lanes": [
          "Jungler"
       ],
@@ -5809,6 +5831,10 @@
          "x": 288,
          "y": 0
       },
+      "roles": [
+         "Crowd Control",
+         "Waveclear"
+      ],
       "lanes": [
          "Mid"
       ],
@@ -5851,6 +5877,10 @@
          "x": 336,
          "y": 0
       },
+      "roles": [
+         "Tank",
+         "Waveclear"
+      ],
       "lanes": [
          "Top",
          "Mid"
@@ -5894,6 +5924,10 @@
          "x": 384,
          "y": 0
       },
+      "roles": [
+         "Tank",
+         "Crowd Control"
+      ],
       "lanes": [
          "Top",
          "Jungler"
@@ -5937,6 +5971,10 @@
          "x": 432,
          "y": 0
       },
+      "roles": [
+         "Tank",
+         "Crowd Control"
+      ],
       "lanes": [
          "Jungler"
       ],
@@ -5979,6 +6017,9 @@
          "x": 0,
          "y": 48
       },
+      "roles": [
+         "Waveclear"
+      ],
       "lanes": [
          "Carry"
       ],
@@ -6021,6 +6062,11 @@
          "x": 48,
          "y": 48
       },
+      "roles": [
+         "Poke",
+         "Crowd Control",
+         "Waveclear"
+      ],
       "lanes": [
          "Mid"
       ],
@@ -6063,6 +6109,10 @@
          "x": 96,
          "y": 48
       },
+      "roles": [
+         "Crowd Control",
+         "Disengage"
+      ],
       "lanes": [
          "Jungler"
       ],
@@ -6105,6 +6155,10 @@
          "x": 144,
          "y": 48
       },
+      "roles": [
+         "Waveclear",
+         "Crowd Control"
+      ],
       "lanes": [
          "Mid",
          "Top"
@@ -6148,6 +6202,10 @@
          "x": 192,
          "y": 48
       },
+      "roles": [
+         "Tank",
+         "Crowd Control"
+      ],
       "lanes": [
          "Top"
       ],
@@ -6190,6 +6248,12 @@
          "x": 192,
          "y": 48
       },
+      "roles": [
+         "Poke",
+         "Crowd Control",
+         "Disengage",
+         "Hard Engage"
+      ],
       "lanes": [
          "Top"
       ],
@@ -6232,6 +6296,12 @@
          "x": 240,
          "y": 48
       },
+      "roles": [
+         "Crowd Control",
+         "Tank",
+         "Disengage",
+         "Hard Engage"
+      ],
       "lanes": [
          "Jungler"
       ],
@@ -6274,6 +6344,7 @@
          "x": 288,
          "y": 48
       },
+      "roles": [],
       "lanes": [
          "Mid"
       ],
@@ -6316,6 +6387,11 @@
          "x": 336,
          "y": 48
       },
+      "roles": [
+         "Poke",
+         "Crowd Control",
+         "Waveclear"
+      ],
       "lanes": [
          "Mid"
       ],
