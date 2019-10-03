@@ -1015,6 +1015,9 @@
          "x": 48,
          "y": 96
       },
+      "roles": [
+         ""
+      ],
       "lanes": [
          "Carry"
       ],
@@ -1057,6 +1060,10 @@
          "x": 96,
          "y": 96
       },
+      "roles": [
+         "Tank",
+         "Crowd Control"
+      ],
       "lanes": [
          "Top"
       ],
@@ -1099,6 +1106,12 @@
          "x": 144,
          "y": 96
       },
+      "roles": [
+         "Waveclear",
+         "Hard Engage",
+         "Disengage",
+         "Crowd Control"
+      ],
       "lanes": [
          "Mid",
          "Top"
@@ -1142,6 +1155,9 @@
          "x": 192,
          "y": 96
       },
+      "roles": [
+         "Crowd Control"
+      ],
       "lanes": [
          "Jungler"
       ],
