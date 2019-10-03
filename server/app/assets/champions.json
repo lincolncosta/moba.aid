@@ -2090,7 +2090,7 @@
          "y": 48
       },
       "roles": [
-         "Pokes",
+         "Poke",
          "Crowd Control"
       ],
       "lanes": [
@@ -6358,6 +6358,11 @@
          "x": 384,
          "y": 48
       },
+      "roles": [
+         "Waveclear",
+         "Crowd Control",
+         "Poke"
+      ],
       "lanes": [
          "Support",
          "Mid"
@@ -6401,6 +6406,10 @@
          "x": 432,
          "y": 48
       },
+      "roles": [
+         "Crowd Control",
+         "Poke"
+      ],
       "lanes": [
          "Mid"
       ],
@@ -6443,6 +6452,11 @@
          "x": 0,
          "y": 96
       },
+      "roles": [
+         "Waveclear",
+         "Crowd Control",
+         "Poke"
+      ],
       "lanes": [
          "Mid",
          "Support"
