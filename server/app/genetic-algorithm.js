@@ -41,7 +41,7 @@ class GeneticAlgorithm {
         chromosome.genes.map(gene => {
             json.map(function (champion) {
                 if (gene === champion.id) {
-                    champion.roles.map(function (role) {
+                    champion.lanes.map(function (role) {
                         if (role === 'Support') {
                             hasSupp = true;
                         }
