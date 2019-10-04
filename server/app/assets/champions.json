@@ -4581,6 +4581,12 @@
          "x": 288,
          "y": 0
       },
+      "roles": [
+         "Hard Engage",
+         "Disengage",
+         "Crowd Control",
+         "Tank"
+      ],
       "lanes": [
          "Jungler"
       ],
@@ -4623,6 +4629,7 @@
          "x": 336,
          "y": 0
       },
+      "roles": [],
       "lanes": [
          "Jungler"
       ],
@@ -4665,6 +4672,11 @@
          "x": 384,
          "y": 0
       },
+      "roles": [
+         "Hard Engage",
+         "Crowd Control",
+         "Tank"
+      ],
       "lanes": [
          "Top"
       ],
@@ -4707,6 +4719,11 @@
          "x": 432,
          "y": 0
       },
+      "roles": [
+         "Hard Engage",
+         "Crowd Control",
+         "Tank"
+      ],
       "lanes": [
          "Jungler"
       ],
@@ -4749,6 +4766,10 @@
          "x": 0,
          "y": 48
       },
+      "roles": [
+         "Crowd Control",
+         "Tank"
+      ],
       "lanes": [
          "Top"
       ],
@@ -4791,6 +4812,11 @@
          "x": 48,
          "y": 48
       },
+      "roles": [
+         "Hard Engage",
+         "Crowd Control",
+         "Tank"
+      ],
       "lanes": [
          "Top"
       ],
@@ -4833,6 +4859,11 @@
          "x": 96,
          "y": 48
       },
+      "roles": [
+         "Hard Engage",
+         "Waveclear",
+         "Disengage"
+      ],
       "lanes": [
          "Carry"
       ],
@@ -4875,6 +4906,11 @@
          "x": 144,
          "y": 48
       },
+      "roles": [
+         "Hard Engage",
+         "Crowd Control",
+         "Tank"
+      ],
       "lanes": [
          "Jungler"
       ],
@@ -4917,6 +4953,11 @@
          "x": 192,
          "y": 48
       },
+      "roles": [
+         "Crowd Control",
+         "Poke",
+         "Disengage"
+      ],
       "lanes": [
          "Support"
       ],
@@ -4959,6 +5000,10 @@
          "x": 240,
          "y": 48
       },
+      "roles": [
+         "Poke",
+         "Crowd Control"
+      ],
       "lanes": [
          "Support"
       ],
