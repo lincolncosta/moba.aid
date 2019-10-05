@@ -30,6 +30,7 @@ class GeneticAlgorithm {
         this.numberCompare = this.numberCompare.bind(this);
         this.validChromosome = this.validChromosome.bind(this);
         this.validCompositionFunction = this.validCompositionFunction.bind(this);
+        this.validRolesFunction = this.validRolesFunction.bind(this);
         this.showCompositionInfo = this.showCompositionInfo.bind(this);
     }
 
@@ -60,6 +61,18 @@ class GeneticAlgorithm {
 
         return validComposition;
     };
+
+    validRolesFunction(champion, strategy, multiplier) {
+        if (!champion.roles) {
+            return multiplier;
+        }   
+        
+        if(!champion.roles.includes(strategy)){
+            return multiplier;
+        }
+
+        return +(0.1 + multiplier).toFixed(12);
+    }
 
     mutationFunction(chromosome, possibleGenes) {
         var mutatedGenes = chromosome.genes.slice();
@@ -134,15 +147,21 @@ class GeneticAlgorithm {
                 var fitvalueHardEngage = 0;
                 var attack_1 = 0;
                 var movspeed_1 = 0;
+                var multiplier = 1.0;
+                var self = this;
+
                 chromosome.genes.map(function (gene) {
-                    json.map(function (champion) {
+                    json.map((champion) => {
                         if (gene === champion.id) {
                             attack_1 = attack_1 + champion.stats.attackdamage;
                             movspeed_1 = movspeed_1 + champion.stats.movespeed;
+                            // console.log(this);
+                            multiplier = self.validRolesFunction(champion, 'Hard Engage', multiplier);
                         }
                     });
                 });
-                fitvalueHardEngage = (attack_1 + movspeed_1) / MAX_FIT_VALUE;
+
+                fitvalueHardEngage = ((attack_1 + movspeed_1) * multiplier) / MAX_FIT_VALUE;
 
                 if (fitvalueHardEngage > finalFitvalue) {
                     finalFitvalue = fitvalueHardEngage;
