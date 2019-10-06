@@ -2354,6 +2354,12 @@
          "x": 192,
          "y": 48
       },
+      "info": {
+         "attack": 8,
+         "defense": 4,
+         "magic": 3,
+         "difficulty": 7
+     },
       "roles": [
          "Poke",
          "Crowd Control"
@@ -2401,6 +2407,12 @@
          "x": 240,
          "y": 48
       },
+      "info": {
+         "attack": 10,
+         "defense": 2,
+         "magic": 6,
+         "difficulty": 6
+     },
       "roles": [],
       "lanes": [
          "Carry"
@@ -2444,6 +2456,12 @@
          "x": 288,
          "y": 48
       },
+      "info": {
+         "attack": 9,
+         "defense": 2,
+         "magic": 4,
+         "difficulty": 6
+     },
       "roles": [
          "Waveclear",
          "Disengage"
@@ -2485,6 +2503,12 @@
          "attackspeedperlevel": 1.8,
          "attackspeed": 0.644
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 3,
+         "difficulty": 6
+     },
       "roles": [],
       "sprite": {
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
@@ -2533,6 +2557,12 @@
          "x": 384,
          "y": 48
       },
+      "info": {
+         "attack": 8,
+         "defense": 2,
+         "magic": 4,
+         "difficulty": 7
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -2579,6 +2609,12 @@
          "x": 432,
          "y": 48
       },
+      "info": {
+         "attack": 1,
+         "defense": 7,
+         "magic": 8,
+         "difficulty": 5
+     },
       "roles": [
          "Poke"
       ],
@@ -2626,6 +2662,12 @@
          "x": 0,
          "y": 96
       },
+      "info": {
+         "attack": 2,
+         "defense": 2,
+         "magic": 10,
+         "difficulty": 7
+     },
       "roles": [
          "Poke",
          "Waveclear"
@@ -2673,6 +2715,12 @@
          "x": 48,
          "y": 96
       },
+      "info": {
+         "attack": 3,
+         "defense": 5,
+         "magic": 8,
+         "difficulty": 8
+     },
       "roles": [
          ""
       ],
@@ -2719,6 +2767,12 @@
          "x": 96,
          "y": 96
       },
+      "info": {
+         "attack": 4,
+         "defense": 3,
+         "magic": 9,
+         "difficulty": 8
+     },
       "roles": [
          ""
       ],
@@ -2764,6 +2818,12 @@
          "x": 144,
          "y": 96
       },
+      "info": {
+         "attack": 6,
+         "defense": 6,
+         "magic": 7,
+         "difficulty": 7
+     },
       "roles": [
          ""
       ],
@@ -2810,6 +2870,12 @@
          "x": 192,
          "y": 96
       },
+      "info": {
+         "attack": 10,
+         "defense": 6,
+         "magic": 1,
+         "difficulty": 8
+     },
       "roles": [
          "Crowd Control"
       ],
@@ -2856,6 +2922,12 @@
          "x": 240,
          "y": 96
       },
+      "info": {
+         "attack": 6,
+         "defense": 4,
+         "magic": 7,
+         "difficulty": 4
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -2902,6 +2974,12 @@
          "x": 288,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 4,
+         "magic": 3,
+         "difficulty": 6
+     },
       "roles": [
          ""
       ],
@@ -2948,6 +3026,12 @@
          "x": 336,
          "y": 96
       },
+      "info": {
+         "attack": 8,
+         "defense": 2,
+         "magic": 2,
+         "difficulty": 4
+     },
       "roles": [
          ""
       ],
@@ -2993,6 +3077,12 @@
          "x": 384,
          "y": 96
       },
+      "info": {
+         "attack": 8,
+         "defense": 2,
+         "magic": 2,
+         "difficulty": 7
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -3039,6 +3129,12 @@
          "x": 432,
          "y": 96
       },
+      "info": {
+         "attack": 8,
+         "defense": 2,
+         "magic": 5,
+         "difficulty": 6
+     },
       "roles": [
          "Poke",
          "Waveclear"
@@ -3085,6 +3181,12 @@
          "x": 0,
          "y": 0
       },
+      "info": {
+         "attack": 1,
+         "defense": 4,
+         "magic": 10,
+         "difficulty": 9
+     },
       "roles": [
          "Crowd Control"
       ],
@@ -3130,6 +3232,12 @@
          "x": 48,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 3,
+         "difficulty": 6
+     },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -3178,6 +3286,12 @@
          "x": 96,
          "y": 0
       },
+      "info": {
+         "attack": 4,
+         "defense": 8,
+         "magic": 3,
+         "difficulty": 4
+     },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -3226,6 +3340,12 @@
          "x": 144,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 5,
+         "magic": 8,
+         "difficulty": 6
+     },
       "roles": [
          "Waveclear",
          "Hard Engage",
@@ -3273,6 +3393,12 @@
          "x": 192,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 3,
+         "difficulty": 6
+     },
       "roles": [
          "Waveclear"
       ],
@@ -3318,6 +3444,12 @@
          "x": 240,
          "y": 0
       },
+      "info": {
+         "attack": 4,
+         "defense": 5,
+         "magic": 7,
+         "difficulty": 5
+     },
       "roles": [
          "Crowd Control"
       ],
@@ -3363,6 +3495,12 @@
          "x": 288,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 4,
+         "magic": 9,
+         "difficulty": 5
+     },
       "roles": [
          "Poke",
          "Waveclear"
@@ -3409,6 +3547,12 @@
          "x": 336,
          "y": 0
       },
+      "info": {
+         "attack": 5,
+         "defense": 9,
+         "magic": 7,
+         "difficulty": 2
+     },
       "roles": [
          "Hard Engage",
          "Tank",
@@ -3456,6 +3600,12 @@
          "x": 384,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 2,
+         "magic": 9,
+         "difficulty": 6
+     },
       "roles": [
          "Waveclear",
          "Crowd Control"
@@ -3503,6 +3653,12 @@
          "x": 432,
          "y": 0
       },
+      "info": {
+         "attack": 3,
+         "defense": 8,
+         "magic": 6,
+         "difficulty": 3
+     },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -3550,6 +3706,12 @@
          "x": 0,
          "y": 48
       },
+      "info": {
+         "attack": 10,
+         "defense": 4,
+         "magic": 2,
+         "difficulty": 4
+     },
       "roles": [],
       "lanes": [
          "Jungler",
@@ -3594,6 +3756,12 @@
          "x": 48,
          "y": 48
       },
+      "info": {
+         "attack": 8,
+         "defense": 2,
+         "magic": 5,
+         "difficulty": 1
+     },
       "roles": [
          ""
       ],
@@ -3639,6 +3807,12 @@
          "x": 96,
          "y": 48
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 2,
+         "difficulty": 3
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -3685,6 +3859,12 @@
          "x": 144,
          "y": 48
       },
+      "info": {
+         "attack": 4,
+         "defense": 6,
+         "magic": 7,
+         "difficulty": 4
+     },
       "roles": [],
       "lanes": [
          "Mid"
@@ -3728,6 +3908,12 @@
          "x": 192,
          "y": 48
       },
+      "info": {
+         "attack": 1,
+         "defense": 6,
+         "magic": 8,
+         "difficulty": 1
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -3775,6 +3961,12 @@
          "x": 240,
          "y": 48
       },
+      "info": {
+         "attack": 4,
+         "defense": 3,
+         "magic": 7,
+         "difficulty": 5
+     },
       "roles": [
          "Hard Engage",
          "Disengage",
@@ -3822,6 +4014,12 @@
          "x": 288,
          "y": 48
       },
+      "info": {
+         "attack": 7,
+         "defense": 5,
+         "magic": 6,
+         "difficulty": 6
+     },
       "roles": [
          "Tank"
       ],
@@ -3867,6 +4065,12 @@
          "x": 336,
          "y": 48
       },
+      "info": {
+         "attack": 4,
+         "defense": 6,
+         "magic": 6,
+         "difficulty": 6
+     },
       "roles": [
          "Hard Engage",
          "Tank",
@@ -3915,6 +4119,12 @@
          "x": 336,
          "y": 48
       },
+      "info": {
+         "attack": 1,
+         "defense": 1,
+         "magic": 9,
+         "difficulty": 5
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -3962,6 +4172,12 @@
          "x": 384,
          "y": 48
       },
+      "info": {
+         "attack": 5,
+         "defense": 4,
+         "magic": 7,
+         "difficulty": 8
+     },
       "roles": [
          "Poke"
       ],
@@ -4008,6 +4224,12 @@
          "x": 432,
          "y": 48
       },
+      "info": {
+         "attack": 9,
+         "defense": 5,
+         "magic": 2,
+         "difficulty": 4
+     },
       "roles": [
          "Hard Engage",
          "Disengage",
@@ -4055,6 +4277,12 @@
          "x": 0,
          "y": 96
       },
+      "info": {
+         "attack": 4,
+         "defense": 6,
+         "magic": 7,
+         "difficulty": 4
+     },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -4103,6 +4331,12 @@
          "x": 48,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 5,
+         "magic": 3,
+         "difficulty": 3
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -4150,6 +4384,12 @@
          "x": 96,
          "y": 96
       },
+      "info": {
+         "attack": 4,
+         "defense": 3,
+         "magic": 9,
+         "difficulty": 7
+     },
       "roles": [
          "Hard Engage",
          "Waveclear",
@@ -4197,6 +4437,12 @@
          "x": 144,
          "y": 96
       },
+      "info": {
+         "attack": 5,
+         "defense": 9,
+         "magic": 3,
+         "difficulty": 5
+     },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -4244,6 +4490,12 @@
          "x": 192,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 4,
+         "magic": 3,
+         "difficulty": 4
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -4291,6 +4543,12 @@
          "x": 240,
          "y": 96
       },
+      "info": {
+         "attack": 6,
+         "defense": 7,
+         "magic": 2,
+         "difficulty": 6
+     },
       "roles": [
          "Hard Engage",
          "Tank",
@@ -4339,6 +4597,12 @@
          "x": 288,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 3,
+         "magic": 1,
+         "difficulty": 7
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -4385,6 +4649,12 @@
          "x": 288,
          "y": 96
       },
+      "info": {
+         "attack": 0,
+         "defense": 2,
+         "magic": 4,
+         "difficulty": 8
+       },
       "roles": [
          "Crowd Control"
       ],
@@ -4431,6 +4701,12 @@
          "x": 336,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 4,
+         "magic": 2,
+         "difficulty": 5
+     },
       "roles": [],
       "lanes": [
          "Carry",
@@ -4475,6 +4751,12 @@
          "x": 384,
          "y": 96
       },
+      "info": {
+         "attack": 2,
+         "defense": 4,
+         "magic": 8,
+         "difficulty": 5
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -4521,6 +4803,12 @@
          "x": 432,
          "y": 96
       },
+      "info": {
+         "attack": 4,
+         "defense": 10,
+         "magic": 5,
+         "difficulty": 5
+     },
       "roles": [
          "Hard Engage",
          "Tank",
@@ -4569,6 +4857,12 @@
          "x": 0,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 2,
+         "difficulty": 3
+     },
       "roles": [
          "Hard Engage",
          "Tank",
@@ -4616,6 +4910,12 @@
          "x": 48,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 2,
+         "difficulty": 3
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -4662,6 +4962,12 @@
          "x": 96,
          "y": 0
       },
+      "info": {
+         "attack": 7,
+         "defense": 4,
+         "magic": 2,
+         "difficulty": 8
+     },
       "roles": [],
       "lanes": [
          "Jungler",
@@ -4706,6 +5012,12 @@
          "x": 144,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 1,
+         "difficulty": 8
+     },
       "roles": [
          "Crowd Control"
       ],
@@ -4751,6 +5063,12 @@
          "x": 192,
          "y": 0
       },
+      "info": {
+         "attack": 3,
+         "defense": 6,
+         "magic": 8,
+         "difficulty": 10
+     },
       "roles": [
          "Hard Engage",
          "Waveclear",
@@ -4799,6 +5117,12 @@
          "x": 240,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 2,
+         "magic": 10,
+         "difficulty": 7
+     },
       "roles": [
          "Waveclear",
          "Crowd Control"
@@ -4846,6 +5170,12 @@
          "x": 288,
          "y": 0
       },
+      "info": {
+         "attack": 5,
+         "defense": 7,
+         "magic": 6,
+         "difficulty": 4
+     },
       "roles": [
          "Hard Engage",
          "Disengage",
@@ -4894,6 +5224,12 @@
          "x": 336,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 4,
+         "magic": 6,
+         "difficulty": 9
+     },
       "roles": [],
       "lanes": [
          "Jungler"
@@ -4937,6 +5273,12 @@
          "x": 384,
          "y": 0
       },
+      "info": {
+         "attack": 3,
+         "defense": 9,
+         "magic": 3,
+         "difficulty": 4
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control",
@@ -4984,6 +5326,12 @@
          "x": 432,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 6,
+         "magic": 3,
+         "difficulty": 4
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control",
@@ -5031,6 +5379,12 @@
          "x": 0,
          "y": 48
       },
+      "info": {
+         "attack": 4,
+         "defense": 8,
+         "magic": 7,
+         "difficulty": 5
+     },
       "roles": [
          "Crowd Control",
          "Tank"
@@ -5077,6 +5431,12 @@
          "x": 48,
          "y": 48
       },
+      "info": {
+         "attack": 5,
+         "defense": 9,
+         "magic": 3,
+         "difficulty": 5
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control",
@@ -5124,6 +5484,12 @@
          "x": 96,
          "y": 48
       },
+      "info": {
+         "attack": 9,
+         "defense": 3,
+         "magic": 1,
+         "difficulty": 4
+     },
       "roles": [
          "Hard Engage",
          "Waveclear",
@@ -5171,6 +5537,12 @@
          "x": 144,
          "y": 48
       },
+      "info": {
+         "attack": 7,
+         "defense": 6,
+         "magic": 5,
+         "difficulty": 5
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control",
@@ -5218,6 +5590,12 @@
          "x": 192,
          "y": 48
       },
+      "info": {
+         "attack": 5,
+         "defense": 2,
+         "magic": 8,
+         "difficulty": 4
+     },
       "roles": [
          "Crowd Control",
          "Poke",
@@ -5265,6 +5643,12 @@
          "x": 240,
          "y": 48
       },
+      "info": {
+         "attack": 2,
+         "defense": 5,
+         "magic": 7,
+         "difficulty": 3
+     },
       "roles": [
          "Poke",
          "Crowd Control"
@@ -5311,6 +5695,12 @@
          "x": 288,
          "y": 48
       },
+      "info": {
+         "attack": 2,
+         "defense": 6,
+         "magic": 9,
+         "difficulty": 8
+     },
       "roles": [
          "Crowd Control",
          "Hard Engage",
@@ -5359,6 +5749,12 @@
          "x": 288,
          "y": 48
       },
+      "info": {
+         "attack": 3,
+         "defense": 4,
+         "magic": 8,
+         "difficulty": 5
+     },
       "roles": [
          "Crowd Control",
          "Hard Engage",
@@ -5408,6 +5804,12 @@
          "x": 336,
          "y": 48
       },
+      "info": {
+         "attack": 2,
+         "defense": 3,
+         "magic": 9,
+         "difficulty": 8
+     },
       "roles": [
          "Disengage",
          "Crowd Control",
@@ -5457,6 +5859,12 @@
          "x": 384,
          "y": 48
       },
+      "info": {
+         "attack": 3,
+         "defense": 9,
+         "magic": 6,
+         "difficulty": 5
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -5503,6 +5911,12 @@
          "x": 432,
          "y": 48
       },
+      "info": {
+         "attack": 1,
+         "defense": 7,
+         "magic": 8,
+         "difficulty": 5
+     },
       "roles": [
          "Disengage",
          "Crowd Control",
@@ -5551,6 +5965,12 @@
          "x": 0,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 3,
+         "magic": 1,
+         "difficulty": 7
+     },
       "roles": [],
       "lanes": [
          "Mid"
@@ -5594,6 +6014,12 @@
          "x": 48,
          "y": 96
       },
+      "info": {
+         "attack": 4,
+         "defense": 8,
+         "magic": 5,
+         "difficulty": 3
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -5640,6 +6066,12 @@
          "x": 96,
          "y": 96
       },
+      "info": {
+         "attack": 5,
+         "defense": 3,
+         "magic": 7,
+         "difficulty": 6
+     },
       "roles": [
          "Crowd Control"
       ],
@@ -5686,6 +6118,12 @@
          "x": 144,
          "y": 96
       },
+      "info": {
+         "attack": 5,
+         "defense": 6,
+         "magic": 6,
+         "difficulty": 7
+     },
       "roles": [
          "Tank",
          "Crowd Control",
@@ -5734,6 +6172,12 @@
          "x": 192,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 3,
+         "magic": 5,
+         "difficulty": 4
+     },
       "roles": [
          "Disengage",
          "Waveclear"
@@ -5780,6 +6224,12 @@
          "x": 240,
          "y": 96
       },
+      "info": {
+         "attack": 7,
+         "defense": 6,
+         "magic": 2,
+         "difficulty": 5
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -5827,6 +6277,12 @@
          "x": 288,
          "y": 96
       },
+      "info": {
+         "attack": 10,
+         "defense": 5,
+         "magic": 2,
+         "difficulty": 5
+     },
       "roles": [],
       "lanes": [
          "Top"
@@ -5870,6 +6326,12 @@
          "x": 336,
          "y": 96
       },
+      "info": {
+         "attack": 6,
+         "defense": 2,
+         "magic": 6,
+         "difficulty": 9
+     },
       "roles": [
          "Crowd Control"
       ],
@@ -5915,6 +6377,12 @@
          "x": 384,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 2,
+         "magic": 3,
+         "difficulty": 6
+     },
       "roles": [],
       "lanes": [
          "Carry"
@@ -5958,6 +6426,12 @@
          "x": 432,
          "y": 96
       },
+      "info": {
+         "attack": 8,
+         "defense": 7,
+         "magic": 4,
+         "difficulty": 7
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -6004,6 +6478,12 @@
          "x": 0,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 3,
+         "difficulty": 8
+     },
       "roles": [
          "Crowd Control",
          "Hard Engage"
@@ -6051,6 +6531,12 @@
          "x": 48,
          "y": 0
       },
+      "info": {
+         "attack": 7,
+         "defense": 3,
+         "magic": 4,
+         "difficulty": 2
+     },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6099,6 +6585,12 @@
          "x": 96,
          "y": 0
       },
+      "info": {
+         "attack": 10,
+         "defense": 1,
+         "magic": 1,
+         "difficulty": 8
+     },
       "roles": [],
       "lanes": [
          "Carry"
@@ -6142,6 +6634,12 @@
          "x": 144,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 2,
+         "magic": 10,
+         "difficulty": 7
+     },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6189,6 +6687,12 @@
          "x": 192,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 2,
+         "magic": 10,
+         "difficulty": 8
+     },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6236,6 +6740,12 @@
          "x": 240,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 3,
+         "difficulty": 4
+     },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -6282,6 +6792,12 @@
          "x": 288,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 4,
+         "magic": 10,
+         "difficulty": 9
+     },
       "roles": [
          "Crowd Control",
          "Waveclear"
@@ -6328,6 +6844,12 @@
          "x": 336,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 6,
+         "magic": 8,
+         "difficulty": 7
+     },
       "roles": [
          "Tank",
          "Waveclear"
@@ -6375,6 +6897,12 @@
          "x": 384,
          "y": 0
       },
+      "info": {
+         "attack": 7,
+         "defense": 7,
+         "magic": 4,
+         "difficulty": 3
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -6422,6 +6950,12 @@
          "x": 432,
          "y": 0
       },
+      "info": {
+         "attack": 9,
+         "defense": 5,
+         "magic": 3,
+         "difficulty": 3
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -6468,6 +7002,12 @@
          "x": 0,
          "y": 48
       },
+      "info": {
+         "attack": 10,
+         "defense": 6,
+         "magic": 1,
+         "difficulty": 5
+     },
       "roles": [
          "Waveclear"
       ],
@@ -6513,6 +7053,12 @@
          "x": 48,
          "y": 48
       },
+      "info": {
+         "attack": 1,
+         "defense": 3,
+         "magic": 10,
+         "difficulty": 8
+     },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6560,6 +7106,12 @@
          "x": 96,
          "y": 48
       },
+      "info": {
+         "attack": 8,
+         "defense": 6,
+         "magic": 3,
+         "difficulty": 2
+     },
       "roles": [
          "Crowd Control",
          "Disengage"
@@ -6606,6 +7158,12 @@
          "x": 144,
          "y": 48
       },
+      "info": {
+         "attack": 8,
+         "defense": 4,
+         "magic": 4,
+         "difficulty": 10
+     },
       "roles": [
          "Waveclear",
          "Crowd Control"
@@ -6653,6 +7211,12 @@
          "x": 192,
          "y": 48
       },
+      "info": {
+         "attack": 6,
+         "defense": 6,
+         "magic": 4,
+         "difficulty": 6
+     },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -6699,6 +7263,12 @@
          "x": 192,
          "y": 48
       },
+      "info": {
+         "attack": 5,
+         "defense": 1,
+         "magic": 8,
+         "difficulty": 2
+     },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6747,6 +7317,12 @@
          "x": 240,
          "y": 48
       },
+      "info": {
+         "attack": 3,
+         "defense": 7,
+         "magic": 7,
+         "difficulty": 8
+     },
       "roles": [
          "Crowd Control",
          "Tank",
@@ -6795,6 +7371,12 @@
          "x": 288,
          "y": 48
       },
+      "info": {
+         "attack": 9,
+         "defense": 2,
+         "magic": 1,
+         "difficulty": 7
+     },
       "roles": [],
       "lanes": [
          "Mid"
@@ -6838,6 +7420,12 @@
          "x": 336,
          "y": 48
       },
+      "info": {
+         "attack": 2,
+         "defense": 4,
+         "magic": 9,
+         "difficulty": 4
+     },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6885,6 +7473,12 @@
          "x": 384,
          "y": 48
       },
+      "info": {
+         "attack": 2,
+         "defense": 5,
+         "magic": 8,
+         "difficulty": 6
+     },
       "roles": [
          "Waveclear",
          "Crowd Control",
@@ -6933,6 +7527,12 @@
          "x": 432,
          "y": 48
       },
+      "info": {
+         "attack": 1,
+         "defense": 7,
+         "magic": 8,
+         "difficulty": 5
+     },
       "roles": [
          "Crowd Control",
          "Poke"
@@ -6979,6 +7579,12 @@
          "x": 0,
          "y": 96
       },
+      "info": {
+         "attack": 4,
+         "defense": 3,
+         "magic": 8,
+         "difficulty": 7
+     },
       "roles": [
          "Waveclear",
          "Crowd Control",
