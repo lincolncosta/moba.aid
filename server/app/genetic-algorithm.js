@@ -62,12 +62,14 @@ class GeneticAlgorithm {
         return validComposition;
     };
 
-    validRolesFunction(champion, strategy, multiplier) {
+    validRolesFunction(champion, strategies, multiplier) {
         if (!champion.roles) {
             return multiplier;
-        }   
-        
-        if(!champion.roles.includes(strategy)){
+        }
+
+        let hasStrategy = champion.roles.filter(value => strategies.includes(value)).length;
+
+        if (!hasStrategy) {
             return multiplier;
         }
 
@@ -155,8 +157,7 @@ class GeneticAlgorithm {
                         if (gene === champion.id) {
                             attack_1 = attack_1 + champion.stats.attackdamage;
                             movspeed_1 = movspeed_1 + champion.stats.movespeed;
-                            // console.log(this);
-                            multiplier = self.validRolesFunction(champion, 'Hard Engage', multiplier);
+                            multiplier = self.validRolesFunction(champion, ['Hard Engage', 'Crowd Control'], multiplier);
                         }
                     });
                 });
@@ -174,16 +175,21 @@ class GeneticAlgorithm {
                 var attackdamage_1 = 0;
                 var attackdamagelevel_1 = 0;
                 var healthpoints_1 = 0;
+                var multiplier = 1.0;
+                var self = this;
+
                 chromosome.genes.map(function (gene) {
                     json.map(function (champion) {
                         if (gene === champion.id) {
                             attackdamage_1 = attackdamage_1 + champion.stats.attackdamage;
                             attackdamagelevel_1 = attackdamagelevel_1 + champion.stats.attackdamageperlevel;
                             healthpoints_1 = healthpoints_1 + champion.stats.hp;
+                            multiplier = self.validRolesFunction(champion, ['Waveclear', 'Disengage', 'Crowd Control'], multiplier);
                         }
                     });
                 });
-                fitvalueTeamfight = (attackdamage_1 + attackdamagelevel_1 + healthpoints_1) / MAX_FIT_VALUE;
+
+                fitvalueTeamfight = ((attackdamage_1 + attackdamagelevel_1 + healthpoints_1) * multiplier) / MAX_FIT_VALUE;
                 if (fitvalueTeamfight > finalFitvalue) {
                     this.finalFitvalue = fitvalueTeamfight;
                     this.finalChromosome = chromosome;
@@ -194,6 +200,8 @@ class GeneticAlgorithm {
                 var attackdmg_1 = 0;
                 var attackrange_1 = 0;
                 var attackspeed_1 = 0;
+                var multiplier = 1.0;
+                var self = this;
 
                 chromosome.genes.map(gene => {
                     json.map(function (champion) {
@@ -201,11 +209,12 @@ class GeneticAlgorithm {
                             attackdmg_1 = attackdmg_1 + champion.stats.attackdamage;
                             attackrange_1 = attackrange_1 + champion.stats.attackrange;
                             attackspeed_1 = attackspeed_1 + champion.stats.attackspeedperlevel;
+                            multiplier = self.validRolesFunction(champion, ['Waveclear'], multiplier);
                         }
                     });
                 });
 
-                fitvaluePusher = (attackdmg_1 + attackrange_1 + attackspeed_1) / MAX_FIT_VALUE;
+                fitvaluePusher = ((attackdmg_1 + attackrange_1 + attackspeed_1) * multiplier) / MAX_FIT_VALUE;
                 if (fitvaluePusher > finalFitvalue) {
                     this.finalFitvalue = fitvaluePusher;
                     this.finalChromosome = chromosome;

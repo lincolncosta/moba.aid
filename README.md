@@ -13,9 +13,9 @@ Os parâmetros utilizados para calcular o fitness máximo foram os seguintes:
 
 Com isso, obtém-se que os máximos são:
 
-- Máximo na estratégia _Hard Engage_: **2095**.
-- Máximo na estratégia _Team Fight_: **3633**.
-- Máximo na estratégia _Pusher_: **3356**.
+- Máximo na estratégia _Hard Engage_: **2095** (**3142** caso sejam considerados parâmetros de role).
+- Máximo na estratégia _Team Fight_: **3633** (**5449** caso sejam considerados parâmetros de role).
+- Máximo na estratégia _Pusher_: **3356** (**5034** caso sejam considerados parâmetros de role).
 
 ## Informações de execução
 
