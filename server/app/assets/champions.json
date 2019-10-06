@@ -1089,6 +1089,12 @@
          "x": 0,
          "y": 96
       },
+      "info": {
+         "attack": 7,
+         "defense": 6,
+         "magic": 8,
+         "difficulty": 4
+      },
       "roles": [
          "Poke",
          "Crowd Control"
@@ -1136,6 +1142,12 @@
          "x": 48,
          "y": 96
       },
+      "info": {
+         "attack": 9,
+         "defense": 3,
+         "magic": 1,
+         "difficulty": 8
+      },
       "roles": [
          ""
       ],
@@ -1180,6 +1192,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion0.png",
          "x": 96,
          "y": 96
+      },
+      "info": {
+         "attack": 5,
+         "defense": 7,
+         "magic": 6,
+         "difficulty": 5
       },
       "roles": [
          "Tank",
@@ -1226,6 +1244,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion0.png",
          "x": 144,
          "y": 96
+      },
+      "info": {
+         "attack": 5,
+         "defense": 3,
+         "magic": 7,
+         "difficulty": 8
       },
       "roles": [
          "Waveclear",
@@ -1276,6 +1300,12 @@
          "x": 192,
          "y": 96
       },
+      "info": {
+         "attack": 6,
+         "defense": 5,
+         "magic": 7,
+         "difficulty": 9
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -1320,6 +1350,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion0.png",
          "x": 240,
          "y": 96
+      },
+      "info": {
+         "attack": 4,
+         "defense": 2,
+         "magic": 7,
+         "difficulty": 10
       },
       "roles": [
          "Crowd Control"
@@ -1366,6 +1402,12 @@
          "x": 288,
          "y": 96
       },
+      "info": {
+         "attack": 7,
+         "defense": 2,
+         "magic": 6,
+         "difficulty": 7
+      },
       "roles": [
          "Poke"
       ],
@@ -1411,6 +1453,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion0.png",
          "x": 336,
          "y": 96
+      },
+      "info": {
+         "attack": 2,
+         "defense": 3,
+         "magic": 9,
+         "difficulty": 9
       },
       "roles": [
          "Hard Engage",
@@ -1460,6 +1508,12 @@
          "x": 384,
          "y": 96
       },
+      "info": {
+         "attack": 10,
+         "defense": 4,
+         "magic": 2,
+         "difficulty": 3
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -1505,6 +1559,12 @@
          "x": 432,
          "y": 96
       },
+      "info": {
+         "attack": 6,
+         "defense": 4,
+         "magic": 7,
+         "difficulty": 6
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -1549,6 +1609,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
          "x": 0,
          "y": 0
+      },
+      "info": {
+         "attack": 1,
+         "defense": 10,
+         "magic": 6,
+         "difficulty": 5
       },
       "roles": [
          "Tank",
@@ -1598,6 +1664,12 @@
          "x": 48,
          "y": 0
       },
+      "info": {
+         "attack": 7,
+         "defense": 6,
+         "magic": 4,
+         "difficulty": 9
+      },
       "roles": [
          "Poke",
          "Waveclear"
@@ -1645,6 +1717,12 @@
          "x": 96,
          "y": 0
       },
+      "info": {
+         "attack": 7,
+         "defense": 7,
+         "magic": 1,
+         "difficulty": 5
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -1690,6 +1768,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
          "x": 144,
          "y": 0
+      },
+      "info": {
+         "attack": 6,
+         "defense": 5,
+         "magic": 5,
+         "difficulty": 8
       },
       "roles": [
          "Tank",
@@ -1737,6 +1821,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
          "x": 192,
          "y": 0
+      },
+      "info": {
+         "attack": 4,
+         "defense": 7,
+         "magic": 6,
+         "difficulty": 5
       },
       "roles": [
          "Tank",
@@ -1788,6 +1878,12 @@
          "x": 240,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 5,
+         "magic": 3,
+         "difficulty": 3
+      },
       "roles": [
          "Waveclear"
       ],
@@ -1832,6 +1928,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
          "x": 288,
          "y": 0
+      },
+      "info": {
+         "attack": 8,
+         "defense": 6,
+         "magic": 4,
+         "difficulty": 6
       },
       "roles": [
          "Tank",
@@ -1881,6 +1983,12 @@
          "x": 336,
          "y": 0
       },
+      "info": {
+         "attack": 2,
+         "defense": 6,
+         "magic": 8,
+         "difficulty": 8
+      },
       "roles": [
          "Waveclear",
          "Poke",
@@ -1929,6 +2037,12 @@
          "x": 384,
          "y": 0
       },
+      "info": {
+         "attack": 8,
+         "defense": 6,
+         "magic": 3,
+         "difficulty": 4
+      },
       "roles": [
          "Tank",
          "Hard Engage"
@@ -1974,6 +2088,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
          "x": 432,
          "y": 0
+      },
+      "info": {
+         "attack": 7,
+         "defense": 4,
+         "magic": 5,
+         "difficulty": 5
       },
       "roles": [
          "Tank",
@@ -2022,6 +2142,12 @@
          "x": 0,
          "y": 48
       },
+      "info": {
+         "attack": 3,
+         "defense": 5,
+         "magic": 7,
+         "difficulty": 7
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -2067,6 +2193,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
          "x": 48,
          "y": 48
+      },
+      "info": {
+         "attack": 3,
+         "defense": 5,
+         "magic": 7,
+         "difficulty": 7
       },
       "roles": [
          "Disengage",
@@ -2115,6 +2247,12 @@
          "x": 96,
          "y": 48
       },
+      "info": {
+         "attack": 6,
+         "defense": 8,
+         "magic": 3,
+         "difficulty": 5
+      },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -2162,6 +2300,12 @@
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
          "x": 144,
          "y": 48
+      },
+      "info": {
+         "attack": 7,
+         "defense": 5,
+         "magic": 7,
+         "difficulty": 5
       },
       "roles": [
          "Tank",
