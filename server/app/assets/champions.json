@@ -28,7 +28,7 @@
          "x": 0,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 4,
          "magic": 3,
@@ -81,7 +81,7 @@
          "x": 48,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 4,
          "magic": 8,
@@ -134,7 +134,7 @@
          "x": 96,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 3,
          "magic": 8,
@@ -186,7 +186,7 @@
          "x": 144,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 9,
          "magic": 5,
@@ -240,7 +240,7 @@
          "x": 192,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 6,
          "magic": 8,
@@ -295,7 +295,7 @@
          "x": 240,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 4,
          "magic": 10,
@@ -348,7 +348,7 @@
          "x": 288,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 3,
          "magic": 10,
@@ -401,7 +401,7 @@
          "x": 336,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 3,
          "magic": 2,
@@ -454,7 +454,7 @@
          "x": 384,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 3,
          "magic": 8,
@@ -507,7 +507,7 @@
          "x": 432,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 3,
          "magic": 8,
@@ -561,7 +561,7 @@
          "x": 0,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 4,
          "magic": 5,
@@ -614,7 +614,7 @@
          "x": 48,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 8,
          "magic": 5,
@@ -667,7 +667,7 @@
          "x": 96,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 2,
          "magic": 9,
@@ -720,7 +720,7 @@
          "x": 144,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 9,
          "magic": 4,
@@ -774,7 +774,7 @@
          "x": 192,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 2,
          "magic": 2,
@@ -825,7 +825,7 @@
          "x": 240,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 6,
          "magic": 3,
@@ -878,7 +878,7 @@
          "x": 288,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 3,
          "magic": 9,
@@ -930,7 +930,7 @@
          "x": 336,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 7,
          "magic": 7,
@@ -983,7 +983,7 @@
          "x": 384,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 3,
          "magic": 6,
@@ -1037,7 +1037,7 @@
          "x": 432,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 5,
          "magic": 1,
@@ -1089,7 +1089,7 @@
          "x": 0,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 6,
          "magic": 8,
@@ -1142,7 +1142,7 @@
          "x": 48,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 3,
          "magic": 1,
@@ -1193,7 +1193,7 @@
          "x": 96,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 7,
          "magic": 6,
@@ -1245,7 +1245,7 @@
          "x": 144,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 3,
          "magic": 7,
@@ -1300,7 +1300,7 @@
          "x": 192,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 5,
          "magic": 7,
@@ -1351,7 +1351,7 @@
          "x": 240,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 2,
          "magic": 7,
@@ -1402,7 +1402,7 @@
          "x": 288,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 2,
          "magic": 6,
@@ -1454,7 +1454,7 @@
          "x": 336,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 3,
          "magic": 9,
@@ -1508,7 +1508,7 @@
          "x": 384,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 10,
          "defense": 4,
          "magic": 2,
@@ -1559,7 +1559,7 @@
          "x": 432,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 4,
          "magic": 7,
@@ -1610,7 +1610,7 @@
          "x": 0,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 10,
          "magic": 6,
@@ -1664,7 +1664,7 @@
          "x": 48,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 6,
          "magic": 4,
@@ -1717,7 +1717,7 @@
          "x": 96,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 7,
          "magic": 1,
@@ -1769,7 +1769,7 @@
          "x": 144,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 5,
          "magic": 5,
@@ -1822,7 +1822,7 @@
          "x": 192,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 7,
          "magic": 6,
@@ -1878,7 +1878,7 @@
          "x": 240,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 3,
@@ -1929,7 +1929,7 @@
          "x": 288,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 6,
          "magic": 4,
@@ -1983,7 +1983,7 @@
          "x": 336,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 6,
          "magic": 8,
@@ -2037,7 +2037,7 @@
          "x": 384,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 6,
          "magic": 3,
@@ -2089,7 +2089,7 @@
          "x": 432,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 4,
          "magic": 5,
@@ -2142,7 +2142,7 @@
          "x": 0,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 5,
          "magic": 7,
@@ -2194,7 +2194,7 @@
          "x": 48,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 5,
          "magic": 7,
@@ -2247,7 +2247,7 @@
          "x": 96,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 8,
          "magic": 3,
@@ -2301,7 +2301,7 @@
          "x": 144,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 5,
          "magic": 7,
@@ -2354,7 +2354,7 @@
          "x": 192,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 4,
          "magic": 3,
@@ -2407,7 +2407,7 @@
          "x": 240,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 10,
          "defense": 2,
          "magic": 6,
@@ -2456,7 +2456,7 @@
          "x": 288,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 2,
          "magic": 4,
@@ -2503,7 +2503,7 @@
          "attackspeedperlevel": 1.8,
          "attackspeed": 0.644
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 3,
@@ -2557,7 +2557,7 @@
          "x": 384,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 2,
          "magic": 4,
@@ -2609,7 +2609,7 @@
          "x": 432,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 7,
          "magic": 8,
@@ -2662,7 +2662,7 @@
          "x": 0,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 2,
          "magic": 10,
@@ -2715,7 +2715,7 @@
          "x": 48,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 5,
          "magic": 8,
@@ -2767,7 +2767,7 @@
          "x": 96,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 3,
          "magic": 9,
@@ -2818,7 +2818,7 @@
          "x": 144,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 6,
          "magic": 7,
@@ -2870,7 +2870,7 @@
          "x": 192,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 10,
          "defense": 6,
          "magic": 1,
@@ -2922,7 +2922,7 @@
          "x": 240,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 4,
          "magic": 7,
@@ -2974,7 +2974,7 @@
          "x": 288,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 4,
          "magic": 3,
@@ -3026,7 +3026,7 @@
          "x": 336,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 2,
          "magic": 2,
@@ -3077,7 +3077,7 @@
          "x": 384,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 2,
          "magic": 2,
@@ -3129,7 +3129,7 @@
          "x": 432,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 2,
          "magic": 5,
@@ -3181,7 +3181,7 @@
          "x": 0,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 4,
          "magic": 10,
@@ -3232,7 +3232,7 @@
          "x": 48,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 3,
@@ -3286,7 +3286,7 @@
          "x": 96,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 8,
          "magic": 3,
@@ -3340,7 +3340,7 @@
          "x": 144,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 5,
          "magic": 8,
@@ -3393,7 +3393,7 @@
          "x": 192,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 3,
@@ -3444,7 +3444,7 @@
          "x": 240,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 5,
          "magic": 7,
@@ -3495,7 +3495,7 @@
          "x": 288,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 4,
          "magic": 9,
@@ -3547,7 +3547,7 @@
          "x": 336,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 9,
          "magic": 7,
@@ -3600,7 +3600,7 @@
          "x": 384,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 2,
          "magic": 9,
@@ -3653,7 +3653,7 @@
          "x": 432,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 8,
          "magic": 6,
@@ -3706,7 +3706,7 @@
          "x": 0,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 10,
          "defense": 4,
          "magic": 2,
@@ -3756,7 +3756,7 @@
          "x": 48,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 2,
          "magic": 5,
@@ -3807,7 +3807,7 @@
          "x": 96,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 2,
@@ -3859,7 +3859,7 @@
          "x": 144,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 6,
          "magic": 7,
@@ -3908,7 +3908,7 @@
          "x": 192,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 6,
          "magic": 8,
@@ -3961,7 +3961,7 @@
          "x": 240,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 3,
          "magic": 7,
@@ -4014,7 +4014,7 @@
          "x": 288,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 5,
          "magic": 6,
@@ -4065,7 +4065,7 @@
          "x": 336,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 6,
          "magic": 6,
@@ -4119,7 +4119,7 @@
          "x": 336,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 1,
          "magic": 9,
@@ -4172,7 +4172,7 @@
          "x": 384,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 4,
          "magic": 7,
@@ -4224,7 +4224,7 @@
          "x": 432,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 5,
          "magic": 2,
@@ -4277,7 +4277,7 @@
          "x": 0,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 6,
          "magic": 7,
@@ -4331,7 +4331,7 @@
          "x": 48,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 5,
          "magic": 3,
@@ -4384,7 +4384,7 @@
          "x": 96,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 3,
          "magic": 9,
@@ -4437,7 +4437,7 @@
          "x": 144,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 9,
          "magic": 3,
@@ -4490,7 +4490,7 @@
          "x": 192,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 4,
          "magic": 3,
@@ -4543,7 +4543,7 @@
          "x": 240,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 7,
          "magic": 2,
@@ -4597,7 +4597,7 @@
          "x": 288,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 3,
          "magic": 1,
@@ -4649,7 +4649,7 @@
          "x": 288,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 0,
          "defense": 2,
          "magic": 4,
@@ -4701,7 +4701,7 @@
          "x": 336,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 4,
          "magic": 2,
@@ -4751,7 +4751,7 @@
          "x": 384,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 4,
          "magic": 8,
@@ -4803,7 +4803,7 @@
          "x": 432,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 10,
          "magic": 5,
@@ -4857,7 +4857,7 @@
          "x": 0,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 2,
@@ -4910,7 +4910,7 @@
          "x": 48,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 2,
@@ -4962,7 +4962,7 @@
          "x": 96,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 4,
          "magic": 2,
@@ -5012,7 +5012,7 @@
          "x": 144,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 1,
@@ -5063,7 +5063,7 @@
          "x": 192,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 6,
          "magic": 8,
@@ -5117,7 +5117,7 @@
          "x": 240,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 2,
          "magic": 10,
@@ -5170,7 +5170,7 @@
          "x": 288,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 7,
          "magic": 6,
@@ -5224,7 +5224,7 @@
          "x": 336,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 4,
          "magic": 6,
@@ -5273,7 +5273,7 @@
          "x": 384,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 9,
          "magic": 3,
@@ -5326,7 +5326,7 @@
          "x": 432,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 6,
          "magic": 3,
@@ -5379,7 +5379,7 @@
          "x": 0,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 8,
          "magic": 7,
@@ -5431,7 +5431,7 @@
          "x": 48,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 9,
          "magic": 3,
@@ -5484,7 +5484,7 @@
          "x": 96,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 3,
          "magic": 1,
@@ -5537,7 +5537,7 @@
          "x": 144,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 6,
          "magic": 5,
@@ -5590,7 +5590,7 @@
          "x": 192,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 2,
          "magic": 8,
@@ -5643,7 +5643,7 @@
          "x": 240,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 5,
          "magic": 7,
@@ -5695,7 +5695,7 @@
          "x": 288,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 6,
          "magic": 9,
@@ -5749,7 +5749,7 @@
          "x": 288,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 4,
          "magic": 8,
@@ -5804,7 +5804,7 @@
          "x": 336,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 3,
          "magic": 9,
@@ -5859,7 +5859,7 @@
          "x": 384,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 9,
          "magic": 6,
@@ -5911,7 +5911,7 @@
          "x": 432,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 7,
          "magic": 8,
@@ -5965,7 +5965,7 @@
          "x": 0,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 3,
          "magic": 1,
@@ -6014,7 +6014,7 @@
          "x": 48,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 8,
          "magic": 5,
@@ -6066,7 +6066,7 @@
          "x": 96,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 3,
          "magic": 7,
@@ -6118,7 +6118,7 @@
          "x": 144,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 6,
          "magic": 6,
@@ -6172,7 +6172,7 @@
          "x": 192,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 3,
          "magic": 5,
@@ -6224,7 +6224,7 @@
          "x": 240,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 6,
          "magic": 2,
@@ -6277,7 +6277,7 @@
          "x": 288,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 10,
          "defense": 5,
          "magic": 2,
@@ -6326,7 +6326,7 @@
          "x": 336,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 2,
          "magic": 6,
@@ -6377,7 +6377,7 @@
          "x": 384,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 2,
          "magic": 3,
@@ -6426,7 +6426,7 @@
          "x": 432,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 7,
          "magic": 4,
@@ -6478,7 +6478,7 @@
          "x": 0,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 3,
@@ -6531,7 +6531,7 @@
          "x": 48,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 3,
          "magic": 4,
@@ -6585,7 +6585,7 @@
          "x": 96,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 10,
          "defense": 1,
          "magic": 1,
@@ -6634,7 +6634,7 @@
          "x": 144,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 2,
          "magic": 10,
@@ -6687,7 +6687,7 @@
          "x": 192,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 2,
          "magic": 10,
@@ -6740,7 +6740,7 @@
          "x": 240,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 5,
          "magic": 3,
@@ -6792,7 +6792,7 @@
          "x": 288,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 4,
          "magic": 10,
@@ -6844,7 +6844,7 @@
          "x": 336,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 6,
          "magic": 8,
@@ -6897,7 +6897,7 @@
          "x": 384,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 7,
          "defense": 7,
          "magic": 4,
@@ -6950,7 +6950,7 @@
          "x": 432,
          "y": 0
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 5,
          "magic": 3,
@@ -7002,7 +7002,7 @@
          "x": 0,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 10,
          "defense": 6,
          "magic": 1,
@@ -7053,7 +7053,7 @@
          "x": 48,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 3,
          "magic": 10,
@@ -7106,7 +7106,7 @@
          "x": 96,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 6,
          "magic": 3,
@@ -7158,7 +7158,7 @@
          "x": 144,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 8,
          "defense": 4,
          "magic": 4,
@@ -7211,7 +7211,7 @@
          "x": 192,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 6,
          "defense": 6,
          "magic": 4,
@@ -7263,7 +7263,7 @@
          "x": 192,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 5,
          "defense": 1,
          "magic": 8,
@@ -7317,7 +7317,7 @@
          "x": 240,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 3,
          "defense": 7,
          "magic": 7,
@@ -7371,7 +7371,7 @@
          "x": 288,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 9,
          "defense": 2,
          "magic": 1,
@@ -7420,7 +7420,7 @@
          "x": 336,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 4,
          "magic": 9,
@@ -7473,7 +7473,7 @@
          "x": 384,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 2,
          "defense": 5,
          "magic": 8,
@@ -7527,7 +7527,7 @@
          "x": 432,
          "y": 48
       },
-      "info": {
+      "infos": {
          "attack": 1,
          "defense": 7,
          "magic": 8,
@@ -7579,7 +7579,7 @@
          "x": 0,
          "y": 96
       },
-      "info": {
+      "infos": {
          "attack": 4,
          "defense": 3,
          "magic": 8,

@@ -35,21 +35,31 @@ class GeneticAlgorithm {
     }
 
     validCompositionFunction(chromosome) {
-        var validComposition = false;
-        var hasCarry = false;
-        var hasSupp = false;
+        let validComposition = false;
+        let hasCarry = false;
+        let hasSupp = false;
+        let hasApCarry = false;
 
         chromosome.genes.map(gene => {
             json.map(function (champion) {
                 if (gene === champion.id) {
-                    champion.lanes.map(function (role) {
+
+                    if (champion.infos.magic >= 8) {
+                        hasApCarry = true;
+                    }
+
+                    champion.lanes.map((role) => {
                         if (role === 'Support') {
                             hasSupp = true;
+                            hasApCarry = false;
                         }
+
                         if (role === 'Carry') {
                             hasCarry = true;
+                            hasApCarry = false;
                         }
                     });
+
                 }
 
                 if (hasCarry && hasSupp) {
@@ -157,7 +167,7 @@ class GeneticAlgorithm {
                         if (gene === champion.id) {
                             attack_1 = attack_1 + champion.stats.attackdamage;
                             movspeed_1 = movspeed_1 + champion.stats.movespeed;
-                            multiplier = self.validRolesFunction(champion, ['Hard Engage', 'Crowd Control'], multiplier);
+                            multiplier = self.validRolesFunction(champion, ['Hard Engage'], multiplier);
                         }
                     });
                 });
