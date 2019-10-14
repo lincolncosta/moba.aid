@@ -10,6 +10,9 @@ Os parâmetros utilizados para calcular o fitness máximo foram os seguintes:
 - Máximos de _healthpoints_: 800, 625.6, 616.28, 616.28, 615.
 - Máximos de _attackrange_: 650, 600, 600, 575, 575.
 - Máximos de _attackspeedperlevel_: 6, 4, 3.75, 3.7, 3.5.
+- Máximos de _armor_: 47, 47, 47, 45, 44.
+- Máximos de _attackdamageperlevel_: 5, 5, 4.7, 4.5, 4.5.
+- Máximos de _attackspeedperlevel_: 4, 4, 3.75, 3.7, 3.5.
 
 Com isso, obtém-se que os máximos são:
 

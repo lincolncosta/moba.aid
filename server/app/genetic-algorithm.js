@@ -44,17 +44,19 @@ class GeneticAlgorithm {
             json.map(function (champion) {
                 if (gene === champion.id) {
 
-                    if (champion.infos.magic >= 8) {
+                    // console.log(hasApCarry);
+
+                    if (champion.infos.magic >= 8 && !hasApCarry) {
                         hasApCarry = true;
                     }
 
                     champion.lanes.map((role) => {
-                        if (role === 'Support') {
+                        if (role === 'Support' && !hasSupp) {
                             hasSupp = true;
                             hasApCarry = false;
                         }
 
-                        if (role === 'Carry') {
+                        if (role === 'Carry' && !hasCarry) {
                             hasCarry = true;
                             hasApCarry = false;
                         }
@@ -62,7 +64,7 @@ class GeneticAlgorithm {
 
                 }
 
-                if (hasCarry && hasSupp) {
+                if (hasCarry && hasSupp && hasApCarry) {
                     validComposition = true;
                 }
 
