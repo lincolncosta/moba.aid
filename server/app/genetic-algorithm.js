@@ -38,33 +38,44 @@ class GeneticAlgorithm {
         let validComposition = false;
         let hasCarry = false;
         let hasSupp = false;
-        let hasApCarry = false;
+        let hasMid = false;
+        let hasTop = false;
+        let hasJungle = false;
 
         chromosome.genes.map(gene => {
             json.map(function (champion) {
                 if (gene === champion.id) {
 
-                    // console.log(hasApCarry);
-
-                    if (champion.infos.magic >= 8 && !hasApCarry) {
-                        hasApCarry = true;
-                    }
-
                     champion.lanes.map((role) => {
-                        if (role === 'Support' && !hasSupp) {
-                            hasSupp = true;
-                            hasApCarry = false;
+                        if (role === 'Top' && !hasTop) {
+                            hasTop = true;
+                            return;
+                        }
+
+                        if (role === 'Jungler' && !hasJungle) {
+                            hasJungle = true;
+                            return;
+                        }
+
+                        if (role === 'Mid' && !hasMid) {
+                            hasMid = true;
+                            return;
                         }
 
                         if (role === 'Carry' && !hasCarry) {
                             hasCarry = true;
-                            hasApCarry = false;
+                            return;
+                        }
+
+                        if (role === 'Support' && !hasSupp) {
+                            hasSupp = true;
+                            return;
                         }
                     });
 
                 }
 
-                if (hasCarry && hasSupp && hasApCarry) {
+                if (hasCarry && hasSupp && hasMid && hasTop && hasJungle) {
                     validComposition = true;
                 }
 
@@ -169,7 +180,7 @@ class GeneticAlgorithm {
                         if (gene === champion.id) {
                             attack_1 = attack_1 + champion.stats.attackdamage;
                             movspeed_1 = movspeed_1 + champion.stats.movespeed;
-                            multiplier = self.validRolesFunction(champion, ['Hard Engage'], multiplier);
+                            multiplier = self.validRolesFunction(champion, ['Hard Engage', 'Crowd Control'], multiplier);
                         }
                     });
                 });
@@ -221,7 +232,7 @@ class GeneticAlgorithm {
                             attackdmg_1 = attackdmg_1 + champion.stats.attackdamage;
                             attackrange_1 = attackrange_1 + champion.stats.attackrange;
                             attackspeed_1 = attackspeed_1 + champion.stats.attackspeedperlevel;
-                            multiplier = self.validRolesFunction(champion, ['Waveclear'], multiplier);
+                            multiplier = self.validRolesFunction(champion, ['Waveclear', 'Poke'], multiplier);
                         }
                     });
                 });
