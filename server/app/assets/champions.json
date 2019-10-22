@@ -32,7 +32,10 @@
          "attack": 8,
          "defense": 4,
          "magic": 3,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "top": 48.49
+         }
       },
       "roles": [
          "Tank",
@@ -85,7 +88,10 @@
          "attack": 3,
          "defense": 4,
          "magic": 8,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "mid": 51.99
+         }
       },
       "roles": [
          "Crowd Control",
@@ -138,7 +144,11 @@
          "attack": 5,
          "defense": 3,
          "magic": 8,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "top": 47.36,
+            "mid": 46.8
+         }
       },
       "roles": [
          "Crowd Control"
@@ -190,7 +200,10 @@
          "attack": 6,
          "defense": 9,
          "magic": 5,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "support": 47.08
+         }
       },
       "roles": [
          "Tank",
@@ -244,7 +257,10 @@
          "attack": 2,
          "defense": 6,
          "magic": 8,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "jungle": 48.31
+         }
       },
       "roles": [
          "Tank",
@@ -253,8 +269,7 @@
          "Disengage"
       ],
       "lanes": [
-         "Jungler",
-         "Top"
+         "Jungler"
       ],
       "title": "the Sad Mummy",
       "description": "Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his touch is death, his affection ruin. Those who claim to have seen him describe...",
@@ -299,7 +314,10 @@
          "attack": 1,
          "defense": 4,
          "magic": 10,
-         "difficulty": 10
+         "difficulty": 10,
+         "winrate": {
+            "mid": 51.72
+         }
       },
       "roles": [
          "Waveclear",
@@ -352,7 +370,11 @@
          "attack": 2,
          "defense": 3,
          "magic": 10,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "mid": 52.2,
+            "support": 52.05
+         }
       },
       "roles": [
          "Hard Engage",
@@ -405,15 +427,17 @@
          "attack": 7,
          "defense": 3,
          "magic": 2,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "carry": 54.78
+         }
       },
       "roles": [
          "Hard Engage",
          "Crowd Control"
       ],
       "lanes": [
-         "Carry",
-         "Support"
+         "Carry"
       ],
       "title": "the Frost Archer",
       "description": "Iceborn warmother of the Avarosan tribe, Ashe commands the most populous horde in the north. Stoic, intelligent, and idealistic, yet uncomfortable with her role as leader, she taps into the ancestral magics of her lineage to wield a bow of True Ice...",
@@ -458,7 +482,10 @@
          "attack": 2,
          "defense": 3,
          "magic": 8,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "mid": 55.01
+         }
       },
       "roles": [
          "Disengage",
@@ -511,7 +538,10 @@
          "attack": 6,
          "defense": 3,
          "magic": 8,
-         "difficulty": 9
+         "difficulty": 9,
+         "winrate": {
+            "mid": 46.23
+         }
       },
       "roles": [
          "Poke",
@@ -565,7 +595,10 @@
          "attack": 4,
          "defense": 4,
          "magic": 5,
-         "difficulty": 9
+         "difficulty": 9,
+         "winrate": {
+            "support": 52.79
+         }
       },
       "roles": [
          "Disengage",
@@ -618,7 +651,10 @@
          "attack": 4,
          "defense": 8,
          "magic": 5,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "mid": 52.33
+         }
       },
       "roles": [
          "Tank",
@@ -671,7 +707,11 @@
          "attack": 2,
          "defense": 2,
          "magic": 9,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "mid": 44.44,
+            "support": 47.9
+         }
       },
       "roles": [
          "Waveclear",
@@ -724,7 +764,10 @@
          "attack": 3,
          "defense": 9,
          "magic": 4,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "support": 46.66
+         }
       },
       "roles": [
          "Tank",
@@ -778,7 +821,10 @@
          "attack": 8,
          "defense": 2,
          "magic": 2,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "mid": 50.37
+         }
       },
       "roles": [
          "Poke"
@@ -829,7 +875,12 @@
          "attack": 8,
          "defense": 6,
          "magic": 3,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "top": 50.05,
+            "jungle": 47.65,
+            "mid": 50.04
+         }
       },
       "roles": [
          "Hard Engage",
@@ -837,7 +888,8 @@
       ],
       "lanes": [
          "Top",
-         "Jungler"
+         "Jungler",
+         "Mid"
       ],
       "title": "the Steel Shadow",
       "description": "Weaponized to operate outside the boundaries of the law, Camille is the Principal Intelligencer of Clan Ferros\u2014an elegant and elite agent who ensures the Piltover machine and its Zaunite underbelly runs smoothly. Adaptable and precise, she views sloppy...",
@@ -882,7 +934,10 @@
          "attack": 2,
          "defense": 3,
          "magic": 9,
-         "difficulty": 10
+         "difficulty": 10,
+         "winrate": {
+            "mid": 51.72
+         }
       },
       "roles": [
          "Disengage",
@@ -934,7 +989,11 @@
          "attack": 3,
          "defense": 7,
          "magic": 7,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 49.7,
+            "mid": 50.64
+         }
       },
       "roles": [
          "Tank",
@@ -942,7 +1001,7 @@
       ],
       "lanes": [
          "Top",
-         "Jungler"
+         "Mid"
       ],
       "title": "the Terror of the Void",
       "description": "From the moment Cho'Gath first emerged into the harsh light of Runeterra's sun, the beast was driven by the most pure and insatiable hunger. A perfect expression of the Void's desire to consume all life, Cho'Gath's complex biology quickly converts...",
@@ -987,7 +1046,10 @@
          "attack": 8,
          "defense": 3,
          "magic": 6,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "mid": 47.19
+         }
       },
       "roles": [
          "Poke",
@@ -995,8 +1057,7 @@
          "Disengage"
       ],
       "lanes": [
-         "Mid",
-         "Carry"
+         "Mid"
       ],
       "title": "the Daring Bombardier",
       "description": "The yordle pilot Corki loves two things above all others: flying, and his glamorous mustache... though not necessarily in that order. After leaving Bandle City, he settled in Piltover and fell in love with the wondrous machines he found there. He...",
@@ -1041,7 +1102,10 @@
          "attack": 9,
          "defense": 5,
          "magic": 1,
-         "difficulty": 2
+         "difficulty": 2,
+         "winrate": {
+            "top": 49.48
+         }
       },
       "roles": [
          "Tank",
@@ -1093,15 +1157,17 @@
          "attack": 7,
          "defense": 6,
          "magic": 8,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "top": 50.94
+         }
       },
       "roles": [
          "Poke",
          "Crowd Control"
       ],
       "lanes": [
-         "Mid",
-         "Top"
+         "Mid"
       ],
       "title": "Scorn of the Moon",
       "description": "Bearing her crescent moonblade, Diana fights as a warrior of the Lunari\u2014a faith all but quashed in the lands around Mount Targon. Clad in shimmering armor the color of winter snow at night, she is a living embodiment of the silver moon's power. Imbued...",
@@ -1146,7 +1212,10 @@
          "attack": 9,
          "defense": 3,
          "magic": 1,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "carry": 50.15
+         }
       },
       "roles": [
          ""
@@ -1197,14 +1266,19 @@
          "attack": 5,
          "defense": 7,
          "magic": 6,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "jungle": 52.19,
+            "top": 48.53
+         }
       },
       "roles": [
          "Tank",
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Jungler"
       ],
       "title": "the Madman of Zaun",
       "description": "Utterly insane, unrepentantly homicidal, and horrifyingly purple, Dr. Mundo is what keeps many of Zaun's citizens indoors on particularly dark nights. This monosyllabic monstrosity seems to want nothing more than pain\u2014both the giving of it, and the...",
@@ -1249,7 +1323,11 @@
          "attack": 5,
          "defense": 3,
          "magic": 7,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "jungle": 51.27,
+            "mid": 51.48
+         }
       },
       "roles": [
          "Waveclear",
@@ -1259,7 +1337,7 @@
       ],
       "lanes": [
          "Mid",
-         "Top"
+         "Jungle"
       ],
       "title": "the Boy Who Shattered Time",
       "description": "A prodigy from the rough streets of Zaun, Ekko manipulates time to twist any situation to his advantage. Using his own invention, the Zero Drive, he explores the branching possibilities of reality to craft the perfect moment. Though he revels in this...",
@@ -1304,7 +1382,10 @@
          "attack": 6,
          "defense": 5,
          "magic": 7,
-         "difficulty": 9
+         "difficulty": 9,
+         "winrate": {
+            "jungle": 50.89
+         }
       },
       "roles": [
          "Crowd Control"
@@ -1355,7 +1436,10 @@
          "attack": 4,
          "defense": 2,
          "magic": 7,
-         "difficulty": 10
+         "difficulty": 10,
+         "winrate": {
+            "top": 50.13
+         }
       },
       "roles": [
          "Crowd Control"
@@ -1406,7 +1490,11 @@
          "attack": 7,
          "defense": 2,
          "magic": 6,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "carry": 47.33,
+            "mid": 43.7
+         }
       },
       "roles": [
          "Poke"
@@ -1458,7 +1546,11 @@
          "attack": 2,
          "defense": 3,
          "magic": 9,
-         "difficulty": 9
+         "difficulty": 9,
+         "winrate": {
+            "support": 50.78,
+            "jungle": 47.55
+         }
       },
       "roles": [
          "Hard Engage",
@@ -1466,8 +1558,7 @@
       ],
       "lanes": [
          "Support",
-         "Jungler",
-         "Mid"
+         "Jungler"
       ],
       "title": "the Harbinger of Doom",
       "description": "Fiddlesticks is a ghastly, living scarecrow who stalks the darkness, wielding a cruel scythe and preying upon the unwary. Once a lonely man accused of bringing famine to his village, he was tied up and left to starve in his own barren field. Resurrected...",
@@ -1512,7 +1603,10 @@
          "attack": 10,
          "defense": 4,
          "magic": 2,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "top": 49.95
+         }
       },
       "roles": [
          "Crowd Control"
@@ -1563,7 +1657,10 @@
          "attack": 6,
          "defense": 4,
          "magic": 7,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "mid": 51.99
+         }
       },
       "roles": [
          "Crowd Control"
@@ -1614,7 +1711,11 @@
          "attack": 1,
          "defense": 10,
          "magic": 6,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "mid": 50.88,
+            "support": 47.22
+         }
       },
       "roles": [
          "Tank",
@@ -1668,15 +1769,17 @@
          "attack": 7,
          "defense": 6,
          "magic": 4,
-         "difficulty": 9
+         "difficulty": 9,
+         "winrate": {
+            "top": 51.14
+         }
       },
       "roles": [
          "Poke",
          "Waveclear"
       ],
       "lanes": [
-         "Top",
-         "Mid"
+         "Top"
       ],
       "title": "the Saltwater Scourge",
       "description": "As unpredictable as he is brutal, the dethroned reaver king Gangplank is feared far and wide. Once, he ruled the port city of Bilgewater, and while his reign is over, there are those who believe this has only made him more dangerous. Gangplank would see...",
@@ -1721,14 +1824,19 @@
          "attack": 7,
          "defense": 7,
          "magic": 1,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 53.08,
+            "mid": 54.24
+         }
       },
       "roles": [
          "Tank",
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Mid"
       ],
       "title": "The Might of Demacia",
       "description": "A proud and noble warrior, Garen fights as one of the Dauntless Vanguard. He is popular among his fellows, and respected well enough by his enemies\u2014not least as a scion of the prestigious Crownguard family, entrusted with defending Demacia and its...",
@@ -1773,7 +1881,10 @@
          "attack": 6,
          "defense": 5,
          "magic": 5,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "top": 48.35
+         }
       },
       "roles": [
          "Tank",
@@ -1826,7 +1937,11 @@
          "attack": 4,
          "defense": 7,
          "magic": 6,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "jungle": 47.81,
+            "support": 47.31
+         }
       },
       "roles": [
          "Tank",
@@ -1836,8 +1951,7 @@
       ],
       "lanes": [
          "Jungler",
-         "Mid",
-         "Top"
+         "Support"
       ],
       "title": "the Rabble Rouser",
       "description": "Equal parts jolly and imposing, Gragas is a massive, rowdy brewmaster on his own quest for the perfect pint of ale. Hailing from parts unknown, he now searches for rare ingredients among the unblemished wastes of the Freljord, trying each recipe as he...",
@@ -1882,7 +1996,10 @@
          "attack": 8,
          "defense": 5,
          "magic": 3,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "support": 50.12
+         }
       },
       "roles": [
          "Waveclear"
@@ -1933,7 +2050,11 @@
          "attack": 8,
          "defense": 6,
          "magic": 4,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "top": 52.15,
+            "jungle": 50.93
+         }
       },
       "roles": [
          "Tank",
@@ -1987,7 +2108,12 @@
          "attack": 2,
          "defense": 6,
          "magic": 8,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "top": 51.29,
+            "mid": 53.6,
+            "carry": 54
+         }
       },
       "roles": [
          "Waveclear",
@@ -1996,7 +2122,8 @@
       ],
       "lanes": [
          "Top",
-         "Mid"
+         "Mid",
+         "Carry"
       ],
       "title": "the Revered Inventor",
       "description": "A brilliant yet eccentric yordle scientist, Professor Cecil B. Heimerdinger is one of the most innovative and esteemed inventors Piltover has ever known. Relentless in his work to the point of neurotic obsession, he thrives on answering the universe's...",
@@ -2041,7 +2168,10 @@
          "attack": 8,
          "defense": 6,
          "magic": 3,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "top": 49.94
+         }
       },
       "roles": [
          "Tank",
@@ -2093,7 +2223,11 @@
          "attack": 7,
          "defense": 4,
          "magic": 5,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 47.05,
+            "mid": 45.31
+         }
       },
       "roles": [
          "Tank",
@@ -2146,7 +2280,10 @@
          "attack": 3,
          "defense": 5,
          "magic": 7,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "jungle": 50.91
+         }
       },
       "roles": [
          "Hard Engage",
@@ -2198,7 +2335,10 @@
          "attack": 3,
          "defense": 5,
          "magic": 7,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "support": 51.62,
+         }
       },
       "roles": [
          "Disengage",
@@ -2251,7 +2391,10 @@
          "attack": 6,
          "defense": 8,
          "magic": 3,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "jungle": 50.01
+         }
       },
       "roles": [
          "Tank",
@@ -2259,8 +2402,7 @@
          "Crowd Control"
       ],
       "lanes": [
-         "Jungler",
-         "Top"
+         "Jungler"
       ],
       "title": "the Exemplar of Demacia",
       "description": "Prince Jarvan, scion of the Lightshield dynasty, is heir apparent to the throne of Demacia. Raised to be a paragon of his nation's greatest virtues, he is forced to balance the heavy expectations placed upon him with his own desire to fight on the front...",
@@ -2305,7 +2447,11 @@
          "attack": 7,
          "defense": 5,
          "magic": 7,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 51.45,
+            "jungle": 50.41
+         }
       },
       "roles": [
          "Tank",
@@ -2358,8 +2504,12 @@
          "attack": 8,
          "defense": 4,
          "magic": 3,
-         "difficulty": 7
-     },
+         "difficulty": 7,
+         "winrate": {
+            "top": 47.78,
+            "mid": 47.62
+         }
+      },
       "roles": [
          "Poke",
          "Crowd Control"
@@ -2411,8 +2561,11 @@
          "attack": 10,
          "defense": 2,
          "magic": 6,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "carry": 51.17
+         }
+      },
       "roles": [],
       "lanes": [
          "Carry"
@@ -2460,8 +2613,11 @@
          "attack": 9,
          "defense": 2,
          "magic": 4,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "carry": 52.22
+         }
+      },
       "roles": [
          "Waveclear",
          "Disengage"
@@ -2507,8 +2663,11 @@
          "attack": 8,
          "defense": 5,
          "magic": 3,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "carry": 48.42
+         }
+      },
       "roles": [],
       "sprite": {
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
@@ -2561,8 +2720,11 @@
          "attack": 8,
          "defense": 2,
          "magic": 4,
-         "difficulty": 7
-     },
+         "difficulty": 7,
+         "winrate": {
+            "carry": 48.47
+         }
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -2613,14 +2775,17 @@
          "attack": 1,
          "defense": 7,
          "magic": 8,
-         "difficulty": 5
-     },
+         "difficulty": 5,
+         "winrate": {
+            "support": 47.6,
+            "top": 47.69
+         }
+      },
       "roles": [
          "Poke"
       ],
       "lanes": [
          "Support",
-         "Mid",
          "Top"
       ],
       "title": "the Enlightened One",
@@ -2666,15 +2831,17 @@
          "attack": 2,
          "defense": 2,
          "magic": 10,
-         "difficulty": 7
-     },
+         "difficulty": 7,
+         "winrate": {
+            "jungle": 52.76
+         }
+      },
       "roles": [
          "Poke",
          "Waveclear"
       ],
       "lanes": [
-         "Jungler",
-         "Mid"
+         "Jungler"
       ],
       "title": "the Deathsinger",
       "description": "The harbinger of oblivion, Karthus is an undying spirit whose haunting songs are a prelude to the horror of his nightmarish appearance. The living fear the eternity of undeath, but Karthus sees only beauty and purity in its embrace, a perfect union of...",
@@ -2719,8 +2886,12 @@
          "attack": 3,
          "defense": 5,
          "magic": 8,
-         "difficulty": 8
-     },
+         "difficulty": 8,
+         "winrate": {
+            "mid": 50.65,
+            "top": 49.1
+         }
+      },
       "roles": [
          ""
       ],
@@ -2771,8 +2942,11 @@
          "attack": 4,
          "defense": 3,
          "magic": 9,
-         "difficulty": 8
-     },
+         "difficulty": 8,
+         "winrate": {
+            "mid": 51.26
+         }
+      },
       "roles": [
          ""
       ],
@@ -2822,8 +2996,12 @@
          "attack": 6,
          "defense": 6,
          "magic": 7,
-         "difficulty": 7
-     },
+         "difficulty": 7,
+         "winrate": {
+            "mid": 52.03,
+            "top": 52.86
+         }
+      },
       "roles": [
          ""
       ],
@@ -2874,14 +3052,16 @@
          "attack": 10,
          "defense": 6,
          "magic": 1,
-         "difficulty": 8
-     },
+         "difficulty": 8,
+         "winrate": {
+            "jungle": 48.71
+         }
+      },
       "roles": [
          "Crowd Control"
       ],
       "lanes": [
-         "Jungler",
-         "Mid"
+         "Jungler"
       ],
       "title": "the Shadow Reaper",
       "description": "A peerless practitioner of lethal shadow magic, Shieda Kayn battles to achieve his true destiny\u2014to one day lead the Order of the Shadow into a new era of Ionian supremacy. He audaciously wields the sentient darkin weapon Rhaast, undeterred by its...",
@@ -2926,14 +3106,19 @@
          "attack": 6,
          "defense": 4,
          "magic": 7,
-         "difficulty": 4
-     },
+         "difficulty": 4,
+         "winrate": {
+            "mid": 52.77,
+            "top": 50.28
+         }
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Mid"
       ],
       "title": "the Heart of the Tempest",
       "description": "More than just the lightning-quick enforcer of Ionian balance, Kennen is the only yordle member of the Kinkou. Despite his small, furry stature, he is eager to take on any threat with a whirling storm of shuriken and boundless enthusiasm. Alongside his...",
@@ -2978,14 +3163,16 @@
          "attack": 9,
          "defense": 4,
          "magic": 3,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "jungle": 50.75
+         }
+      },
       "roles": [
          ""
       ],
       "lanes": [
-         "Jungler",
-         "Top"
+         "Jungler"
       ],
       "title": "the Voidreaver",
       "description": "The Void grows, and the Void adapts\u2014in none of its myriad spawn are these truths more apparent than Kha'Zix. Evolution drives the core of this mutating horror, born to survive and to slay the strong. Where it struggles to do so, it grows new, more...",
@@ -3030,8 +3217,11 @@
          "attack": 8,
          "defense": 2,
          "magic": 2,
-         "difficulty": 4
-     },
+         "difficulty": 4,
+         "winrate": {
+            "mid": 50.19
+         }
+      },
       "roles": [
          ""
       ],
@@ -3081,14 +3271,19 @@
          "attack": 8,
          "defense": 2,
          "magic": 2,
-         "difficulty": 7
-     },
+         "difficulty": 7,
+         "winrate": {
+            "top": 52.43,
+            "mid": 54.51
+         }
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Mid"
       ],
       "title": "the Cantankerous Cavalier",
       "description": "A warrior as fearless as he is ornery, the yordle Kled embodies the furious bravado of Noxus. He is an icon beloved by the empire's soldiers, distrusted by its officers, and loathed by the nobility. Many claim Kled has fought in every campaign the...",
@@ -3133,8 +3328,11 @@
          "attack": 8,
          "defense": 2,
          "magic": 5,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "carry": 49.73
+         }
+      },
       "roles": [
          "Poke",
          "Waveclear"
@@ -3185,8 +3383,11 @@
          "attack": 1,
          "defense": 4,
          "magic": 10,
-         "difficulty": 9
-     },
+         "difficulty": 9,
+         "winrate": {
+            "mid": 47.89
+         }
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -3236,8 +3437,11 @@
          "attack": 8,
          "defense": 5,
          "magic": 3,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "jungle": 48.6
+         }
+      },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -3290,8 +3494,11 @@
          "attack": 4,
          "defense": 8,
          "magic": 3,
-         "difficulty": 4
-     },
+         "difficulty": 4,
+         "winrate": {
+            "support": 52.87
+         }
+      },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -3344,8 +3551,11 @@
          "attack": 2,
          "defense": 5,
          "magic": 8,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "mid": 49.85
+         }
+      },
       "roles": [
          "Waveclear",
          "Hard Engage",
@@ -3397,8 +3607,11 @@
          "attack": 8,
          "defense": 5,
          "magic": 3,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "carry": 49.45
+         }
+      },
       "roles": [
          "Waveclear"
       ],
@@ -3448,8 +3661,11 @@
          "attack": 4,
          "defense": 5,
          "magic": 7,
-         "difficulty": 5
-     },
+         "difficulty": 5,
+         "winrate": {
+            "support": 49.21
+         }
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -3499,14 +3715,19 @@
          "attack": 2,
          "defense": 4,
          "magic": 9,
-         "difficulty": 5
-     },
+         "difficulty": 5,
+         "winrate": {
+            "mid": 50.02,
+            "support": 48.04
+         }
+      },
       "roles": [
          "Poke",
          "Waveclear"
       ],
       "lanes": [
-         "Mid"
+         "Mid",
+         "Support"
       ],
       "title": "the Lady of Luminosity",
       "description": "Luxanna Crownguard hails from Demacia, an insular realm where magical abilities are viewed with fear and suspicion. Able to bend light to her will, she grew up dreading discovery and exile, and was forced to keep her power secret, in order to preserve...",
@@ -3551,15 +3772,22 @@
          "attack": 5,
          "defense": 9,
          "magic": 7,
-         "difficulty": 2
-     },
+         "difficulty": 2,
+         "winrate": {
+            "mid": 51.24,
+            "top": 50.24,
+            "support": 45.57
+         }
+      },
       "roles": [
          "Hard Engage",
          "Tank",
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Support",
+         "Mid"
       ],
       "title": "Shard of the Monolith",
       "description": "A massive creature of living stone, Malphite struggles to impose blessed order on a chaotic world. Birthed as a servitor-shard to an otherworldly obelisk known as the Monolith, he used his tremendous elemental strength to maintain and protect his...",
@@ -3604,15 +3832,19 @@
          "attack": 2,
          "defense": 2,
          "magic": 9,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "mid": 51.95,
+            "top": 50.6
+         }
+      },
       "roles": [
          "Waveclear",
          "Crowd Control"
       ],
       "lanes": [
          "Mid",
-         "Support"
+         "Top"
       ],
       "title": "the Prophet of the Void",
       "description": "A zealous seer dedicated to the unification of all life, Malzahar truly believes the newly emergent Void to be the path to Runeterra's salvation. In the desert wastes of Shurima, he followed the voices that whispered in his mind, all the way to ancient...",
@@ -3657,8 +3889,11 @@
          "attack": 3,
          "defense": 8,
          "magic": 6,
-         "difficulty": 3
-     },
+         "difficulty": 3,
+         "winrate": {
+            "top": 50.89
+         }
+      },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -3710,12 +3945,14 @@
          "attack": 10,
          "defense": 4,
          "magic": 2,
-         "difficulty": 4
-     },
+         "difficulty": 4,
+         "winrate": {
+            "jungle": 48.49
+         }
+      },
       "roles": [],
       "lanes": [
-         "Jungler",
-         "Top"
+         "Jungler"
       ],
       "title": "the Wuju Bladesman",
       "description": "Master Yi has tempered his body and sharpened his mind, so that thought and action have become almost as one. Though he chooses to enter into violence only as a last resort, the grace and speed of his blade ensures resolution is always swift. As one of...",
@@ -3760,13 +3997,18 @@
          "attack": 8,
          "defense": 2,
          "magic": 5,
-         "difficulty": 1
-     },
+         "difficulty": 1,
+         "winrate": {
+            "carry": 53.1,
+            "support": 42.6
+         }
+      },
       "roles": [
          ""
       ],
       "lanes": [
-         "Carry"
+         "Carry",
+         "Support"
       ],
       "title": "the Bounty Hunter",
       "description": "A Bilgewater captain famed for her looks but feared for her ruthlessness, Sarah Fortune paints a stark figure among the hardened criminals of the port city. As a child, she witnessed the reaver king Gangplank murder her family\u2014an act she brutally...",
@@ -3811,14 +4053,17 @@
          "attack": 8,
          "defense": 5,
          "magic": 2,
-         "difficulty": 3
-     },
+         "difficulty": 3,
+         "winrate": {
+            "jungle": 47.88
+         }
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Jungle"
       ],
       "title": "the Monid King",
       "description": "Wukong is a vastayan trickster who uses his strength, agility, and intelligence to confuse his opponents and gain the upper hand. After finding a lifelong friend in the warrior known as Master Yi, Wukong became the last student of the ancient martial...",
@@ -3863,11 +4108,16 @@
          "attack": 4,
          "defense": 6,
          "magic": 7,
-         "difficulty": 4
-     },
+         "difficulty": 4,
+         "winrate": {
+            "mid": 51.98,
+            "top": 50.17
+         }
+      },
       "roles": [],
       "lanes": [
-         "Mid"
+         "Mid",
+         "Top"
       ],
       "title": "the Iron Revenant",
       "description": "The baleful revenant Mordekaiser is among the most terrifying and hateful spirits haunting the Shadow Isles. He has existed for countless centuries, shielded from true death by necromantic sorcery and the force of his own dark will. Those who dare face...",
@@ -3912,15 +4162,17 @@
          "attack": 1,
          "defense": 6,
          "magic": 8,
-         "difficulty": 1
-     },
+         "difficulty": 1,
+         "winrate": {
+            "support": 49.49
+         }
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
       ],
       "lanes": [
-         "Support",
-         "Mid"
+         "Support"
       ],
       "title": "Fallen Angel",
       "description": "Driven by vindictive obsession, Morgana is a potent mistress of suffering and the black arts. Once a being of grace and light, she was ripped from her kind during an ancient conflict that broke her soul, turning her into the cruel tormentor she is today...",
@@ -3965,8 +4217,11 @@
          "attack": 4,
          "defense": 3,
          "magic": 7,
-         "difficulty": 5
-     },
+         "difficulty": 5,
+         "winrate": {
+            "support": 50.82
+         }
+      },
       "roles": [
          "Hard Engage",
          "Disengage",
@@ -4018,8 +4273,11 @@
          "attack": 7,
          "defense": 5,
          "magic": 6,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "mid": 47.02
+         }
+      },
       "roles": [
          "Tank"
       ],
@@ -4069,16 +4327,18 @@
          "attack": 4,
          "defense": 6,
          "magic": 6,
-         "difficulty": 6
-     },
+         "difficulty": 6,
+         "winrate": {
+            "mid": 52.31
+         }
+      },
       "roles": [
          "Hard Engage",
          "Tank",
          "Crowd Control"
       ],
       "lanes": [
-         "Support",
-         "Top"
+         "Support"
       ],
       "title": "the Titan of the Depths",
       "description": "A lonely legend as old as the first piers sunk in Bilgewater, the armored goliath known as Nautilus roams the dark waters off the coast of the Blue Flame Isles. Driven by a forgotten betrayal, he strikes without warning, swinging his enormous anchor to...",
@@ -4123,15 +4383,21 @@
          "attack": 1,
          "defense": 1,
          "magic": 9,
-         "difficulty": 5
-     },
+         "difficulty": 5,
+         "winrate": {
+            "mid": 50.03,
+            "support": 48.81,
+            "top": 50.65
+         }
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
       ],
       "lanes": [
          "Support",
-         "Mid"
+         "Mid",
+         "Top"
       ],
       "title": "the Curious Chameleon",
       "description": "Hailing from a long lost tribe of vastaya, Neeko can blend into any crowd by borrowing the appearances of others, even absorbing something of their emotional state to tell friend from foe in an instant. No one is ever sure where—or who—Neeko might be...",
@@ -4177,7 +4443,7 @@
          "defense": 4,
          "magic": 7,
          "difficulty": 8
-     },
+      },
       "roles": [
          "Poke"
       ],
@@ -4229,7 +4495,7 @@
          "defense": 5,
          "magic": 2,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Hard Engage",
          "Disengage",
@@ -4282,7 +4548,7 @@
          "defense": 6,
          "magic": 7,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -4336,7 +4602,7 @@
          "defense": 5,
          "magic": 3,
          "difficulty": 3
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -4389,7 +4655,7 @@
          "defense": 3,
          "magic": 9,
          "difficulty": 7
-     },
+      },
       "roles": [
          "Hard Engage",
          "Waveclear",
@@ -4442,7 +4708,7 @@
          "defense": 9,
          "magic": 3,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Tank",
          "Hard Engage",
@@ -4495,7 +4761,7 @@
          "defense": 4,
          "magic": 3,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -4548,7 +4814,7 @@
          "defense": 7,
          "magic": 2,
          "difficulty": 6
-     },
+      },
       "roles": [
          "Hard Engage",
          "Tank",
@@ -4602,7 +4868,7 @@
          "defense": 3,
          "magic": 1,
          "difficulty": 7
-     },
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -4654,7 +4920,7 @@
          "defense": 2,
          "magic": 4,
          "difficulty": 8
-       },
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -4706,7 +4972,7 @@
          "defense": 4,
          "magic": 2,
          "difficulty": 5
-     },
+      },
       "roles": [],
       "lanes": [
          "Carry",
@@ -4756,7 +5022,7 @@
          "defense": 4,
          "magic": 8,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -4808,7 +5074,7 @@
          "defense": 10,
          "magic": 5,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Hard Engage",
          "Tank",
@@ -4862,7 +5128,7 @@
          "defense": 5,
          "magic": 2,
          "difficulty": 3
-     },
+      },
       "roles": [
          "Hard Engage",
          "Tank",
@@ -4915,7 +5181,7 @@
          "defense": 5,
          "magic": 2,
          "difficulty": 3
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -4967,7 +5233,7 @@
          "defense": 4,
          "magic": 2,
          "difficulty": 8
-     },
+      },
       "roles": [],
       "lanes": [
          "Jungler",
@@ -5017,7 +5283,7 @@
          "defense": 5,
          "magic": 1,
          "difficulty": 8
-     },
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -5068,7 +5334,7 @@
          "defense": 6,
          "magic": 8,
          "difficulty": 10
-     },
+      },
       "roles": [
          "Hard Engage",
          "Waveclear",
@@ -5122,7 +5388,7 @@
          "defense": 2,
          "magic": 10,
          "difficulty": 7
-     },
+      },
       "roles": [
          "Waveclear",
          "Crowd Control"
@@ -5175,7 +5441,7 @@
          "defense": 7,
          "magic": 6,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Hard Engage",
          "Disengage",
@@ -5229,7 +5495,7 @@
          "defense": 4,
          "magic": 6,
          "difficulty": 9
-     },
+      },
       "roles": [],
       "lanes": [
          "Jungler"
@@ -5278,7 +5544,7 @@
          "defense": 9,
          "magic": 3,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control",
@@ -5331,7 +5597,7 @@
          "defense": 6,
          "magic": 3,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control",
@@ -5384,7 +5650,7 @@
          "defense": 8,
          "magic": 7,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Crowd Control",
          "Tank"
@@ -5436,7 +5702,7 @@
          "defense": 9,
          "magic": 3,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control",
@@ -5489,7 +5755,7 @@
          "defense": 3,
          "magic": 1,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Hard Engage",
          "Waveclear",
@@ -5542,7 +5808,7 @@
          "defense": 6,
          "magic": 5,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control",
@@ -5595,7 +5861,7 @@
          "defense": 2,
          "magic": 8,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Crowd Control",
          "Poke",
@@ -5648,7 +5914,7 @@
          "defense": 5,
          "magic": 7,
          "difficulty": 3
-     },
+      },
       "roles": [
          "Poke",
          "Crowd Control"
@@ -5700,7 +5966,7 @@
          "defense": 6,
          "magic": 9,
          "difficulty": 8
-     },
+      },
       "roles": [
          "Crowd Control",
          "Hard Engage",
@@ -5754,7 +6020,7 @@
          "defense": 4,
          "magic": 8,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Crowd Control",
          "Hard Engage",
@@ -5809,7 +6075,7 @@
          "defense": 3,
          "magic": 9,
          "difficulty": 8
-     },
+      },
       "roles": [
          "Disengage",
          "Crowd Control",
@@ -5864,7 +6130,7 @@
          "defense": 9,
          "magic": 6,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -5916,7 +6182,7 @@
          "defense": 7,
          "magic": 8,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Disengage",
          "Crowd Control",
@@ -5970,7 +6236,7 @@
          "defense": 3,
          "magic": 1,
          "difficulty": 7
-     },
+      },
       "roles": [],
       "lanes": [
          "Mid"
@@ -6019,7 +6285,7 @@
          "defense": 8,
          "magic": 5,
          "difficulty": 3
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -6071,7 +6337,7 @@
          "defense": 3,
          "magic": 7,
          "difficulty": 6
-     },
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -6123,7 +6389,7 @@
          "defense": 6,
          "magic": 6,
          "difficulty": 7
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control",
@@ -6177,7 +6443,7 @@
          "defense": 3,
          "magic": 5,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Disengage",
          "Waveclear"
@@ -6229,7 +6495,7 @@
          "defense": 6,
          "magic": 2,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -6282,7 +6548,7 @@
          "defense": 5,
          "magic": 2,
          "difficulty": 5
-     },
+      },
       "roles": [],
       "lanes": [
          "Top"
@@ -6331,7 +6597,7 @@
          "defense": 2,
          "magic": 6,
          "difficulty": 9
-     },
+      },
       "roles": [
          "Crowd Control"
       ],
@@ -6382,7 +6648,7 @@
          "defense": 2,
          "magic": 3,
          "difficulty": 6
-     },
+      },
       "roles": [],
       "lanes": [
          "Carry"
@@ -6431,7 +6697,7 @@
          "defense": 7,
          "magic": 4,
          "difficulty": 7
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -6483,7 +6749,7 @@
          "defense": 5,
          "magic": 3,
          "difficulty": 8
-     },
+      },
       "roles": [
          "Crowd Control",
          "Hard Engage"
@@ -6536,7 +6802,7 @@
          "defense": 3,
          "magic": 4,
          "difficulty": 2
-     },
+      },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6590,7 +6856,7 @@
          "defense": 1,
          "magic": 1,
          "difficulty": 8
-     },
+      },
       "roles": [],
       "lanes": [
          "Carry"
@@ -6639,7 +6905,7 @@
          "defense": 2,
          "magic": 10,
          "difficulty": 7
-     },
+      },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6692,7 +6958,7 @@
          "defense": 2,
          "magic": 10,
          "difficulty": 8
-     },
+      },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -6745,7 +7011,7 @@
          "defense": 5,
          "magic": 3,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Hard Engage",
          "Crowd Control"
@@ -6797,7 +7063,7 @@
          "defense": 4,
          "magic": 10,
          "difficulty": 9
-     },
+      },
       "roles": [
          "Crowd Control",
          "Waveclear"
@@ -6849,7 +7115,7 @@
          "defense": 6,
          "magic": 8,
          "difficulty": 7
-     },
+      },
       "roles": [
          "Tank",
          "Waveclear"
@@ -6902,7 +7168,7 @@
          "defense": 7,
          "magic": 4,
          "difficulty": 3
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -6955,7 +7221,7 @@
          "defense": 5,
          "magic": 3,
          "difficulty": 3
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -7007,7 +7273,7 @@
          "defense": 6,
          "magic": 1,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Waveclear"
       ],
@@ -7058,7 +7324,7 @@
          "defense": 3,
          "magic": 10,
          "difficulty": 8
-     },
+      },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -7111,7 +7377,7 @@
          "defense": 6,
          "magic": 3,
          "difficulty": 2
-     },
+      },
       "roles": [
          "Crowd Control",
          "Disengage"
@@ -7163,7 +7429,7 @@
          "defense": 4,
          "magic": 4,
          "difficulty": 10
-     },
+      },
       "roles": [
          "Waveclear",
          "Crowd Control"
@@ -7216,7 +7482,7 @@
          "defense": 6,
          "magic": 4,
          "difficulty": 6
-     },
+      },
       "roles": [
          "Tank",
          "Crowd Control"
@@ -7268,7 +7534,7 @@
          "defense": 1,
          "magic": 8,
          "difficulty": 2
-     },
+      },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -7322,7 +7588,7 @@
          "defense": 7,
          "magic": 7,
          "difficulty": 8
-     },
+      },
       "roles": [
          "Crowd Control",
          "Tank",
@@ -7376,7 +7642,7 @@
          "defense": 2,
          "magic": 1,
          "difficulty": 7
-     },
+      },
       "roles": [],
       "lanes": [
          "Mid"
@@ -7425,7 +7691,7 @@
          "defense": 4,
          "magic": 9,
          "difficulty": 4
-     },
+      },
       "roles": [
          "Poke",
          "Crowd Control",
@@ -7478,7 +7744,7 @@
          "defense": 5,
          "magic": 8,
          "difficulty": 6
-     },
+      },
       "roles": [
          "Waveclear",
          "Crowd Control",
@@ -7532,7 +7798,7 @@
          "defense": 7,
          "magic": 8,
          "difficulty": 5
-     },
+      },
       "roles": [
          "Crowd Control",
          "Poke"
@@ -7584,7 +7850,7 @@
          "defense": 3,
          "magic": 8,
          "difficulty": 7
-     },
+      },
       "roles": [
          "Waveclear",
          "Crowd Control",
