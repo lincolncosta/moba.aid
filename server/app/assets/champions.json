@@ -2337,7 +2337,7 @@
          "magic": 7,
          "difficulty": 7,
          "winrate": {
-            "support": 51.62,
+            "support": 51.62
          }
       },
       "roles": [
@@ -4442,14 +4442,16 @@
          "attack": 5,
          "defense": 4,
          "magic": 7,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "jungle": 51.67
+         }
       },
       "roles": [
          "Poke"
       ],
       "lanes": [
-         "Jungler",
-         "Mid"
+         "Jungler"
       ],
       "title": "the Bestial Huntress",
       "description": "Raised in the deepest jungle, Nidalee is a master tracker who can shapeshift into a ferocious cougar at will. Neither wholly woman nor beast, she viciously defends her territory from any and all trespassers, with carefully placed traps and deft spear...",
@@ -4494,7 +4496,10 @@
          "attack": 9,
          "defense": 5,
          "magic": 2,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "jungler": 50.42
+         }
       },
       "roles": [
          "Hard Engage",
@@ -4547,7 +4552,10 @@
          "attack": 4,
          "defense": 6,
          "magic": 7,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "jungler": 51.97
+         }
       },
       "roles": [
          "Tank",
@@ -4555,8 +4563,7 @@
          "Crowd Control"
       ],
       "lanes": [
-         "Jungler",
-         "Top"
+         "Jungler"
       ],
       "title": "the Yeti Rider",
       "description": "Frolicking through the hills of the Freljord, Nunu and Willump make an unlikely pair, but many travellers would swear they have seen the yeti with a fearless boy clinging to his back. Though Nunu may have tamed the beast's heart, Willump's anger remains...",
@@ -4601,7 +4608,11 @@
          "attack": 9,
          "defense": 5,
          "magic": 3,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "jungler": 51.97,
+            "top": 51.12
+         }
       },
       "roles": [
          "Tank",
@@ -4654,7 +4665,10 @@
          "attack": 4,
          "defense": 3,
          "magic": 9,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "mid": 50.25
+         }
       },
       "roles": [
          "Hard Engage",
@@ -4707,7 +4721,11 @@
          "attack": 5,
          "defense": 9,
          "magic": 3,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 50.63,
+            "mid": 50.61
+         }
       },
       "roles": [
          "Tank",
@@ -4715,7 +4733,8 @@
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Mid"
       ],
       "title": "The Fire below the Mountain",
       "description": "Ornn is the Freljordian spirit of forging and craftsmanship. He works in the solitude of a massive smithy, hammered out from the lava caverns beneath the volcano Hearth-Home. There he stokes bubbling cauldrons of molten rock to purify ores and fashion...",
@@ -4760,7 +4779,12 @@
          "attack": 9,
          "defense": 4,
          "magic": 3,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "jungler": 48.53,
+            "top": 51.43,
+            "mid": 50.73
+         }
       },
       "roles": [
          "Hard Engage",
@@ -4768,7 +4792,8 @@
       ],
       "lanes": [
          "Top",
-         "Jungler"
+         "Jungler",
+         "Mid"
       ],
       "title": "the Artisan of War",
       "description": "The peerless warrior known as Pantheon is a nigh-unstoppable paragon of battle. He was born among the Rakkor, a warlike people living on the flanks of Mount Targon, and after climbing the mountain's treacherous peak and being deemed worthy, he was...",
@@ -4813,7 +4838,12 @@
          "attack": 6,
          "defense": 7,
          "magic": 2,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "top": 49.12,
+            "support": 46.35,
+            "jungle": 51.13
+         }
       },
       "roles": [
          "Hard Engage",
@@ -4822,7 +4852,8 @@
       ],
       "lanes": [
          "Top",
-         "Support"
+         "Support",
+         "Jungler"
       ],
       "title": "Keeper of the Hammer",
       "description": "Runeterra has no shortage of valiant champions, but few are as tenacious as Poppy. Bearing the legendary hammer of Orlon, a weapon twice her size, this determined yordle has spent untold years searching in secret for the fabled \u201cHero of Demacia,\u201d said...",
@@ -4867,14 +4898,19 @@
          "attack": 9,
          "defense": 3,
          "magic": 1,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "support": 50.75,
+            "mid": 54.66
+         }
       },
       "roles": [
          "Hard Engage",
          "Crowd Control"
       ],
       "lanes": [
-         "Support"
+         "Support",
+         "Mid"
       ],
       "title": "the Bloodharbor Ripper",
       "description": "A renowned harpooner from the slaughter docks of Bilgewater, Pyke should have met his death in the belly of a gigantic jaull-fish\u2026 and yet, he returned. Now, stalking the dank alleys and backways of his former hometown, he uses his new supernatural...",
@@ -4919,14 +4955,18 @@
          "attack": 0,
          "defense": 2,
          "magic": 4,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "jungle": 38.95,
+            "mid": 48.25
+         }
       },
       "roles": [
          "Crowd Control"
       ],
       "lanes": [
-         "Assassin",
-         "Fighter"
+         "Mid",
+         "Jungler"
       ],
       "title": "Empress of the Elements",
       "description": "In the jungle city of Ixaocan, Qiyana plots her own ruthless path to the high seat of the Yun Tal. Last in line to succeed her parents, she faces those who stand in her way with brash confidence and unprecedented mastery over elemental magic. With the...",
@@ -4971,11 +5011,15 @@
          "attack": 9,
          "defense": 4,
          "magic": 2,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 51.87,
+            "mid": 50.16
+         }
       },
       "roles": [],
       "lanes": [
-         "Carry",
+         "Mid",
          "Top"
       ],
       "title": "Demacia's Wings",
@@ -5021,7 +5065,10 @@
          "attack": 2,
          "defense": 4,
          "magic": 8,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "support": 48.64
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5073,7 +5120,10 @@
          "attack": 4,
          "defense": 10,
          "magic": 5,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "jungle": 48.87
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5081,8 +5131,7 @@
          "Crowd Control"
       ],
       "lanes": [
-         "Jungler",
-         "Top"
+         "Jungler"
       ],
       "title": "the Armordillo",
       "description": "Idolized by many, dismissed by some, mystifying to all, the curious being Rammus is an enigma. Protected by a spiked shell, he inspires increasingly disparate theories on his origin wherever he goes\u2014from demigod, to sacred oracle, to a mere beast...",
@@ -5127,7 +5176,10 @@
          "attack": 8,
          "defense": 5,
          "magic": 2,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "jungle": 52.59
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5180,14 +5232,19 @@
          "attack": 8,
          "defense": 5,
          "magic": 2,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "top": 49.68,
+            "mid": 50.91
+         }
       },
       "roles": [
          "Tank",
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Mid"
       ],
       "title": "the Butcher of the Sands",
       "description": "Renekton is a terrifying, rage-fueled Ascended being from the scorched deserts of Shurima. Once, he was his empire's most esteemed warrior, leading the nation's armies to countless victories. However, after the empire's fall, Renekton was entombed...",
@@ -5232,7 +5289,11 @@
          "attack": 7,
          "defense": 4,
          "magic": 2,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "top": 51.08,
+            "jungle": 48.47
+         }
       },
       "roles": [],
       "lanes": [
@@ -5282,13 +5343,18 @@
          "attack": 8,
          "defense": 5,
          "magic": 1,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "top": 49.01,
+            "mid": 49.01
+         }
       },
       "roles": [
          "Crowd Control"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Mid"
       ],
       "title": "the Exile",
       "description": "Once a swordmaster in the warhosts of Noxus, Riven is an expatriate in a land she previously tried to conquer. She rose through the ranks on the strength of her conviction and brutal efficiency, and was rewarded with a legendary runic blade and a...",
@@ -5333,7 +5399,11 @@
          "attack": 3,
          "defense": 6,
          "magic": 8,
-         "difficulty": 10
+         "difficulty": 10,
+         "winrate": {
+            "top": 49.43,
+            "mid": 53.43
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5342,7 +5412,7 @@
       ],
       "lanes": [
          "Top",
-         "Jungle"
+         "Mid"
       ],
       "title": "the Mechanized Menace",
       "description": "Rumble is a young inventor with a temper. Using nothing more than his own two hands and a heap of scrap, the feisty yordle constructed a colossal mech suit outfitted with an arsenal of electrified harpoons and incendiary rockets. Though others may scoff...",
@@ -5387,7 +5457,11 @@
          "attack": 2,
          "defense": 2,
          "magic": 10,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "top": 47.61,
+            "mid": 47.89
+         }
       },
       "roles": [
          "Waveclear",
@@ -5440,7 +5514,10 @@
          "attack": 5,
          "defense": 7,
          "magic": 6,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "jungle": 45.74
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5494,11 +5571,18 @@
          "attack": 8,
          "defense": 4,
          "magic": 6,
-         "difficulty": 9
+         "difficulty": 9,
+         "winrate": {
+            "jungle": 51.57,
+            "support": 55.2
+         }
       },
-      "roles": [],
+      "roles": [
+         "Crowd Control"
+      ],
       "lanes": [
-         "Jungler"
+         "Jungler",
+         "Support"
       ],
       "title": "the Demon Jester",
       "description": "Crafted long ago as a plaything for a lonely prince, the enchanted marionette Shaco now delights in murder and mayhem. Corrupted by dark magic and the loss of his beloved charge, the once-kind puppet finds pleasure only in the misery of the poor souls...",
@@ -5543,7 +5627,11 @@
          "attack": 3,
          "defense": 9,
          "magic": 3,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "top": 49.69,
+            "support": 47.62
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5551,7 +5639,8 @@
          "Tank"
       ],
       "lanes": [
-         "Top"
+         "Top",
+         "Support"
       ],
       "title": "the Eye of Twilight",
       "description": "Among the secretive, Ionian warriors known as the Kinkou, Shen serves as their leader, the Eye of Twilight. He longs to remain free from the confusion of emotion, prejudice, and ego, and walks the unseen path of dispassionate judgment between the spirit...",
@@ -5596,7 +5685,11 @@
          "attack": 8,
          "defense": 6,
          "magic": 3,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "jungle": 49.83,
+            "top": 49
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5604,7 +5697,8 @@
          "Tank"
       ],
       "lanes": [
-         "Jungler"
+         "Jungler",
+         "Top"
       ],
       "title": "the Half-Dragon",
       "description": "Shyvana is a creature with the magic of a rune shard burning within her heart. Though she often appears humanoid, she can take her true form as a fearsome dragon, incinerating her foes with fiery breath. Having saved the life of the crown prince Jarvan...",
@@ -5649,7 +5743,10 @@
          "attack": 4,
          "defense": 8,
          "magic": 7,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 50.74
+         }
       },
       "roles": [
          "Crowd Control",
@@ -5701,7 +5798,10 @@
          "attack": 5,
          "defense": 9,
          "magic": 3,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 50.46
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5754,7 +5854,10 @@
          "attack": 9,
          "defense": 3,
          "magic": 1,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "carr": 48.7
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5807,7 +5910,10 @@
          "attack": 7,
          "defense": 6,
          "magic": 5,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "jungler": 46.99
+         }
       },
       "roles": [
          "Hard Engage",
@@ -5860,7 +5966,10 @@
          "attack": 5,
          "defense": 2,
          "magic": 8,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "support": 49.08
+         }
       },
       "roles": [
          "Crowd Control",
@@ -5913,7 +6022,10 @@
          "attack": 2,
          "defense": 5,
          "magic": 7,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "support": 51.27
+         }
       },
       "roles": [
          "Poke",
@@ -5965,7 +6077,11 @@
          "attack": 2,
          "defense": 6,
          "magic": 9,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "support": 49.83,
+            "mid": 51.58
+         }
       },
       "roles": [
          "Crowd Control",
@@ -5973,8 +6089,8 @@
          "Tank"
       ],
       "lanes": [
-         "Top",
-         "Mid"
+         "Mid",
+         "Support"
       ],
       "title": "the Noxian Grand General",
       "description": "Jericho Swain is the visionary ruler of Noxus, an expansionist nation that reveres only strength. Though he was cast down and crippled in the Ionian wars, his left arm severed, he seized control of the empire with ruthless determination\u2026 and a new...",
@@ -6019,7 +6135,12 @@
          "attack": 3,
          "defense": 4,
          "magic": 8,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 45.31,
+            "mid": 44.59,
+            "jungle": 41.55
+         }
       },
       "roles": [
          "Crowd Control",
@@ -6074,7 +6195,10 @@
          "attack": 2,
          "defense": 3,
          "magic": 9,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "mid": 49.88
+         }
       },
       "roles": [
          "Disengage",
@@ -6129,7 +6253,10 @@
          "attack": 3,
          "defense": 9,
          "magic": 6,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "support": 46.06
+         }
       },
       "roles": [
          "Tank",
@@ -6181,7 +6308,11 @@
          "attack": 1,
          "defense": 7,
          "magic": 8,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "jungle": 49.52,
+            "mid": 52.78
+         }
       },
       "roles": [
          "Disengage",
@@ -6235,7 +6366,10 @@
          "attack": 9,
          "defense": 3,
          "magic": 1,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "mid": 51.56
+         }
       },
       "roles": [],
       "lanes": [
@@ -6284,7 +6418,10 @@
          "attack": 4,
          "defense": 8,
          "magic": 5,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "support": 48.52
+         }
       },
       "roles": [
          "Tank",
@@ -6336,14 +6473,16 @@
          "attack": 5,
          "defense": 3,
          "magic": 7,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "top": 50.54
+         }
       },
       "roles": [
          "Crowd Control"
       ],
       "lanes": [
-         "Top",
-         "Mid"
+         "Top"
       ],
       "title": "the Swift Scout",
       "description": "Undeterred by even the most dangerous and threatening of obstacles, Teemo scouts the world with boundless enthusiasm and a cheerful spirit. A yordle with an unwavering sense of morality, he takes pride in following the Bandle Scout's Code, sometimes...",
@@ -6388,7 +6527,10 @@
          "attack": 5,
          "defense": 6,
          "magic": 6,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "support": 50.2
+         }
       },
       "roles": [
          "Tank",
@@ -6442,14 +6584,19 @@
          "attack": 9,
          "defense": 3,
          "magic": 5,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "mid": 47.16,
+            "carry": 47.93
+         }
       },
       "roles": [
          "Disengage",
          "Waveclear"
       ],
       "lanes": [
-         "Carry"
+         "Carry",
+         "Mid"
       ],
       "title": "the Yordle Gunner",
       "description": "While many other yordles channel their energy into discovery, invention, or just plain mischief-making, Tristana was always inspired by the adventures of great warriors. She had heard much about Runeterra, its factions, and its wars, and believed her...",
@@ -6494,7 +6641,11 @@
          "attack": 7,
          "defense": 6,
          "magic": 2,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 40,
+            "jungler": 40
+         }
       },
       "roles": [
          "Tank",
@@ -6547,7 +6698,10 @@
          "attack": 10,
          "defense": 5,
          "magic": 2,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "top": 49.4
+         }
       },
       "roles": [],
       "lanes": [
@@ -6596,7 +6750,10 @@
          "attack": 6,
          "defense": 2,
          "magic": 6,
-         "difficulty": 9
+         "difficulty": 9,
+         "winrate": {
+            "mid": 50.76
+         }
       },
       "roles": [
          "Crowd Control"
@@ -6647,7 +6804,10 @@
          "attack": 9,
          "defense": 2,
          "magic": 3,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "carry": 51.93
+         }
       },
       "roles": [],
       "lanes": [
@@ -6696,7 +6856,10 @@
          "attack": 8,
          "defense": 7,
          "magic": 4,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "jungler": 48.81
+         }
       },
       "roles": [
          "Tank",
@@ -6748,14 +6911,16 @@
          "attack": 8,
          "defense": 5,
          "magic": 3,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "top": 49.66
+         }
       },
       "roles": [
          "Crowd Control",
          "Hard Engage"
       ],
       "lanes": [
-         "Mid",
          "Top"
       ],
       "title": "the Dreadnought",
@@ -6801,7 +6966,10 @@
          "attack": 7,
          "defense": 3,
          "magic": 4,
-         "difficulty": 2
+         "difficulty": 2,
+         "winrate": {
+            "carry": 48.99
+         }
       },
       "roles": [
          "Poke",
@@ -6855,7 +7023,11 @@
          "attack": 10,
          "defense": 1,
          "magic": 1,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "top": 49.96,
+            "carry": 50.59
+         }
       },
       "roles": [],
       "lanes": [
@@ -6904,7 +7076,11 @@
          "attack": 2,
          "defense": 2,
          "magic": 10,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "mid": 48.97,
+            "support": 46.22
+         }
       },
       "roles": [
          "Poke",
@@ -6912,7 +7088,8 @@
          "Waveclear"
       ],
       "lanes": [
-         "Mid"
+         "Mid",
+         "Support"
       ],
       "title": "the Tiny Master of Evil",
       "description": "An enthusiastic master of dark sorcery, Veigar has embraced powers that few mortals dare approach. As a free-spirited inhabitant of Bandle City, he longed to push beyond the limitations of yordle magic, and turned instead to arcane texts that had been...",
@@ -6957,7 +7134,11 @@
          "attack": 2,
          "defense": 2,
          "magic": 10,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "mid": 49.85,
+            "support": 50.49
+         }
       },
       "roles": [
          "Poke",
@@ -6965,7 +7146,8 @@
          "Waveclear"
       ],
       "lanes": [
-         "Mid"
+         "Mid",
+         "Support"
       ],
       "title": "the Eye of the Void",
       "description": "It is unclear if Vel'Koz was the first Void-spawn to emerge on Runeterra, but there has certainly never been another to match his level of cruel, calculating sentience. While his kin devour or defile everything around them, he seeks instead to...",
@@ -7010,7 +7192,10 @@
          "attack": 8,
          "defense": 5,
          "magic": 3,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "jungler": 51.67
+         }
       },
       "roles": [
          "Hard Engage",
@@ -7062,14 +7247,19 @@
          "attack": 2,
          "defense": 4,
          "magic": 10,
-         "difficulty": 9
+         "difficulty": 9,
+         "winrate": {
+            "mid": 48.44,
+            "top": 48.03
+         }
       },
       "roles": [
          "Crowd Control",
          "Waveclear"
       ],
       "lanes": [
-         "Mid"
+         "Mid",
+         "Top"
       ],
       "title": "the Machine Herald",
       "description": "The herald of a new age of technology, Viktor has devoted his life to the advancement of humankind. An idealist who seeks to lift the people of Zaun to a new level of understanding, he believes that only by embracing a glorious evolution of technology...",
@@ -7114,7 +7304,11 @@
          "attack": 2,
          "defense": 6,
          "magic": 8,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "top": 48.55,
+            "mid": 50.46
+         }
       },
       "roles": [
          "Tank",
@@ -7167,7 +7361,12 @@
          "attack": 7,
          "defense": 7,
          "magic": 4,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "top": 51.43,
+            "jungler": 50.9,
+            "support": 50.07
+         }
       },
       "roles": [
          "Tank",
@@ -7175,7 +7374,8 @@
       ],
       "lanes": [
          "Top",
-         "Jungler"
+         "Jungler",
+         "Support"
       ],
       "title": "the Thunder's Roar",
       "description": "The thunderous demigod known as the Thousand-Pierced Bear is the battle-spirit of the Freljord. Thousands of years of constant and bitter wars, fought in the coldest winters, have hardened Volibear into a truly indomitable force, hurling bolts of...",
@@ -7220,7 +7420,10 @@
          "attack": 9,
          "defense": 5,
          "magic": 3,
-         "difficulty": 3
+         "difficulty": 3,
+         "winrate": {
+            "jungler": 50.57
+         }
       },
       "roles": [
          "Tank",
@@ -7272,7 +7475,10 @@
          "attack": 10,
          "defense": 6,
          "magic": 1,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "carry": 49.11
+         }
       },
       "roles": [
          "Waveclear"
@@ -7323,7 +7529,11 @@
          "attack": 1,
          "defense": 3,
          "magic": 10,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "mid": 49.68,
+            "support": 49.9
+         }
       },
       "roles": [
          "Poke",
@@ -7331,7 +7541,8 @@
          "Waveclear"
       ],
       "lanes": [
-         "Mid"
+         "Mid",
+         "Support"
       ],
       "title": "the Magus Ascendant",
       "description": "Xerath is an Ascended Magus of ancient Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus. For millennia, he was trapped beneath the desert sands, but the rise of Shurima freed him from his ancient prison. Driven...",
@@ -7376,7 +7587,10 @@
          "attack": 8,
          "defense": 6,
          "magic": 3,
-         "difficulty": 2
+         "difficulty": 2,
+         "winrate": {
+            "jungler": 51.52
+         }
       },
       "roles": [
          "Crowd Control",
@@ -7428,7 +7642,12 @@
          "attack": 8,
          "defense": 4,
          "magic": 4,
-         "difficulty": 10
+         "difficulty": 10,
+         "winrate": {
+            "top": 48.8,
+            "mid": 49.38,
+            "carry": 50.2
+         }
       },
       "roles": [
          "Waveclear",
@@ -7436,7 +7655,8 @@
       ],
       "lanes": [
          "Mid",
-         "Top"
+         "Top",
+         "Carry"
       ],
       "title": "the Unforgiven",
       "description": "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. As a proud young man, he was falsely accused of murdering his master\u2014unable to prove his innocence, he was forced to slay his own brother in self...",
@@ -7481,7 +7701,10 @@
          "attack": 6,
          "defense": 6,
          "magic": 4,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "top": 50.93
+         }
       },
       "roles": [
          "Tank",
@@ -7533,7 +7756,10 @@
          "attack": 5,
          "defense": 1,
          "magic": 8,
-         "difficulty": 2
+         "difficulty": 2,
+         "winrate": {
+            "support": 42
+         }
       },
       "roles": [
          "Poke",
@@ -7542,7 +7768,7 @@
          "Hard Engage"
       ],
       "lanes": [
-         "Top"
+         "Support"
       ],
       "title": "the Magical Cat",
       "description": "A magical cat from Bandle City, Yuumi was once the familiar of a yordle enchantress, Norra. When her master mysteriously disappeared, Yuumi became the Keeper of Norra's sentient Book of Thresholds, traveling through portals in its pages to search for...",
@@ -7587,7 +7813,10 @@
          "attack": 3,
          "defense": 7,
          "magic": 7,
-         "difficulty": 8
+         "difficulty": 8,
+         "winrate": {
+            "jungle": 52.87
+         }
       },
       "roles": [
          "Crowd Control",
@@ -7641,7 +7870,10 @@
          "attack": 9,
          "defense": 2,
          "magic": 1,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "mid": 50.54
+         }
       },
       "roles": [],
       "lanes": [
@@ -7690,7 +7922,10 @@
          "attack": 2,
          "defense": 4,
          "magic": 9,
-         "difficulty": 4
+         "difficulty": 4,
+         "winrate": {
+            "mid": 48.3
+         }
       },
       "roles": [
          "Poke",
@@ -7743,7 +7978,11 @@
          "attack": 2,
          "defense": 5,
          "magic": 8,
-         "difficulty": 6
+         "difficulty": 6,
+         "winrate": {
+            "mid": 52.2,
+            "support": 51.26
+         }
       },
       "roles": [
          "Waveclear",
@@ -7797,7 +8036,10 @@
          "attack": 1,
          "defense": 7,
          "magic": 8,
-         "difficulty": 5
+         "difficulty": 5,
+         "winrate": {
+            "mid": 50.68
+         }
       },
       "roles": [
          "Crowd Control",
@@ -7849,7 +8091,10 @@
          "attack": 4,
          "defense": 3,
          "magic": 8,
-         "difficulty": 7
+         "difficulty": 7,
+         "winrate": {
+            "support": 51.01
+         }
       },
       "roles": [
          "Waveclear",
@@ -7857,7 +8102,6 @@
          "Poke"
       ],
       "lanes": [
-         "Mid",
          "Support"
       ],
       "title": "Rise of the Thorns",
