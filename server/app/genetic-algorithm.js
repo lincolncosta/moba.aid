@@ -35,40 +35,55 @@ class GeneticAlgorithm {
     }
 
     validCompositionFunction(chromosome) {
-        let validComposition = false;
+        let winrateComposition = 0;
+
         let hasCarry = false;
+        let winrateCarry = 0;
+
         let hasSupp = false;
+        let winrateSupp = 0;
+
         let hasMid = false;
+        let winrateMid = 0;
+
         let hasTop = false;
+        let winrateTop = 0;
+
         let hasJungle = false;
+        let winrateJungle = 0;
 
         chromosome.genes.map(gene => {
             json.map(function (champion) {
                 if (gene === champion.id) {
 
-                    champion.lanes.map((role) => {
-                        if (role === 'Top' && !hasTop) {
+                    Object.entries(champion.infos.winrate).forEach(([role, winrate]) => {
+                        if (role === 'top' && !hasTop) {
                             hasTop = true;
+                            winrateTop = winrate;
                             return;
                         }
 
-                        if (role === 'Jungler' && !hasJungle) {
+                        if (role === 'jungle' && !hasJungle) {
                             hasJungle = true;
+                            winrateJungle = winrate;
                             return;
                         }
 
-                        if (role === 'Mid' && !hasMid) {
+                        if (role === 'mid' && !hasMid) {
                             hasMid = true;
+                            winrateMid = winrate;
                             return;
                         }
 
-                        if (role === 'Carry' && !hasCarry) {
+                        if (role === 'carry' && !hasCarry) {
                             hasCarry = true;
+                            winrateCarry = winrate;
                             return;
                         }
 
-                        if (role === 'Support' && !hasSupp) {
+                        if (role === 'support' && !hasSupp) {
                             hasSupp = true;
+                            winrateSupp = winrate;
                             return;
                         }
                     });
@@ -76,13 +91,13 @@ class GeneticAlgorithm {
                 }
 
                 if (hasCarry && hasSupp && hasMid && hasTop && hasJungle) {
-                    validComposition = true;
+                    winrateComposition = (winrateCarry + winrateSupp + winrateMid + winrateTop + winrateJungle) / 5;
                 }
 
             });
         });
 
-        return validComposition;
+        return winrateComposition;
     };
 
     validRolesFunction(champion, strategies, multiplier) {
@@ -161,31 +176,24 @@ class GeneticAlgorithm {
 
     fitnessFunction(chromosome) {
         allChromosomes.push(chromosome);
-        let validComposition = this.validCompositionFunction(chromosome);
-
-        if (!validComposition) {
-            return 0;
-        }
 
         switch (COMPOSITION_STRATEGY) {
             case 'hardengage':
+
                 var fitvalueHardEngage = 0;
-                var attack_1 = 0;
-                var movspeed_1 = 0;
+                fitvalueHardEngage = this.validCompositionFunction(chromosome);
                 var multiplier = 1.0;
                 var self = this;
 
                 chromosome.genes.map(function (gene) {
                     json.map((champion) => {
                         if (gene === champion.id) {
-                            attack_1 = attack_1 + champion.stats.attackdamage;
-                            movspeed_1 = movspeed_1 + champion.stats.movespeed;
-                            multiplier = self.validRolesFunction(champion, ['Hard Engage', 'Crowd Control'], multiplier);
+                            multiplier = self.validRolesFunction(champion, ['Hard Engage'], multiplier);
                         }
                     });
                 });
 
-                fitvalueHardEngage = ((attack_1 + movspeed_1) * multiplier) / MAX_FIT_VALUE;
+                fitvalueHardEngage = (fitvalueHardEngage * multiplier) / MAX_FIT_VALUE;
 
                 if (fitvalueHardEngage > finalFitvalue) {
                     finalFitvalue = fitvalueHardEngage;
@@ -194,54 +202,47 @@ class GeneticAlgorithm {
 
                 return fitvalueHardEngage;
             case 'teamfight':
-                var fitvalueTeamfight = 0;
-                var attackdamage_1 = 0;
-                var attackdamagelevel_1 = 0;
-                var healthpoints_1 = 0;
+                var fitvalueTeamFight = this.validCompositionFunction(chromosome);
                 var multiplier = 1.0;
                 var self = this;
 
                 chromosome.genes.map(function (gene) {
-                    json.map(function (champion) {
+                    json.map((champion) => {
                         if (gene === champion.id) {
-                            attackdamage_1 = attackdamage_1 + champion.stats.attackdamage;
-                            attackdamagelevel_1 = attackdamagelevel_1 + champion.stats.attackdamageperlevel;
-                            healthpoints_1 = healthpoints_1 + champion.stats.hp;
-                            multiplier = self.validRolesFunction(champion, ['Waveclear', 'Disengage', 'Crowd Control'], multiplier);
+                            multiplier = self.validRolesFunction(champion, ['Disengage', 'Crowd Control', 'Tank'], multiplier);
                         }
                     });
                 });
 
-                fitvalueTeamfight = ((attackdamage_1 + attackdamagelevel_1 + healthpoints_1) * multiplier) / MAX_FIT_VALUE;
-                if (fitvalueTeamfight > finalFitvalue) {
-                    this.finalFitvalue = fitvalueTeamfight;
+                fitvalueTeamFight = (fitvalueTeamFight * multiplier) / MAX_FIT_VALUE;
+
+                if (fitvalueTeamFight > finalFitvalue) {
+                    finalFitvalue = fitvalueTeamFight;
                     this.finalChromosome = chromosome;
                 }
-                return fitvalueTeamfight;
+
+                return fitvalueTeamFight;
             case 'pusher':
-                var fitvaluePusher = 0;
-                var attackdmg_1 = 0;
-                var attackrange_1 = 0;
-                var attackspeed_1 = 0;
+                var fitvaluePusher = this.validCompositionFunction(chromosome);
                 var multiplier = 1.0;
                 var self = this;
 
-                chromosome.genes.map(gene => {
-                    json.map(function (champion) {
+                chromosome.genes.map(function (gene) {
+                    json.map((champion) => {
                         if (gene === champion.id) {
-                            attackdmg_1 = attackdmg_1 + champion.stats.attackdamage;
-                            attackrange_1 = attackrange_1 + champion.stats.attackrange;
-                            attackspeed_1 = attackspeed_1 + champion.stats.attackspeedperlevel;
-                            multiplier = self.validRolesFunction(champion, ['Waveclear', 'Poke'], multiplier);
+                            multiplier = self.validRolesFunction(champion, ['Poke', 'Waveclear'], multiplier);
                         }
                     });
                 });
 
-                fitvaluePusher = ((attackdmg_1 + attackrange_1 + attackspeed_1) * multiplier) / MAX_FIT_VALUE;
+                fitvaluePusher = (fitvaluePusher * multiplier) / MAX_FIT_VALUE;
+
                 if (fitvaluePusher > finalFitvalue) {
-                    this.finalFitvalue = fitvaluePusher;
+                    finalFitvalue = fitvaluePusher;
+                    console.log(finalFitvalue);
                     this.finalChromosome = chromosome;
                 }
+
                 return fitvaluePusher;
         }
     };
@@ -263,11 +264,6 @@ class GeneticAlgorithm {
     showCompositionInfo() {
         var championsIcons = [];
         var parsedJson = JSON.parse(JSON.stringify(json));
-
-        // var objJson = Object.keys(parsedJson);
-        // delete objJson[0];
-
-        // console.log(objJson.filter(value => value != 14));
 
         if (this.finalChromosome) {
             this.finalChromosome.genes.forEach(function (item) {

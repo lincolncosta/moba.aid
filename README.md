@@ -38,4 +38,4 @@ Os resultados obtidos após a execução da abordagem estarão disponíveis nas 
 
 ## Novas implementações
 
-**TODAS AS ALTERAÇÕES DE CODIFICAÇÃO DEVEM SER REALIZADAS SOMENTE NO ARQUIVO `genetic-algorithm.ts`.**
+**DEVIDO AOS PARÂMETROS OBRIGATÓRIOS NA CONSTRUÇÃO DE UMA COMPOSIÇÃO, É POSSÍVEL QUE NÃO SEJA GERADO UM TIME COMPLETO CASO NÃO HAJA UM NÚMERO SATISFATÓRIO DE ITERAÇÕES.**
