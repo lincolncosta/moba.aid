@@ -13,7 +13,7 @@ routes.get('/randomic', (req, res) => {
 
 routes.get('/result', (req, res) => {
 
-    let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedChampions } = req.query;
+    let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedChampions, pickedChampions } = req.query;
 
     let bannedGenes = [];
     bannedGenes.push(bannedChampions);
@@ -24,7 +24,16 @@ routes.get('/result', (req, res) => {
         });
     }
 
-    let fileName = GeneticAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedChampions);
+    let pickedGenes = [];
+    pickedGenes.push(pickedChampions);
+
+    if (pickedGenes) {
+        pickedChampions = pickedGenes.map(function (item) {
+            return Number(item);
+        });
+    }
+
+    let fileName = GeneticAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedChampions, pickedChampions);
 
     // res.send(fileName);
 

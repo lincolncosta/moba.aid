@@ -209,7 +209,7 @@ class GeneticAlgorithm {
                 chromosome.genes.map(function (gene) {
                     json.map((champion) => {
                         if (gene === champion.id) {
-                            multiplier = self.validRolesFunction(champion, ['Disengage', 'Crowd Control', 'Tank'], multiplier);
+                            multiplier = self.validRolesFunction(champion, ['Area of Effect'], multiplier);
                         }
                     });
                 });

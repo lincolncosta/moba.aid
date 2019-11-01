@@ -266,7 +266,8 @@
          "Tank",
          "Hard Engage",
          "Crowd Control",
-         "Disengage"
+         "Disengage",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler"
@@ -322,7 +323,8 @@
       "roles": [
          "Waveclear",
          "Crowd Control",
-         "Disengage"
+         "Disengage",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid"
@@ -490,7 +492,8 @@
       "roles": [
          "Disengage",
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid"
@@ -715,7 +718,8 @@
       },
       "roles": [
          "Waveclear",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid",
@@ -1333,7 +1337,8 @@
          "Waveclear",
          "Hard Engage",
          "Disengage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid",
@@ -1554,7 +1559,8 @@
       },
       "roles": [
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Support",
@@ -1720,7 +1726,8 @@
       "roles": [
          "Tank",
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Support",
@@ -1889,7 +1896,8 @@
       "roles": [
          "Tank",
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Top"
@@ -1947,7 +1955,8 @@
          "Tank",
          "Hard Engage",
          "Disengage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler",
@@ -2059,7 +2068,8 @@
       "roles": [
          "Tank",
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler",
@@ -2175,7 +2185,8 @@
       },
       "roles": [
          "Tank",
-         "Hard Engage"
+         "Hard Engage",
+         "Area of Effect"
       ],
       "lanes": [
          "Top"
@@ -2399,7 +2410,8 @@
       "roles": [
          "Tank",
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler"
@@ -2727,7 +2739,8 @@
       },
       "roles": [
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Disengage"
       ],
       "lanes": [
          "Carry"
@@ -2782,7 +2795,8 @@
          }
       },
       "roles": [
-         "Poke"
+         "Poke",
+         "Area of Effect"
       ],
       "lanes": [
          "Support",
@@ -2838,7 +2852,8 @@
       },
       "roles": [
          "Poke",
-         "Waveclear"
+         "Waveclear",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler"
@@ -2948,7 +2963,7 @@
          }
       },
       "roles": [
-         ""
+         "Area of Effect"
       ],
       "lanes": [
          "Mid"
@@ -3114,7 +3129,8 @@
       },
       "roles": [
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Top",
@@ -3503,7 +3519,8 @@
          "Tank",
          "Hard Engage",
          "Disengage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
@@ -3782,7 +3799,8 @@
       "roles": [
          "Hard Engage",
          "Tank",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Top",
@@ -3897,7 +3915,8 @@
       "roles": [
          "Tank",
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Top"
@@ -4008,7 +4027,8 @@
       ],
       "lanes": [
          "Carry",
-         "Support"
+         "Support",
+         "Area of Effect"
       ],
       "title": "the Bounty Hunter",
       "description": "A Bilgewater captain famed for her looks but feared for her ruthlessness, Sarah Fortune paints a stark figure among the hardened criminals of the port city. As a child, she witnessed the reaver king Gangplank murder her family\u2014an act she brutally...",
@@ -4060,7 +4080,8 @@
       },
       "roles": [
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungle"
@@ -4169,7 +4190,8 @@
       },
       "roles": [
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
@@ -4225,7 +4247,8 @@
       "roles": [
          "Hard Engage",
          "Disengage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
@@ -4392,7 +4415,8 @@
       },
       "roles": [
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Support",
@@ -4560,7 +4584,8 @@
       "roles": [
          "Tank",
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler"
@@ -4673,7 +4698,8 @@
       "roles": [
          "Hard Engage",
          "Waveclear",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid"
@@ -4788,7 +4814,8 @@
       },
       "roles": [
          "Hard Engage",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Top",
@@ -5408,7 +5435,8 @@
       "roles": [
          "Hard Engage",
          "Waveclear",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Top",
@@ -5465,7 +5493,8 @@
       },
       "roles": [
          "Waveclear",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid",
@@ -5523,7 +5552,8 @@
          "Hard Engage",
          "Disengage",
          "Crowd Control",
-         "Tank"
+         "Tank",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler"
@@ -5578,7 +5608,7 @@
          }
       },
       "roles": [
-         "Crowd Control"
+         ""
       ],
       "lanes": [
          "Jungler",
@@ -5806,7 +5836,8 @@
       "roles": [
          "Hard Engage",
          "Crowd Control",
-         "Tank"
+         "Tank",
+         "Area of Effect"
       ],
       "lanes": [
          "Top"
@@ -5862,7 +5893,8 @@
       "roles": [
          "Hard Engage",
          "Waveclear",
-         "Disengage"
+         "Disengage",
+         "Area of Effect"
       ],
       "lanes": [
          "Carry"
@@ -5974,7 +6006,8 @@
       "roles": [
          "Crowd Control",
          "Poke",
-         "Disengage"
+         "Disengage",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
@@ -6029,7 +6062,8 @@
       },
       "roles": [
          "Poke",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
@@ -6086,7 +6120,8 @@
       "roles": [
          "Crowd Control",
          "Hard Engage",
-         "Tank"
+         "Tank",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid",
@@ -6317,7 +6352,8 @@
       "roles": [
          "Disengage",
          "Crowd Control",
-         "Hard Engage"
+         "Hard Engage",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler",
@@ -6425,7 +6461,8 @@
       },
       "roles": [
          "Tank",
-         "Crowd Control"
+         "Crowd Control",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
@@ -6536,7 +6573,8 @@
          "Tank",
          "Crowd Control",
          "Hard Engage",
-         "Disengage"
+         "Disengage",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
@@ -6975,7 +7013,8 @@
          "Poke",
          "Crowd Control",
          "Waveclear",
-         "Hard Engage"
+         "Hard Engage",
+         "Area of Effect"
       ],
       "lanes": [
          "Carry"
@@ -7085,7 +7124,8 @@
       "roles": [
          "Poke",
          "Crowd Control",
-         "Waveclear"
+         "Waveclear",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid",
@@ -7143,7 +7183,8 @@
       "roles": [
          "Poke",
          "Crowd Control",
-         "Waveclear"
+         "Waveclear",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid",
@@ -7255,7 +7296,8 @@
       },
       "roles": [
          "Crowd Control",
-         "Waveclear"
+         "Waveclear",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid",
@@ -7312,7 +7354,8 @@
       },
       "roles": [
          "Tank",
-         "Waveclear"
+         "Waveclear",
+         "Area of Effect"
       ],
       "lanes": [
          "Top",
@@ -7538,7 +7581,8 @@
       "roles": [
          "Poke",
          "Crowd Control",
-         "Waveclear"
+         "Waveclear",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid",
@@ -7765,7 +7809,8 @@
          "Poke",
          "Crowd Control",
          "Disengage",
-         "Hard Engage"
+         "Hard Engage",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
@@ -7822,7 +7867,8 @@
          "Crowd Control",
          "Tank",
          "Disengage",
-         "Hard Engage"
+         "Hard Engage",
+         "Area of Effect"
       ],
       "lanes": [
          "Jungler"
@@ -7930,7 +7976,8 @@
       "roles": [
          "Poke",
          "Crowd Control",
-         "Waveclear"
+         "Waveclear",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid"
@@ -7987,7 +8034,8 @@
       "roles": [
          "Waveclear",
          "Crowd Control",
-         "Poke"
+         "Poke",
+         "Area of Effect"
       ],
       "lanes": [
          "Support",
@@ -8043,7 +8091,8 @@
       },
       "roles": [
          "Crowd Control",
-         "Poke"
+         "Poke",
+         "Area of Effect"
       ],
       "lanes": [
          "Mid"
@@ -8099,7 +8148,8 @@
       "roles": [
          "Waveclear",
          "Crowd Control",
-         "Poke"
+         "Poke",
+         "Area of Effect"
       ],
       "lanes": [
          "Support"
