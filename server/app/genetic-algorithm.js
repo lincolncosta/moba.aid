@@ -239,7 +239,6 @@ class GeneticAlgorithm {
 
                 if (fitvaluePusher > finalFitvalue) {
                     finalFitvalue = fitvaluePusher;
-                    console.log(finalFitvalue);
                     this.finalChromosome = chromosome;
                 }
 
@@ -330,10 +329,8 @@ class GeneticAlgorithm {
             // this.writeGenerationsOnFile();
             this.allChromosomes = [];
             generation++;
-            // console.log(this.finalFitvalue);
         }
 
-        // console.log(this.finalFitvalue);
         this.showCompositionInfo();
         this.finalFitvalue = 0;
         var end = new Date();
