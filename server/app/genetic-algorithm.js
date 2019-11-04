@@ -1,5 +1,6 @@
 var evolveGa = require("evolve-ga");
 var createCollage = require("@settlin/collage");
+var jsonDOTA = require("./assets/dota/champions.json");
 var json = require("./assets/champions.json");
 var fs = require("fs");
 let generation = 1;
