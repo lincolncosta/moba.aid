@@ -339,6 +339,35 @@ class GeneticAlgorithm {
     });
   }
 
+  writeSecondsOnFile(start, end, duration) {
+    fs.appendFileSync(
+      filePathTimeReports,
+      execution + ";" + start + ";" + end + ";" + duration + " \r\n"
+    );
+  }
+
+  createReportFiles() {
+    fs.writeFile(filePathReports, "", function() {});
+    fs.writeFile(filePathTimeReports, "", function() {});
+  }
+
+  genetic() {
+    var start = new Date();
+    this.algorithm.resetPopulation();
+
+    while (generation <= MAX_GENERATIONS) {
+      this.algorithm.run();
+      this.writeGenerationsOnFile();
+      this.allChromosomes = [];
+      generation++;
+    }
+
+    this.showCompositionInfo();
+    this.finalFitvalue = 0;
+    var end = new Date();
+    this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
+  }
+
   numberCompare(a, b) {
     return a - b;
   }
@@ -396,6 +425,20 @@ class GeneticAlgorithm {
       this.allChromosomes = [];
       generation++;
     }
+    this.createReportFiles();
+    this.writeFileHeader();
+    this.writeFileSecondsHeader();
+
+    this.algorithm = evolveGa.evolve({
+      populationSize: POPULATION_SIZE,
+      chromosomeLength: 5,
+      possibleGenes: champions,
+      mutationChance: MUTATION_CHANCE,
+      fitnessFunction: this.fitnessFunction,
+      selectionFunction: this.selectionFunction,
+      crossOverFunction: this.crossOverFunction,
+      mutationFunction: this.mutationFunction
+    });
 
     this.showCompositionInfo();
     this.finalFitvalue = 0;
