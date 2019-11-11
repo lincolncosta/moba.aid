@@ -491,7 +491,6 @@
       },
       "roles": [
          "Disengage",
-         "Hard Engage",
          "Crowd Control",
          "Area of Effect"
       ],
@@ -6533,33 +6532,6 @@
    },
    {
       "localized_name": "Thresh",
-      "stats": {
-         "hp": 560.52,
-         "hpperlevel": 93,
-         "mp": 273.92,
-         "mpperlevel": 44,
-         "movespeed": 335,
-         "armor": 28,
-         "armorperlevel": 0,
-         "spellblock": 30,
-         "spellblockperlevel": 0.5,
-         "attackrange": 450,
-         "hpregen": 7,
-         "hpregenperlevel": 0.55,
-         "mpregen": 6,
-         "mpregenperlevel": 0.8,
-         "crit": 0,
-         "critperlevel": 0,
-         "attackdamage": 56,
-         "attackdamageperlevel": 2.2,
-         "attackspeedperlevel": 3.5,
-         "attackspeed": 0.625
-      },
-      "sprite": {
-         "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion3.png",
-         "x": 144,
-         "y": 96
-      },
       "infos": {
          "attack": 5,
          "defense": 6,
@@ -6578,9 +6550,7 @@
       ],
       "lanes": [
          "Support"
-      ],
-      "title": "the Chain Warden",
-      "description": "Sadistic and cunning, Thresh is an ambitious and restless spirit of the Shadow Isles. Once the custodian of countless arcane secrets, he sought a power greater than life or death, and now sustains himself by tormenting and breaking others with slow...",
+      ],     
       "counters": [
          "Sion",
          "Maokai",
