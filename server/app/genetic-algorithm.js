@@ -33,6 +33,10 @@ class GeneticAlgorithm {
         this.validCompositionFunction = this.validCompositionFunction.bind(this);
         this.validRolesFunction = this.validRolesFunction.bind(this);
         this.showCompositionInfo = this.showCompositionInfo.bind(this);
+
+        this.createReportFiles = this.createReportFiles.bind(this);
+        this.writeFileHeader = this.writeFileHeader.bind(this);
+        this.writeFileSecondsHeader = this.writeFileSecondsHeader.bind(this);
     }
 
     validCompositionFunction(chromosome) {
@@ -317,17 +321,14 @@ class GeneticAlgorithm {
         fs.writeFile(filePathTimeReports, "", function () { });
     };
 
-    // createReportFiles();
-    // writeFileHeader();
-    // writeFileSecondsHeader();
-
     genetic() {
+
         var start = new Date();
         this.algorithm.resetPopulation();
 
         while (generation <= MAX_GENERATIONS) {
             this.algorithm.run();
-            // this.writeGenerationsOnFile();
+            this.writeGenerationsOnFile();
             this.allChromosomes = [];
             generation++;
         }
@@ -335,7 +336,7 @@ class GeneticAlgorithm {
         this.showCompositionInfo();
         this.finalFitvalue = 0;
         var end = new Date();
-        // this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
+        this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     }
 
     start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, bannedGenes) {
@@ -351,6 +352,10 @@ class GeneticAlgorithm {
         if (bannedGenes) {
             champions = possibleGenes.filter(x => !bannedGenes.includes(x));
         }
+
+        this.createReportFiles();
+        this.writeFileHeader();
+        this.writeFileSecondsHeader();
 
         this.algorithm = evolveGa.evolve({
             populationSize: POPULATION_SIZE,

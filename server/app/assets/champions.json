@@ -491,7 +491,6 @@
       },
       "roles": [
          "Disengage",
-         "Hard Engage",
          "Crowd Control",
          "Area of Effect"
       ],
@@ -2738,7 +2737,6 @@
          }
       },
       "roles": [
-         "Hard Engage",
          "Crowd Control",
          "Disengage"
       ],
@@ -4352,7 +4350,8 @@
          "magic": 6,
          "difficulty": 6,
          "winrate": {
-            "mid": 52.31
+            "mid": 52.31,
+            "support": 51.34
          }
       },
       "roles": [
@@ -4361,7 +4360,9 @@
          "Crowd Control"
       ],
       "lanes": [
-         "Support"
+         "Mid",
+         "Support",
+         "Top"
       ],
       "title": "the Titan of the Depths",
       "description": "A lonely legend as old as the first piers sunk in Bilgewater, the armored goliath known as Nautilus roams the dark waters off the coast of the Blue Flame Isles. Driven by a forgotten betrayal, he strikes without warning, swinging his enormous anchor to...",
@@ -4927,8 +4928,7 @@
          "magic": 1,
          "difficulty": 7,
          "winrate": {
-            "support": 50.75,
-            "mid": 54.66
+            "support": 50.75
          }
       },
       "roles": [
@@ -4936,8 +4936,7 @@
          "Crowd Control"
       ],
       "lanes": [
-         "Support",
-         "Mid"
+         "Support"
       ],
       "title": "the Bloodharbor Ripper",
       "description": "A renowned harpooner from the slaughter docks of Bilgewater, Pyke should have met his death in the belly of a gigantic jaull-fish\u2026 and yet, he returned. Now, stalking the dank alleys and backways of his former hometown, he uses his new supernatural...",
@@ -6345,8 +6344,7 @@
          "magic": 8,
          "difficulty": 5,
          "winrate": {
-            "jungle": 49.52,
-            "mid": 52.78
+            "jungle": 49.52
          }
       },
       "roles": [
@@ -6356,8 +6354,7 @@
          "Area of Effect"
       ],
       "lanes": [
-         "Jungler",
-         "Mid"
+         "Jungler"
       ],
       "title": "the Stoneweaver",
       "description": "Taliyah is a nomadic mage from Shurima, torn between teenage wonder and adult responsibility. She has crossed nearly all of Valoran on a journey to learn the true nature of her growing powers, though more recently she has returned to protect her tribe...",
