@@ -334,8 +334,9 @@ class GeneticAlgorithm {
       var dest = fs.createWriteStream(blobName);
 
       src.pipe(dest);
-
-      uploadFile(blobName);
+      src.on("end", function() {
+        uploadFile(blobName);
+      });
     });
   }
 
