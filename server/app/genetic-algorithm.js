@@ -355,10 +355,10 @@ class GeneticAlgorithm {
             await this.writeFileSecondsHeader();
 
             while (generation <= MAX_GENERATIONS) {
-            this.algorithm.run();
-            await this.writeGenerationsOnFile();
-            this.allChromosomes = [];
-            generation++;
+                this.algorithm.run();
+                await this.writeGenerationsOnFile();
+                this.allChromosomes = [];
+                generation++;
             }
             this.finalFitvalue = 0;
             var end = new Date();
