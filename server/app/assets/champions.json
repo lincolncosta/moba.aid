@@ -259,7 +259,7 @@
          "magic": 8,
          "difficulty": 3,
          "winrate": {
-            "jungle": 48.31
+            "jungler": 48.31
          }
       },
       "roles": [
@@ -882,7 +882,7 @@
          "difficulty": 4,
          "winrate": {
             "top": 50.05,
-            "jungle": 47.65,
+            "jungler": 47.65,
             "mid": 50.04
          }
       },
@@ -1272,7 +1272,7 @@
          "magic": 6,
          "difficulty": 5,
          "winrate": {
-            "jungle": 52.19,
+            "jungler": 52.19,
             "top": 48.53
          }
       },
@@ -1329,7 +1329,7 @@
          "magic": 7,
          "difficulty": 8,
          "winrate": {
-            "jungle": 51.27,
+            "jungler": 51.27,
             "mid": 51.48
          }
       },
@@ -1342,7 +1342,7 @@
       ],
       "lanes": [
          "Mid",
-         "Jungle"
+         "jungler"
       ],
       "title": "the Boy Who Shattered Time",
       "description": "A prodigy from the rough streets of Zaun, Ekko manipulates time to twist any situation to his advantage. Using his own invention, the Zero Drive, he explores the branching possibilities of reality to craft the perfect moment. Though he revels in this...",
@@ -1389,7 +1389,7 @@
          "magic": 7,
          "difficulty": 9,
          "winrate": {
-            "jungle": 50.89
+            "jungler": 50.89
          }
       },
       "roles": [
@@ -1554,7 +1554,7 @@
          "difficulty": 9,
          "winrate": {
             "support": 50.78,
-            "jungle": 47.55
+            "jungler": 47.55
          }
       },
       "roles": [
@@ -1947,7 +1947,7 @@
          "magic": 6,
          "difficulty": 5,
          "winrate": {
-            "jungle": 47.81,
+            "jungler": 47.81,
             "support": 47.31
          }
       },
@@ -2062,7 +2062,7 @@
          "difficulty": 6,
          "winrate": {
             "top": 52.15,
-            "jungle": 50.93
+            "jungler": 50.93
          }
       },
       "roles": [
@@ -2293,7 +2293,7 @@
          "magic": 7,
          "difficulty": 7,
          "winrate": {
-            "jungle": 50.91
+            "jungler": 50.91
          }
       },
       "roles": [
@@ -2404,7 +2404,7 @@
          "magic": 3,
          "difficulty": 5,
          "winrate": {
-            "jungle": 50.01
+            "jungler": 50.01
          }
       },
       "roles": [
@@ -2462,7 +2462,7 @@
          "difficulty": 5,
          "winrate": {
             "top": 51.45,
-            "jungle": 50.41
+            "jungler": 50.41
          }
       },
       "roles": [
@@ -2847,7 +2847,7 @@
          "magic": 10,
          "difficulty": 7,
          "winrate": {
-            "jungle": 52.76
+            "jungler": 52.76
          }
       },
       "roles": [
@@ -3069,7 +3069,7 @@
          "magic": 1,
          "difficulty": 8,
          "winrate": {
-            "jungle": 48.71
+            "jungler": 48.71
          }
       },
       "roles": [
@@ -3181,7 +3181,7 @@
          "magic": 3,
          "difficulty": 6,
          "winrate": {
-            "jungle": 50.75
+            "jungler": 50.75
          }
       },
       "roles": [
@@ -3455,7 +3455,7 @@
          "magic": 3,
          "difficulty": 6,
          "winrate": {
-            "jungle": 48.6
+            "jungler": 48.6
          }
       },
       "roles": [
@@ -3966,7 +3966,7 @@
          "magic": 2,
          "difficulty": 4,
          "winrate": {
-            "jungle": 48.49
+            "jungler": 48.49
          }
       },
       "roles": [],
@@ -4075,7 +4075,7 @@
          "magic": 2,
          "difficulty": 3,
          "winrate": {
-            "jungle": 47.88
+            "jungler": 47.88
          }
       },
       "roles": [
@@ -4084,7 +4084,7 @@
          "Area of Effect"
       ],
       "lanes": [
-         "Jungle"
+         "jungler"
       ],
       "title": "the Monid King",
       "description": "Wukong is a vastayan trickster who uses his strength, agility, and intelligence to confuse his opponents and gain the upper hand. After finding a lifelong friend in the warrior known as Master Yi, Wukong became the last student of the ancient martial...",
@@ -4468,7 +4468,7 @@
          "magic": 7,
          "difficulty": 8,
          "winrate": {
-            "jungle": 51.67
+            "jungler": 51.67
          }
       },
       "roles": [
@@ -4869,7 +4869,7 @@
          "winrate": {
             "top": 49.12,
             "support": 46.35,
-            "jungle": 51.13
+            "jungler": 51.13
          }
       },
       "roles": [
@@ -4984,7 +4984,7 @@
          "magic": 4,
          "difficulty": 8,
          "winrate": {
-            "jungle": 38.95,
+            "jungler": 38.95,
             "mid": 48.25
          }
       },
@@ -5149,7 +5149,7 @@
          "magic": 5,
          "difficulty": 5,
          "winrate": {
-            "jungle": 48.87
+            "jungler": 48.87
          }
       },
       "roles": [
@@ -5205,7 +5205,7 @@
          "magic": 2,
          "difficulty": 3,
          "winrate": {
-            "jungle": 52.59
+            "jungler": 52.59
          }
       },
       "roles": [
@@ -5319,7 +5319,7 @@
          "difficulty": 8,
          "winrate": {
             "top": 51.08,
-            "jungle": 48.47
+            "jungler": 48.47
          }
       },
       "roles": [],
@@ -5545,7 +5545,7 @@
          "magic": 6,
          "difficulty": 4,
          "winrate": {
-            "jungle": 45.74
+            "jungler": 45.74
          }
       },
       "roles": [
@@ -5603,7 +5603,7 @@
          "magic": 6,
          "difficulty": 9,
          "winrate": {
-            "jungle": 51.57,
+            "jungler": 51.57,
             "support": 55.2
          }
       },
@@ -5717,7 +5717,7 @@
          "magic": 3,
          "difficulty": 4,
          "winrate": {
-            "jungle": 49.83,
+            "jungler": 49.83,
             "top": 49
          }
       },
@@ -6174,7 +6174,7 @@
          "winrate": {
             "top": 45.31,
             "mid": 44.59,
-            "jungle": 41.55
+            "jungler": 41.55
          }
       },
       "roles": [
@@ -6183,7 +6183,7 @@
          "Waveclear"
       ],
       "lanes": [
-         "Jungle",
+         "jungler",
          "Mid",
          "Top"
       ],
@@ -6345,7 +6345,7 @@
          "magic": 8,
          "difficulty": 5,
          "winrate": {
-            "jungle": 49.52,
+            "jungler": 49.52,
             "mid": 52.78
          }
       },
@@ -7831,7 +7831,7 @@
          "magic": 7,
          "difficulty": 8,
          "winrate": {
-            "jungle": 52.87
+            "jungler": 52.87
          }
       },
       "roles": [

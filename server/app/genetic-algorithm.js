@@ -8,7 +8,7 @@ let generation = 1;
 let execution = 1;
 let finalFitvalue = 0;
 let allChromosomes = [];
-let totalChampions = 141;
+let totalChampions = 146;
 let POPULATION_SIZE;
 let MUTATION_CHANCE;
 let MAX_GENERATIONS;
@@ -63,7 +63,7 @@ class GeneticAlgorithm {
                             return;
                         }
 
-                        if (role === "jungle" && !hasJungle) {
+                        if (role === "jungler" && !hasJungle) {
                             hasJungle = true;
                             winrateJungle = winrate;
                             return;
@@ -302,6 +302,8 @@ class GeneticAlgorithm {
             });
         }
 
+        console.log(this.finalChromosome);
+
         var options = {
             sources: championsIcons,
             width: 5,
@@ -310,23 +312,29 @@ class GeneticAlgorithm {
             imageHeight: 120
         };
 
-        createCollage(options).then(async canvas => {
+        createCollage(options).then(canvas => {
             var src = canvas.jpegStream();
             const blobName = `${fileName}.png`;
             var dest = fs.createWriteStream(blobName);
 
             src.pipe(dest);
-            src.on("end", function () {
-                uploadFile(blobName);
-            });
+            // src.on("end", function () {
+            //     uploadFile(blobName);
+            // });
         });
     }
 
     writeSecondsOnFile(start, end, duration) {
-        fs.appendFileSync(
+        fs.writeFile(
             filePathTimeReports,
-            execution + ";" + start + ";" + end + ";" + duration + " \r\n"
-        );
+            execution + ";" + start + ";" + end + ";" + duration + " \r\n", function (err) {
+
+                if (err) {
+                    // return console.log(err);
+                }
+
+                // console.log("The file was saved!");
+            });
     }
 
     // createReportFiles() {
@@ -338,7 +346,11 @@ class GeneticAlgorithm {
         var start = new Date();
         this.algorithm.resetPopulation();
 
-        while (generation <= MAX_GENERATIONS) {
+        this.createReportFiles();
+        this.writeFileHeader();
+        this.writeFileSecondsHeader();
+
+        while (generation <= MAX_EXECUTIONS) {
             this.algorithm.run();
             this.writeGenerationsOnFile();
             this.allChromosomes = [];
@@ -356,77 +368,66 @@ class GeneticAlgorithm {
     }
 
     writeFileHeader() {
-        fs.writeFile(filePathReports, "execution;generation;chromosome;fitness \r\n", function(err) {
+        fs.writeFile(filePathReports, "execution;generation;chromosome;fitness \r\n", function (err) {
 
-            if(err) {
+            if (err) {
                 // return console.log(err);
             }
-        
+
             // console.log("The file was saved!");
-        }); 
+        });
     }
 
     writeFileSecondsHeader() {
-        fs.writeFile(filePathTimeReports, "execution;start;end;duration \r\n", function(err) {
+        fs.writeFile(filePathTimeReports, "execution;start;end;duration \r\n", function (err) {
 
-            if(err) {
+            if (err) {
                 // return console.log(err);
             }
-        
+
             // console.log("The file was saved!");
-        }); 
+        });
     }
 
     writeGenerationsOnFile() {
-        allChromosomes.map(function (chromosome) {
-            fs.appendFileSync(
+        var self = this;
+        allChromosomes.map(function (chromosome, self) {
+            fs.writeFile(
                 filePathReports,
                 execution +
                 ";" +
                 generation +
                 ";" +
-                chromosome.genes.sort(this.numberCompare).toString() +
+                chromosome.genes.sort(self.numberCompare).toString() +
                 ";" +
                 chromosome.fitness +
-                "\r\n"
-            );
+                "\r\n", function (err) {
+
+                    if (err) {
+                        return console.log(err);
+                    }
+
+                    console.log("The file was saved!");
+                });
         });
     }
 
     writeSecondsOnFile(start, end, duration) {
-        fs.appendFileSync(
+        fs.writeFile(
             filePathTimeReports,
-            execution + ";" + start + ";" + end + ";" + duration + " \r\n"
-        );
+            execution + ";" + start + ";" + end + ";" + duration + " \r\n", function (err) {
+
+                if (err) {
+                    return console.log(err);
+                }
+
+                console.log("The file was saved!");
+            });
     }
 
     createReportFiles() {
         fs.writeFile(filePathReports, "", function () { });
         fs.writeFile(filePathTimeReports, "", function () { });
-    }
-
-    // createReportFiles();
-    // writeFileHeader();
-    // writeFileSecondsHeader();
-
-    genetic() {
-        var start = new Date();
-        this.algorithm.resetPopulation();
-
-        while (generation <= MAX_GENERATIONS) {
-            this.algorithm.run();
-            // this.writeGenerationsOnFile();
-            this.allChromosomes = [];
-            generation++;
-        }
-        this.createReportFiles();
-        this.writeFileHeader();
-        this.writeFileSecondsHeader();
-
-        this.showCompositionInfo();
-        this.finalFitvalue = 0;
-        var end = new Date();
-        // this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     }
 
     start(
@@ -438,8 +439,14 @@ class GeneticAlgorithm {
         bannedGenes
     ) {
 
+        MAX_GENERATIONS = maxGenerations;
+        COMPOSITION_STRATEGY = strategy;
+        MAX_FIT_VALUE = maxFitValue;
+        POPULATION_SIZE = populationSize;
+        MUTATION_CHANCE = mutationChance;
+
         filePathReports =
-            "reports/" +
+            "app/reports/" +
             strategy +
             "/PS-" +
             populationSize +
@@ -449,7 +456,7 @@ class GeneticAlgorithm {
             maxGenerations +
             ".csv";
         filePathTimeReports =
-            "time-reports/" +
+            "app/time-reports/" +
             strategy +
             "/PS-" +
             populationSize +
@@ -459,10 +466,7 @@ class GeneticAlgorithm {
             maxGenerations +
             ".csv";
 
-        let possibleGenes = Array.apply(null, { length: totalChampions }).map(
-            Number.call,
-            Number
-        );
+        let possibleGenes = Array.from({ length: totalChampions }, (v, k) => k + 1)
         let champions = possibleGenes;
 
         if (bannedGenes) {
@@ -487,6 +491,7 @@ class GeneticAlgorithm {
             Math.random()
                 .toString(36)
                 .substring(2, 15);
+
         this.genetic();
         return fileName;
     }
