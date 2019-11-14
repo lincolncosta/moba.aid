@@ -291,6 +291,8 @@ class GeneticAlgorithm {
         var championsIcons = [];
         var parsedJson = JSON.parse(JSON.stringify(json));
 
+        console.log(this.finalChromosome);
+
         if (this.finalChromosome) {
             this.finalChromosome.genes.forEach(function (item) {
                 var aux = parsedJson.find(function (champion) {
@@ -301,8 +303,6 @@ class GeneticAlgorithm {
                 }
             });
         }
-
-        console.log(this.finalChromosome);
 
         var options = {
             sources: championsIcons,
@@ -325,16 +325,18 @@ class GeneticAlgorithm {
     }
 
     writeSecondsOnFile(start, end, duration) {
-        fs.writeFile(
-            filePathTimeReports,
-            execution + ";" + start + ";" + end + ";" + duration + " \r\n", function (err) {
+        return new Promise(function (resolve, reject) {
+            fs.appendFile(
+                filePathTimeReports,
+                execution + ";" + start + ";" + end + ";" + duration + " \r\n", function (err) {
 
-                if (err) {
-                    // return console.log(err);
-                }
+                    if (err) {
+                        // return console.log(err);
+                    }
 
-                // console.log("The file was saved!");
-            });
+                    // console.log("The file was saved!");
+                });
+        })
     }
 
     // createReportFiles() {
@@ -342,25 +344,31 @@ class GeneticAlgorithm {
     //     fs.writeFile(filePathTimeReports, "", function () { });
     // }
 
-    genetic() {
+    async genetic() {
         var start = new Date();
         this.algorithm.resetPopulation();
 
-        this.createReportFiles();
-        this.writeFileHeader();
-        this.writeFileSecondsHeader();
+        try {
+            await this.createReportFile();
+            await this.createTimeReportFile();
+            await this.writeFileHeader();
+            await this.writeFileSecondsHeader();
 
-        while (generation <= MAX_EXECUTIONS) {
+            while (generation <= MAX_GENERATIONS) {
             this.algorithm.run();
-            this.writeGenerationsOnFile();
+            await this.writeGenerationsOnFile();
             this.allChromosomes = [];
             generation++;
+            }
+            this.finalFitvalue = 0;
+            var end = new Date();
+            await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
+            this.showCompositionInfo();
+
+        } catch (error) {
+            throw Error(error);
         }
 
-        this.showCompositionInfo();
-        this.finalFitvalue = 0;
-        var end = new Date();
-        this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     }
 
     numberCompare(a, b) {
@@ -368,52 +376,59 @@ class GeneticAlgorithm {
     }
 
     writeFileHeader() {
-        fs.writeFile(filePathReports, "execution;generation;chromosome;fitness \r\n", function (err) {
+        return new Promise(function (resolve, reject) {
+            fs.appendFile(filePathReports, "execution;generation;chromosome;fitness \r\n", function (err) {
 
-            if (err) {
-                // return console.log(err);
-            }
+                if (err) {
+                    return reject(err);
+                }
 
-            // console.log("The file was saved!");
-        });
+                resolve(true);
+            });
+
+        })
     }
 
     writeFileSecondsHeader() {
-        fs.writeFile(filePathTimeReports, "execution;start;end;duration \r\n", function (err) {
+        return new Promise(function (resolve, reject) {
+            fs.appendFile(filePathTimeReports, "execution;start;end;duration \r\n", function (err) {
 
-            if (err) {
-                // return console.log(err);
-            }
+                if (err) {
+                    return reject(err);
+                }
 
-            // console.log("The file was saved!");
-        });
+                resolve(true);
+            });
+        })
     }
 
     writeGenerationsOnFile() {
-        var self = this;
-        allChromosomes.map(function (chromosome, self) {
-            fs.writeFile(
-                filePathReports,
-                execution +
-                ";" +
-                generation +
-                ";" +
-                chromosome.genes.sort(self.numberCompare).toString() +
-                ";" +
-                chromosome.fitness +
-                "\r\n", function (err) {
+        return new Promise(function (resolve, reject) {
+            var self = this;
+            allChromosomes.map(function (chromosome, self) {
+                fs.appendFile(
+                    filePathReports,
+                    execution +
+                    ";" +
+                    generation +
+                    ";" +
+                    chromosome.genes.sort(self.numberCompare).toString() +
+                    ";" +
+                    chromosome.fitness +
+                    "\r\n", function (err) {
 
-                    if (err) {
-                        return console.log(err);
-                    }
+                        if (err) {
+                            return reject(err);
+                        }
 
-                    console.log("The file was saved!");
-                });
-        });
+                        resolve(true);
+                    });
+            });
+        })
     }
 
     writeSecondsOnFile(start, end, duration) {
-        fs.writeFile(
+        fs.appendFile(
             filePathTimeReports,
             execution + ";" + start + ";" + end + ";" + duration + " \r\n", function (err) {
 
@@ -425,9 +440,17 @@ class GeneticAlgorithm {
             });
     }
 
-    createReportFiles() {
-        fs.writeFile(filePathReports, "", function () { });
-        fs.writeFile(filePathTimeReports, "", function () { });
+    createReportFile() {
+
+        return new Promise(function (resolve, reject) {
+            fs.appendFile(filePathReports, "", function () { resolve(true); });
+        })
+    }
+
+    createTimeReportFile() {
+        return new Promise(function (resolve, reject) {
+            fs.appendFile(filePathTimeReports, "", function () { resolve(true); });
+        })
     }
 
     start(
