@@ -407,23 +407,23 @@ class GeneticAlgorithm {
             var self = this;
             let chromosome = allChromosomes[0];
             // allChromosomes.map((chromosome, self) => {
-                fs.appendFile(
-                    filePathReports,
-                    CURRENT_EXECUTION +
-                    ";" +
-                    generation +
-                    ";" +
-                    chromosome.genes.toString() +
-                    ";" +
-                    chromosome.fitness +
-                    "\r\n", function (err) {
+            fs.appendFile(
+                filePathReports,
+                CURRENT_EXECUTION +
+                ";" +
+                generation +
+                ";" +
+                chromosome.genes.toString() +
+                ";" +
+                chromosome.fitness +
+                "\r\n", function (err) {
 
-                        if (err) {
-                            return reject(err);
-                        }
+                    if (err) {
+                        return reject(err);
+                    }
 
-                        resolve(true);
-                    });
+                    resolve(true);
+                });
             // });
         })
     }
