@@ -405,14 +405,15 @@ class GeneticAlgorithm {
     writeGenerationsOnFile() {
         return new Promise(function (resolve, reject) {
             var self = this;
-            allChromosomes.map((chromosome, self) => {
+            let chromosome = allChromosomes[0];
+            // allChromosomes.map((chromosome, self) => {
                 fs.appendFile(
                     filePathReports,
                     CURRENT_EXECUTION +
                     ";" +
                     generation +
                     ";" +
-                    chromosome.genes.sort(self.numberCompare).toString() +
+                    chromosome.genes.toString() +
                     ";" +
                     chromosome.fitness +
                     "\r\n", function (err) {
@@ -423,7 +424,7 @@ class GeneticAlgorithm {
 
                         resolve(true);
                     });
-            });
+            // });
         })
     }
 
@@ -458,7 +459,7 @@ class GeneticAlgorithm {
         CURRENT_EXECUTION = currentExecution;
 
         filePathReports =
-            "app/reports/" +
+            "server/app/reports/" +
             strategy +
             "/PS-" +
             populationSize +
@@ -468,7 +469,7 @@ class GeneticAlgorithm {
             maxGenerations +
             ".csv";
         filePathTimeReports =
-            "app/time-reports/" +
+            "server/app/time-reports/" +
             strategy +
             "/PS-" +
             populationSize +
