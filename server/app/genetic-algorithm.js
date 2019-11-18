@@ -15,6 +15,7 @@ let MAX_GENERATIONS;
 let MAX_EXECUTIONS = 3;
 let COMPOSITION_STRATEGY;
 let MAX_FIT_VALUE = 3633;
+let CURRENT_EXECUTION;
 var fileName = "";
 let filePathReports = '';
 let filePathTimeReports = '';
@@ -291,8 +292,6 @@ class GeneticAlgorithm {
         var championsIcons = [];
         var parsedJson = JSON.parse(JSON.stringify(json));
 
-        console.log(this.finalChromosome);
-
         if (this.finalChromosome) {
             this.finalChromosome.genes.forEach(function (item) {
                 var aux = parsedJson.find(function (champion) {
@@ -357,9 +356,10 @@ class GeneticAlgorithm {
             while (generation <= MAX_GENERATIONS) {
                 this.algorithm.run();
                 await this.writeGenerationsOnFile();
-                this.allChromosomes = [];
+                allChromosomes = [];
                 generation++;
             }
+
             this.finalFitvalue = 0;
             var end = new Date();
             await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
@@ -405,10 +405,10 @@ class GeneticAlgorithm {
     writeGenerationsOnFile() {
         return new Promise(function (resolve, reject) {
             var self = this;
-            allChromosomes.map(function (chromosome, self) {
+            allChromosomes.map((chromosome, self) => {
                 fs.appendFile(
                     filePathReports,
-                    execution +
+                    CURRENT_EXECUTION +
                     ";" +
                     generation +
                     ";" +
@@ -459,6 +459,7 @@ class GeneticAlgorithm {
         populationSize,
         mutationChance,
         maxGenerations,
+        currentExecution,
         bannedGenes
     ) {
 
@@ -467,6 +468,7 @@ class GeneticAlgorithm {
         MAX_FIT_VALUE = maxFitValue;
         POPULATION_SIZE = populationSize;
         MUTATION_CHANCE = mutationChance;
+        CURRENT_EXECUTION = currentExecution;
 
         filePathReports =
             "app/reports/" +
@@ -515,7 +517,9 @@ class GeneticAlgorithm {
                 .toString(36)
                 .substring(2, 15);
 
-        this.genetic();
+        // for (var execution = 1; execution <= MAX_EXECUTIONS; execution++) {
+        this.genetic(execution);
+        // }
         return fileName;
     }
 }
