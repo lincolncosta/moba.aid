@@ -3,7 +3,7 @@ var createCollage = require("@settlin/collage");
 var jsonDOTA = require("./assets/dota/champions.json");
 var json = require("./assets/champions.json");
 var fs = require("fs");
-const uploadFile = require("./uploadFile");
+// const uploadFile = require("./uploadFile");
 let generation = 1;
 let execution = 1;
 let finalFitvalue = 0;
@@ -459,7 +459,7 @@ class GeneticAlgorithm {
         CURRENT_EXECUTION = currentExecution;
 
         filePathReports =
-            "server/app/reports/" +
+            "app/reports/" +
             strategy +
             "/PS-" +
             populationSize +
@@ -469,7 +469,7 @@ class GeneticAlgorithm {
             maxGenerations +
             ".csv";
         filePathTimeReports =
-            "server/app/time-reports/" +
+            "app/time-reports/" +
             strategy +
             "/PS-" +
             populationSize +
