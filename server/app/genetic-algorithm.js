@@ -327,7 +327,7 @@ class GeneticAlgorithm {
         return new Promise(function (resolve, reject) {
             fs.appendFile(
                 filePathTimeReports,
-                execution + ";" + start + ";" + end + ";" + duration + " \r\n", function (err) {
+                CURRENT_EXECUTION + ";" + start + ";" + end + ";" + duration + " \r\n", function (err) {
 
                     if (err) {
                         // return console.log(err);
@@ -363,7 +363,7 @@ class GeneticAlgorithm {
             this.finalFitvalue = 0;
             var end = new Date();
             await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
-            this.showCompositionInfo();
+            // this.showCompositionInfo();
 
         } catch (error) {
             throw Error(error);
@@ -425,19 +425,6 @@ class GeneticAlgorithm {
                     });
             });
         })
-    }
-
-    writeSecondsOnFile(start, end, duration) {
-        fs.appendFile(
-            filePathTimeReports,
-            execution + ";" + start + ";" + end + ";" + duration + " \r\n", function (err) {
-
-                if (err) {
-                    return console.log(err);
-                }
-
-                console.log("The file was saved!");
-            });
     }
 
     createReportFile() {
