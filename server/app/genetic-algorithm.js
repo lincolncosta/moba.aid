@@ -14,7 +14,7 @@ let MUTATION_CHANCE;
 let MAX_GENERATIONS;
 let MAX_EXECUTIONS = 3;
 let COMPOSITION_STRATEGY;
-let MAX_FIT_VALUE = 3633;
+let MAX_FIT_VALUE = 81.28;
 let CURRENT_EXECUTION;
 var fileName = "";
 let filePathReports = '';
