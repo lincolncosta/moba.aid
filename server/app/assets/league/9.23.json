@@ -1602,7 +1602,11 @@
             "attack": 1,
             "defense": 10,
             "magic": 6,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "mid": 50.7,
+                "support": 48.07
+            }
         },
         "image": {
             "full": "Galio.png",
@@ -1652,7 +1656,10 @@
             "attack": 7,
             "defense": 6,
             "magic": 4,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "top": 48.87
+            }
         },
         "image": {
             "full": "Gangplank.png",
@@ -1701,7 +1708,11 @@
             "attack": 7,
             "defense": 7,
             "magic": 1,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 53,
+                "mid": 54.87
+            }
         },
         "image": {
             "full": "Garen.png",
@@ -1751,7 +1762,10 @@
             "attack": 6,
             "defense": 5,
             "magic": 5,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "top": 49.51
+            }
         },
         "image": {
             "full": "Gnar.png",
