@@ -3538,6 +3538,7 @@
             "Pusher",
             "Disabler"
         ],
+        "winrate": 51.90,
         "img": "/apps/dota2/images/heroes/jakiro_full.png?",
         "icon": "/apps/dota2/images/heroes/jakiro_icon.png",
         "base_health": 200,
@@ -3594,6 +3595,7 @@
             "Disabler",
             "Escape"
         ],
+        "winrate": 44.24,
         "img": "/apps/dota2/images/heroes/batrider_full.png?",
         "icon": "/apps/dota2/images/heroes/batrider_icon.png",
         "base_health": 200,
@@ -3649,6 +3651,7 @@
             "Jungler",
             "Pusher"
         ],
+        "winrate": 49.16,
         "img": "/apps/dota2/images/heroes/chen_full.png?",
         "icon": "/apps/dota2/images/heroes/chen_icon.png",
         "base_health": 200,
@@ -3704,6 +3707,7 @@
             "Durable",
             "Escape"
         ],
+        "winrate": 53.86,
         "img": "/apps/dota2/images/heroes/spectre_full.png?",
         "icon": "/apps/dota2/images/heroes/spectre_icon.png",
         "base_health": 200,
@@ -3759,6 +3763,7 @@
             "Disabler",
             "Nuker"
         ],
+        "winrate": 51.82,
         "img": "/apps/dota2/images/heroes/ancient_apparition_full.png?",
         "icon": "/apps/dota2/images/heroes/ancient_apparition_icon.png",
         "base_health": 200,
@@ -3816,6 +3821,7 @@
             "Durable",
             "Nuker"
         ],
+        "winrate": 46.83,
         "img": "/apps/dota2/images/heroes/doom_bringer_full.png?",
         "icon": "/apps/dota2/images/heroes/doom_bringer_icon.png",
         "base_health": 200,
