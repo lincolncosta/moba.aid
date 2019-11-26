@@ -912,7 +912,10 @@
             "attack": 3,
             "defense": 7,
             "magic": 7,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 49.65
+            }
         },
         "image": {
             "full": "Chogath.png",
@@ -962,7 +965,10 @@
             "attack": 8,
             "defense": 3,
             "magic": 6,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "mid": 47.63
+            }
         },
         "image": {
             "full": "Corki.png",
@@ -1011,7 +1017,10 @@
             "attack": 9,
             "defense": 5,
             "magic": 1,
-            "difficulty": 2
+            "difficulty": 2,
+            "winrate": {
+                "top": 50.45
+            }
         },
         "image": {
             "full": "Darius.png",
@@ -1061,7 +1070,10 @@
             "attack": 7,
             "defense": 6,
             "magic": 8,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "mid": 50.56
+            }
         },
         "image": {
             "full": "Diana.png",
@@ -1111,7 +1123,10 @@
             "attack": 9,
             "defense": 3,
             "magic": 1,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "carry": 50.24
+            }
         },
         "image": {
             "full": "Draven.png",
@@ -1160,7 +1175,11 @@
             "attack": 5,
             "defense": 7,
             "magic": 6,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "jungler": 54.56,
+                "top": 49.98
+            }
         },
         "image": {
             "full": "DrMundo.png",
@@ -1210,7 +1229,11 @@
             "attack": 5,
             "defense": 3,
             "magic": 7,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "jungler": 51.37,
+                "mid": 50.88
+            }
         },
         "image": {
             "full": "Ekko.png",
@@ -1260,7 +1283,10 @@
             "attack": 6,
             "defense": 5,
             "magic": 7,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "jungler": 51.6
+            }
         },
         "image": {
             "full": "Elise.png",
