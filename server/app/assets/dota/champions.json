@@ -10,6 +10,7 @@
             "Escape",
             "Nuker"
         ],
+        "winrate": 49.03,
         "img": "/apps/dota2/images/heroes/antimage_full.png?",
         "icon": "/apps/dota2/images/heroes/antimage_icon.png",
         "base_health": 200,
@@ -66,6 +67,7 @@
             "Disabler",
             "Jungler"
         ],
+        "winrate": 50.49,
         "img": "/apps/dota2/images/heroes/axe_full.png?",
         "icon": "/apps/dota2/images/heroes/axe_icon.png",
         "base_health": 200,

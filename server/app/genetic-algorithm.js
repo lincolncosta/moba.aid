@@ -1,7 +1,7 @@
 var evolveGa = require("evolve-ga");
 var createCollage = require("@settlin/collage");
 var jsonDOTA = require("./assets/dota/champions.json");
-var json = require("./assets/champions.json");
+var jsonLeague= require("./assets/league/champions.json");
 var fs = require("fs");
 // const uploadFile = require("./uploadFile");
 let generation = 1;
@@ -290,7 +290,7 @@ class GeneticAlgorithm {
 
     showCompositionInfo() {
         var championsIcons = [];
-        var parsedJson = JSON.parse(JSON.stringify(json));
+        var parsedjsonLeague= JSON.parse(JSON.stringify(json));
 
         if (this.finalChromosome) {
             this.finalChromosome.genes.forEach(function (item) {
