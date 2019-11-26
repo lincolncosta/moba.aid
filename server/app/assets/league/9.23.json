@@ -1336,7 +1336,10 @@
             "attack": 4,
             "defense": 2,
             "magic": 7,
-            "difficulty": 10
+            "difficulty": 10,
+            "winrate": {
+                "jungler": 48.73
+            }
         },
         "image": {
             "full": "Evelynn.png",
@@ -1386,7 +1389,10 @@
             "attack": 7,
             "defense": 2,
             "magic": 6,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "carry": 47.65
+            }
         },
         "image": {
             "full": "Ezreal.png",
@@ -1436,7 +1442,11 @@
             "attack": 2,
             "defense": 3,
             "magic": 9,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "jungler": 46.4,
+                "support": 51.77
+            }
         },
         "image": {
             "full": "Fiddlesticks.png",
@@ -1486,7 +1496,10 @@
             "attack": 10,
             "defense": 4,
             "magic": 2,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "top": 49.6
+            }
         },
         "image": {
             "full": "Fiora.png",
@@ -1536,7 +1549,10 @@
             "attack": 6,
             "defense": 4,
             "magic": 7,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "mid": 52.8
+            }
         },
         "image": {
             "full": "Fizz.png",
