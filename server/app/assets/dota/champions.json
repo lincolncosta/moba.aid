@@ -3878,6 +3878,7 @@
             "Durable",
             "Disabler"
         ],
+        "winrate": 51.23,
         "img": "/apps/dota2/images/heroes/ursa_full.png?",
         "icon": "/apps/dota2/images/heroes/ursa_icon.png",
         "base_health": 200,
@@ -3935,6 +3936,7 @@
             "Durable",
             "Escape"
         ],
+        "winrate": 49.92,
         "img": "/apps/dota2/images/heroes/spirit_breaker_full.png?",
         "icon": "/apps/dota2/images/heroes/spirit_breaker_icon.png",
         "base_health": 200,
@@ -3990,6 +3992,7 @@
             "Nuker",
             "Disabler"
         ],
+        "winrate": 48.49,
         "img": "/apps/dota2/images/heroes/gyrocopter_full.png?",
         "icon": "/apps/dota2/images/heroes/gyrocopter_icon.png",
         "base_health": 200,
@@ -4048,6 +4051,7 @@
             "Initiator",
             "Nuker"
         ],
+        "winrate": 49.64,
         "img": "/apps/dota2/images/heroes/alchemist_full.png?",
         "icon": "/apps/dota2/images/heroes/alchemist_icon.png",
         "base_health": 200,
@@ -4105,6 +4109,7 @@
             "Escape",
             "Pusher"
         ],
+        "winrate": 49.36,
         "img": "/apps/dota2/images/heroes/invoker_full.png?",
         "icon": "/apps/dota2/images/heroes/invoker_icon.png",
         "base_health": 200,
@@ -4162,6 +4167,7 @@
             "Initiator",
             "Nuker"
         ],
+        "winrate": 52.79,
         "img": "/apps/dota2/images/heroes/silencer_full.png?",
         "icon": "/apps/dota2/images/heroes/silencer_icon.png",
         "base_health": 200,
@@ -4217,6 +4223,7 @@
             "Nuker",
             "Disabler"
         ],
+        "winrate": 46.23,
         "img": "/apps/dota2/images/heroes/obsidian_destroyer_full.png?",
         "icon": "/apps/dota2/images/heroes/obsidian_destroyer_icon.png",
         "base_health": 200,
