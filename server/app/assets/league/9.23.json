@@ -171,7 +171,10 @@
             "attack": 6,
             "defense": 9,
             "magic": 5,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "support": 47.68
+            }
         },
         "image": {
             "full": "Alistar.png",
@@ -221,7 +224,10 @@
             "attack": 2,
             "defense": 6,
             "magic": 8,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "jungler": 47.68
+            }
         },
         "image": {
             "full": "Amumu.png",
@@ -271,7 +277,10 @@
             "attack": 1,
             "defense": 4,
             "magic": 10,
-            "difficulty": 10
+            "difficulty": 10,
+            "winrate": {
+                "mid": 52.55
+            }
         },
         "image": {
             "full": "Anivia.png",
@@ -321,7 +330,10 @@
             "attack": 2,
             "defense": 3,
             "magic": 10,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "mid": 52.5
+            }
         },
         "image": {
             "full": "Annie.png",
@@ -370,7 +382,10 @@
             "attack": 7,
             "defense": 3,
             "magic": 2,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "carry": 52.01
+            }
         },
         "image": {
             "full": "Ashe.png",
@@ -420,7 +435,10 @@
             "attack": 2,
             "defense": 3,
             "magic": 8,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "mid": 55.15
+            }
         },
         "image": {
             "full": "AurelionSol.png",
@@ -469,7 +487,10 @@
             "attack": 6,
             "defense": 3,
             "magic": 8,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "mid": 48.15
+            }
         },
         "image": {
             "full": "Azir.png",
@@ -519,7 +540,10 @@
             "attack": 4,
             "defense": 4,
             "magic": 5,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "support": 52.9
+            }
         },
         "image": {
             "full": "Bard.png",
@@ -569,7 +593,10 @@
             "attack": 4,
             "defense": 8,
             "magic": 5,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "support": 51.97
+            }
         },
         "image": {
             "full": "Blitzcrank.png",
@@ -619,7 +646,10 @@
             "attack": 2,
             "defense": 2,
             "magic": 9,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "support": 50.16
+            }
         },
         "image": {
             "full": "Brand.png",
@@ -668,7 +698,10 @@
             "attack": 3,
             "defense": 9,
             "magic": 4,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "support": 49.51
+            }
         },
         "image": {
             "full": "Braum.png",
@@ -718,7 +751,10 @@
             "attack": 8,
             "defense": 2,
             "magic": 2,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "carry": 50.69
+            }
         },
         "image": {
             "full": "Caitlyn.png",
@@ -767,7 +803,12 @@
             "attack": 8,
             "defense": 6,
             "magic": 3,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "top": 51.09,
+                "mid": 51.15,
+                "jungler": 48.52
+            }
         },
         "image": {
             "full": "Camille.png",
@@ -817,7 +858,12 @@
             "attack": 2,
             "defense": 3,
             "magic": 9,
-            "difficulty": 10
+            "difficulty": 10,
+            "winrate": {
+                "top": 52.22,
+                "mid": 52.14,
+                "bottom": 51.97
+            }
         },
         "image": {
             "full": "Cassiopeia.png",
