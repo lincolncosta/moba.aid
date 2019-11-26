@@ -3426,6 +3426,7 @@
             "Escape",
             "Nuker"
         ],
+        "winrate": 50.75,
         "img": "/apps/dota2/images/heroes/bounty_hunter_full.png?",
         "icon": "/apps/dota2/images/heroes/bounty_hunter_icon.png",
         "base_health": 200,
@@ -3480,6 +3481,7 @@
             "Carry",
             "Escape"
         ],
+        "winrate": 49.38,
         "img": "/apps/dota2/images/heroes/weaver_full.png?",
         "icon": "/apps/dota2/images/heroes/weaver_icon.png",
         "base_health": 200,
