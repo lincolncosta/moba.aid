@@ -4281,6 +4281,7 @@
             "Durable",
             "Escape"
         ],
+        "winrate": 50.54,
         "img": "/apps/dota2/images/heroes/lycan_full.png?",
         "icon": "/apps/dota2/images/heroes/lycan_icon.png",
         "base_health": 200,
@@ -4338,6 +4339,7 @@
             "Disabler",
             "Nuker"
         ],
+        "winrate": 49.79,
         "img": "/apps/dota2/images/heroes/brewmaster_full.png?",
         "icon": "/apps/dota2/images/heroes/brewmaster_icon.png",
         "base_health": 200,
@@ -4394,6 +4396,7 @@
             "Initiator",
             "Nuker"
         ],
+        "winrate": 46.89,
         "img": "/apps/dota2/images/heroes/shadow_demon_full.png?",
         "icon": "/apps/dota2/images/heroes/shadow_demon_icon.png",
         "base_health": 200,
@@ -4450,6 +4453,7 @@
             "Jungler",
             "Durable"
         ],
+        "winrate": 42.16,
         "img": "/apps/dota2/images/heroes/lone_druid_full.png?",
         "icon": "/apps/dota2/images/heroes/lone_druid_icon.png",
         "base_health": 200,
@@ -4507,6 +4511,7 @@
             "Pusher",
             "Initiator"
         ],
+        "winrate": 52.49,
         "img": "/apps/dota2/images/heroes/chaos_knight_full.png?",
         "icon": "/apps/dota2/images/heroes/chaos_knight_icon.png",
         "base_health": 200,
@@ -4565,6 +4570,7 @@
             "Initiator",
             "Pusher"
         ],
+        "winrate": 54.07,
         "img": "/apps/dota2/images/heroes/meepo_full.png?",
         "icon": "/apps/dota2/images/heroes/meepo_icon.png",
         "base_health": 200,
@@ -4622,6 +4628,7 @@
             "Disabler",
             "Escape"
         ],
+        "winrate": 50.57,
         "img": "/apps/dota2/images/heroes/treant_full.png?",
         "icon": "/apps/dota2/images/heroes/treant_icon.png",
         "base_health": 200,
@@ -4679,6 +4686,7 @@
             "Durable",
             "Initiator"
         ],
+        "winrate": 51.47,
         "img": "/apps/dota2/images/heroes/ogre_magi_full.png?",
         "icon": "/apps/dota2/images/heroes/ogre_magi_icon.png",
         "base_health": 200,
@@ -4735,6 +4743,7 @@
             "Disabler",
             "Nuker"
         ],
+        "winrate": 51.62,
         "img": "/apps/dota2/images/heroes/undying_full.png?",
         "icon": "/apps/dota2/images/heroes/undying_icon.png",
         "base_health": 200,
@@ -4790,6 +4799,7 @@
             "Disabler",
             "Nuker"
         ],
+        "winrate": 45.63,
         "img": "/apps/dota2/images/heroes/rubick_full.png?",
         "icon": "/apps/dota2/images/heroes/rubick_icon.png",
         "base_health": 200,
@@ -4846,6 +4856,7 @@
             "Nuker",
             "Initiator"
         ],
+        "winrate": 49.62,
         "img": "/apps/dota2/images/heroes/disruptor_full.png?",
         "icon": "/apps/dota2/images/heroes/disruptor_icon.png",
         "base_health": 200,
@@ -4902,6 +4913,7 @@
             "Initiator",
             "Escape"
         ],
+        "winrate": 48.30,
         "img": "/apps/dota2/images/heroes/nyx_assassin_full.png?",
         "icon": "/apps/dota2/images/heroes/nyx_assassin_icon.png",
         "base_health": 200,
@@ -4960,6 +4972,7 @@
             "Initiator",
             "Escape"
         ],
+        "winrate": 53.48,
         "img": "/apps/dota2/images/heroes/naga_siren_full.png?",
         "icon": "/apps/dota2/images/heroes/naga_siren_icon.png",
         "base_health": 200,
@@ -5016,6 +5029,7 @@
             "Disabler",
             "Jungler"
         ],
+        "winrate": 50.63,
         "img": "/apps/dota2/images/heroes/keeper_of_the_light_full.png?",
         "icon": "/apps/dota2/images/heroes/keeper_of_the_light_icon.png",
         "base_health": 200,
@@ -5071,6 +5085,7 @@
             "Escape",
             "Nuker"
         ],
+        "winrate": 44.80,
         "img": "/apps/dota2/images/heroes/wisp_full.png?",
         "icon": "/apps/dota2/images/heroes/wisp_icon.png",
         "base_health": 200,
@@ -5128,6 +5143,7 @@
             "Disabler",
             "Pusher"
         ],
+        "winrate": 52.44,
         "img": "/apps/dota2/images/heroes/visage_full.png?",
         "icon": "/apps/dota2/images/heroes/visage_icon.png",
         "base_health": 200,
@@ -5184,6 +5200,7 @@
             "Disabler",
             "Nuker"
         ],
+        "winrate": 50.23,
         "img": "/apps/dota2/images/heroes/slark_full.png?",
         "icon": "/apps/dota2/images/heroes/slark_icon.png",
         "base_health": 200,
@@ -5239,6 +5256,7 @@
             "Disabler",
             "Durable"
         ],
+        "winrate": 45.77,
         "img": "/apps/dota2/images/heroes/medusa_full.png?",
         "icon": "/apps/dota2/images/heroes/medusa_icon.png",
         "base_health": 200,
@@ -5295,6 +5313,7 @@
             "Disabler",
             "Durable"
         ],
+        "winrate": 47.62,
         "img": "/apps/dota2/images/heroes/troll_warlord_full.png?",
         "icon": "/apps/dota2/images/heroes/troll_warlord_icon.png",
         "base_health": 200,
@@ -5352,6 +5371,7 @@
             "Nuker",
             "Escape"
         ],
+        "winrate": 48.84,
         "img": "/apps/dota2/images/heroes/centaur_full.png?",
         "icon": "/apps/dota2/images/heroes/centaur_icon.png",
         "base_health": 200,
@@ -5408,6 +5428,7 @@
             "Nuker",
             "Escape"
         ],
+        "winrate": 46.01,
         "img": "/apps/dota2/images/heroes/magnataur_full.png?",
         "icon": "/apps/dota2/images/heroes/magnataur_icon.png",
         "base_health": 200,
@@ -5463,6 +5484,7 @@
             "Durable",
             "Escape"
         ],
+        "winrate": 45.64,
         "img": "/apps/dota2/images/heroes/shredder_full.png?",
         "icon": "/apps/dota2/images/heroes/shredder_icon.png",
         "base_health": 200,
@@ -5519,6 +5541,7 @@
             "Initiator",
             "Nuker"
         ],
+        "winrate": 49.78,
         "img": "/apps/dota2/images/heroes/bristleback_full.png?",
         "icon": "/apps/dota2/images/heroes/bristleback_icon.png",
         "base_health": 200,
@@ -5574,6 +5597,7 @@
             "Disabler",
             "Nuker"
         ],
+        "winrate": 45.77,
         "img": "/apps/dota2/images/heroes/tusk_full.png?",
         "icon": "/apps/dota2/images/heroes/tusk_icon.png",
         "base_health": 200,
@@ -5629,6 +5653,7 @@
             "Nuker",
             "Disabler"
         ],
+        "winrate": 51.65,
         "img": "/apps/dota2/images/heroes/skywrath_mage_full.png?",
         "icon": "/apps/dota2/images/heroes/skywrath_mage_icon.png",
         "base_health": 200,
@@ -5684,6 +5709,7 @@
             "Carry",
             "Durable"
         ],
+        "winrate": 53.67,
         "img": "/apps/dota2/images/heroes/abaddon_full.png?",
         "icon": "/apps/dota2/images/heroes/abaddon_icon.png",
         "base_health": 200,
@@ -5740,6 +5766,7 @@
             "Nuker",
             "Durable"
         ],
+        "winrate": 50.51,
         "img": "/apps/dota2/images/heroes/elder_titan_full.png?",
         "icon": "/apps/dota2/images/heroes/elder_titan_icon.png",
         "base_health": 200,
@@ -5797,6 +5824,7 @@
             "Durable",
             "Nuker"
         ],
+        "winrate": 49.74,
         "img": "/apps/dota2/images/heroes/legion_commander_full.png?",
         "icon": "/apps/dota2/images/heroes/legion_commander_icon.png",
         "base_health": 200,
@@ -5851,6 +5879,7 @@
             "Nuker",
             "Disabler"
         ],
+        "winrate": 48.53,
         "img": "/apps/dota2/images/heroes/techies_full.png?",
         "icon": "/apps/dota2/images/heroes/techies_icon.png",
         "base_health": 200,
@@ -5908,6 +5937,7 @@
             "Disabler",
             "Initiator"
         ],
+        "winrate": 47.29,
         "img": "/apps/dota2/images/heroes/ember_spirit_full.png?",
         "icon": "/apps/dota2/images/heroes/ember_spirit_icon.png",
         "base_health": 200,
@@ -5965,6 +5995,7 @@
             "Initiator",
             "Durable"
         ],
+        "winrate": 43.56,
         "img": "/apps/dota2/images/heroes/earth_spirit_full.png?",
         "icon": "/apps/dota2/images/heroes/earth_spirit_icon.png",
         "base_health": 200,
@@ -6022,6 +6053,7 @@
             "Durable",
             "Escape"
         ],
+        "winrate": 54.98,
         "img": "/apps/dota2/images/heroes/abyssal_underlord_full.png?",
         "icon": "/apps/dota2/images/heroes/abyssal_underlord_icon.png",
         "base_health": 200,
@@ -6077,6 +6109,7 @@
             "Pusher",
             "Nuker"
         ],
+        "winrate": 47.02,
         "img": "/apps/dota2/images/heroes/terrorblade_full.png?",
         "icon": "/apps/dota2/images/heroes/terrorblade_icon.png",
         "base_health": 200,
@@ -6134,6 +6167,7 @@
             "Escape",
             "Disabler"
         ],
+        "winrate": 50.61,
         "img": "/apps/dota2/images/heroes/phoenix_full.png?",
         "icon": "/apps/dota2/images/heroes/phoenix_icon.png",
         "base_health": 200,
@@ -6190,6 +6224,7 @@
             "Disabler",
             "Escape"
         ],
+        "winrate": 45.65,
         "img": "/apps/dota2/images/heroes/oracle_full.png?",
         "icon": "/apps/dota2/images/heroes/oracle_icon.png",
         "base_health": 200,
@@ -6245,6 +6280,7 @@
             "Disabler",
             "Nuker"
         ],
+        "winrate": 47.82,
         "img": "/apps/dota2/images/heroes/winter_wyvern_full.png?",
         "icon": "/apps/dota2/images/heroes/winter_wyvern_icon.png",
         "base_health": 200,
@@ -6300,6 +6336,7 @@
             "Escape",
             "Nuker"
         ],
+        "winrate": 49.01,
         "img": "/apps/dota2/images/heroes/arc_warden_full.png?",
         "icon": "/apps/dota2/images/heroes/arc_warden_icon.png",
         "base_health": 200,
@@ -6356,6 +6393,7 @@
             "Disabler",
             "Initiator"
         ],
+        "winrate": 48.95,
         "img": "/apps/dota2/images/heroes/monkey_king_full.png?",
         "icon": "/apps/dota2/images/heroes/monkey_king_icon.png",
         "base_health": 200,
@@ -6412,6 +6450,7 @@
             "Disabler",
             "Escape"
         ],
+        "winrate": 48.94,
         "img": "/apps/dota2/images/heroes/dark_willow_full.png?",
         "icon": "/apps/dota2/images/heroes/dark_willow_icon.png",
         "base_health": 200,
@@ -6470,6 +6509,7 @@
             "Escape",
             "Initiator"
         ],
+        "winrate": 48.92,
         "img": "/apps/dota2/images/heroes/pangolier_full.png?",
         "icon": "/apps/dota2/images/heroes/pangolier_icon.png",
         "base_health": 200,
@@ -6526,6 +6566,7 @@
             "Disabler",
             "Escape"
         ],
+        "winrate": 47.17,
         "img": "/apps/dota2/images/heroes/grimstroke_full.png?",
         "icon": "/apps/dota2/images/heroes/grimstroke_icon.png",
         "base_health": 200,
