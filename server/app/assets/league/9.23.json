@@ -1815,7 +1815,11 @@
             "attack": 4,
             "defense": 7,
             "magic": 6,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "jungler": 47.9,
+                "support": 46.4
+            }
         },
         "image": {
             "full": "Gragas.png",
@@ -1865,7 +1869,10 @@
             "attack": 8,
             "defense": 5,
             "magic": 3,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "jungler": 49.46
+            }
         },
         "image": {
             "full": "Graves.png",
@@ -1914,7 +1921,11 @@
             "attack": 8,
             "defense": 6,
             "magic": 4,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "jungler": 49.6,
+                "top": 51.59
+            }
         },
         "image": {
             "full": "Hecarim.png",
@@ -1964,7 +1975,12 @@
             "attack": 2,
             "defense": 6,
             "magic": 8,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "carry": 53.31,
+                "top": 50.91,
+                "mid": 53.57
+            }
         },
         "image": {
             "full": "Heimerdinger.png",
@@ -2014,7 +2030,10 @@
             "attack": 8,
             "defense": 6,
             "magic": 3,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "top": 50.89
+            }
         },
         "image": {
             "full": "Illaoi.png",
@@ -2064,7 +2083,11 @@
             "attack": 7,
             "defense": 4,
             "magic": 5,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 48.04,
+                "mid": 46.62
+            }
         },
         "image": {
             "full": "Irelia.png",
@@ -2114,7 +2137,10 @@
             "attack": 3,
             "defense": 5,
             "magic": 7,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "jungler": 50.76
+            }
         },
         "image": {
             "full": "Ivern.png",
@@ -2164,7 +2190,10 @@
             "attack": 3,
             "defense": 5,
             "magic": 7,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "support": 53.19
+            }
         },
         "image": {
             "full": "Janna.png",
@@ -2214,7 +2243,10 @@
             "attack": 6,
             "defense": 8,
             "magic": 3,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "jungler": 50.42
+            }
         },
         "image": {
             "full": "JarvanIV.png",
@@ -2264,7 +2296,11 @@
             "attack": 7,
             "defense": 5,
             "magic": 7,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 50.03,
+                "jungler": 49.35
+            }
         },
         "image": {
             "full": "Jax.png",
@@ -2314,7 +2350,11 @@
             "attack": 8,
             "defense": 4,
             "magic": 3,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "top": 46.72,
+                "mid": 48.04
+            }
         },
         "image": {
             "full": "Jayce.png",
@@ -2364,7 +2404,10 @@
             "attack": 10,
             "defense": 2,
             "magic": 6,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "carry": 51.48
+            }
         },
         "image": {
             "full": "Jhin.png",
@@ -2414,7 +2457,10 @@
             "attack": 9,
             "defense": 2,
             "magic": 4,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "carry": 52.15
+            }
         },
         "image": {
             "full": "Jinx.png",
@@ -2463,7 +2509,10 @@
             "attack": 8,
             "defense": 5,
             "magic": 3,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "carry": 48.55
+            }
         },
         "image": {
             "full": "Kaisa.png",
@@ -2512,7 +2561,10 @@
             "attack": 8,
             "defense": 2,
             "magic": 4,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "carry": 47.89
+            }
         },
         "image": {
             "full": "Kalista.png",
@@ -2561,7 +2613,10 @@
             "attack": 1,
             "defense": 7,
             "magic": 8,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "support": 48.09
+            }
         },
         "image": {
             "full": "Karma.png",
@@ -2611,7 +2666,10 @@
             "attack": 2,
             "defense": 2,
             "magic": 10,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "jungler": 50.67
+            }
         },
         "image": {
             "full": "Karthus.png",
@@ -2660,7 +2718,10 @@
             "attack": 3,
             "defense": 5,
             "magic": 8,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "mid": 52.98
+            }
         },
         "image": {
             "full": "Kassadin.png",
@@ -2710,7 +2771,10 @@
             "attack": 4,
             "defense": 3,
             "magic": 9,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "mid": 51.12
+            }
         },
         "image": {
             "full": "Katarina.png",
@@ -2760,7 +2824,11 @@
             "attack": 6,
             "defense": 6,
             "magic": 7,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "mid": 50.59,
+                "top": 50.36
+            }
         },
         "image": {
             "full": "Kayle.png",
@@ -2810,7 +2878,10 @@
             "attack": 10,
             "defense": 6,
             "magic": 1,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "jungler": 49.46
+            }
         },
         "image": {
             "full": "Kayn.png",
@@ -2860,7 +2931,10 @@
             "attack": 6,
             "defense": 4,
             "magic": 7,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "top": 51.14
+            }
         },
         "image": {
             "full": "Kennen.png",
@@ -2910,7 +2984,10 @@
             "attack": 9,
             "defense": 4,
             "magic": 3,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "jungler": 50.19
+            }
         },
         "image": {
             "full": "Khazix.png",
@@ -2959,7 +3036,10 @@
             "attack": 8,
             "defense": 2,
             "magic": 2,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "mid": 50.51
+            }
         },
         "image": {
             "full": "Kindred.png",
@@ -3008,7 +3088,11 @@
             "attack": 8,
             "defense": 2,
             "magic": 2,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "top": 51.84,
+                "mid": 54.15
+            }
         },
         "image": {
             "full": "Kled.png",
@@ -3058,7 +3142,10 @@
             "attack": 8,
             "defense": 2,
             "magic": 5,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "carry": 50.69
+            }
         },
         "image": {
             "full": "KogMaw.png",
@@ -3108,7 +3195,10 @@
             "attack": 1,
             "defense": 4,
             "magic": 10,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "mid": 48.15
+            }
         },
         "image": {
             "full": "Leblanc.png",
@@ -3158,7 +3248,10 @@
             "attack": 8,
             "defense": 5,
             "magic": 3,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "jungler": 49.24
+            }
         },
         "image": {
             "full": "LeeSin.png",
@@ -3208,7 +3301,10 @@
             "attack": 4,
             "defense": 8,
             "magic": 3,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "support": 52.2
+            }
         },
         "image": {
             "full": "Leona.png",
@@ -3258,7 +3354,10 @@
             "attack": 2,
             "defense": 5,
             "magic": 8,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "mid": 49.41
+            }
         },
         "image": {
             "full": "Lissandra.png",
@@ -3307,7 +3406,11 @@
             "attack": 8,
             "defense": 5,
             "magic": 3,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "carry": 49.4,
+                "mid": 46.93
+            }
         },
         "image": {
             "full": "Lucian.png",
