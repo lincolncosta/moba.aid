@@ -3459,7 +3459,10 @@
             "attack": 4,
             "defense": 5,
             "magic": 7,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "support": 50.55
+            }
         },
         "image": {
             "full": "Lulu.png",
@@ -3509,7 +3512,11 @@
             "attack": 2,
             "defense": 4,
             "magic": 9,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "support": 47.66,
+                "mid": 50.15
+            }
         },
         "image": {
             "full": "Lux.png",
@@ -3559,7 +3566,12 @@
             "attack": 5,
             "defense": 9,
             "magic": 7,
-            "difficulty": 2
+            "difficulty": 2,
+            "winrate": {
+                "support": 46.51,
+                "mid": 53.8,
+                "top": 51
+            }
         },
         "image": {
             "full": "Malphite.png",
@@ -3609,7 +3621,10 @@
             "attack": 2,
             "defense": 2,
             "magic": 9,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "mid": 51.99
+            }
         },
         "image": {
             "full": "Malzahar.png",
