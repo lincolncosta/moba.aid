@@ -3674,7 +3674,11 @@
             "attack": 3,
             "defense": 8,
             "magic": 6,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "top": 50.77,
+                "support": 52.3
+            }
         },
         "image": {
             "full": "Maokai.png",
@@ -3724,7 +3728,10 @@
             "attack": 10,
             "defense": 4,
             "magic": 2,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "jungler": 49.69
+            }
         },
         "image": {
             "full": "MasterYi.png",
@@ -3774,7 +3781,11 @@
             "attack": 8,
             "defense": 2,
             "magic": 5,
-            "difficulty": 1
+            "difficulty": 1,
+            "winrate": {
+                "carry": 52.47,
+                "support": 42.34
+            }
         },
         "image": {
             "full": "MissFortune.png",
@@ -3823,7 +3834,10 @@
             "attack": 8,
             "defense": 5,
             "magic": 2,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "jungler": 47.5
+            }
         },
         "image": {
             "full": "MonkeyKing.png",
@@ -3873,7 +3887,11 @@
             "attack": 4,
             "defense": 6,
             "magic": 7,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "top": 52.57,
+                "mid": 53.56
+            }
         },
         "image": {
             "full": "Mordekaiser.png",
@@ -3922,7 +3940,10 @@
             "attack": 1,
             "defense": 6,
             "magic": 8,
-            "difficulty": 1
+            "difficulty": 1,
+            "winrate": {
+                "support": 49.43
+            }
         },
         "image": {
             "full": "Morgana.png",
@@ -3972,7 +3993,10 @@
             "attack": 4,
             "defense": 3,
             "magic": 7,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "support": 50.04
+            }
         },
         "image": {
             "full": "Nami.png",
@@ -4022,7 +4046,10 @@
             "attack": 7,
             "defense": 5,
             "magic": 6,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "top": 49.66
+            }
         },
         "image": {
             "full": "Nasus.png",
@@ -4072,7 +4099,10 @@
             "attack": 4,
             "defense": 6,
             "magic": 6,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "support": 51.13
+            }
         },
         "image": {
             "full": "Nautilus.png",
@@ -4122,7 +4152,11 @@
             "attack": 1,
             "defense": 1,
             "magic": 9,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "mid": 49.65,
+                "support": 46.63
+            }
         },
         "image": {
             "full": "Neeko.png",
@@ -4172,7 +4206,10 @@
             "attack": 5,
             "defense": 4,
             "magic": 7,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "jungler": 50.24
+            }
         },
         "image": {
             "full": "Nidalee.png",
@@ -4222,7 +4259,12 @@
             "attack": 9,
             "defense": 5,
             "magic": 2,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "jungler": 48.74,
+                "mid": 51.65,
+                "top": 51.45
+            }
         },
         "image": {
             "full": "Nocturne.png",
@@ -4272,7 +4314,11 @@
             "attack": 4,
             "defense": 6,
             "magic": 7,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "jungler": 52.02,
+                "mid": 43.86
+            }
         },
         "image": {
             "full": "Nunu.png",
@@ -4322,7 +4368,11 @@
             "attack": 9,
             "defense": 5,
             "magic": 3,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "jungler": 52.19,
+                "top": 50.27
+            }
         },
         "image": {
             "full": "Olaf.png",
@@ -4372,7 +4422,10 @@
             "attack": 4,
             "defense": 3,
             "magic": 9,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "mid": 49.88
+            }
         },
         "image": {
             "full": "Orianna.png",
@@ -4422,7 +4475,10 @@
             "attack": 5,
             "defense": 9,
             "magic": 3,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 52.15
+            }
         },
         "image": {
             "full": "Ornn.png",
@@ -4472,7 +4528,12 @@
             "attack": 9,
             "defense": 4,
             "magic": 3,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "jungler": 45.82,
+                "mid": 50.28,
+                "top": 48.2
+            }
         },
         "image": {
             "full": "Pantheon.png",
@@ -4522,7 +4583,12 @@
             "attack": 6,
             "defense": 7,
             "magic": 2,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "jungler": 50.16,
+                "support": 46.95,
+                "top": 50.55
+            }
         },
         "image": {
             "full": "Poppy.png",
@@ -4572,7 +4638,10 @@
             "attack": 9,
             "defense": 3,
             "magic": 1,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "support": 46.55
+            }
         },
         "image": {
             "full": "Pyke.png",
@@ -4622,7 +4691,11 @@
             "attack": 0,
             "defense": 2,
             "magic": 4,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "jungler": 40.18,
+                "mid": 48.2
+            }
         },
         "image": {
             "full": "Qiyana.png",
@@ -4672,7 +4745,11 @@
             "attack": 9,
             "defense": 4,
             "magic": 2,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "mid": 51.39,
+                "top": 50.35
+            }
         },
         "image": {
             "full": "Quinn.png",
@@ -4722,7 +4799,10 @@
             "attack": 2,
             "defense": 4,
             "magic": 8,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "support": 51.59
+            }
         },
         "image": {
             "full": "Rakan.png",
@@ -4771,7 +4851,10 @@
             "attack": 4,
             "defense": 10,
             "magic": 5,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "jungler": 49.8
+            }
         },
         "image": {
             "full": "Rammus.png",
@@ -4821,7 +4904,10 @@
             "attack": 8,
             "defense": 5,
             "magic": 2,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "jungler": 50.12
+            }
         },
         "image": {
             "full": "RekSai.png",
@@ -4870,7 +4956,11 @@
             "attack": 8,
             "defense": 5,
             "magic": 2,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "top": 50.07,
+                "mid": 50.47
+            }
         },
         "image": {
             "full": "Renekton.png",
@@ -4920,7 +5010,11 @@
             "attack": 7,
             "defense": 4,
             "magic": 2,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "jungler": 48.51,
+                "top": 51.68
+            }
         },
         "image": {
             "full": "Rengar.png",
@@ -4970,7 +5064,10 @@
             "attack": 8,
             "defense": 5,
             "magic": 1,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "top": 50.27
+            }
         },
         "image": {
             "full": "Riven.png",
@@ -5020,7 +5117,11 @@
             "attack": 3,
             "defense": 6,
             "magic": 8,
-            "difficulty": 10
+            "difficulty": 10,
+            "winrate": {
+                "mid": 53.08,
+                "top": 49.03
+            }
         },
         "image": {
             "full": "Rumble.png",
@@ -5070,7 +5171,11 @@
             "attack": 2,
             "defense": 2,
             "magic": 10,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "mid": 48.68,
+                "top": 49.58
+            }
         },
         "image": {
             "full": "Ryze.png",
@@ -5120,7 +5225,10 @@
             "attack": 5,
             "defense": 7,
             "magic": 6,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "jungler": 48.34
+            }
         },
         "image": {
             "full": "Sejuani.png",
@@ -5170,7 +5278,11 @@
             "attack": 7,
             "defense": 2,
             "magic": 6,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "support": 51.62,
+                "carry": 52.91
+            }
         },
         "image": {
             "full": "Senna.png",
@@ -5220,7 +5332,11 @@
             "attack": 8,
             "defense": 4,
             "magic": 6,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "jungler": 52.27,
+                "support": 53.12
+            }
         },
         "image": {
             "full": "Shaco.png",
@@ -5269,7 +5385,11 @@
             "attack": 3,
             "defense": 9,
             "magic": 3,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "top": 50.75,
+                "support": 47.17
+            }
         },
         "image": {
             "full": "Shen.png",
@@ -5318,7 +5438,10 @@
             "attack": 8,
             "defense": 6,
             "magic": 3,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "jungler": 50.72
+            }
         },
         "image": {
             "full": "Shyvana.png",
@@ -5368,7 +5491,10 @@
             "attack": 4,
             "defense": 8,
             "magic": 7,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 52.45
+            }
         },
         "image": {
             "full": "Singed.png",
@@ -5418,7 +5544,10 @@
             "attack": 5,
             "defense": 9,
             "magic": 3,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 50.93
+            }
         },
         "image": {
             "full": "Sion.png",
@@ -5468,7 +5597,10 @@
             "attack": 9,
             "defense": 3,
             "magic": 1,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "carry": 49.13
+            }
         },
         "image": {
             "full": "Sivir.png",
@@ -5517,7 +5649,10 @@
             "attack": 7,
             "defense": 6,
             "magic": 5,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "jungler": 49.63
+            }
         },
         "image": {
             "full": "Skarner.png",
@@ -5567,7 +5702,10 @@
             "attack": 5,
             "defense": 2,
             "magic": 8,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "support": 51.61
+            }
         },
         "image": {
             "full": "Sona.png",
@@ -5617,7 +5755,10 @@
             "attack": 2,
             "defense": 5,
             "magic": 7,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "support": 51.48
+            }
         },
         "image": {
             "full": "Soraka.png",
@@ -5667,7 +5808,12 @@
             "attack": 2,
             "defense": 6,
             "magic": 9,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "support": 50.24,
+                "carry": 54.33,
+                "mid": 51.75
+            }
         },
         "image": {
             "full": "Swain.png",
@@ -5717,7 +5863,11 @@
             "attack": 3,
             "defense": 4,
             "magic": 8,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "mid": 46.49,
+                "top": 44.89
+            }
         },
         "image": {
             "full": "Sylas.png",
@@ -5767,7 +5917,10 @@
             "attack": 2,
             "defense": 3,
             "magic": 9,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "mid": 49.55
+            }
         },
         "image": {
             "full": "Syndra.png",
@@ -5817,7 +5970,10 @@
             "attack": 3,
             "defense": 9,
             "magic": 6,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "support": 46.02
+            }
         },
         "image": {
             "full": "TahmKench.png",
@@ -5867,7 +6023,10 @@
             "attack": 1,
             "defense": 7,
             "magic": 8,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "jungler": 49.03
+            }
         },
         "image": {
             "full": "Taliyah.png",
@@ -5917,7 +6076,10 @@
             "attack": 9,
             "defense": 3,
             "magic": 1,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "mid": 50.24
+            }
         },
         "image": {
             "full": "Talon.png",
@@ -5966,7 +6128,10 @@
             "attack": 4,
             "defense": 8,
             "magic": 5,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "support": 52.16
+            }
         },
         "image": {
             "full": "Taric.png",
@@ -6016,7 +6181,10 @@
             "attack": 5,
             "defense": 3,
             "magic": 7,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "top": 49.93
+            }
         },
         "image": {
             "full": "Teemo.png",
@@ -6066,7 +6234,10 @@
             "attack": 5,
             "defense": 6,
             "magic": 6,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "support": 49.98
+            }
         },
         "image": {
             "full": "Thresh.png",
@@ -6116,7 +6287,11 @@
             "attack": 9,
             "defense": 3,
             "magic": 5,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "carry": 48.58,
+                "mid": 46.41
+            }
         },
         "image": {
             "full": "Tristana.png",
@@ -6166,7 +6341,10 @@
             "attack": 7,
             "defense": 6,
             "magic": 2,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 38.79
+            }
         },
         "image": {
             "full": "Trundle.png",
@@ -6216,7 +6394,10 @@
             "attack": 10,
             "defense": 5,
             "magic": 2,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "top": 48.49
+            }
         },
         "image": {
             "full": "Tryndamere.png",
@@ -6266,7 +6447,10 @@
             "attack": 6,
             "defense": 2,
             "magic": 6,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "mid": 50.32
+            }
         },
         "image": {
             "full": "TwistedFate.png",
@@ -6315,7 +6499,10 @@
             "attack": 9,
             "defense": 2,
             "magic": 3,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "carry": 50.61
+            }
         },
         "image": {
             "full": "Twitch.png",
@@ -6365,7 +6552,10 @@
             "attack": 8,
             "defense": 7,
             "magic": 4,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "jungler": 50.43
+            }
         },
         "image": {
             "full": "Udyr.png",
@@ -6415,7 +6605,10 @@
             "attack": 8,
             "defense": 5,
             "magic": 3,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "top": 51.14
+            }
         },
         "image": {
             "full": "Urgot.png",
@@ -6465,7 +6658,10 @@
             "attack": 7,
             "defense": 3,
             "magic": 4,
-            "difficulty": 2
+            "difficulty": 2,
+            "winrate": {
+                "carry": 49.13
+            }
         },
         "image": {
             "full": "Varus.png",
@@ -6515,7 +6711,11 @@
             "attack": 10,
             "defense": 1,
             "magic": 1,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "carry": 50.54,
+                "top": 48.49
+            }
         },
         "image": {
             "full": "Vayne.png",
@@ -6565,7 +6765,11 @@
             "attack": 2,
             "defense": 2,
             "magic": 10,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "support": 47.58,
+                "mid": 50.19
+            }
         },
         "image": {
             "full": "Veigar.png",
@@ -6614,7 +6818,11 @@
             "attack": 2,
             "defense": 2,
             "magic": 10,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "support": 50.48,
+                "mid": 52.4
+            }
         },
         "image": {
             "full": "Velkoz.png",
@@ -6663,7 +6871,10 @@
             "attack": 8,
             "defense": 5,
             "magic": 3,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "jungler": 51.07
+            }
         },
         "image": {
             "full": "Vi.png",
@@ -6713,7 +6924,11 @@
             "attack": 2,
             "defense": 4,
             "magic": 10,
-            "difficulty": 9
+            "difficulty": 9,
+            "winrate": {
+                "top": 49.68,
+                "mid": 50.6
+            }
         },
         "image": {
             "full": "Viktor.png",
@@ -6762,7 +6977,11 @@
             "attack": 2,
             "defense": 6,
             "magic": 8,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "top": 50.09,
+                "mid": 51.29
+            }
         },
         "image": {
             "full": "Vladimir.png",
@@ -6811,7 +7030,12 @@
             "attack": 7,
             "defense": 7,
             "magic": 4,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "jungler": 50.87,
+                "support": 46.35,
+                "top": 51.7
+            }
         },
         "image": {
             "full": "Volibear.png",
@@ -6861,7 +7085,11 @@
             "attack": 9,
             "defense": 5,
             "magic": 3,
-            "difficulty": 3
+            "difficulty": 3,
+            "winrate": {
+                "jungler": 52.26,
+                "top": 47.14
+            }
         },
         "image": {
             "full": "Warwick.png",
@@ -6911,7 +7139,10 @@
             "attack": 10,
             "defense": 6,
             "magic": 1,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "carry": 49.34
+            }
         },
         "image": {
             "full": "Xayah.png",
@@ -6960,7 +7191,11 @@
             "attack": 1,
             "defense": 3,
             "magic": 10,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "support": 49.94,
+                "mid": 48.46
+            }
         },
         "image": {
             "full": "Xerath.png",
@@ -7009,7 +7244,10 @@
             "attack": 8,
             "defense": 6,
             "magic": 3,
-            "difficulty": 2
+            "difficulty": 2,
+            "winrate": {
+                "jungler": 51.02
+            }
         },
         "image": {
             "full": "XinZhao.png",
@@ -7059,7 +7297,12 @@
             "attack": 8,
             "defense": 4,
             "magic": 4,
-            "difficulty": 10
+            "difficulty": 10,
+            "winrate": {
+                "carry": 49.28,
+                "mid": 49.05,
+                "top": 48.47
+            }
         },
         "image": {
             "full": "Yasuo.png",
@@ -7109,7 +7352,10 @@
             "attack": 6,
             "defense": 6,
             "magic": 4,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "top": 51.94
+            }
         },
         "image": {
             "full": "Yorick.png",
@@ -7159,7 +7405,10 @@
             "attack": 5,
             "defense": 1,
             "magic": 8,
-            "difficulty": 2
+            "difficulty": 2,
+            "winrate": {
+                "support": 40.06
+            }
         },
         "image": {
             "full": "Yuumi.png",
@@ -7209,7 +7458,11 @@
             "attack": 3,
             "defense": 7,
             "magic": 7,
-            "difficulty": 8
+            "difficulty": 8,
+            "winrate": {
+                "jungler": 52.21,
+                "support": 47.9
+            }
         },
         "image": {
             "full": "Zac.png",
@@ -7259,7 +7512,10 @@
             "attack": 9,
             "defense": 2,
             "magic": 1,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "mid": 49.07
+            }
         },
         "image": {
             "full": "Zed.png",
@@ -7308,7 +7564,10 @@
             "attack": 2,
             "defense": 4,
             "magic": 9,
-            "difficulty": 4
+            "difficulty": 4,
+            "winrate": {
+                "mid": 48.46
+            }
         },
         "image": {
             "full": "Ziggs.png",
@@ -7357,7 +7616,11 @@
             "attack": 2,
             "defense": 5,
             "magic": 8,
-            "difficulty": 6
+            "difficulty": 6,
+            "winrate": {
+                "support": 52.03,
+                "mid": 53.36
+            }
         },
         "image": {
             "full": "Zilean.png",
@@ -7407,7 +7670,10 @@
             "attack": 1,
             "defense": 7,
             "magic": 8,
-            "difficulty": 5
+            "difficulty": 5,
+            "winrate": {
+                "mid": 50.72
+            }
         },
         "image": {
             "full": "Zoe.png",
@@ -7457,7 +7723,10 @@
             "attack": 4,
             "defense": 3,
             "magic": 8,
-            "difficulty": 7
+            "difficulty": 7,
+            "winrate": {
+                "support": 51.74
+            }
         },
         "image": {
             "full": "Zyra.png",
