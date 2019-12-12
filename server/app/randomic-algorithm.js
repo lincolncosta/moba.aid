@@ -1,5 +1,5 @@
 var fs = require("fs");
-var json = require("./assets/champions.json");
+var json = jsonLeague = require("./assets/league/champions.json");
 
 class RandomicAlgorithm {
 

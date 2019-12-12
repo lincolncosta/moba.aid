@@ -1,7 +1,7 @@
 var evolveGa = require("evolve-ga");
 var createCollage = require("@settlin/collage");
 var jsonDOTA = require("./assets/dota/champions.json");
-var jsonLeague= require("./assets/league/champions.json");
+var json = require("./assets/league/champions.json");
 var fs = require("fs");
 // const uploadFile = require("./uploadFile");
 let generation = 1;
@@ -290,7 +290,7 @@ class GeneticAlgorithm {
 
     showCompositionInfo() {
         var championsIcons = [];
-        var parsedjsonLeague= JSON.parse(JSON.stringify(json));
+        var parsedJson = JSON.parse(JSON.stringify(json));
 
         if (this.finalChromosome) {
             this.finalChromosome.genes.forEach(function (item) {
@@ -350,8 +350,8 @@ class GeneticAlgorithm {
         try {
             await this.createReportFile();
             await this.createTimeReportFile();
-            await this.writeFileHeader();
-            await this.writeFileSecondsHeader();
+            // await this.writeFileHeader();
+            // await this.writeFileSecondsHeader();
 
             while (generation <= MAX_GENERATIONS) {
                 this.algorithm.run();
@@ -362,8 +362,8 @@ class GeneticAlgorithm {
 
             this.finalFitvalue = 0;
             var end = new Date();
-            await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
             // this.showCompositionInfo();
+            await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());            
 
         } catch (error) {
             throw Error(error);
