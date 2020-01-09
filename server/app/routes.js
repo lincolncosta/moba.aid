@@ -4,13 +4,6 @@ const routes = express.Router()
 const RandomicAlgorithm = require('./randomic-algorithm')
 const GeneticAlgorithm = require('./genetic-algorithm')
 
-routes.get('/randomic', (req, res) => {
-
-    // TODO esperar o callback do start para mostrar o resultado
-    RandomicAlgorithm.start()
-    res.send('ok')
-})
-
 routes.get('/result', (req, res) => {
 
     let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions } = req.query;
@@ -37,7 +30,19 @@ routes.get('/result', (req, res) => {
 
     // res.send(fileName);
 
-    return res.json({ filename: fileName })
+    return res.json({ filename: fileName });
+})
+
+routes.get('/randomic', (req, res) => {
+
+    let { strategy, maxFitValue, currentExecution, bannedChampions, pickedChampions } = req.query;
+
+    console.log('recebido');
+
+    // RandomicAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions);
+    RandomicAlgorithm.start();
+
+    return res.json('Geração randômica finalizada.');
 })
 
 module.exports = routes

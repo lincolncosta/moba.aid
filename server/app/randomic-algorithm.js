@@ -1,34 +1,34 @@
 var fs = require("fs");
-var json = require("./assets/champions.json");
+var json = require("./assets/league/champions.json");
 
 class RandomicAlgorithm {
 
-  constructor (){
+  constructor() {
     this.randomic = this.randomic.bind(this)
   }
 
-  generateRandomPosition () {
+  generateRandomPosition() {
     return Math.floor(Math.random() * 141) + 1;
   };
 
-  randomic () {
+  randomic() {
     var chromosome = [];
     var control = 0;
     var current;
     var finalFitness = 0;
     for (var x = 0; x < 5; x++) {
-        while (chromosome.find(function (item) { return item === control; }) || control === 0) {
-            current = json[this.generateRandomPosition()];
-            if (current)
-                control = current.id;
-        }
-        finalFitness += current.stats.attackdamage + current.stats.movespeed;
-        chromosome.push(control);
+      while (chromosome.find(function (item) { return item === control; }) || control === 0) {
+        current = json[this.generateRandomPosition()];
+        if (current)
+          control = current.id;
+      }
+      finalFitness += current.stats.attackdamage + current.stats.movespeed;
+      chromosome.push(control);
     }
-    fs.appendFileSync("reports/randomic.csv", chromosome + "\t fit = " + finalFitness.toFixed(2) + "\r\n");
+    fs.appendFile("app/reports/randomic.csv", chromosome + "\t fit = " + finalFitness.toFixed(2) + "\r\n");
   };
-  
-  start () {
+
+  start() {
     for (var x = 0; x < 100; x++) {
       this.randomic();
     }
