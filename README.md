@@ -24,7 +24,7 @@ Com isso, obtém-se que os máximos são:
 
 Após realizar o download ou clone do projeto, execute o comando `npm install` para que todas as dependências de execução sejam instaladas em seu computador.
 
-Para executar o projeto utilize o comando `npm run` + um parâmetro de estratégia. Atualmente as estratégias disponíveis são `hardengage`, `pusher` e `teamfight`.
+Para executar o projeto utilize o comando `npm start` na pasta `server`. Atualmente as estratégias disponíveis são `hardengage`, `pusher` e `teamfight`.
 
 Ou seja, as possíveis execuções seriam:
 

@@ -1,10 +1,12 @@
-const exec = require('child_process').exec;
-const express = require('express')
-const routes = express.Router()
-const RandomicAlgorithm = require('./randomic-algorithm')
-const GeneticAlgorithm = require('./genetic-algorithm')
+const exec = require('child_process').exec;;
+const express = require('express');
+const RandomicAlgorithm = require('./randomic-algorithm');
+const GeneticAlgorithm = require('./genetic-algorithm');
+const LeagueAlgorithm = require('./league-algorithm');
 
-routes.get('/result', (req, res) => {
+const routes = express.Router();
+
+routes.get('/league', (req, res) => {
 
     let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions } = req.query;
 
@@ -26,7 +28,7 @@ routes.get('/result', (req, res) => {
         });
     }
 
-    let fileName = GeneticAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions);
+    let fileName = LeagueAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions);
 
     // res.send(fileName);
 
