@@ -22,6 +22,7 @@ let filePathTimeReports = '';
 
 class DotaAlgorithm extends GeneticAlgorithm {
     constructor() {
+        super();
         this.genetic = this.genetic.bind(this);
 
         this.crossOverFunction = this.crossOverFunction.bind(this);
@@ -57,7 +58,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
         chromosome.genes.map(gene => {
             json.map(function (champion) {
                 if (gene === champion.id) {
-                    Object.entries(champion.infos.winrate).forEach(([role, winrate]) => {
+                    Object.entries(champion.winrate).forEach(([role, winrate]) => {
                         if (role === "top" && !hasTop) {
                             hasTop = true;
                             winrateTop = winrate;
@@ -298,6 +299,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
                     return champion.id === item;
                 });
                 if (aux) {
+                    console.log(aux.icon);
                     championsIcons.push(aux.icon);
                 }
             });
@@ -348,22 +350,22 @@ class DotaAlgorithm extends GeneticAlgorithm {
         this.algorithm.resetPopulation();
 
         try {
-            await this.createReportFile();
-            await this.createTimeReportFile();
+            // await this.createReportFile();
+            // await this.createTimeReportFile();
             // await this.writeFileHeader();
             // await this.writeFileSecondsHeader();
 
             while (generation <= MAX_GENERATIONS) {
                 this.algorithm.run();
-                await this.writeGenerationsOnFile();
+                // await this.writeGenerationsOnFile();
                 allChromosomes = [];
                 generation++;
             }
 
             this.finalFitvalue = 0;
             var end = new Date();
-            // this.showCompositionInfo();
-            await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());            
+            this.showCompositionInfo();
+            // await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());            
 
         } catch (error) {
             throw Error(error);
