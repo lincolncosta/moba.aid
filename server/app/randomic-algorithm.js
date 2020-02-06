@@ -23,9 +23,93 @@ class RandomicAlgorithm {
           control = current.id;
       }
       finalFitness += current.stats.attackdamage + current.stats.movespeed;
+
+      switch (COMPOSITION_STRATEGY) {
+        case "hardengage":
+            var fitvalueHardEngage = 0;
+            fitvalueHardEngage = this.validCompositionFunction(chromosome);
+            var multiplier = 1.0;
+            var self = this;
+
+            chromosome.genes.map(function (gene) {
+                json.map(champion => {
+                    if (gene === champion.id) {
+                        multiplier = self.validRolesFunction(
+                            champion,
+                            ["Hard Engage"],
+                            multiplier
+                        );
+                    }
+                });
+            });
+
+            fitvalueHardEngage = (fitvalueHardEngage * multiplier) / MAX_FIT_VALUE;
+
+            if (fitvalueHardEngage > finalFitvalue) {
+                finalFitvalue = fitvalueHardEngage;
+                this.finalChromosome = chromosome;
+            }
+
+            return fitvalueHardEngage;
+        case "teamfight":
+            var fitvalueTeamFight = this.validCompositionFunction(chromosome);
+            var multiplier = 1.0;
+            var self = this;
+
+            chromosome.genes.map(function (gene) {
+                json.map(champion => {
+                    if (gene === champion.id) {
+                        multiplier = self.validRolesFunction(
+                            champion,
+                            ["Area of Effect"],
+                            multiplier
+                        );
+                    }
+                });
+            });
+
+            fitvalueTeamFight = (fitvalueTeamFight * multiplier) / MAX_FIT_VALUE;
+
+            if (fitvalueTeamFight > finalFitvalue) {
+                finalFitvalue = fitvalueTeamFight;
+                this.finalChromosome = chromosome;
+            }
+
+            return fitvalueTeamFight;
+        case "pusher":
+            var fitvaluePusher = this.validCompositionFunction(chromosome);
+            var multiplier = 1.0;
+            var self = this;
+
+            chromosome.genes.map(function (gene) {
+                json.map(champion => {
+                    if (gene === champion.id) {
+                        multiplier = self.validRolesFunction(
+                            champion,
+                            ["Poke", "Waveclear"],
+                            multiplier
+                        );
+                    }
+                });
+            });
+
+            fitvaluePusher = (fitvaluePusher * multiplier) / MAX_FIT_VALUE;
+
+            if (fitvaluePusher > finalFitvalue) {
+                finalFitvalue = fitvaluePusher;
+                this.finalChromosome = chromosome;
+            }
+
+            return fitvaluePusher;
+    }
+
       chromosome.push(control);
     }
-    fs.appendFile("app/reports/randomic.csv", chromosome + "\t fit = " + finalFitness.toFixed(2) + "\r\n");
+
+    return new Promise(function (resolve, reject) {
+      fs.appendFile("app/reports/randomic.csv", chromosome + "\t fit = " + finalFitness.toFixed(2) + "\r\n");
+    });
+
   };
 
   start() {
