@@ -58,48 +58,26 @@ class DotaAlgorithm extends GeneticAlgorithm {
         chromosome.genes.map(gene => {
             json.map(function (champion) {
                 if (gene === champion.id) {
-                    Object.entries(champion.winrate).forEach(([role, winrate]) => {
-                        if (role === "top" && !hasTop) {
-                            hasTop = true;
-                            winrateTop = winrate;
-                            return;
-                        }
+                    // Object.entries(champion.winrate).forEach(([role, winrate]) => {
+                        winrateComposition += champion.winrate;
 
-                        if (role === "jungler" && !hasJungle) {
-                            hasJungle = true;
-                            winrateJungle = winrate;
-                            return;
-                        }
-
-                        if (role === "mid" && !hasMid) {
-                            hasMid = true;
-                            winrateMid = winrate;
-                            return;
-                        }
-
-                        if (role === "carry" && !hasCarry) {
+                        if (champion.roles.includes('carry') && !hasCarry) {
                             hasCarry = true;
-                            winrateCarry = winrate;
                             return;
                         }
 
-                        if (role === "support" && !hasSupp) {
+                        if (champion.roles.includes('support') && !hasSupp) {
                             hasSupp = true;
-                            winrateSupp = winrate;
                             return;
                         }
-                    });
+
+                    // });
                 }
 
-                if (hasCarry && hasSupp && hasMid && hasTop && hasJungle) {
-                    winrateComposition =
-                        (winrateCarry +
-                            winrateSupp +
-                            winrateMid +
-                            winrateTop +
-                            winrateJungle) /
-                        5;
+                if (hasCarry && hasSupp) {
+                    winrateComposition = winrateComposition / 5;
                 }
+
             });
         });
 
@@ -299,8 +277,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
                     return champion.id === item;
                 });
                 if (aux) {
-                    console.log(aux.icon);
-                    championsIcons.push(aux.icon);
+                    championsIcons.push('https://api.opendota.com' + aux.img);
                 }
             });
         }
@@ -309,8 +286,8 @@ class DotaAlgorithm extends GeneticAlgorithm {
             sources: championsIcons,
             width: 5,
             height: 1,
-            imageWidth: 120,
-            imageHeight: 120
+            imageWidth: 256,
+            imageHeight: 144
         };
 
         createCollage(options).then(canvas => {

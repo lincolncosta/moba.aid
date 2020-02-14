@@ -6,7 +6,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Nuker"
         ],
@@ -119,7 +119,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Disabler",
             "Nuker",
             "Durable"
@@ -176,7 +176,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Disabler",
             "Jungler",
             "Nuker",
@@ -234,7 +234,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Disabler",
             "Nuker",
             "Jungler"
@@ -291,7 +291,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Disabler",
             "Pusher"
         ],
@@ -347,7 +347,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Support",
+            "support",
             "Initiator",
             "Disabler",
             "Nuker"
@@ -404,7 +404,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Pusher",
             "Escape"
         ],
@@ -460,8 +460,8 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
-            "Support",
+            "carry",
+            "support",
             "Escape",
             "Nuker",
             "Disabler"
@@ -518,7 +518,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Durable",
             "Nuker",
@@ -576,7 +576,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker"
         ],
         "winrate": 46.87,
@@ -631,7 +631,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Pusher",
             "Nuker"
@@ -802,7 +802,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Durable",
             "Nuker",
             "Pusher"
@@ -861,7 +861,7 @@
         "roles": [
             "Initiator",
             "Disabler",
-            "Support",
+            "support",
             "Nuker",
             "Escape",
             "Jungler"
@@ -918,7 +918,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Nuker",
             "Initiator",
@@ -976,7 +976,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Disabler",
             "Initiator",
             "Durable",
@@ -1034,7 +1034,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Pusher",
             "Initiator",
@@ -1093,7 +1093,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Initiator",
             "Disabler",
             "Nuker",
@@ -1151,8 +1151,8 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
-            "Support",
+            "carry",
+            "support",
             "Disabler",
             "Escape",
             "Nuker"
@@ -1263,8 +1263,8 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
-            "Support",
+            "carry",
+            "support",
             "Disabler",
             "Initiator",
             "Durable",
@@ -1322,8 +1322,8 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
-            "Carry",
+            "support",
+            "carry",
             "Nuker",
             "Disabler"
         ],
@@ -1379,7 +1379,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Disabler",
             "Nuker",
             "Initiator"
@@ -1436,7 +1436,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Pusher",
             "Disabler",
             "Nuker",
@@ -1494,7 +1494,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Durable",
             "Initiator",
             "Disabler",
@@ -1609,7 +1609,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler"
         ],
@@ -1665,7 +1665,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker"
         ],
         "winrate": 48.82,
@@ -1720,7 +1720,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Disabler"
         ],
@@ -1833,7 +1833,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Pusher"
         ],
@@ -1889,7 +1889,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker"
         ],
         "winrate": 47.12,
@@ -1944,7 +1944,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Durable",
             "Disabler"
@@ -2001,7 +2001,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Initiator",
             "Disabler"
         ],
@@ -2114,7 +2114,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Escape"
         ],
@@ -2170,7 +2170,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Initiator",
             "Pusher",
@@ -2228,7 +2228,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Initiator",
             "Disabler",
             "Escape",
@@ -2286,8 +2286,8 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
-            "Support",
+            "carry",
+            "support",
             "Durable",
             "Disabler",
             "Initiator"
@@ -2344,7 +2344,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Pusher",
             "Nuker",
             "Disabler"
@@ -2401,7 +2401,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Escape"
         ],
         "winrate": 50.74,
@@ -2511,7 +2511,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Escape"
         ],
         "winrate": 46.40,
@@ -2566,7 +2566,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Durable",
             "Initiator",
             "Disabler"
@@ -2623,7 +2623,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Pusher"
         ],
@@ -2679,7 +2679,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Pusher",
             "Durable",
             "Disabler",
@@ -2738,7 +2738,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler"
         ],
@@ -2851,8 +2851,8 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
-            "Support",
+            "carry",
+            "support",
             "Nuker",
             "Pusher",
             "Disabler"
@@ -2909,7 +2909,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Jungler",
             "Pusher",
             "Escape",
@@ -2967,7 +2967,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Durable",
             "Jungler",
             "Escape",
@@ -3082,7 +3082,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Pusher"
         ],
@@ -3138,7 +3138,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Support",
+            "support",
             "Durable",
             "Nuker"
         ],
@@ -3194,7 +3194,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Jungler",
             "Pusher",
             "Durable",
@@ -3252,7 +3252,7 @@
         "primary_attr": "str",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Durable",
             "Initiator"
         ],
@@ -3308,7 +3308,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Initiator",
             "Durable",
             "Disabler",
@@ -3366,7 +3366,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Pusher",
             "Escape",
             "Nuker"
@@ -3478,7 +3478,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Escape"
         ],
         "winrate": 49.38,
@@ -3533,7 +3533,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Pusher",
             "Disabler"
@@ -3647,7 +3647,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Jungler",
             "Pusher"
         ],
@@ -3703,7 +3703,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Durable",
             "Escape"
         ],
@@ -3759,7 +3759,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Disabler",
             "Nuker"
         ],
@@ -3815,7 +3815,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Disabler",
             "Initiator",
             "Durable",
@@ -3873,7 +3873,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Jungler",
             "Durable",
             "Disabler"
@@ -3930,7 +3930,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Initiator",
             "Disabler",
             "Durable",
@@ -3988,7 +3988,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Disabler"
         ],
@@ -4044,8 +4044,8 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
-            "Support",
+            "carry",
+            "support",
             "Durable",
             "Disabler",
             "Initiator",
@@ -4103,7 +4103,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Disabler",
             "Escape",
@@ -4161,8 +4161,8 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
-            "Support",
+            "carry",
+            "support",
             "Disabler",
             "Initiator",
             "Nuker"
@@ -4219,7 +4219,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Disabler"
         ],
@@ -4275,7 +4275,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Pusher",
             "Jungler",
             "Durable",
@@ -4333,7 +4333,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Initiator",
             "Durable",
             "Disabler",
@@ -4391,7 +4391,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Disabler",
             "Initiator",
             "Nuker"
@@ -4448,7 +4448,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Pusher",
             "Jungler",
             "Durable"
@@ -4505,7 +4505,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Disabler",
             "Durable",
             "Pusher",
@@ -4563,7 +4563,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Nuker",
             "Disabler",
@@ -4622,7 +4622,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Support",
+            "support",
             "Initiator",
             "Durable",
             "Disabler",
@@ -4680,7 +4680,7 @@
         "primary_attr": "int",
         "attack_type": "Melee",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler",
             "Durable",
@@ -4738,7 +4738,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Support",
+            "support",
             "Durable",
             "Disabler",
             "Nuker"
@@ -4795,7 +4795,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Disabler",
             "Nuker"
         ],
@@ -4851,7 +4851,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Disabler",
             "Nuker",
             "Initiator"
@@ -4965,8 +4965,8 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
-            "Support",
+            "carry",
+            "support",
             "Pusher",
             "Disabler",
             "Initiator",
@@ -5024,7 +5024,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler",
             "Jungler"
@@ -5081,7 +5081,7 @@
         "primary_attr": "str",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Escape",
             "Nuker"
         ],
@@ -5137,7 +5137,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Durable",
             "Disabler",
@@ -5195,7 +5195,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Disabler",
             "Nuker"
@@ -5252,7 +5252,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Disabler",
             "Durable"
         ],
@@ -5308,7 +5308,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Pusher",
             "Disabler",
             "Durable"
@@ -5536,7 +5536,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Durable",
             "Initiator",
             "Nuker"
@@ -5649,7 +5649,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler"
         ],
@@ -5705,8 +5705,8 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Support",
-            "Carry",
+            "support",
+            "carry",
             "Durable"
         ],
         "winrate": 53.67,
@@ -5818,7 +5818,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Disabler",
             "Initiator",
             "Durable",
@@ -5931,7 +5931,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Nuker",
             "Disabler",
@@ -6047,7 +6047,7 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler",
             "Durable",
@@ -6105,7 +6105,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Pusher",
             "Nuker"
         ],
@@ -6161,7 +6161,7 @@
         "primary_attr": "str",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Initiator",
             "Escape",
@@ -6219,7 +6219,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler",
             "Escape"
@@ -6276,7 +6276,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Disabler",
             "Nuker"
         ],
@@ -6332,7 +6332,7 @@
         "primary_attr": "agi",
         "attack_type": "Ranged",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Nuker"
         ],
@@ -6388,7 +6388,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Escape",
             "Disabler",
             "Initiator"
@@ -6445,7 +6445,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler",
             "Escape"
@@ -6502,7 +6502,7 @@
         "primary_attr": "agi",
         "attack_type": "Melee",
         "roles": [
-            "Carry",
+            "carry",
             "Nuker",
             "Disabler",
             "Durable",
@@ -6561,7 +6561,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Support",
+            "support",
             "Nuker",
             "Disabler",
             "Escape"
