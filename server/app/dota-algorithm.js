@@ -208,7 +208,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
                         if (gene === champion.id) {
                             multiplier = self.validRolesFunction(
                                 champion,
-                                ["Area of Effect"],
+                                ["disabler, escape"],
                                 multiplier
                             );
                         }
