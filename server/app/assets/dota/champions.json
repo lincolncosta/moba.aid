@@ -8,7 +8,7 @@
         "roles": [
             "carry",
             "Escape",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 49.03,
         "img": "/apps/dota2/images/heroes/antimage_full.png?",
@@ -62,8 +62,8 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
-            "Durable",
+            "initiator",
+            "durable",
             "Disabler",
             "Jungler"
         ],
@@ -121,8 +121,8 @@
         "roles": [
             "support",
             "Disabler",
-            "Nuker",
-            "Durable"
+            "nuker",
+            "durable"
         ],
         "winrate": 48.02,
         "img": "/apps/dota2/images/heroes/bane_full.png?",
@@ -179,8 +179,8 @@
             "carry",
             "Disabler",
             "Jungler",
-            "Nuker",
-            "Initiator"
+            "nuker",
+            "initiator"
         ],
         "winrate": 51.25,
         "img": "/apps/dota2/images/heroes/bloodseeker_full.png?",
@@ -236,7 +236,7 @@
         "roles": [
             "support",
             "Disabler",
-            "Nuker",
+            "nuker",
             "Jungler"
         ],
         "winrate": 52.33,
@@ -293,7 +293,7 @@
         "roles": [
             "carry",
             "Disabler",
-            "Pusher"
+            "pusher"
         ],
         "winrate": 51.61,
         "img": "/apps/dota2/images/heroes/drow_ranger_full.png?",
@@ -348,9 +348,9 @@
         "attack_type": "Melee",
         "roles": [
             "support",
-            "Initiator",
+            "initiator",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 49.91,
         "img": "/apps/dota2/images/heroes/earthshaker_full.png?",
@@ -405,7 +405,7 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Pusher",
+            "pusher",
             "Escape"
         ],
         "winrate": 49.15,
@@ -463,7 +463,7 @@
             "carry",
             "support",
             "Escape",
-            "Nuker",
+            "nuker",
             "Disabler"
         ],
         "winrate": 51.91,
@@ -520,8 +520,8 @@
         "roles": [
             "carry",
             "Escape",
-            "Durable",
-            "Nuker",
+            "durable",
+            "nuker",
             "Disabler"
         ],
         "winrate": 44.92,
@@ -577,7 +577,7 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 46.87,
         "img": "/apps/dota2/images/heroes/nevermore_full.png?",
@@ -633,8 +633,8 @@
         "roles": [
             "carry",
             "Escape",
-            "Pusher",
-            "Nuker"
+            "pusher",
+            "nuker"
         ],
         "winrate": 49.26,
         "img": "/apps/dota2/images/heroes/phantom_lancer_full.png?",
@@ -688,10 +688,10 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Initiator",
+            "initiator",
             "Disabler",
             "Escape",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 44.63,
         "img": "/apps/dota2/images/heroes/puck_full.png?",
@@ -746,9 +746,9 @@
         "attack_type": "Melee",
         "roles": [
             "Disabler",
-            "Initiator",
-            "Durable",
-            "Nuker"
+            "initiator",
+            "durable",
+            "nuker"
         ],
         "winrate": 53.29,
         "img": "/apps/dota2/images/heroes/pudge_full.png?",
@@ -803,9 +803,9 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Durable",
-            "Nuker",
-            "Pusher"
+            "durable",
+            "nuker",
+            "pusher"
         ],
         "winrate": 47.32,
         "img": "/apps/dota2/images/heroes/razor_full.png?",
@@ -859,10 +859,10 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
+            "initiator",
             "Disabler",
             "support",
-            "Nuker",
+            "nuker",
             "Escape",
             "Jungler"
         ],
@@ -920,8 +920,8 @@
         "roles": [
             "carry",
             "Escape",
-            "Nuker",
-            "Initiator",
+            "nuker",
+            "initiator",
             "Disabler"
         ],
         "winrate": 47.60,
@@ -978,9 +978,9 @@
         "roles": [
             "carry",
             "Disabler",
-            "Initiator",
-            "Durable",
-            "Nuker"
+            "initiator",
+            "durable",
+            "nuker"
         ],
         "winrate": 48.61,
         "img": "/apps/dota2/images/heroes/sven_full.png?",
@@ -1035,10 +1035,10 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Nuker",
-            "Pusher",
-            "Initiator",
-            "Durable",
+            "nuker",
+            "pusher",
+            "initiator",
+            "durable",
             "Disabler"
         ],
         "winrate": 44.48,
@@ -1094,9 +1094,9 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Initiator",
+            "initiator",
             "Disabler",
-            "Nuker",
+            "nuker",
             "Escape"
         ],
         "winrate": 52.76,
@@ -1155,7 +1155,7 @@
             "support",
             "Disabler",
             "Escape",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 52.43,
         "img": "/apps/dota2/images/heroes/windrunner_full.png?",
@@ -1209,7 +1209,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Nuker"
+            "nuker"
         ],
         "winrate": 55.14,
         "img": "/apps/dota2/images/heroes/zuus_full.png?",
@@ -1266,9 +1266,9 @@
             "carry",
             "support",
             "Disabler",
-            "Initiator",
-            "Durable",
-            "Nuker"
+            "initiator",
+            "durable",
+            "nuker"
         ],
         "winrate": 48.67,
         "img": "/apps/dota2/images/heroes/kunkka_full.png?",
@@ -1324,7 +1324,7 @@
         "roles": [
             "support",
             "carry",
-            "Nuker",
+            "nuker",
             "Disabler"
         ],
         "winrate": 45.72,
@@ -1381,8 +1381,8 @@
         "roles": [
             "support",
             "Disabler",
-            "Nuker",
-            "Initiator"
+            "nuker",
+            "initiator"
         ],
         "winrate": 48.88,
         "img": "/apps/dota2/images/heroes/lion_full.png?",
@@ -1437,10 +1437,10 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Pusher",
+            "pusher",
             "Disabler",
-            "Nuker",
-            "Initiator"
+            "nuker",
+            "initiator"
         ],
         "winrate": 50.84,
         "img": "/apps/dota2/images/heroes/shadow_shaman_full.png?",
@@ -1495,8 +1495,8 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Durable",
-            "Initiator",
+            "durable",
+            "initiator",
             "Disabler",
             "Escape"
         ],
@@ -1552,10 +1552,10 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
-            "Durable",
+            "initiator",
+            "durable",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 50.74,
         "img": "/apps/dota2/images/heroes/tidehunter_full.png?",
@@ -1610,7 +1610,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler"
         ],
         "winrate": 49.58,
@@ -1666,7 +1666,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 48.82,
         "img": "/apps/dota2/images/heroes/lich_full.png?",
@@ -1778,8 +1778,8 @@
         "roles": [
             "Disabler",
             "Jungler",
-            "Initiator",
-            "Pusher"
+            "initiator",
+            "pusher"
         ],
         "winrate": 50.94,
         "img": "/apps/dota2/images/heroes/enigma_full.png?",
@@ -1834,8 +1834,8 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker",
-            "Pusher"
+            "nuker",
+            "pusher"
         ],
         "winrate": 46.33,
         "img": "/apps/dota2/images/heroes/tinker_full.png?",
@@ -1890,7 +1890,7 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 47.12,
         "img": "/apps/dota2/images/heroes/sniper_full.png?",
@@ -1945,8 +1945,8 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker",
-            "Durable",
+            "nuker",
+            "durable",
             "Disabler"
         ],
         "winrate": 49.03,
@@ -2002,7 +2002,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Initiator",
+            "initiator",
             "Disabler"
         ],
         "winrate": 54.30,
@@ -2057,10 +2057,10 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
+            "initiator",
             "Disabler",
-            "Durable",
-            "Nuker"
+            "durable",
+            "nuker"
         ],
         "winrate": 48.97,
         "img": "/apps/dota2/images/heroes/beastmaster_full.png?",
@@ -2115,7 +2115,7 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker",
+            "nuker",
             "Escape"
         ],
         "winrate": 45.97,
@@ -2171,9 +2171,9 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
-            "Initiator",
-            "Pusher",
+            "nuker",
+            "initiator",
+            "pusher",
             "Disabler"
         ],
         "winrate": 50.51,
@@ -2229,10 +2229,10 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Initiator",
+            "initiator",
             "Disabler",
             "Escape",
-            "Durable"
+            "durable"
         ],
         "winrate": 51.00,
         "img": "/apps/dota2/images/heroes/faceless_void_full.png?",
@@ -2288,9 +2288,9 @@
         "roles": [
             "carry",
             "support",
-            "Durable",
+            "durable",
             "Disabler",
-            "Initiator"
+            "initiator"
         ],
         "winrate": 54.15,
         "img": "/apps/dota2/images/heroes/skeleton_king_full.png?",
@@ -2345,8 +2345,8 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Pusher",
-            "Nuker",
+            "pusher",
+            "nuker",
             "Disabler"
         ],
         "winrate": 47.93,
@@ -2456,8 +2456,8 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Nuker",
-            "Pusher"
+            "nuker",
+            "pusher"
         ],
         "winrate": 46.85,
         "img": "/apps/dota2/images/heroes/pugna_full.png?",
@@ -2567,8 +2567,8 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Durable",
-            "Initiator",
+            "durable",
+            "initiator",
             "Disabler"
         ],
         "winrate": 52.84,
@@ -2624,8 +2624,8 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker",
-            "Pusher"
+            "nuker",
+            "pusher"
         ],
         "winrate": 51.81,
         "img": "/apps/dota2/images/heroes/luna_full.png?",
@@ -2680,11 +2680,11 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Pusher",
-            "Durable",
+            "pusher",
+            "durable",
             "Disabler",
-            "Initiator",
-            "Nuker"
+            "initiator",
+            "nuker"
         ],
         "winrate": 48.62,
         "img": "/apps/dota2/images/heroes/dragon_knight_full.png?",
@@ -2739,7 +2739,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler"
         ],
         "winrate": 51.80,
@@ -2794,10 +2794,10 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
+            "initiator",
             "Disabler",
-            "Durable",
-            "Nuker"
+            "durable",
+            "nuker"
         ],
         "winrate": 52.56,
         "img": "/apps/dota2/images/heroes/rattletrap_full.png?",
@@ -2853,8 +2853,8 @@
         "roles": [
             "carry",
             "support",
-            "Nuker",
-            "Pusher",
+            "nuker",
+            "pusher",
             "Disabler"
         ],
         "winrate": 45.18,
@@ -2911,9 +2911,9 @@
         "roles": [
             "carry",
             "Jungler",
-            "Pusher",
+            "pusher",
             "Escape",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 44.51,
         "img": "/apps/dota2/images/heroes/furion_full.png?",
@@ -2968,7 +2968,7 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Durable",
+            "durable",
             "Jungler",
             "Escape",
             "Disabler"
@@ -3025,7 +3025,7 @@
         "primary_attr": "int",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
+            "initiator",
             "Jungler",
             "Escape",
             "Disabler"
@@ -3084,7 +3084,7 @@
         "roles": [
             "carry",
             "Escape",
-            "Pusher"
+            "pusher"
         ],
         "winrate": 54.01,
         "img": "/apps/dota2/images/heroes/clinkz_full.png?",
@@ -3139,8 +3139,8 @@
         "attack_type": "Melee",
         "roles": [
             "support",
-            "Durable",
-            "Nuker"
+            "durable",
+            "nuker"
         ],
         "winrate": 52.33,
         "img": "/apps/dota2/images/heroes/omniknight_full.png?",
@@ -3196,8 +3196,8 @@
         "roles": [
             "support",
             "Jungler",
-            "Pusher",
-            "Durable",
+            "pusher",
+            "durable",
             "Disabler"
         ],
         "winrate": 50.00,
@@ -3253,8 +3253,8 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Durable",
-            "Initiator"
+            "durable",
+            "initiator"
         ],
         "winrate": 49.07,
         "img": "/apps/dota2/images/heroes/huskar_full.png?",
@@ -3309,10 +3309,10 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Initiator",
-            "Durable",
+            "initiator",
+            "durable",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 53.88,
         "img": "/apps/dota2/images/heroes/night_stalker_full.png?",
@@ -3367,9 +3367,9 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Pusher",
+            "pusher",
             "Escape",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 50.21,
         "img": "/apps/dota2/images/heroes/broodmother_full.png?",
@@ -3424,7 +3424,7 @@
         "attack_type": "Melee",
         "roles": [
             "Escape",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 50.75,
         "img": "/apps/dota2/images/heroes/bounty_hunter_full.png?",
@@ -3534,8 +3534,8 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
-            "Pusher",
+            "nuker",
+            "pusher",
             "Disabler"
         ],
         "winrate": 51.90,
@@ -3590,7 +3590,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Initiator",
+            "initiator",
             "Jungler",
             "Disabler",
             "Escape"
@@ -3649,7 +3649,7 @@
         "roles": [
             "support",
             "Jungler",
-            "Pusher"
+            "pusher"
         ],
         "winrate": 49.16,
         "img": "/apps/dota2/images/heroes/chen_full.png?",
@@ -3704,7 +3704,7 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Durable",
+            "durable",
             "Escape"
         ],
         "winrate": 53.86,
@@ -3761,7 +3761,7 @@
         "roles": [
             "support",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 51.82,
         "img": "/apps/dota2/images/heroes/ancient_apparition_full.png?",
@@ -3817,9 +3817,9 @@
         "roles": [
             "carry",
             "Disabler",
-            "Initiator",
-            "Durable",
-            "Nuker"
+            "initiator",
+            "durable",
+            "nuker"
         ],
         "winrate": 46.83,
         "img": "/apps/dota2/images/heroes/doom_bringer_full.png?",
@@ -3875,7 +3875,7 @@
         "roles": [
             "carry",
             "Jungler",
-            "Durable",
+            "durable",
             "Disabler"
         ],
         "winrate": 51.23,
@@ -3931,9 +3931,9 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Initiator",
+            "initiator",
             "Disabler",
-            "Durable",
+            "durable",
             "Escape"
         ],
         "winrate": 49.92,
@@ -3989,7 +3989,7 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker",
+            "nuker",
             "Disabler"
         ],
         "winrate": 48.49,
@@ -4046,10 +4046,10 @@
         "roles": [
             "carry",
             "support",
-            "Durable",
+            "durable",
             "Disabler",
-            "Initiator",
-            "Nuker"
+            "initiator",
+            "nuker"
         ],
         "winrate": 49.64,
         "img": "/apps/dota2/images/heroes/alchemist_full.png?",
@@ -4104,10 +4104,10 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker",
+            "nuker",
             "Disabler",
             "Escape",
-            "Pusher"
+            "pusher"
         ],
         "winrate": 49.36,
         "img": "/apps/dota2/images/heroes/invoker_full.png?",
@@ -4164,8 +4164,8 @@
             "carry",
             "support",
             "Disabler",
-            "Initiator",
-            "Nuker"
+            "initiator",
+            "nuker"
         ],
         "winrate": 52.79,
         "img": "/apps/dota2/images/heroes/silencer_full.png?",
@@ -4220,7 +4220,7 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Nuker",
+            "nuker",
             "Disabler"
         ],
         "winrate": 46.23,
@@ -4276,9 +4276,9 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Pusher",
+            "pusher",
             "Jungler",
-            "Durable",
+            "durable",
             "Escape"
         ],
         "winrate": 50.54,
@@ -4334,10 +4334,10 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Initiator",
-            "Durable",
+            "initiator",
+            "durable",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 49.79,
         "img": "/apps/dota2/images/heroes/brewmaster_full.png?",
@@ -4393,8 +4393,8 @@
         "roles": [
             "support",
             "Disabler",
-            "Initiator",
-            "Nuker"
+            "initiator",
+            "nuker"
         ],
         "winrate": 46.89,
         "img": "/apps/dota2/images/heroes/shadow_demon_full.png?",
@@ -4449,9 +4449,9 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Pusher",
+            "pusher",
             "Jungler",
-            "Durable"
+            "durable"
         ],
         "winrate": 42.16,
         "img": "/apps/dota2/images/heroes/lone_druid_full.png?",
@@ -4507,9 +4507,9 @@
         "roles": [
             "carry",
             "Disabler",
-            "Durable",
-            "Pusher",
-            "Initiator"
+            "durable",
+            "pusher",
+            "initiator"
         ],
         "winrate": 52.49,
         "img": "/apps/dota2/images/heroes/chaos_knight_full.png?",
@@ -4565,10 +4565,10 @@
         "roles": [
             "carry",
             "Escape",
-            "Nuker",
+            "nuker",
             "Disabler",
-            "Initiator",
-            "Pusher"
+            "initiator",
+            "pusher"
         ],
         "winrate": 54.07,
         "img": "/apps/dota2/images/heroes/meepo_full.png?",
@@ -4623,8 +4623,8 @@
         "attack_type": "Melee",
         "roles": [
             "support",
-            "Initiator",
-            "Durable",
+            "initiator",
+            "durable",
             "Disabler",
             "Escape"
         ],
@@ -4681,10 +4681,10 @@
         "attack_type": "Melee",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler",
-            "Durable",
-            "Initiator"
+            "durable",
+            "initiator"
         ],
         "winrate": 51.47,
         "img": "/apps/dota2/images/heroes/ogre_magi_full.png?",
@@ -4739,9 +4739,9 @@
         "attack_type": "Melee",
         "roles": [
             "support",
-            "Durable",
+            "durable",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 51.62,
         "img": "/apps/dota2/images/heroes/undying_full.png?",
@@ -4797,7 +4797,7 @@
         "roles": [
             "support",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 45.63,
         "img": "/apps/dota2/images/heroes/rubick_full.png?",
@@ -4853,8 +4853,8 @@
         "roles": [
             "support",
             "Disabler",
-            "Nuker",
-            "Initiator"
+            "nuker",
+            "initiator"
         ],
         "winrate": 49.62,
         "img": "/apps/dota2/images/heroes/disruptor_full.png?",
@@ -4909,8 +4909,8 @@
         "attack_type": "Melee",
         "roles": [
             "Disabler",
-            "Nuker",
-            "Initiator",
+            "nuker",
+            "initiator",
             "Escape"
         ],
         "winrate": 48.30,
@@ -4967,9 +4967,9 @@
         "roles": [
             "carry",
             "support",
-            "Pusher",
+            "pusher",
             "Disabler",
-            "Initiator",
+            "initiator",
             "Escape"
         ],
         "winrate": 53.48,
@@ -5025,7 +5025,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler",
             "Jungler"
         ],
@@ -5083,7 +5083,7 @@
         "roles": [
             "support",
             "Escape",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 44.80,
         "img": "/apps/dota2/images/heroes/wisp_full.png?",
@@ -5138,10 +5138,10 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
-            "Durable",
+            "nuker",
+            "durable",
             "Disabler",
-            "Pusher"
+            "pusher"
         ],
         "winrate": 52.44,
         "img": "/apps/dota2/images/heroes/visage_full.png?",
@@ -5198,7 +5198,7 @@
             "carry",
             "Escape",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 50.23,
         "img": "/apps/dota2/images/heroes/slark_full.png?",
@@ -5254,7 +5254,7 @@
         "roles": [
             "carry",
             "Disabler",
-            "Durable"
+            "durable"
         ],
         "winrate": 45.77,
         "img": "/apps/dota2/images/heroes/medusa_full.png?",
@@ -5309,9 +5309,9 @@
         "attack_type": "Ranged",
         "roles": [
             "carry",
-            "Pusher",
+            "pusher",
             "Disabler",
-            "Durable"
+            "durable"
         ],
         "winrate": 47.62,
         "img": "/apps/dota2/images/heroes/troll_warlord_full.png?",
@@ -5365,10 +5365,10 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Durable",
-            "Initiator",
+            "durable",
+            "initiator",
             "Disabler",
-            "Nuker",
+            "nuker",
             "Escape"
         ],
         "winrate": 48.84,
@@ -5423,9 +5423,9 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
+            "initiator",
             "Disabler",
-            "Nuker",
+            "nuker",
             "Escape"
         ],
         "winrate": 46.01,
@@ -5480,8 +5480,8 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Nuker",
-            "Durable",
+            "nuker",
+            "durable",
             "Escape"
         ],
         "winrate": 45.64,
@@ -5537,9 +5537,9 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Durable",
-            "Initiator",
-            "Nuker"
+            "durable",
+            "initiator",
+            "nuker"
         ],
         "winrate": 49.78,
         "img": "/apps/dota2/images/heroes/bristleback_full.png?",
@@ -5593,9 +5593,9 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
+            "initiator",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 45.77,
         "img": "/apps/dota2/images/heroes/tusk_full.png?",
@@ -5650,7 +5650,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler"
         ],
         "winrate": 51.65,
@@ -5707,7 +5707,7 @@
         "roles": [
             "support",
             "carry",
-            "Durable"
+            "durable"
         ],
         "winrate": 53.67,
         "img": "/apps/dota2/images/heroes/abaddon_full.png?",
@@ -5761,10 +5761,10 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Initiator",
+            "initiator",
             "Disabler",
-            "Nuker",
-            "Durable"
+            "nuker",
+            "durable"
         ],
         "winrate": 50.51,
         "img": "/apps/dota2/images/heroes/elder_titan_full.png?",
@@ -5820,9 +5820,9 @@
         "roles": [
             "carry",
             "Disabler",
-            "Initiator",
-            "Durable",
-            "Nuker"
+            "initiator",
+            "durable",
+            "nuker"
         ],
         "winrate": 49.74,
         "img": "/apps/dota2/images/heroes/legion_commander_full.png?",
@@ -5876,7 +5876,7 @@
         "primary_attr": "int",
         "attack_type": "Ranged",
         "roles": [
-            "Nuker",
+            "nuker",
             "Disabler"
         ],
         "winrate": 48.53,
@@ -5933,9 +5933,9 @@
         "roles": [
             "carry",
             "Escape",
-            "Nuker",
+            "nuker",
             "Disabler",
-            "Initiator"
+            "initiator"
         ],
         "winrate": 47.29,
         "img": "/apps/dota2/images/heroes/ember_spirit_full.png?",
@@ -5989,11 +5989,11 @@
         "primary_attr": "str",
         "attack_type": "Melee",
         "roles": [
-            "Nuker",
+            "nuker",
             "Escape",
             "Disabler",
-            "Initiator",
-            "Durable"
+            "initiator",
+            "durable"
         ],
         "winrate": 43.56,
         "img": "/apps/dota2/images/heroes/earth_spirit_full.png?",
@@ -6048,9 +6048,9 @@
         "attack_type": "Melee",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler",
-            "Durable",
+            "durable",
             "Escape"
         ],
         "winrate": 54.98,
@@ -6106,8 +6106,8 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Pusher",
-            "Nuker"
+            "pusher",
+            "nuker"
         ],
         "winrate": 47.02,
         "img": "/apps/dota2/images/heroes/terrorblade_full.png?",
@@ -6162,8 +6162,8 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
-            "Initiator",
+            "nuker",
+            "initiator",
             "Escape",
             "Disabler"
         ],
@@ -6220,7 +6220,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler",
             "Escape"
         ],
@@ -6278,7 +6278,7 @@
         "roles": [
             "support",
             "Disabler",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 47.82,
         "img": "/apps/dota2/images/heroes/winter_wyvern_full.png?",
@@ -6334,7 +6334,7 @@
         "roles": [
             "carry",
             "Escape",
-            "Nuker"
+            "nuker"
         ],
         "winrate": 49.01,
         "img": "/apps/dota2/images/heroes/arc_warden_full.png?",
@@ -6391,7 +6391,7 @@
             "carry",
             "Escape",
             "Disabler",
-            "Initiator"
+            "initiator"
         ],
         "winrate": 48.95,
         "img": "/apps/dota2/images/heroes/monkey_king_full.png?",
@@ -6446,7 +6446,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler",
             "Escape"
         ],
@@ -6503,11 +6503,11 @@
         "attack_type": "Melee",
         "roles": [
             "carry",
-            "Nuker",
+            "nuker",
             "Disabler",
-            "Durable",
+            "durable",
             "Escape",
-            "Initiator"
+            "initiator"
         ],
         "winrate": 48.92,
         "img": "/apps/dota2/images/heroes/pangolier_full.png?",
@@ -6562,7 +6562,7 @@
         "attack_type": "Ranged",
         "roles": [
             "support",
-            "Nuker",
+            "nuker",
             "Disabler",
             "Escape"
         ],

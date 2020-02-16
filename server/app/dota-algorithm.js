@@ -40,42 +40,41 @@ class DotaAlgorithm extends GeneticAlgorithm {
     validCompositionFunction(chromosome) {
         let winrateComposition = 0;
 
-        let hasCarry = false;
-        let winrateCarry = 0;
+        let minCarry = false;
+        let amountCarry = 0;
 
-        let hasSupp = false;
-        let winrateSupp = 0;
+        let minSupp = false;
+        let amountSupp = 0;
 
-        let hasMid = false;
-        let winrateMid = 0;
-
-        let hasTop = false;
-        let winrateTop = 0;
-
-        let hasJungle = false;
-        let winrateJungle = 0;
+        let minDurable = false;
+        let amountDurable = 0;
 
         chromosome.genes.map(gene => {
             json.map(function (champion) {
                 if (gene === champion.id) {
-                    // Object.entries(champion.winrate).forEach(([role, winrate]) => {
-                        winrateComposition += champion.winrate;
+                    winrateComposition += champion.winrate;
 
-                        if (champion.roles.includes('carry') && !hasCarry) {
-                            hasCarry = true;
-                            return;
-                        }
+                    if (champion.roles.includes('carry') && minCarry > amountCarry) {
+                        amountCarry++;
+                        return;
+                    }
 
-                        if (champion.roles.includes('support') && !hasSupp) {
-                            hasSupp = true;
-                            return;
-                        }
+                    if (champion.roles.includes('support') && minSupp > amountSupp) {
+                        amountSupp++;
+                        return;
+                    }
 
-                    // });
+                    if (champion.roles.includes('durable') && minSupp > amountDurable) {
+                        amountDurable++;
+                        return;
+                    }
+
                 }
 
-                if (hasCarry && hasSupp) {
+                if (amountCarry == minCarry && amountSupp == minSupp && amountDurable == minDurable) {
                     winrateComposition = winrateComposition / 5;
+                } else {
+                    winrateComposition = 0;
                 }
 
             });
@@ -183,7 +182,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
                         if (gene === champion.id) {
                             multiplier = self.validRolesFunction(
                                 champion,
-                                ["Hard Engage"],
+                                ["initiator"],
                                 multiplier
                             );
                         }
@@ -193,6 +192,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
                 fitvalueHardEngage = (fitvalueHardEngage * multiplier) / MAX_FIT_VALUE;
 
                 if (fitvalueHardEngage > finalFitvalue) {
+                    // console.log(fitvalueHardEngage);
                     finalFitvalue = fitvalueHardEngage;
                     this.finalChromosome = chromosome;
                 }
@@ -233,7 +233,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
                         if (gene === champion.id) {
                             multiplier = self.validRolesFunction(
                                 champion,
-                                ["Poke", "Waveclear"],
+                                ["nuker", "pusher"],
                                 multiplier
                             );
                         }
@@ -272,8 +272,10 @@ class DotaAlgorithm extends GeneticAlgorithm {
         var parsedJson = JSON.parse(JSON.stringify(json));
 
         if (this.finalChromosome) {
+            console.log(this.finalChromosome);
             this.finalChromosome.genes.forEach(function (item) {
                 var aux = parsedJson.find(function (champion) {
+                    // console.log(champion);
                     return champion.id === item;
                 });
                 if (aux) {
