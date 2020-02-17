@@ -8,7 +8,7 @@ let generation = 1;
 let execution = 1;
 let finalFitvalue = 0;
 let allChromosomes = [];
-let totalChampions = 146;
+let totalChampions = 121;
 let POPULATION_SIZE;
 let MUTATION_CHANCE;
 let MAX_GENERATIONS;
