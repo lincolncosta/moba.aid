@@ -1,5 +1,7 @@
 # Mobator
 
+Artigo relacionado: https://ieeexplore.ieee.org/document/8924849
+
 ## Informações gerais
 
 Os parâmetros utilizados para calcular o fitness máximo foram os seguintes:
