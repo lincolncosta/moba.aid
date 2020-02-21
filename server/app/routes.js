@@ -40,29 +40,26 @@ routes.get('/league', (req, res) => {
     let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions, enemyChampions } = req.query;
 
     let bannedGenes = [];
-    bannedGenes.push(bannedChampions);
-
     let enemyGenes = [];
-    enemyGenes.push(enemyChampions)
 
-    if (bannedGenes) {
-        bannedChampions = bannedGenes.map(function (item) {
-            return Number(item);
+    if (bannedChampions) {
+        bannedGenes.map(function (item) {
+            bannedGenes.push(Number(item));
         });
     }
 
-    if (enemyGenes) {
-        enemyChampions = enemyGenes.map(function (item) {
-            return Number(item);
+    if (enemyChampions) {
+        enemyChampions.map(function (item) {
+            enemyGenes.push(Number(item));
         });
     }
 
     let pickedGenes = [];
     pickedGenes.push(pickedChampions);
 
-    if (pickedGenes) {
-        pickedChampions = pickedGenes.map(function (item) {
-            return Number(item);
+    if (pickedChampions) {
+        pickedChampions.map(function (item) {
+            pickedGenes.push(Number(item));
         });
     }
 
