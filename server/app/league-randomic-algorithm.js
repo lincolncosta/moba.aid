@@ -1,7 +1,7 @@
 var fs = require("fs");
 var json = jsonLeague = require("./assets/league/champions.json");
 
-class RandomicAlgorithm {
+class LeagueRandomicAlgorithm {
 
   constructor() {
     this.randomic = this.randomic.bind(this)
@@ -119,4 +119,4 @@ class RandomicAlgorithm {
   }
 }
 
-module.exports = new RandomicAlgorithm()
+module.exports = new LeagueRandomicAlgorithm()
