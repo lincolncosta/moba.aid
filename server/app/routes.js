@@ -37,13 +37,22 @@ routes.get('/dota', (req, res) => {
 
 routes.get('/league', (req, res) => {
 
-    let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions } = req.query;
+    let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions, enemyChampions } = req.query;
 
     let bannedGenes = [];
     bannedGenes.push(bannedChampions);
 
+    let enemyGenes = [];
+    enemyGenes.push(enemyChampions)
+
     if (bannedGenes) {
         bannedChampions = bannedGenes.map(function (item) {
+            return Number(item);
+        });
+    }
+
+    if (enemyGenes) {
+        enemyChampions = enemyGenes.map(function (item) {
             return Number(item);
         });
     }
