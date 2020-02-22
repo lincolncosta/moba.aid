@@ -126,8 +126,6 @@ class LeagueAlgorithm extends GeneticAlgorithm {
             return multiplier;
         }
 
-        console.log(champion.counters);
-
         let isCountered = champion.counters.filter(value => ENEMY_GENES.includes(value))
             .length;
 
