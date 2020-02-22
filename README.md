@@ -1,4 +1,4 @@
-# Moba AID 🎮
+<h1 align="center">Moba AID 🎮</h1>
 
 Artigo relacionado: https://ieeexplore.ieee.org/document/8924849
 
