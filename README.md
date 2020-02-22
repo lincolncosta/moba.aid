@@ -35,7 +35,7 @@ Pusher | Poke, Wave Clear
     "enemy_champion[y]": 1,
 }
 ```
-Acima estão ilustrados os possíveis parâmetros em uma requisição para a geração de uma composição de League Of Legends. No exemplo, os valores de chance de mutação, número máximo de gerações e tamanho da população são, respectivamente, 0.3, 1000 e 300. A estratégia requisitada é Hard Engage e o valor máximo alcançável para essa estratégia é 81.28. *Esses são parâmetros obrigatórios!*
+Acima estão ilustrados os possíveis parâmetros em uma requisição para a geração de uma composição de League Of Legends. No exemplo, os valores de chance de mutação, número máximo de gerações e tamanho da população são, respectivamente, 0.3, 1000 e 300. A estratégia requisitada é Hard Engage e o valor máximo alcançável para essa estratégia é 81.28. **Esses são parâmetros obrigatórios!**
 Por fim, os campeões _pickados_ pelo time adversário podem ser inseridos através de um array de, no máximo, 5 itens. Esses campeões serão considerados para buscar uma composição contendo _counters_ dos mesmos.
 
 
