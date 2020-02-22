@@ -22,7 +22,7 @@ Baixe as dependências do projeto executando o comando `npm install` na pasta ra
 
 ## Requisições
 
-Importações das requisições via Insomnia, [clique aqui](../tree/master/docs). 
+Importações das requisições via Insomnia, [clique aqui](../blob/master/docs/Insomnia_2020-02-21.json). 
 
 **URL** : `/api/league/`
 
