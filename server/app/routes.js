@@ -1,4 +1,4 @@
-const exec = require('child_process').exec;;
+const exec = require('child_process').exec;
 const express = require('express');
 const LeagueRandomicAlgorithm = require('./league-randomic-algorithm');
 const DotaAlgorithm = require('./dota-algorithm');
@@ -8,36 +8,36 @@ const routes = express.Router();
 
 routes.get('/dota', (req, res) => {
 
-    let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions } = req.query;
+    let { strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, bannedChampions, pickedChampions } = req.query;
 
-    let bannedGenes = [];
-    bannedGenes.push(bannedChampions);
+    let banned_genes = [];
+    banned_genes.push(bannedChampions);
 
-    if (bannedGenes) {
-        bannedChampions = bannedGenes.map(function (item) {
+    if (banned_genes) {
+        bannedChampions = banned_genes.map(function (item) {
             return Number(item);
         });
     }
 
-    let pickedGenes = [];
-    pickedGenes.push(pickedChampions);
+    let picked_genes = [];
+    picked_genes.push(pickedChampions);
 
-    if (pickedGenes) {
-        pickedChampions = pickedGenes.map(function (item) {
+    if (picked_genes) {
+        pickedChampions = picked_genes.map(function (item) {
             return Number(item);
         });
     }
 
-    let fileName = DotaAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions);
+    let fileName = DotaAlgorithm.start(strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, bannedChampions, pickedChampions);
 
     // res.send(fileName);
 
     return res.json({ filename: fileName });
 })
 
-routes.get('/league', (req, res) => {
+routes.get('/api/league', (req, res) => {
 
-    let { strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions, enemyChampions } = req.query;
+    let { strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, banned_champions, picked_champions, enemy_champions } = req.query;
 
     let bannedGenes = [];
     let enemyGenes = [];
@@ -63,7 +63,7 @@ routes.get('/league', (req, res) => {
         });
     }
 
-    let fileName = LeagueAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedGenes, pickedGenes, enemyGenes);
+    let fileName = LeagueAlgorithm.start(strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, banned_genes, picked_genes, enemy_genes);
 
     // res.send(fileName);
 
@@ -72,11 +72,11 @@ routes.get('/league', (req, res) => {
 
 routes.get('/randomic', (req, res) => {
 
-    let { strategy, maxFitValue, currentExecution, bannedChampions, pickedChampions } = req.query;
+    let { strategy, max_fit_value, current_execution, bannedChampions, pickedChampions } = req.query;
 
     console.log('recebido');
 
-    // RandomicAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions);
+    // RandomicAlgorithm.start(strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, bannedChampions, pickedChampions);
     LeagueRandomicAlgorithm.start();
 
     return res.json('Geração randômica finalizada.');
