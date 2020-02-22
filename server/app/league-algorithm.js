@@ -8,6 +8,7 @@ let generation = 1;
 let execution = 1;
 let finalFitvalue = 0;
 let allChromosomes = [];
+let ENEMY_GENES = [];
 let totalChampions = 146;
 let POPULATION_SIZE;
 let MUTATION_CHANCE;
@@ -138,6 +139,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
                                 ["Hard Engage"],
                                 multiplier
                             );
+
+                            if (ENEMY_GENES.length) {
+                                console.log(ENEMY_GENES);
+                            }
                         }
                     });
                 });
@@ -273,7 +278,9 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         mutationChance,
         maxGenerations,
         currentExecution,
-        bannedGenes
+        bannedGenes,
+        pickedGenes,
+        enemyGenes
     ) {
 
         MAX_GENERATIONS = maxGenerations;
@@ -282,7 +289,8 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         POPULATION_SIZE = populationSize;
         MUTATION_CHANCE = mutationChance;
         CURRENT_EXECUTION = currentExecution;
-
+        ENEMY_GENES = enemyGenes;
+    
         filePathReports =
             "app/reports/" +
             strategy +

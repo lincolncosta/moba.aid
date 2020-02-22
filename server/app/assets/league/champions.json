@@ -48,9 +48,9 @@
       "title": "the Darkin Blade",
       "description": "One of the ancient darkin, Aatrox was once a peerless swordmaster who reveled in the bloody chaos of the battlefield. Trapped within his own blade by the magic of his foes, he waited out the millennia for a suitable host to wield him\u2014this mortal warrior...",
       "counters": [
-         "Malzahar",
-         "Maokai",
-         "Vayne"
+         69,
+         70,
+         127
       ],
       "id": 1,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Aatrox.png"
@@ -104,9 +104,9 @@
       "title": "the Nine-Tailed Fox",
       "description": "Innately connected to the latent power of Runeterra, Ahri is a vastaya who can reshape magic into orbs of raw energy. She revels in toying with her prey by manipulating their emotions before devouring their life essence. Despite her predatory nature...",
       "counters": [
-         "Zilean",
-         "Pyke",
-         "Rumble"
+         144,
+         88,
+         97
       ],
       "id": 2,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ahri.png"
@@ -160,9 +160,9 @@
       "title": "the Fist of Shadow",
       "description": "A prodigy in the fighting arts, Akali is a member of the martial order known as the Kinkou. She succeeds her mother as the Fist of Shadow, entrusted with the sacred duty to end those who would bring imbalance to her homeland. While some find her methods...",
       "counters": [
-         "Kayle",
-         "Malzahar",
-         "Taliyah"
+         54,
+         69,
+         114
       ],
       "id": 3,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Akali.png"
@@ -217,9 +217,9 @@
       "title": "the Minotaur",
       "description": "Always a mighty warrior with a fearsome reputation, Alistar seeks revenge for the death of his clan at the hands of the Noxian empire. Though he was enslaved and forced into the life of a gladiator, his unbreakable will was what kept him from truly...",
       "counters": [
-         "Rakan",
-         "Fiddlesticks",
-         "Brand"
+         91,
+         28,
+         13
       ],
       "id": 4,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Alistar.png"
@@ -275,9 +275,9 @@
       "title": "the Sad Mummy",
       "description": "Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his touch is death, his affection ruin. Those who claim to have seen him describe...",
       "counters": [
-         "Wukong",
-         "Karthus",
-         "Trundle"
+         73,
+         51,
+         120
       ],
       "id": 5,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Amumu.png"
@@ -332,9 +332,9 @@
       "title": "the Cryophoenix",
       "description": "Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect the Freljord. A demigod born of unforgiving ice and bitter winds, she wields those elemental powers to thwart any who dare disturb her homeland...",
       "counters": [
-         "Pyke",
-         "Xerath",
-         "Ziggs"
+         88,
+         136,
+         143
       ],
       "id": 6,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Anivia.png"
@@ -389,9 +389,9 @@
       "title": "the Dark Child",
       "description": "Dangerous, yet disarmingly precocious, Annie is a child mage with immense pyromantic power. Even in the shadows of the mountains north of Noxus, she is a magical outlier. Her natural affinity for fire manifested early in life through unpredictable...",
       "counters": [
-         "Anivia",
-         "Malzahar",
-         "Azir"
+         6,
+         69,
+         10
       ],
       "id": 7,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Annie.png"
@@ -444,9 +444,9 @@
       "title": "the Frost Archer",
       "description": "Iceborn warmother of the Avarosan tribe, Ashe commands the most populous horde in the north. Stoic, intelligent, and idealistic, yet uncomfortable with her role as leader, she taps into the ancestral magics of her lineage to wield a bow of True Ice...",
       "counters": [
-         "Twitch",
-         "Draven",
-         "Miss Fortune"
+         123,
+         22,
+         72
       ],
       "id": 8,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ashe.png"
@@ -501,9 +501,9 @@
       "title": "The Star Forger",
       "description": "Aurelion Sol once graced the vast emptiness of the cosmos with celestial wonders of his own devising. Now, he is forced to wield his awesome power at the behest of a space-faring empire that tricked him into servitude. Desiring a return to his...",
       "counters": [
-         "Ziggs",
-         "Twisted Fate",
-         "Kassadin"
+         143,
+         122,
+         52
       ],
       "id": 9,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/AurelionSol.png"
@@ -558,9 +558,9 @@
       "title": "the Emperor of the Sands",
       "description": "Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn as an Ascended...",
       "counters": [
-         "Xerath",
-         "Corki",
-         "Kassadin"
+         136,
+         19,
+         52
       ],
       "id": 10,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Azir.png"
@@ -614,9 +614,9 @@
       "title": "the Wandering Caretaker",
       "description": "A traveler from beyond the stars, Bard is an agent of serendipity who fights to maintain a balance where life can endure the indifference of chaos. Many Runeterrans sing songs that ponder his extraordinary nature, yet they all agree that the cosmic...",
       "counters": [
-         "Sion",
-         "Soraka",
-         "Zyra"
+         105,
+         109,
+         146
       ],
       "id": 11,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Bard.png"
@@ -670,9 +670,9 @@
       "title": "the Great Steam Golem",
       "description": "Blitzcrank is an enormous, near-indestructible automaton from Zaun, originally built to dispose of hazardous waste. However, he found this primary purpose too restricting, and modified his own form to better serve the fragile people of the Sump...",
       "counters": [
-         "Sion",
-         "Taric",
-         "Janna"
+         105,
+         116,
+         42
       ],
       "id": 12,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Blitzcrank.png"
@@ -728,9 +728,9 @@
       "title": "the Burning Vengeance",
       "description": "Once a tribesman of the icy Freljord localized_named Kegan Rodhe, the creature known as Brand is a lesson in the temptation of greater power. Seeking one of the legendary World Runes, Kegan betrayed his companions and seized it for himself\u2014and, in an instant, the...",
       "counters": [
-         "Janna",
-         "Nautilus",
-         "Lux"
+         42,
+         78,
+         67
       ],
       "id": 13,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Brand.png"
@@ -785,9 +785,9 @@
       "title": "the Heart of the Freljord",
       "description": "Blessed with massive biceps and an even bigger heart, Braum is a beloved hero of the Freljord. Every mead hall north of Frostheld toasts his legendary strength, said to have felled a forest of oaks in a single night, and punched an entire mountain into...",
       "counters": [
-         "Sion",
-         "Soraka",
-         "Janna"
+         105,
+         109,
+         42
       ],
       "id": 14,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Braum.png"
@@ -839,9 +839,9 @@
       "title": "the Sheriff of Piltover",
       "description": "Renowned as its finest peacekeeper, Caitlyn is also Piltover's best shot at ridding the city of its elusive criminal elements. She is often paired with Vi, acting as a cool counterpoint to her partner's more impetuous nature. Even though she carries a...",
       "counters": [
-         "Twitch",
-         "Quinn",
-         "Miss Fortune"
+         123,
+         90,
+         72
       ],
       "id": 15,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Caitlyn.png"
@@ -898,9 +898,9 @@
       "title": "the Steel Shadow",
       "description": "Weaponized to operate outside the boundaries of the law, Camille is the Principal Intelligencer of Clan Ferros\u2014an elegant and elite agent who ensures the Piltover machine and its Zaunite underbelly runs smoothly. Adaptable and precise, she views sloppy...",
       "counters": [
-         "Heimerdinger",
-         "Tryndamere",
-         "Kayle"
+         38,
+         121,
+         54
       ],
       "id": 16,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Camille.png"
@@ -953,9 +953,9 @@
       "title": "the Serpent's Embrace",
       "description": "Cassiopeia is a deadly creature bent on manipulating others to her sinister will. Youngest and most beautiful daughter of the noble Du Couteau family of Noxus, she ventured deep into the crypts beneath Shurima in search of ancient power. There, she was...",
       "counters": [
-         "Morgana",
-         "Aurelion Sol",
-         "Ziggs"
+         75,
+         9,
+         143
       ],
       "id": 17,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Cassiopeia.png"
@@ -1010,9 +1010,9 @@
       "title": "the Terror of the Void",
       "description": "From the moment Cho'Gath first emerged into the harsh light of Runeterra's sun, the beast was driven by the most pure and insatiable hunger. A perfect expression of the Void's desire to consume all life, Cho'Gath's complex biology quickly converts...",
       "counters": [
-         "Cassiopeia",
-         "Neeko",
-         "Yorick"
+         17,
+         79,
+         139
       ],
       "id": 18,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Chogath.png"
@@ -1066,9 +1066,9 @@
       "title": "the Daring Bombardier",
       "description": "The yordle pilot Corki loves two things above all others: flying, and his glamorous mustache... though not necessarily in that order. After leaving Bandle City, he settled in Piltover and fell in love with the wondrous machines he found there. He...",
       "counters": [
-         "Aurelion Sol",
-         "Vel'Koz",
-         "Karthus"
+         9,
+         129,
+         51
       ],
       "id": 19,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Corki.png"
@@ -1121,9 +1121,9 @@
       "title": "the Hand of Noxus",
       "description": "There is no greater symbol of Noxian might than Darius, the nation's most feared and battle-hardened commander. Rising from humble origins to become the Hand of Noxus, he cleaves through the empire's enemies\u2014many of them Noxians themselves. Knowing that...",
       "counters": [
-         "Quinn",
-         "Aatrox",
-         "Yorick"
+         90,
+         1,
+         139
       ],
       "id": 20,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Darius.png"
@@ -1176,9 +1176,9 @@
       "title": "Scorn of the Moon",
       "description": "Bearing her crescent moonblade, Diana fights as a warrior of the Lunari\u2014a faith all but quashed in the lands around Mount Targon. Clad in shimmering armor the color of winter snow at night, she is a living embodiment of the silver moon's power. Imbued...",
       "counters": [
-         "Annie",
-         "Anivia",
-         "Malzahar"
+         7,
+         6,
+         69
       ],
       "id": 21,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Diana.png"
@@ -1230,9 +1230,9 @@
       "title": "the Glorious Executioner",
       "description": "In Noxus, warriors known as Reckoners face one another in arenas where blood is spilled and strength tested\u2014but none has ever been as celebrated as Draven. A former soldier, he found that the crowds uniquely appreciated his flair for the dramatic, and...",
       "counters": [
-         "Caitlyn",
-         "Twitch",
-         "Kog'Maw"
+         15,
+         123,
+         60
       ],
       "id": 22,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Draven.png"
@@ -1287,9 +1287,9 @@
       "title": "the Madman of Zaun",
       "description": "Utterly insane, unrepentantly homicidal, and horrifyingly purple, Dr. Mundo is what keeps many of Zaun's citizens indoors on particularly dark nights. This monosyllabic monstrosity seems to want nothing more than pain\u2014both the giving of it, and the...",
       "counters": [
-         "Tryndamere",
-         "Pantheon",
-         "Riven"
+         121,
+         86,
+         96
       ],
       "id": 23,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/DrMundo.png"
@@ -1347,9 +1347,9 @@
       "title": "the Boy Who Shattered Time",
       "description": "A prodigy from the rough streets of Zaun, Ekko manipulates time to twist any situation to his advantage. Using his own invention, the Zero Drive, he explores the branching possibilities of reality to craft the perfect moment. Though he revels in this...",
       "counters": [
-         "Kennen",
-         "Anivia",
-         "Talon"
+         56,
+         6,
+         115
       ],
       "id": 24,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ekko.png"
@@ -1401,9 +1401,9 @@
       "title": "the Spider Queen",
       "description": "Elise is a deadly predator who dwells in a shuttered, lightless palace, deep within the oldest city of Noxus. Once mortal, she was the mistress of a powerful house, but the bite of a vile demigod transformed her into something beautiful, yet utterly...",
       "counters": [
-         "Nunu",
-         "Maokai",
-         "Skarner"
+         82,
+         70,
+         107
       ],
       "id": 25,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Elise.png"
@@ -1455,9 +1455,9 @@
       "title": "Agony's Embrace",
       "description": "Within the dark seams of Runeterra, the demon Evelynn searches for her next victim. She lures in prey with the voluptuous fa\u00e7ade of a human female, but once a person succumbs to her charms, Evelynn's true form is unleashed. She then subjects her victim...",
       "counters": [
-         "Sejuani",
-         "Nunu",
-         "Ivern"
+         99,
+         82,
+         41
       ],
       "id": 26,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Evelynn.png"
@@ -1511,9 +1511,9 @@
       "title": "the Prodigal Explorer",
       "description": "A self-assured Piltovan explorer with an uncanny ability to find his way into and out of trouble, Ezreal travels Runeterra in search of adventure. Armed with a magical gauntlet procured from the ruins of ancient Shurima, he seeks out the world's most...",
       "counters": [
-         "Kog'Maw",
-         "Twitch",
-         "Tristana"
+         60,
+         123,
+         119
       ],
       "id": 27,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ezreal.png"
@@ -1569,9 +1569,9 @@
       "title": "the Harbinger of Doom",
       "description": "Fiddlesticks is a ghastly, living scarecrow who stalks the darkness, wielding a cruel scythe and preying upon the unwary. Once a lonely man accused of bringing famine to his village, he was tied up and left to starve in his own barren field. Resurrected...",
       "counters": [
-         "Olaf",
-         "Twitch",
-         "Zac"
+         83,
+         123,
+         141
       ],
       "id": 28,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Fiddlesticks.png"
@@ -1623,9 +1623,9 @@
       "title": "the Grand Duelist",
       "description": "The most feared duelist in all Valoran, Fiora is as renowned for her brusque manner and cunning mind as she is for the speed of her bluesteel rapier. Born to House Laurent in the kingdom of Demacia, Fiora took control of the family from her father in...",
       "counters": [
-         "Pantheon",
-         "Kayle",
-         "Cassiopeia"
+         86,
+         54,
+         17
       ],
       "id": 29,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Fiora.png"
@@ -1677,9 +1677,9 @@
       "title": "the Tidal Trickster",
       "description": "Fizz is an amphibious yordle, who dwells among the reefs surrounding Bilgewater. He often retrieves and returns the tithes cast into the sea by superstitious captains, but even the saltiest of sailors know better than to cross him\u2014for many are the tales...",
       "counters": [
-         "Zilean",
-         "Kennen",
-         "Anivia"
+         144,
+         56,
+         6
       ],
       "id": 30,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Fizz.png"
@@ -1736,9 +1736,9 @@
       "title": "the Colossus",
       "description": "Outside the gleaming city of Demacia, the stone colossus Galio keeps vigilant watch. Built as a bulwark against enemy mages, he often stands motionless for decades until the presence of powerful magic stirs him to life. Once activated, Galio makes the...",
       "counters": [
-         "Fiora",
-         "Darius",
-         "Tryndamere"
+         29,
+         20,
+         121
       ],
       "id": 31,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Galio.png"
@@ -1791,9 +1791,9 @@
       "title": "the Saltwater Scourge",
       "description": "As unpredictable as he is brutal, the dethroned reaver king Gangplank is feared far and wide. Once, he ruled the port city of Bilgewater, and while his reign is over, there are those who believe this has only made him more dangerous. Gangplank would see...",
       "counters": [
-         "Aatrox",
-         "Kayle",
-         "Tryndamere"
+         1,
+         54,
+         121
       ],
       "id": 32,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Gangplank.png"
@@ -1848,9 +1848,9 @@
       "title": "The Might of Demacia",
       "description": "A proud and noble warrior, Garen fights as one of the Dauntless Vanguard. He is popular among his fellows, and respected well enough by his enemies\u2014not least as a scion of the prestigious Crownguard family, entrusted with defending Demacia and its...",
       "counters": [
-         "Kayle",
-         "Gragas",
-         "Teemo"
+         54,
+         35,
+         117
       ],
       "id": 33,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Garen.png"
@@ -1905,9 +1905,9 @@
       "title": "the Missing Link",
       "description": "Gnar is a primeval yordle whose playful antics can erupt into a toddler's outrage in an instant, transforming him into a massive beast bent on destruction. Frozen in True Ice for millennia, the curious creature broke free and now hops about a changed...",
       "counters": [
-         "Riven",
-         "Irelia",
-         "Fiora"
+         96,
+         40,
+         29
       ],
       "id": 34,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Gnar.png"
@@ -1965,9 +1965,9 @@
       "title": "the Rabble Rouser",
       "description": "Equal parts jolly and imposing, Gragas is a massive, rowdy brewmaster on his own quest for the perfect pint of ale. Hailing from parts unknown, he now searches for rare ingredients among the unblemished wastes of the Freljord, trying each recipe as he...",
       "counters": [
-         "Maokai",
-         "Nunu",
-         "Xin Zhao"
+         70,
+         82,
+         137
       ],
       "id": 35,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Gragas.png"
@@ -2019,9 +2019,9 @@
       "title": "the Outlaw",
       "description": "Malcolm Graves is a renowned mercenary, gambler, and thief\u2014a wanted man in every city and empire he has visited. Even though he has an explosive temper, he possesses a strict sense of criminal honor, often enforced at the business end of his...",
       "counters": [
-         "Nunu",
-         "Udyr",
-         "Nidalee"
+         82,
+         124,
+         80
       ],
       "id": 36,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Graves.png"
@@ -2078,9 +2078,9 @@
       "title": "the Shadow of War",
       "description": "Hecarim is a spectral fusion of man and beast, cursed to ride down the souls of the living for all eternity. When the Blessed Isles fell into shadow, this proud knight was obliterated by the destructive energies of the Ruination, along with all his...",
       "counters": [
-         "Nunu",
-         "Sejuani",
-         "Maokai"
+         82,
+         99,
+         70
       ],
       "id": 37,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Hecarim.png"
@@ -2138,9 +2138,9 @@
       "title": "the Revered Inventor",
       "description": "A brilliant yet eccentric yordle scientist, Professor Cecil B. Heimerdinger is one of the most innovative and esteemed inventors Piltover has ever known. Relentless in his work to the point of neurotic obsession, he thrives on answering the universe's...",
       "counters": [
-         "Yasuo",
-         "Swain",
-         "Gangplank"
+         138,
+         110,
+         32
       ],
       "id": 38,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Heimerdinger.png"
@@ -2194,9 +2194,9 @@
       "title": "the Kraken Priestess",
       "description": "Illaoi's powerful physique is dwarfed only by her indomitable faith. As the prophet of the Great Kraken, she uses a huge, golden idol to rip her foes' spirits from their bodies and shatter their perception of reality. All who challenge the \u201cTruth Bearer...",
       "counters": [
-         "Heimerdinger",
-         "Sion",
-         "Poppy"
+         38,
+         105,
+         87
       ],
       "id": 39,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Illaoi.png"
@@ -2251,9 +2251,9 @@
       "title": "the Blade Dancer",
       "description": "The Noxian occupation of Ionia produced many heroes, none more unlikely than young Irelia of Navori. Trained in the ancient dances of her province, she adapted her art for war, using the graceful and carefully practised movements to levitate a host of...",
       "counters": [
-         "Wukong",
-         "Mordekaiser",
-         "Riven"
+         73,
+         74,
+         96
       ],
       "id": 40,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Irelia.png"
@@ -2306,9 +2306,9 @@
       "title": "the Green Father",
       "description": "Ivern Bramblefoot, known to many as the Green Father, is a peculiar half man, half tree who roams Runeterra's forests, cultivating life everywhere he goes. He knows the secrets of the natural world, and holds deep friendships with all things that grow...",
       "counters": [
-         "Nunu",
-         "Zac",
-         "Jarvan IV"
+         82,
+         141,
+         43
       ],
       "id": 41,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ivern.png"
@@ -2362,9 +2362,9 @@
       "title": "the Storm's Fury",
       "description": "Armed with the power of Runeterra's gales, Janna is a mysterious, elemental wind spirit who protects the dispossessed of Zaun. Some believe she was brought into existence by the pleas of Runeterra's sailors who prayed for fair winds as they navigated...",
       "counters": [
-         "Trundle",
-         "Soraka",
-         "Thresh"
+         120,
+         109,
+         118
       ],
       "id": 42,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Janna.png"
@@ -2419,9 +2419,9 @@
       "title": "the Exemplar of Demacia",
       "description": "Prince Jarvan, scion of the Lightshield dynasty, is heir apparent to the throne of Demacia. Raised to be a paragon of his nation's greatest virtues, he is forced to balance the heavy expectations placed upon him with his own desire to fight on the front...",
       "counters": [
-         "Nunu",
-         "Jax",
-         "Volibear"
+         82,
+         44,
+         133
       ],
       "id": 43,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/JarvanIV.png"
@@ -2476,9 +2476,9 @@
       "title": "Grandmaster at Arms",
       "description": "Unmatched in both his skill with unique armaments and his biting sarcasm, Jax is the last known weapons master of Icathia. After his homeland was laid low by its own hubris in unleashing the Void, Jax and his kind vowed to protect what little remained...",
       "counters": [
-         "Karthus",
-         "Quinn",
-         "Maokai"
+         51,
+         90,
+         70
       ],
       "id": 44,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Jax.png"
@@ -2533,9 +2533,9 @@
       "title": "the Defender of Tomorrow",
       "description": "Jayce is a brilliant inventor who has pledged his life to the defense of Piltover and its unyielding pursuit of progress. With his transforming hextech hammer in hand, Jayce uses his strength, courage, and considerable intelligence to protect his...",
       "counters": [
-         "Maokai",
-         "Rengar",
-         "Talon"
+         70,
+         95,
+         115
       ],
       "id": 45,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Jayce.png"
@@ -2585,9 +2585,9 @@
       "title": "the Virtuoso",
       "description": "Jhin is a meticulous criminal psychopath who believes murder is art. Once an Ionian prisoner, but freed by shadowy elements within Ionia's ruling council, the serial killer now works as their cabal's assassin. Using his gun as his paintbrush, Jhin...",
       "counters": [
-         "Kog'Maw",
-         "Sivir",
-         "Caitlyn"
+         60,
+         106,
+         15
       ],
       "id": 46,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Jhin.png"
@@ -2640,9 +2640,9 @@
       "title": "the Loose Cannon",
       "description": "A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx...",
       "counters": [
-         "Twitch",
-         "Tristana",
-         "Draven"
+         123,
+         119,
+         22
       ],
       "id": 47,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Jinx.png"
@@ -2692,9 +2692,9 @@
       "title": "Daughter of the Void",
       "description": "Claimed by the Void when she was only a child, Kai'Sa managed to survive through sheer tenacity and strength of will. Her experiences have made her a deadly hunter and, to some, the harbinger of a future they would rather not live to see. Having entered...",
       "counters": [
-         "Kog'Maw",
-         "Jinx",
-         "Twitch"
+         60,
+         47,
+         123
       ],
       "id": 48,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kaisa.png"
@@ -2748,9 +2748,9 @@
       "title": "the Spear of Vengeance",
       "description": "A specter of wrath and retribution, Kalista is the undying spirit of vengeance, an armored nightmare summoned from the Shadow Isles to hunt deceivers and traitors. The betrayed may cry out in blood to be avenged, but Kalista only answers those willing...",
       "counters": [
-         "Miss Fortune",
-         "Tristana",
-         "Draven"
+         72,
+         119,
+         22
       ],
       "id": 49,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kalista.png"
@@ -2805,9 +2805,9 @@
       "title": "the Enlightened One",
       "description": "No champion exemplifies the spiritual traditions of Ionia more than Karma. She is the living embodiment of an ancient soul reincarnated countless times, carrying all her accumulated memories into each new life. With this insight, she serves as a...",
       "counters": [
-         "Fiddlesticks",
-         "Blitzcrank",
-         "Sion"
+         28,
+         12,
+         105
       ],
       "id": 50,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Karma.png"
@@ -2861,9 +2861,9 @@
       "title": "the Deathsinger",
       "description": "The harbinger of oblivion, Karthus is an undying spirit whose haunting songs are a prelude to the horror of his nightmarish appearance. The living fear the eternity of undeath, but Karthus sees only beauty and purity in its embrace, a perfect union of...",
       "counters": [
-         "Ahri",
-         "Viktor",
-         "Ziggs"
+         2,
+         131,
+         143
       ],
       "id": 51,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Karthus.png"
@@ -2917,9 +2917,9 @@
       "title": "the Void Walker",
       "description": "Cutting a burning swath through the darkest places of the world, Kassadin knows his days are numbered. A widely traveled Shuriman guide and adventurer, he had chosen to raise a family among the peaceful southern tribes\u2014until the day his village was...",
       "counters": [
-         "Swain",
-         "Karthus",
-         "Kayle"
+         110,
+         51,
+         54
       ],
       "id": 52,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kassadin.png"
@@ -2971,9 +2971,9 @@
       "title": "the Sinister Blade",
       "description": "Decisive in judgment and lethal in combat, Katarina is a Noxian assassin of the highest caliber. Eldest daughter to the legendary General Du Couteau, she made her talents known with swift kills against unsuspecting enemies. Her fiery ambition has driven...",
       "counters": [
-         "Malzahar",
-         "Kayle",
-         "Kennen"
+         69,
+         54,
+         56
       ],
       "id": 53,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Katarina.png"
@@ -3027,9 +3027,9 @@
       "title": "The Judicator",
       "description": "A great hero and the strongest among her kind, Kayle is an angelic warrior dedicated to purging those beyond redemption. After conflict divided her people, she took up her enchanted armor and flaming sword in the localized_name of order, disowning her very flesh...",
       "counters": [
-         "Sion",
-         "Pantheon",
-         "Akali"
+         105,
+         86,
+         3
       ],
       "id": 54,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kayle.png"
@@ -3081,9 +3081,9 @@
       "title": "the Shadow Reaper",
       "description": "A peerless practitioner of lethal shadow magic, Shieda Kayn battles to achieve his true destiny\u2014to one day lead the Order of the Shadow into a new era of Ionian supremacy. He audaciously wields the sentient darkin weapon Rhaast, undeterred by its...",
       "counters": [
-         "Zac",
-         "Rek'Sai",
-         "Kha'Zix"
+         141,
+         93,
+         57
       ],
       "id": 55,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kayn.png"
@@ -3139,9 +3139,9 @@
       "title": "the Heart of the Tempest",
       "description": "More than just the lightning-quick enforcer of Ionian balance, Kennen is the only yordle member of the Kinkou. Despite his small, furry stature, he is eager to take on any threat with a whirling storm of shuriken and boundless enthusiasm. Alongside his...",
       "counters": [
-         "Olaf",
-         "Kayle",
-         "Pantheon"
+         83,
+         54,
+         86
       ],
       "id": 56,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kennen.png"
@@ -3193,9 +3193,9 @@
       "title": "the Voidreaver",
       "description": "The Void grows, and the Void adapts\u2014in none of its myriad spawn are these truths more apparent than Kha'Zix. Evolution drives the core of this mutating horror, born to survive and to slay the strong. Where it struggles to do so, it grows new, more...",
       "counters": [
-         "Lee Sin",
-         "Jayce",
-         "Pantheon"
+         62,
+         45,
+         86
       ],
       "id": 57,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Khazix.png"
@@ -3247,9 +3247,9 @@
       "title": "The Eternal Hunters",
       "description": "Separate, but never parted, Kindred represents the twin essences of death. Lamb's bow offers a swift release from the mortal realm for those who accept their fate. Wolf hunts down those who run from their end, delivering violent finality within his...",
       "counters": [
-         "Lee Sin",
-         "Diana",
-         "Gragas"
+         62,
+         21,
+         35
       ],
       "id": 58,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kindred.png"
@@ -3304,9 +3304,9 @@
       "title": "the Cantankerous Cavalier",
       "description": "A warrior as fearless as he is ornery, the yordle Kled embodies the furious bravado of Noxus. He is an icon beloved by the empire's soldiers, distrusted by its officers, and loathed by the nobility. Many claim Kled has fought in every campaign the...",
       "counters": [
-         "Jax",
-         "Renekton",
-         "Fiora"
+         44,
+         94,
+         29
       ],
       "id": 59,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kled.png"
@@ -3359,9 +3359,9 @@
       "title": "the Mouth of the Abyss",
       "description": "Belched forth from a rotting Void incursion deep in the wastelands of Icathia, Kog'Maw is an inquisitive yet putrid creature with a caustic, gaping mouth. This particular Void-spawn needs to gnaw and drool on anything within reach to truly understand it...",
       "counters": [
-         "Draven",
-         "Lucian",
-         "Graves"
+         22,
+         65,
+         36
       ],
       "id": 60,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/KogMaw.png"
@@ -3413,9 +3413,9 @@
       "title": "the Deceiver",
       "description": "Mysterious even to other members of the Black Rose cabal, LeBlanc is but one of many localized_names for a pale woman who has manipulated people and events since the earliest days of Noxus. Using her magic to mirror herself, the sorceress can appear to anyone...",
       "counters": [
-         "Galio",
-         "Diana",
-         "Morgana"
+         31,
+         21,
+         75
       ],
       "id": 61,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Leblanc.png"
@@ -3470,9 +3470,9 @@
       "title": "the Blind Monk",
       "description": "A master of Ionia's ancient martial arts, Lee Sin is a principled fighter who channels the essence of the dragon spirit to face any challenge. Though he lost his sight many years ago, the warrior-monk has devoted his life to protecting his homeland...",
       "counters": [
-         "Trundle",
-         "Udyr",
-         "Renekton"
+         120,
+         124,
+         94
       ],
       "id": 62,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/LeeSin.png"
@@ -3528,9 +3528,9 @@
       "title": "the Radiant Dawn",
       "description": "Imbued with the fire of the sun, Leona is a holy warrior of the Solari who defends Mount Targon with her Zenith Blade and the Shield of Daybreak. Her skin shimmers with starfire while her eyes burn with the power of the celestial Aspect within her...",
       "counters": [
-         "Morgana",
-         "Alistar",
-         "Janna"
+         75,
+         4,
+         42
       ],
       "id": 63,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Leona.png"
@@ -3584,9 +3584,9 @@
       "title": "the Ice Witch",
       "description": "Lissandra's magic twists the pure power of ice into something dark and terrible. With the force of her black ice, she does more than freeze\u2014she impales and crushes those who oppose her. To the terrified denizens of the north, she is known only as ''The...",
       "counters": [
-         "Kassadin",
-         "Syndra",
-         "Anivia"
+         52,
+         112,
+         6
       ],
       "id": 64,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lissandra.png"
@@ -3638,9 +3638,9 @@
       "title": "the Purifier",
       "description": "Once a Sentinel of Light, Lucian is a grim hunter of undying spirits, pursuing them relentlessly and annihilating them with his twin relic pistols. Consumed by the need to avenge his dead wife, he will not rest until Thresh, the specter who holds her...",
       "counters": [
-         "Vayne",
-         "Draven",
-         "Tristana"
+         127,
+         22,
+         119
       ],
       "id": 65,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lucian.png"
@@ -3692,9 +3692,9 @@
       "title": "the Fae Sorceress",
       "description": "The yordle mage Lulu is known for conjuring dreamlike illusions and fanciful creatures as she roams Runeterra with her fairy companion Pix. Lulu shapes reality on a whim, warping the fabric of the world, and what she views as the constraints of this...",
       "counters": [
-         "Syndra",
-         "Soraka",
-         "Sona"
+         112,
+         109,
+         108
       ],
       "id": 66,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lulu.png"
@@ -3749,9 +3749,9 @@
       "title": "the Lady of Luminosity",
       "description": "Luxanna Crownguard hails from Demacia, an insular realm where magical abilities are viewed with fear and suspicion. Able to bend light to her will, she grew up dreading discovery and exile, and was forced to keep her power secret, in order to preserve...",
       "counters": [
-         "Talon",
-         "Yasuo",
-         "Gragas"
+         115,
+         138,
+         35
       ],
       "id": 67,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lux.png"
@@ -3810,9 +3810,9 @@
       "title": "Shard of the Monolith",
       "description": "A massive creature of living stone, Malphite struggles to impose blessed order on a chaotic world. Birthed as a servitor-shard to an otherworldly obelisk known as the Monolith, he used his tremendous elemental strength to maintain and protect his...",
       "counters": [
-         "Rumble",
-         "Zac",
-         "Shen"
+         97,
+         141,
+         101
       ],
       "id": 68,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Malphite.png"
@@ -3867,9 +3867,9 @@
       "title": "the Prophet of the Void",
       "description": "A zealous seer dedicated to the unification of all life, Malzahar truly believes the newly emergent Void to be the path to Runeterra's salvation. In the desert wastes of Shurima, he followed the voices that whispered in his mind, all the way to ancient...",
       "counters": [
-         "Gangplank",
-         "Syndra",
-         "Morgana"
+         32,
+         112,
+         75
       ],
       "id": 69,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Malzahar.png"
@@ -3924,9 +3924,9 @@
       "title": "the Twisted Treant",
       "description": "Maokai is a rageful, towering treant who fights the unnatural horrors of the Shadow Isles. He was twisted into a force of vengeance after a magical cataclysm destroyed his home, surviving undeath only through the Waters of Life infused within his...",
       "counters": [
-         "Shyvana",
-         "Pantheon",
-         "Nasus"
+         103,
+         86,
+         77
       ],
       "id": 70,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Maokai.png"
@@ -3976,9 +3976,9 @@
       "title": "the Wuju Bladesman",
       "description": "Master Yi has tempered his body and sharpened his mind, so that thought and action have become almost as one. Though he chooses to enter into violence only as a last resort, the grace and speed of his blade ensures resolution is always swift. As one of...",
       "counters": [
-         "Jax",
-         "Rammus",
-         "Pantheon"
+         44,
+         92,
+         86
       ],
       "id": 71,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/MasterYi.png"
@@ -4033,9 +4033,9 @@
       "title": "the Bounty Hunter",
       "description": "A Bilgewater captain famed for her looks but feared for her ruthlessness, Sarah Fortune paints a stark figure among the hardened criminals of the port city. As a child, she witnessed the reaver king Gangplank murder her family\u2014an act she brutally...",
       "counters": [
-         "Tristana",
-         "Draven",
-         "Caitlyn"
+         119,
+         22,
+         15
       ],
       "id": 72,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/MissFortune.png"
@@ -4089,9 +4089,9 @@
       "title": "the Monid King",
       "description": "Wukong is a vastayan trickster who uses his strength, agility, and intelligence to confuse his opponents and gain the upper hand. After finding a lifelong friend in the warrior known as Master Yi, Wukong became the last student of the ancient martial...",
       "counters": [
-         "Lee Sin",
-         "Garen",
-         "Darius"
+         62,
+         33,
+         20
       ],
       "id": 73,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/MonkeyKing.png"
@@ -4143,9 +4143,9 @@
       "title": "the Iron Revenant",
       "description": "The baleful revenant Mordekaiser is among the most terrifying and hateful spirits haunting the Shadow Isles. He has existed for countless centuries, shielded from true death by necromantic sorcery and the force of his own dark will. Those who dare face...",
       "counters": [
-         "Zyra",
-         "Lux",
-         "Yorick"
+         146,
+         67,
+         139
       ],
       "id": 74,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Mordekaiser.png"
@@ -4199,9 +4199,9 @@
       "title": "Fallen Angel",
       "description": "Driven by vindictive obsession, Morgana is a potent mistress of suffering and the black arts. Once a being of grace and light, she was ripped from her kind during an ancient conflict that broke her soul, turning her into the cruel tormentor she is today...",
       "counters": [
-         "Talon",
-         "Karma",
-         "Vladimir"
+         115,
+         50,
+         132
       ],
       "id": 75,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Morgana.png"
@@ -4256,9 +4256,9 @@
       "title": "the Tidecaller",
       "description": "A headstrong young vastaya of the seas, Nami was the first of the Marai tribe to leave the waves and venture onto dry land, when their ancient accord with the Targonians was broken. With no other option, she took it upon herself to complete the sacred...",
       "counters": [
-         "Lulu",
-         "Ezreal",
-         "Fizz"
+         66,
+         27,
+         30
       ],
       "id": 76,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nami.png"
@@ -4310,9 +4310,9 @@
       "title": "the Curator of the Sands",
       "description": "Nasus is an imposing, jackal-headed Ascended being from ancient Shurima, a heroic figure regarded as a demigod by the people of the desert. Fiercely intelligent, he was a guardian of knowledge and peerless strategist whose wisdom guided the ancient...",
       "counters": [
-         "Teemo",
-         "Olaf",
-         "Rumble"
+         117,
+         83,
+         97
       ],
       "id": 77,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nasus.png"
@@ -4366,9 +4366,9 @@
       "title": "the Titan of the Depths",
       "description": "A lonely legend as old as the first piers sunk in Bilgewater, the armored goliath known as Nautilus roams the dark waters off the coast of the Blue Flame Isles. Driven by a forgotten betrayal, he strikes without warning, swinging his enormous anchor to...",
       "counters": [
-         "Garen",
-         "Shyvana",
-         "Olaf"
+         33,
+         103,
+         83
       ],
       "id": 78,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nautilus.png"
@@ -4426,9 +4426,9 @@
       "title": "the Curious Chameleon",
       "description": "Hailing from a long lost tribe of vastaya, Neeko can blend into any crowd by borrowing the appearances of others, even absorbing something of their emotional state to tell friend from foe in an instant. No one is ever sure where—or who—Neeko might be...",
       "counters": [
-         "Veigar",
-         "Lux",
-         "Kalista"
+         128,
+         67,
+         49
       ],
       "id": 79,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Neeko.png"
@@ -4480,9 +4480,9 @@
       "title": "the Bestial Huntress",
       "description": "Raised in the deepest jungle, Nidalee is a master tracker who can shapeshift into a ferocious cougar at will. Neither wholly woman nor beast, she viciously defends her territory from any and all trespassers, with carefully placed traps and deft spear...",
       "counters": [
-         "Yasuo",
-         "Pantheon",
-         "Akali"
+         138,
+         86,
+         3
       ],
       "id": 80,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nidalee.png"
@@ -4536,9 +4536,9 @@
       "title": "the Eternal Nightmare",
       "description": "A demonic amalgamation drawn from the nightmares that haunt every sentient mind, the thing known as Nocturne has become a primordial force of pure evil. It is liquidly chaotic in aspect, a faceless shadow with cold eyes and armed with wicked-looking...",
       "counters": [
-         "Olaf",
-         "Alistar",
-         "Tryndamere"
+         83,
+         4,
+         121
       ],
       "id": 81,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nocturne.png"
@@ -4593,9 +4593,9 @@
       "title": "the Yeti Rider",
       "description": "Frolicking through the hills of the Freljord, Nunu and Willump make an unlikely pair, but many travellers would swear they have seen the yeti with a fearless boy clinging to his back. Though Nunu may have tamed the beast's heart, Willump's anger remains...",
       "counters": [
-         "Fiddlesticks",
-         "Zac",
-         "Maokai"
+         28,
+         141,
+         70
       ],
       "id": 82,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nunu.png"
@@ -4650,9 +4650,9 @@
       "title": "the Berserker",
       "description": "An unstoppable force of destruction, the axe-wielding Olaf wants nothing but to die in glorious combat. Hailing from the brutal Freljordian peninsula of Lokfar, he once received a prophecy foretelling his peaceful passing\u2014a coward's fate, and a great...",
       "counters": [
-         "Skarner",
-         "Nunu",
-         "Evelynn"
+         107,
+         82,
+         26
       ],
       "id": 83,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Olaf.png"
@@ -4707,9 +4707,9 @@
       "title": "the Lady of Clockwork",
       "description": "Once a curious girl of flesh and blood, Orianna is now a technological marvel comprised entirely of clockwork. She became gravely ill after an accident in the lower districts of Zaun, and her failing body had to be replaced with exquisite artifice...",
       "counters": [
-         "Fiddlesticks",
-         "Aurelion Sol",
-         "Karthus"
+         28,
+         9,
+         51
       ],
       "id": 84,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Orianna.png"
@@ -4765,9 +4765,9 @@
       "title": "The Fire below the Mountain",
       "description": "Ornn is the Freljordian spirit of forging and craftsmanship. He works in the solitude of a massive smithy, hammered out from the lava caverns beneath the volcano Hearth-Home. There he stokes bubbling cauldrons of molten rock to purify ores and fashion...",
       "counters": [
-         "Olaf",
-         "Fiora",
-         "Jayce"
+         83,
+         29,
+         45
       ],
       "id": 85,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ornn.png"
@@ -4825,9 +4825,9 @@
       "title": "the Artisan of War",
       "description": "The peerless warrior known as Pantheon is a nigh-unstoppable paragon of battle. He was born among the Rakkor, a warlike people living on the flanks of Mount Targon, and after climbing the mountain's treacherous peak and being deemed worthy, he was...",
       "counters": [
-         "Maokai",
-         "Sion",
-         "Olaf"
+         70,
+         105,
+         83
       ],
       "id": 86,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pantheon.png"
@@ -4885,9 +4885,9 @@
       "title": "Keeper of the Hammer",
       "description": "Runeterra has no shortage of valiant champions, but few are as tenacious as Poppy. Bearing the legendary hammer of Orlon, a weapon twice her size, this determined yordle has spent untold years searching in secret for the fabled \u201cHero of Demacia,\u201d said...",
       "counters": [
-         "Kayle",
-         "Teemo",
-         "Akali"
+         54,
+         117,
+         3
       ],
       "id": 87,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Poppy.png"
@@ -4942,9 +4942,9 @@
       "title": "the Bloodharbor Ripper",
       "description": "A renowned harpooner from the slaughter docks of Bilgewater, Pyke should have met his death in the belly of a gigantic jaull-fish\u2026 and yet, he returned. Now, stalking the dank alleys and backways of his former hometown, he uses his new supernatural...",
       "counters": [
-         "Janna",
-         "Sion",
-         "Sona"
+         42,
+         105,
+         108
       ],
       "id": 88,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pyke.png"
@@ -4998,9 +4998,9 @@
       "title": "Empress of the Elements",
       "description": "In the jungle city of Ixaocan, Qiyana plots her own ruthless path to the high seat of the Yun Tal. Last in line to succeed her parents, she faces those who stand in her way with brash confidence and unprecedented mastery over elemental magic. With the...",
       "counters": [
-         "Pyke",
-         "Karma",
-         "Swain"
+         88,
+         50,
+         110
       ],
       "id": 89,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Qiyana.png"
@@ -5052,9 +5052,9 @@
       "title": "Demacia's Wings",
       "description": "Quinn is an elite ranger-knight of Demacia, who undertakes dangerous missions deep in enemy territory. She and her legendary eagle, Valor, share an unbreakable bond, and their foes are often slain before they realize they are fighting not one, but two...",
       "counters": [
-         "Kled",
-         "Irelia",
-         "Vladimir"
+         59,
+         40,
+         132
       ],
       "id": 90,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Quinn.png"
@@ -5107,9 +5107,9 @@
       "title": "The Charmer",
       "description": "As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his localized_name has long been synonymous with wild festivals, uncontrollable parties...",
       "counters": [
-         "Janna",
-         "Sona",
-         "Veigar"
+         42,
+         108,
+         128
       ],
       "id": 91,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rakan.png"
@@ -5163,9 +5163,9 @@
       "title": "the Armordillo",
       "description": "Idolized by many, dismissed by some, mystifying to all, the curious being Rammus is an enigma. Protected by a spiked shell, he inspires increasingly disparate theories on his origin wherever he goes\u2014from demigod, to sacred oracle, to a mere beast...",
       "counters": [
-         "Sejuani",
-         "Fiddlesticks",
-         "Ivern"
+         99,
+         28,
+         41
       ],
       "id": 92,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rammus.png"
@@ -5219,9 +5219,9 @@
       "title": "the Void Burrower",
       "description": "An apex predator, Rek'Sai is a merciless Void-spawn that tunnels beneath the ground to ambush and devour unsuspecting prey. Her insatiable hunger has laid waste to entire regions of the once-great empire of Shurima\u2014merchants, traders, even armed...",
       "counters": [
-         "Taliyah",
-         "Hecarim",
-         "Vi"
+         114,
+         37,
+         130
       ],
       "id": 93,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/RekSai.png"
@@ -5276,9 +5276,9 @@
       "title": "the Butcher of the Sands",
       "description": "Renekton is a terrifying, rage-fueled Ascended being from the scorched deserts of Shurima. Once, he was his empire's most esteemed warrior, leading the nation's armies to countless victories. However, after the empire's fall, Renekton was entombed...",
       "counters": [
-         "Karthus",
-         "Talon",
-         "Teemo"
+         51,
+         115,
+         117
       ],
       "id": 94,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Renekton.png"
@@ -5330,9 +5330,9 @@
       "title": "the Pridestalker",
       "description": "Rengar is a ferocious vastayan trophy hunter who lives for the thrill of tracking down and killing dangerous creatures. He scours the world for the most fearsome beasts he can find, especially seeking any trace of Kha'Zix, the void creature who...",
       "counters": [
-         "Xin Zhao",
-         "Sejuani",
-         "Amumu"
+         137,
+         99,
+         5
       ],
       "id": 95,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rengar.png"
@@ -5386,9 +5386,9 @@
       "title": "the Exile",
       "description": "Once a swordmaster in the warhosts of Noxus, Riven is an expatriate in a land she previously tried to conquer. She rose through the ranks on the strength of her conviction and brutal efficiency, and was rewarded with a legendary runic blade and a...",
       "counters": [
-         "Talon",
-         "Mordekaiser",
-         "Tryndamere"
+         115,
+         74,
+         121
       ],
       "id": 96,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Riven.png"
@@ -5445,9 +5445,9 @@
       "title": "the Mechanized Menace",
       "description": "Rumble is a young inventor with a temper. Using nothing more than his own two hands and a heap of scrap, the feisty yordle constructed a colossal mech suit outfitted with an arsenal of electrified harpoons and incendiary rockets. Though others may scoff...",
       "counters": [
-         "Aatrox",
-         "Riven",
-         "Tryndamere"
+         1,
+         96,
+         121
       ],
       "id": 97,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rumble.png"
@@ -5503,9 +5503,9 @@
       "title": "the Rune Mage",
       "description": "Widely considered one of the most adept sorcerers on Runeterra, Ryze is an ancient, hard-bitten archmage with an impossibly heavy burden to bear. Armed with immense arcane power and a boundless constitution, he tirelessly hunts for World Runes\u2014fragments...",
       "counters": [
-         "Fizz",
-         "Anivia",
-         "Syndra"
+         30,
+         6,
+         112
       ],
       "id": 98,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ryze.png"
@@ -5561,9 +5561,9 @@
       "title": "Fury of the North",
       "description": "Sejuani is the brutal, unforgiving Iceborn warmother of the Winter's Claw, one of the most feared tribes of the Freljord. Her people's survival is a constant, desperate battle against the elements, forcing them to raid Noxians, Demacians, and Avarosans...",
       "counters": [
-         "Wukong",
-         "Nocturne",
-         "Maokai"
+         73,
+         81,
+         70
       ],
       "id": 99,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sejuani.png"
@@ -5617,9 +5617,9 @@
       "title": "the Demon Jester",
       "description": "Crafted long ago as a plaything for a lonely prince, the enchanted marionette Shaco now delights in murder and mayhem. Corrupted by dark magic and the loss of his beloved charge, the once-kind puppet finds pleasure only in the misery of the poor souls...",
       "counters": [
-         "Nunu",
-         "Skarner",
-         "Jarvan IV"
+         82,
+         107,
+         43
       ],
       "id": 100,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shaco.png"
@@ -5675,9 +5675,9 @@
       "title": "the Eye of Twilight",
       "description": "Among the secretive, Ionian warriors known as the Kinkou, Shen serves as their leader, the Eye of Twilight. He longs to remain free from the confusion of emotion, prejudice, and ego, and walks the unseen path of dispassionate judgment between the spirit...",
       "counters": [
-         "Mordekaiser",
-         "Kayle",
-         "Swain"
+         74,
+         54,
+         110
       ],
       "id": 101,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shen.png"
@@ -5733,9 +5733,9 @@
       "title": "the Half-Dragon",
       "description": "Shyvana is a creature with the magic of a rune shard burning within her heart. Though she often appears humanoid, she can take her true form as a fearsome dragon, incinerating her foes with fiery breath. Having saved the life of the crown prince Jarvan...",
       "counters": [
-         "Nunu",
-         "Evelynn",
-         "Warwick"
+         82,
+         26,
+         134
       ],
       "id": 103,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shyvana.png"
@@ -5788,9 +5788,9 @@
       "title": "the Mad Chemist",
       "description": "Singed is a Zaunite alchemist of unmatched intellect, who has devoted his life to pushing the boundaries of knowledge\u2014with no price, even his own sanity, too high to pay. Is there a method to his madness? His concoctions rarely fail, but it appears to...",
       "counters": [
-         "Teemo",
-         "Kayle",
-         "Fiora"
+         117,
+         54,
+         29
       ],
       "id": 104,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Singed.png"
@@ -5845,9 +5845,9 @@
       "title": "The Undead Juggernaut",
       "description": "A war hero from a bygone era, Sion was revered in Noxus for choking the life out of a Demacian king with his bare hands\u2014but, denied oblivion, he was resurrected to serve his empire even in death. His indiscriminate slaughter claimed all who stood in his...",
       "counters": [
-         "Vladimir",
-         "Tryndamere",
-         "Akali"
+         132,
+         121,
+         3
       ],
       "id": 105,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sion.png"
@@ -5902,9 +5902,9 @@
       "title": "the Battle Mistress",
       "description": "Sivir is a renowned fortune hunter and mercenary captain who plies her trade in the deserts of Shurima. Armed with her legendary jeweled crossblade, she has fought and won countless battles for those who can afford her exorbitant price. Known for her...",
       "counters": [
-         "Draven",
-         "Vayne",
-         "Jinx"
+         22,
+         127,
+         47
       ],
       "id": 106,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sivir.png"
@@ -5958,9 +5958,9 @@
       "title": "the Crystal Vanguard",
       "description": "Skarner is an immense crystalline scorpion from a hidden valley in Shurima. Part of the ancient Brackern race, Skarner and his kin are known for their great wisdom and deep connection to the land, as their souls are fused with powerful life crystals...",
       "counters": [
-         "Nunu",
-         "Warwick",
-         "Zac"
+         82,
+         134,
+         141
       ],
       "id": 107,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Skarner.png"
@@ -6015,9 +6015,9 @@
       "title": "Maven of the Strings",
       "description": "Sona is Demacia's foremost virtuoso of the stringed etwahl, speaking only through her graceful chords and vibrant arias. This genteel manner has endeared her to the highborn, though others suspect her spellbinding melodies to actually emanate magic\u2014a...",
       "counters": [
-         "Blitzcrank",
-         "Zilean",
-         "Janna"
+         12,
+         144,
+         42
       ],
       "id": 108,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sona.png"
@@ -6071,9 +6071,9 @@
       "title": "the Starchild",
       "description": "A wanderer from the celestial dimensions beyond Mount Targon, Soraka gave up her immortality to protect the mortal races from their own more violent instincts. She endeavors to spread the virtues of compassion and mercy to everyone she meets\u2014even...",
       "counters": [
-         "Blitzcrank",
-         "Trundle",
-         "Maokai"
+         12,
+         120,
+         70
       ],
       "id": 109,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Soraka.png"
@@ -6130,9 +6130,9 @@
       "title": "the Noxian Grand General",
       "description": "Jericho Swain is the visionary ruler of Noxus, an expansionist nation that reveres only strength. Though he was cast down and crippled in the Ionian wars, his left arm severed, he seized control of the empire with ruthless determination\u2026 and a new...",
       "counters": [
-         "Wukong",
-         "Jarvan IV",
-         "Tryndamere"
+         73,
+         43,
+         121
       ],
       "id": 110,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Swain.png"
@@ -6190,9 +6190,9 @@
       "title": "the Unshackled",
       "description": "Raised in one of Demacia's lesser quarters, Sylas of Dregbourne has come to symbolize the darker side of the Great City. As a boy, his ability to root out hidden sorcery caught the attention of the notorious mageseekers, who eventually imprisoned him...",
       "counters": [
-         "Zoe",
-         "Garen",
-         "Jax"
+         145,
+         33,
+         44
       ],
       "id": 111,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Swain.png"
@@ -6248,9 +6248,9 @@
       "title": "the Dark Sovereign",
       "description": "Syndra is a fearsome dark mage with incredible power at her command. As a child of Ionia, she disturbed the village elders with her prodigious but reckless use of magic. They sent her away to be trained under strict supervision, but she quickly...",
       "counters": [
-         "Fiddlesticks",
-         "Katarina",
-         "Fizz"
+         28,
+         53,
+         30
       ],
       "id": 112,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Syndra.png"
@@ -6303,9 +6303,9 @@
       "title": "the River King",
       "description": "Known by many localized_names throughout history, the demon Tahm Kench travels the waterways of Runeterra, feeding his insatiable appetite with the misery of others. Though he may appear singularly charming and proud, he swaggers through the physical realm like a...",
       "counters": [
-         "Sona",
-         "Soraka",
-         "Zilean"
+         108,
+         109,
+         144
       ],
       "id": 113,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/TahmKench.png"
@@ -6362,9 +6362,9 @@
       "title": "the Stoneweaver",
       "description": "Taliyah is a nomadic mage from Shurima, torn between teenage wonder and adult responsibility. She has crossed nearly all of Valoran on a journey to learn the true nature of her growing powers, though more recently she has returned to protect her tribe...",
       "counters": [
-         "Heimerdinger",
-         "Karthus",
-         "Vel'Koz"
+         38,
+         51,
+         129
       ],
       "id": 114,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Taliyah.png"
@@ -6414,9 +6414,9 @@
       "title": "the Blade's Shadow",
       "description": "Talon is the knife in the darkness, a merciless killer able to strike without warning and escape before any alarm is raised. He carved out a dangerous reputation on the brutal streets of Noxus, where he was forced to fight, kill, and steal to survive...",
       "counters": [
-         "Jayce",
-         "Karthus",
-         "Veigar"
+         45,
+         51,
+         128
       ],
       "id": 115,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Talon.png"
@@ -6470,9 +6470,9 @@
       "title": "the Shield of Valoran",
       "description": "Taric is the Aspect of the Protector, wielding incredible power as Runeterra's guardian of life, love, and beauty. Shamed by a dereliction of duty and exiled from his homeland Demacia, Taric ascended Mount Targon to find redemption, only to discover a...",
       "counters": [
-         "Janna",
-         "Sona",
-         "Bard"
+         42,
+         108,
+         11
       ],
       "id": 116,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Taric.png"
@@ -6524,9 +6524,9 @@
       "title": "the Swift Scout",
       "description": "Undeterred by even the most dangerous and threatening of obstacles, Teemo scouts the world with boundless enthusiasm and a cheerful spirit. A yordle with an unwavering sense of morality, he takes pride in following the Bandle Scout's Code, sometimes...",
       "counters": [
-         "Sion",
-         "Pantheon",
-         "Olaf"
+         105,
+         86,
+         83
       ],
       "id": 117,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Teemo.png"
@@ -6551,11 +6551,11 @@
       ],
       "lanes": [
          "Support"
-      ],     
+      ],
       "counters": [
-         "Sion",
-         "Maokai",
-         "Janna"
+         105,
+         70,
+         42
       ],
       "id": 118,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Thresh.png"
@@ -6610,9 +6610,9 @@
       "title": "the Yordle Gunner",
       "description": "While many other yordles channel their energy into discovery, invention, or just plain mischief-making, Tristana was always inspired by the adventures of great warriors. She had heard much about Runeterra, its factions, and its wars, and believed her...",
       "counters": [
-         "Draven",
-         "Twitch",
-         "Kog'Maw"
+         22,
+         123,
+         60
       ],
       "id": 119,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Tristana.png"
@@ -6667,9 +6667,9 @@
       "title": "the Troll King",
       "description": "Trundle is a hulking and devious troll with a particularly vicious streak, and there is nothing he cannot bludgeon into submission\u2014not even the Freljord itself. Fiercely territorial, he chases down anyone foolish enough to enter his domain. Then, his...",
       "counters": [
-         "Swain",
-         "Mordekaiser",
-         "Vladimir"
+         110,
+         74,
+         132
       ],
       "id": 120,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Trundle.png"
@@ -6719,9 +6719,9 @@
       "title": "the Barbarian King",
       "description": "Fueled by unbridled fury and rage, Tryndamere once carved his way through the Freljord, openly challenging the greatest warriors of the north to prepare himself for even darker days ahead. The wrathful barbarian has long sought revenge for the...",
       "counters": [
-         "Quinn",
-         "Darius",
-         "Jayce"
+         90,
+         20,
+         45
       ],
       "id": 121,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Tryndamere.png"
@@ -6773,9 +6773,9 @@
       "title": "the Card Master",
       "description": "Twisted Fate is an infamous cardsharp and swindler who has gambled and charmed his way across much of the known world, earning the enmity and admiration of the rich and foolish alike. He rarely takes things seriously, greeting each day with a mocking...",
       "counters": [
-         "Karthus",
-         "Brand",
-         "Malzahar"
+         51,
+         13,
+         69
       ],
       "id": 122,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/TwistedFate.png"
@@ -6825,9 +6825,9 @@
       "title": "the Plague Rat",
       "description": "A Zaunite plague rat by birth, but a connoisseur of filth by passion, Twitch is not afraid to get his paws dirty. Aiming a chem-powered crossbow at the gilded heart of Piltover, he has vowed to show those in the city above just how filthy they really...",
       "counters": [
-         "Ziggs",
-         "Miss Fortune",
-         "Caitlyn"
+         143,
+         72,
+         15
       ],
       "id": 123,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Twitch.png"
@@ -6880,9 +6880,9 @@
       "title": "the Spirit Walker",
       "description": "Udyr is more than a man; he is a vessel for the untamed power of four primal animal spirits. When tapping into the spirits' bestial natures, Udyr can harness their unique strengths: The tiger grants him speed and ferocity, the turtle resilience, the...",
       "counters": [
-         "Nunu",
-         "Jax",
-         "Shaco"
+         82,
+         44,
+         100
       ],
       "id": 124,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Udyr.png"
@@ -6935,9 +6935,9 @@
       "title": "the Dreadnought",
       "description": "Once a powerful Noxian headsman, Urgot was betrayed by the empire for which he had killed so many. Bound in iron chains, he was forced to learn the true meaning of strength in the Dredge\u2014a prison mine deep beneath Zaun. Emerging in a disaster that...",
       "counters": [
-         "Gangplank",
-         "Riven",
-         "Renekton"
+         32,
+         96,
+         94
       ],
       "id": 125,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Urgot.png"
@@ -6993,9 +6993,9 @@
       "title": "the Arrow of Retribution",
       "description": "One of the ancient race of darkin, Varus was a deadly killer who loved to torment his foes, driving them almost to insanity before delivering the killing arrow. He was imprisoned at the end of the Darkin War, but escaped centuries later in the remade...",
       "counters": [
-         "Miss Fortune",
-         "Draven",
-         "Kog'Maw"
+         72,
+         22,
+         60
       ],
       "id": 126,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Varus.png"
@@ -7046,9 +7046,9 @@
       "title": "the Night Hunter",
       "description": "Shauna Vayne is a deadly, remorseless Demacian monster hunter, who has dedicated her life to finding and destroying the demon that murdered her family. Armed with a wrist-mounted crossbow and a heart full of vengeance, she is only truly happy when...",
       "counters": [
-         "Quinn",
-         "Caitlyn",
-         "Twitch"
+         90,
+         15,
+         123
       ],
       "id": 127,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vayne.png"
@@ -7105,9 +7105,9 @@
       "title": "the Tiny Master of Evil",
       "description": "An enthusiastic master of dark sorcery, Veigar has embraced powers that few mortals dare approach. As a free-spirited inhabitant of Bandle City, he longed to push beyond the limitations of yordle magic, and turned instead to arcane texts that had been...",
       "counters": [
-         "Ziggs",
-         "Malzahar",
-         "Lissandra"
+         143,
+         69,
+         64
       ],
       "id": 128,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Veigar.png"
@@ -7164,9 +7164,9 @@
       "title": "the Eye of the Void",
       "description": "It is unclear if Vel'Koz was the first Void-spawn to emerge on Runeterra, but there has certainly never been another to match his level of cruel, calculating sentience. While his kin devour or defile everything around them, he seeks instead to...",
       "counters": [
-         "Blitzcrank",
-         "Pyke",
-         "Bard"
+         12,
+         88,
+         11
       ],
       "id": 129,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Velkoz.png"
@@ -7219,9 +7219,9 @@
       "title": "the Piltover Enforcer",
       "description": "Once a criminal from the mean streets of Zaun, Vi is a hotheaded, impulsive, and fearsome woman with only a very loose respect for authority figures. Growing up all but alone, Vi developed finely honed survival instincts as well as a wickedly abrasive...",
       "counters": [
-         "Nunu",
-         "Fiddlesticks",
-         "Ivern"
+         82,
+         28,
+         41
       ],
       "id": 130,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vi.png"
@@ -7277,9 +7277,9 @@
       "title": "the Machine Herald",
       "description": "The herald of a new age of technology, Viktor has devoted his life to the advancement of humankind. An idealist who seeks to lift the people of Zaun to a new level of understanding, he believes that only by embracing a glorious evolution of technology...",
       "counters": [
-         "Heimerdinger",
-         "Annie",
-         "Xerath"
+         38,
+         7,
+         136
       ],
       "id": 131,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Viktor.png"
@@ -7335,9 +7335,9 @@
       "title": "the Crimson Reaper",
       "description": "A fiend with a thirst for mortal blood, Vladimir has influenced the affairs of Noxus since the empire's earliest days. In addition to unnaturally extending his life, his mastery of hemomancy allows him to control the minds and bodies of others as easily...",
       "counters": [
-         "Malzahar",
-         "Annie",
-         "Swain"
+         69,
+         7,
+         110
       ],
       "id": 132,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vladimir.png"
@@ -7394,9 +7394,9 @@
       "title": "the Thunder's Roar",
       "description": "The thunderous demigod known as the Thousand-Pierced Bear is the battle-spirit of the Freljord. Thousands of years of constant and bitter wars, fought in the coldest winters, have hardened Volibear into a truly indomitable force, hurling bolts of...",
       "counters": [
-         "Sejuani",
-         "Kha'Zix",
-         "Warwick"
+         99,
+         57,
+         134
       ],
       "id": 133,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Volibear.png"
@@ -7449,9 +7449,9 @@
       "title": "the Uncaged Wrath of Zaun",
       "description": "Warwick is a monster who hunts the gray alleys of Zaun. Transformed by agonizing experiments, his body is fused with an intricate system of chambers and pumps, machinery filling his veins with alchemical rage. Bursting out of the shadows, he preys upon...",
       "counters": [
-         "Dr. Mundo",
-         "Pantheon",
-         "Ivern"
+         23,
+         86,
+         41
       ],
       "id": 134,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Warwick.png"
@@ -7503,9 +7503,9 @@
       "title": "the Rebel",
       "description": "Deadly and precise, Xayah is a vastayan revolutionary waging a personal war to save her people. She uses her speed, guile, and razor-sharp feather blades to cut down anyone who stands in her way. Xayah fights alongside her partner and lover, Rakan, to...",
       "counters": [
-         "Ziggs",
-         "Caitlyn",
-         "Miss Fortune"
+         143,
+         15,
+         72
       ],
       "id": 135,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Xayah.png"
@@ -7562,9 +7562,9 @@
       "title": "the Magus Ascendant",
       "description": "Xerath is an Ascended Magus of ancient Shurima, a being of arcane energy writhing in the broken shards of a magical sarcophagus. For millennia, he was trapped beneath the desert sands, but the rise of Shurima freed him from his ancient prison. Driven...",
       "counters": [
-         "Talon",
-         "Zilean",
-         "Katarina"
+         115,
+         144,
+         53
       ],
       "id": 136,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Xerath.png"
@@ -7617,9 +7617,9 @@
       "title": "the Seneschal of Demacia",
       "description": "Xin Zhao is a resolute warrior loyal to the ruling Lightshield dynasty. Once condemned to the fighting pits of Noxus, he survived countless gladiatorial bouts, but after being freed by Demacian forces, he swore his life and allegiance to these brave...",
       "counters": [
-         "Sejuani",
-         "Jarvan IV",
-         "Twitch"
+         99,
+         43,
+         123
       ],
       "id": 137,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/XinZhao.png"
@@ -7676,9 +7676,9 @@
       "title": "the Unforgiven",
       "description": "An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. As a proud young man, he was falsely accused of murdering his master\u2014unable to prove his innocence, he was forced to slay his own brother in self...",
       "counters": [
-         "Talon",
-         "Riven",
-         "Xin Zhao"
+         115,
+         96,
+         137
       ],
       "id": 138,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yasuo.png"
@@ -7731,9 +7731,9 @@
       "title": "Shepherd of Souls",
       "description": "The last survivor of a long-forgotten religious order, Yorick is both blessed and cursed with power over the dead. Trapped on the Shadow Isles, his only companions are the rotting corpses and shrieking spirits that he gathers to him. Yorick's monstrous...",
       "counters": [
-         "Shen",
-         "Poppy",
-         "Shyvana"
+         101,
+         87,
+         103
       ],
       "id": 139,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yorick.png"
@@ -7789,9 +7789,9 @@
       "title": "the Magical Cat",
       "description": "A magical cat from Bandle City, Yuumi was once the familiar of a yordle enchantress, Norra. When her master mysteriously disappeared, Yuumi became the Keeper of Norra's sentient Book of Thresholds, traveling through portals in its pages to search for...",
       "counters": [
-         "Soraka",
-         "Nautilus",
-         "Blitzcrank"
+         109,
+         78,
+         12
       ],
       "id": 140,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yorick.png"
@@ -7847,9 +7847,9 @@
       "title": "the Secret Weapon",
       "description": "Zac is the product of a toxic spill that ran through a chemtech seam and pooled in an isolated cavern deep in Zaun's Sump. Despite such humble origins, Zac has grown from primordial ooze into a thinking being who dwells in the city's pipes, occasionally...",
       "counters": [
-         "Pantheon",
-         "Nunu",
-         "Xin Zhao"
+         86,
+         82,
+         137
       ],
       "id": 141,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zac.png"
@@ -7899,9 +7899,9 @@
       "title": "the Master of Shadows",
       "description": "Utterly ruthless and without mercy, Zed is the leader of the Order of Shadow, an organization he created with the intent of militarizing Ionia's martial arts traditions to drive out Noxian invaders. During the war, desperation led him to unlock the...",
       "counters": [
-         "Kennen",
-         "Morgana",
-         "Kayle"
+         56,
+         75,
+         54
       ],
       "id": 142,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zed.png"
@@ -7956,9 +7956,9 @@
       "title": "the Hexplosives Expert",
       "description": "With a love of big bombs and short fuses, the yordle Ziggs is an explosive force of nature. As an inventor's assistant in Piltover, he was bored by his predictable life and befriended a mad, blue-haired bomber localized_named Jinx. After a wild night on the town...",
       "counters": [
-         "Corki",
-         "Ahri",
-         "Taliyah"
+         19,
+         2,
+         114
       ],
       "id": 143,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ziggs.png"
@@ -8015,9 +8015,9 @@
       "title": "the Chronokeeper",
       "description": "Once a powerful Icathian mage, Zilean became obsessed with the passage of time after witnessing his homeland's destruction by the Void. Unable to spare even a minute to grieve the catastrophic loss, he called upon ancient temporal magic to divine all...",
       "counters": [
-         "Soraka",
-         "Blitzcrank",
-         "Vel'Koz"
+         109,
+         12,
+         129
       ],
       "id": 144,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zilean.png"
@@ -8071,9 +8071,9 @@
       "title": "the Aspect of Twilight",
       "description": "As the embodiment of mischief, imagination, and change, Zoe acts as the cosmic messenger of Targon, heralding major events that reshape worlds. Her mere presence warps the arcane mathematics governing realities, sometimes causing cataclysms without...",
       "counters": [
-         "Malzahar",
-         "Katarina",
-         "Lux"
+         69,
+         53,
+         67
       ],
       "id": 145,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zoe.png"
@@ -8128,9 +8128,9 @@
       "title": "Rise of the Thorns",
       "description": "Born in an ancient, sorcerous catastrophe, Zyra is the wrath of nature given form\u2014an alluring hybrid of plant and human, kindling new life with every step. She views the many mortals of Valoran as little more than prey for her seeded progeny, and thinks...",
       "counters": [
-         "Blitzcrank",
-         "Sona",
-         "Soraka"
+         12,
+         108,
+         109
       ],
       "id": 146,
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zyra.png"

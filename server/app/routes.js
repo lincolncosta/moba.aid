@@ -63,7 +63,7 @@ routes.get('/league', (req, res) => {
         });
     }
 
-    let fileName = LeagueAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedChampions, pickedChampions);
+    let fileName = LeagueAlgorithm.start(strategy, maxFitValue, populationSize, mutationChance, maxGenerations, currentExecution, bannedGenes, pickedGenes, enemyGenes);
 
     // res.send(fileName);
 
