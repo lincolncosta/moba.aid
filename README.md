@@ -16,6 +16,10 @@ Hard Engage | Hard Engage
 Team Fight | Area of Effect
 Pusher | Poke, Wave Clear
 
+## Inicialização
+
+Baixe as dependências do projeto executando o comando `npm install` na pasta raiz. Para executar o servidor do projeto, acesse a pasta _/server_ e execute o comando `npm start`. As requisições ficarão disponíveis caso não haja nenhum erro na inicialização.
+
 ## Requisições
 
 **URL** : `/api/league/`
