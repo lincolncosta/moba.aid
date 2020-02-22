@@ -22,6 +22,8 @@ Baixe as dependências do projeto executando o comando `npm install` na pasta ra
 
 ## Requisições
 
+Importações das requisições via Insomnia, [clique aqui](../tree/master/docs). 
+
 **URL** : `/api/league/`
 
 **Descrição** : `API para geração de uma composição em League Of Legends.`
