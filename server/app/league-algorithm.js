@@ -121,6 +121,23 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         return +(0.1 + multiplier).toFixed(12);
     }
 
+    validCountersFunction(champion, multiplier) {
+        if (!champion.counters) {
+            return multiplier;
+        }
+
+        console.log(champion.counters);
+
+        let isCountered = champion.counters.filter(value => ENEMY_GENES.includes(value))
+            .length;
+
+        if (isCountered) {
+            return multiplier;
+        }
+
+        return +(0.1 + multiplier).toFixed(12);
+    }
+
     fitnessFunction(chromosome) {
         allChromosomes.push(chromosome);
 
@@ -141,7 +158,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
                             );
 
                             if (ENEMY_GENES.length) {
-                                console.log(ENEMY_GENES);
+                                multiplier = self.validCountersFunction(
+                                    champion,
+                                    multiplier
+                                );
                             }
                         }
                     });
@@ -290,7 +310,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         MUTATION_CHANCE = mutationChance;
         CURRENT_EXECUTION = currentExecution;
         ENEMY_GENES = enemyGenes;
-    
+
         filePathReports =
             "app/reports/" +
             strategy +
