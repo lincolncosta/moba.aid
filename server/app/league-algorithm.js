@@ -9,11 +9,14 @@ let execution = 1;
 let finalFitvalue = 0;
 let allChromosomes = [];
 let ENEMY_GENES = [];
+let PICKED_GENES = [];
 let totalChampions = 146;
+CHROMOSOME_LENGTH = 5;
 let POPULATION_SIZE;
 let MUTATION_CHANCE;
 let MAX_GENERATIONS;
 let MAX_EXECUTIONS = 3;
+let POSSIBLE_GENES = [];
 let COMPOSITION_STRATEGY;
 let MAX_FIT_VALUE = 81.28;
 let CURRENT_EXECUTION;
@@ -34,7 +37,9 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         this.validChromosome = this.validChromosome.bind(this);
         this.validCompositionFunction = this.validCompositionFunction.bind(this);
         this.validRolesFunction = this.validRolesFunction.bind(this);
+        this.validCountersFunction = this.validCountersFunction.bind(this);
         this.showCompositionInfo = this.showCompositionInfo.bind(this);
+        this.generatePopulationFromPicked = this.generatePopulationFromPicked.bind(this);
     }
 
     validCompositionFunction(chromosome) {
@@ -137,6 +142,11 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     }
 
     fitnessFunction(chromosome) {
+
+        if (!PICKED_GENES.every(v => chromosome.genes.includes(v))) {
+            return 0;
+        }
+
         allChromosomes.push(chromosome);
 
         switch (COMPOSITION_STRATEGY) {
@@ -261,9 +271,23 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         });
     }
 
+    generatePopulationFromPicked() {
+        return [...Array(POPULATION_SIZE)].map(() => {
+            return {
+                fitness: 0,
+                genes: PICKED_GENES.concat([...Array(CHROMOSOME_LENGTH - PICKED_GENES.length)].map(() => {
+                    return POSSIBLE_GENES[Math.floor(Math.random() * POSSIBLE_GENES.length)];
+                }))
+            }
+        });
+    }
+
     async genetic() {
         var start = new Date();
-        this.algorithm.resetPopulation();
+
+        if (PICKED_GENES) {
+            this.algorithm.population = this.generatePopulationFromPicked();
+        }
 
         try {
             // await this.createReportFile();
@@ -308,6 +332,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         MUTATION_CHANCE = mutationChance;
         CURRENT_EXECUTION = currentExecution;
         ENEMY_GENES = enemyGenes;
+        PICKED_GENES = pickedGenes;
 
         filePathReports =
             "app/reports/" +
@@ -330,16 +355,16 @@ class LeagueAlgorithm extends GeneticAlgorithm {
             maxGenerations +
             ".csv";
 
-        let possibleGenes = Array.from({ length: totalChampions }, (v, k) => k + 1)
-        let champions = possibleGenes;
+        POSSIBLE_GENES = Array.from({ length: totalChampions }, (v, k) => k + 1)
+        let champions = POSSIBLE_GENES;
 
         if (bannedGenes) {
-            champions = possibleGenes.filter(x => !bannedGenes.includes(x));
+            champions = POSSIBLE_GENES.filter(x => !bannedGenes.includes(x));
         }
 
         this.algorithm = evolveGa.evolve({
             populationSize: POPULATION_SIZE,
-            chromosomeLength: 5,
+            chromosomeLength: CHROMOSOME_LENGTH,
             possibleGenes: champions,
             mutationChance: MUTATION_CHANCE,
             fitnessFunction: this.fitnessFunction,

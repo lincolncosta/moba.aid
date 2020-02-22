@@ -41,29 +41,27 @@ routes.get('/api/league', (req, res) => {
 
     let bannedGenes = [];
     let enemyGenes = [];
+    let pickedGenes = [];
 
-    if (bannedChampions) {
-        bannedGenes.map(function (item) {
+    if (banned_champions) {
+        banned_champions.map(function (item) {
             bannedGenes.push(Number(item));
         });
     }
 
-    if (enemyChampions) {
-        enemyChampions.map(function (item) {
+    if (enemy_champions) {
+        enemy_champions.map(function (item) {
             enemyGenes.push(Number(item));
         });
     }
 
-    let pickedGenes = [];
-    pickedGenes.push(pickedChampions);
-
-    if (pickedChampions) {
-        pickedChampions.map(function (item) {
+    if (picked_champions) {
+        picked_champions.map(function (item) {
             pickedGenes.push(Number(item));
         });
     }
 
-    let fileName = LeagueAlgorithm.start(strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, banned_genes, picked_genes, enemy_genes);
+    let fileName = LeagueAlgorithm.start(strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, bannedGenes, pickedGenes, enemyGenes);
 
     // res.send(fileName);
 
