@@ -1,4 +1,4 @@
-# Mobator
+# Moba AID 🎮
 
 Artigo relacionado: https://ieeexplore.ieee.org/document/8924849
 
