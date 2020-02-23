@@ -6,6 +6,6 @@ const server = express();
 
 server.use(cors())
 server.use(express.json())
-server.use(routes)
+server.use('/api/v1', routes)
 
 server.listen(process.env.PORT || 3333)

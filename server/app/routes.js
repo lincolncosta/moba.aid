@@ -6,6 +6,11 @@ const LeagueAlgorithm = require('./league-algorithm');
 
 const routes = express.Router();
 
+// Health Check
+routes.get('/', (req, res) => {
+    res.sendStatus(200);
+})
+
 routes.get('/dota', (req, res) => {
 
     let { strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, bannedChampions, pickedChampions } = req.query;
@@ -35,7 +40,7 @@ routes.get('/dota', (req, res) => {
     return res.json({ filename: fileName });
 })
 
-routes.get('/api/league', (req, res) => {
+routes.get('/league', (req, res) => {
 
     let { strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, banned_champions, picked_champions, enemy_champions } = req.query;
 

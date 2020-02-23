@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "374440a3-97da-4b3a-ba2e-9a02787b5f82",
+		"name": "moba.aid",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "edc8aa96-e198-4b63-a7f3-c948bae77753",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}",
+					"host": [
+						"{{BASE_URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dota",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "86d5736e-4b86-481a-b30f-59ed73e60318",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/dota",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"dota"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Dota",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/dota",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"dota"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "36"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"24-a3Fg80IuP+ZhRncw2RSKvDFaCMw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Feb 2020 01:07:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"filename\": \"vxbj97ng8daj24jzd5om8\"\n}"
+				}
+			]
+		},
+		{
+			"name": "League of Legends",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "86d5736e-4b86-481a-b30f-59ed73e60318",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/league",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"league"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Randomic",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "86d5736e-4b86-481a-b30f-59ed73e60318",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/randomic",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"randomic"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
