@@ -109,10 +109,14 @@ routes.get('/league', (req, res) => {
 });
 
 routes.get('/randomic', (req, res) => {
-  // Desenvolver geração randômica.
+  // Desenvolver geração randômica.++
+    // let { strategy, max_fit_value, current_execution, bannedChampions, pickedChampions } = req.query;
 
-  return res.json('Geração randômica finalizada.');
-});
+    console.log('recebido');
+  // LeagueRandomicAlgorithm.start();
+
+    return res.json('Geração randômica finalizada.');
+})
 
 routes.get('/champions', async (req, res) => {
   const data = await Champion.find();
