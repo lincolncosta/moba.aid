@@ -18,7 +18,21 @@ Pusher | Poke, Wave Clear
 
 ## Inicialização
 
-Baixe as dependências do projeto executando o comando `npm install` na pasta raiz. Para executar o servidor do projeto, acesse a pasta _/server_ e execute o comando `npm start`. As requisições ficarão disponíveis caso não haja nenhum erro na inicialização.
+1. Instale as dependências
+
+```bash
+cd server && yarn install
+```
+
+2. Duplique o arquivo `.env.example` e renomeie para `.env` preenchendo as variáveis corretamente
+
+3. Suba o servidor
+
+```bash
+yarn start
+```
+
+4. (OPCIONAL) Importe a collection `docs/moba.aid.postman_collection.json` no seu [Postman](https://www.postman.com/) para testar os endpoints
 
 ## Requisições
 

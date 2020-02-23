@@ -9,8 +9,10 @@
     "azure-storage": "^2.10.3",
     "child_process": "^1.0.2",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "evolve-ga": "^2.0.1",
     "express": "^4.17.1",
+    "mongoose": "^5.9.2",
     "nodemon": "^1.19.2"
   },
   "scripts": {

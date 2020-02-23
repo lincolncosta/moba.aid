@@ -3,8 +3,14 @@ const express = require('express');
 const LeagueRandomicAlgorithm = require('./league-randomic-algorithm');
 const DotaAlgorithm = require('./dota-algorithm');
 const LeagueAlgorithm = require('./league-algorithm');
+const Champion = require('./models/Champion');
 
 const routes = express.Router();
+
+// Health Check
+routes.get('/', (req, res) => {
+    res.sendStatus(200);
+})
 
 routes.get('/dota', (req, res) => {
 
@@ -35,7 +41,7 @@ routes.get('/dota', (req, res) => {
     return res.json({ filename: fileName });
 })
 
-routes.get('/api/league', (req, res) => {
+routes.get('/league', (req, res) => {
 
     let { strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, banned_champions, picked_champions, enemy_champions } = req.query;
 
@@ -78,6 +84,11 @@ routes.get('/randomic', (req, res) => {
     LeagueRandomicAlgorithm.start();
 
     return res.json('Geração randômica finalizada.');
+})
+
+routes.get('/champions', async (req, res) => {
+    const data = await Champion.find();
+    res.send(data).status(200);
 })
 
 module.exports = routes
