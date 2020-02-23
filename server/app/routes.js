@@ -3,6 +3,7 @@ const express = require('express');
 const LeagueRandomicAlgorithm = require('./league-randomic-algorithm');
 const DotaAlgorithm = require('./dota-algorithm');
 const LeagueAlgorithm = require('./league-algorithm');
+const Champion = require('./models/Champion');
 
 const routes = express.Router();
 
@@ -83,6 +84,11 @@ routes.get('/randomic', (req, res) => {
     LeagueRandomicAlgorithm.start();
 
     return res.json('Geração randômica finalizada.');
+})
+
+routes.get('/champions', async (req, res) => {
+    const data = await Champion.find();
+    res.send(data).status(200);
 })
 
 module.exports = routes
