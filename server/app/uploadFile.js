@@ -15,6 +15,8 @@ const uploadFile = blobName => {
     blobName,
     blobName,
     function(error, result, response) {
+      console.log(result);
+      console.log(response);
       if (!error) {
         // console.log("error: ", error);
       }

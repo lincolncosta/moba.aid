@@ -1,4 +1,3 @@
-const exec = require('child_process').exec;
 const express = require('express');
 const LeagueRandomicAlgorithm = require('./league-randomic-algorithm');
 const DotaAlgorithm = require('./dota-algorithm');
@@ -76,7 +75,7 @@ routes.get('/league', (req, res) => {
 
 routes.get('/randomic', (req, res) => {
 
-    let { strategy, max_fit_value, current_execution, bannedChampions, pickedChampions } = req.query;
+    // let { strategy, max_fit_value, current_execution, bannedChampions, pickedChampions } = req.query;
 
     console.log('recebido');
 
