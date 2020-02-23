@@ -1,12 +1,12 @@
-const azure = require("azure-storage");
+const azure = require('azure-storage');
 
-const AZURE_CONTAINER_NAME = "images";
-const AZURE_STORAGE_ACCOUNT_NAME = "mobatorstorage";
-const AZURE_STORAGE_ACCOUNT_ACCESS_KEY = "";
+const AZURE_CONTAINER_NAME = 'images';
+const AZURE_STORAGE_ACCOUNT_NAME = 'mobatorstorage';
+const AZURE_STORAGE_ACCOUNT_ACCESS_KEY = '';
 
 const fileservice = azure.createBlobService(
   AZURE_STORAGE_ACCOUNT_NAME,
-  AZURE_STORAGE_ACCOUNT_ACCESS_KEY
+  AZURE_STORAGE_ACCOUNT_ACCESS_KEY,
 );
 
 const uploadFile = blobName => {
@@ -21,7 +21,7 @@ const uploadFile = blobName => {
         // console.log("error: ", error);
       }
       // console.log("upload feito: ", result);
-    }
+    },
   );
 };
 
