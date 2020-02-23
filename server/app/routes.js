@@ -1,6 +1,4 @@
-const exec = require('child_process').exec;
 const express = require('express');
-const LeagueRandomicAlgorithm = require('./league-randomic-algorithm');
 const DotaAlgorithm = require('./dota-algorithm');
 const LeagueAlgorithm = require('./league-algorithm');
 const Champion = require('./models/Champion');
@@ -111,18 +109,7 @@ routes.get('/league', (req, res) => {
 });
 
 routes.get('/randomic', (req, res) => {
-  let {
-    strategy,
-    max_fit_value,
-    current_execution,
-    bannedChampions,
-    pickedChampions,
-  } = req.query;
-
-  console.log('recebido');
-
-  // RandomicAlgorithm.start(strategy, max_fit_value, population_size, mutation_chance, max_generations, current_execution, bannedChampions, pickedChampions);
-  LeagueRandomicAlgorithm.start();
+  // Desenvolver geração randômica.
 
   return res.json('Geração randômica finalizada.');
 });

@@ -11,18 +11,19 @@ let allChromosomes = [];
 let ENEMY_GENES = [];
 let PICKED_GENES = [];
 let totalChampions = 146;
-CHROMOSOME_LENGTH = 5;
+let CHROMOSOME_LENGTH = 5;
+let multiplier = 1.0;
 let POPULATION_SIZE;
 let MUTATION_CHANCE;
 let MAX_GENERATIONS;
-let MAX_EXECUTIONS = 3;
+// let MAX_EXECUTIONS = 3;
 let POSSIBLE_GENES = [];
 let COMPOSITION_STRATEGY;
 let MAX_FIT_VALUE = 81.28;
-let CURRENT_EXECUTION;
-var fileName = '';
-let filePathReports = '';
-let filePathTimeReports = '';
+// let CURRENT_EXECUTION;
+let fileName = '';
+// let filePathReports = '';
+// let filePathTimeReports = '';
 
 class LeagueAlgorithm extends GeneticAlgorithm {
   constructor() {
@@ -145,6 +146,11 @@ class LeagueAlgorithm extends GeneticAlgorithm {
   }
 
   fitnessFunction(chromosome) {
+    let self = this;
+    let fitvalueTeamFight = 0;
+    let fitvalueHardEngage = 0;
+    let fitvaluePusher = 0;
+
     if (!PICKED_GENES.every(v => chromosome.genes.includes(v))) {
       return 0;
     }
@@ -153,10 +159,8 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
     switch (COMPOSITION_STRATEGY) {
       case 'hardengage':
-        var fitvalueHardEngage = 0;
         fitvalueHardEngage = this.validCompositionFunction(chromosome);
-        var multiplier = 1.0;
-        var self = this;
+        multiplier = 1.0;
 
         chromosome.genes.map(function(gene) {
           json.map(champion => {
@@ -183,9 +187,8 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
         return fitvalueHardEngage;
       case 'teamfight':
-        var fitvalueTeamFight = this.validCompositionFunction(chromosome);
-        var multiplier = 1.0;
-        var self = this;
+        fitvalueTeamFight = this.validCompositionFunction(chromosome);
+        multiplier = 1.0;
 
         chromosome.genes.map(function(gene) {
           json.map(champion => {
@@ -195,6 +198,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
                 ['Area of Effect'],
                 multiplier,
               );
+
+              if (ENEMY_GENES.length) {
+                multiplier = self.validCountersFunction(champion, multiplier);
+              }
             }
           });
         });
@@ -208,9 +215,8 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
         return fitvalueTeamFight;
       case 'pusher':
-        var fitvaluePusher = this.validCompositionFunction(chromosome);
-        var multiplier = 1.0;
-        var self = this;
+        fitvaluePusher = this.validCompositionFunction(chromosome);
+        multiplier = 1.0;
 
         chromosome.genes.map(function(gene) {
           json.map(champion => {
@@ -220,6 +226,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
                 ['Poke', 'Waveclear'],
                 multiplier,
               );
+
+              if (ENEMY_GENES.length) {
+                multiplier = self.validCountersFunction(champion, multiplier);
+              }
             }
           });
         });
@@ -236,12 +246,12 @@ class LeagueAlgorithm extends GeneticAlgorithm {
   }
 
   showCompositionInfo() {
-    var championsIcons = [];
-    var parsedJson = JSON.parse(JSON.stringify(json));
+    let championsIcons = [];
+    let parsedJson = JSON.parse(JSON.stringify(json));
 
     if (this.finalChromosome) {
       this.finalChromosome.genes.forEach(function(item) {
-        var aux = parsedJson.find(function(champion) {
+        let aux = parsedJson.find(function(champion) {
           return champion.id === item;
         });
         if (aux) {
@@ -250,7 +260,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
       });
     }
 
-    var options = {
+    let options = {
       sources: championsIcons,
       width: 5,
       height: 1,
@@ -259,9 +269,9 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     };
 
     createCollage(options).then(canvas => {
-      var src = canvas.jpegStream();
+      let src = canvas.jpegStream();
       const blobName = `${fileName}.png`;
-      var dest = fs.createWriteStream(blobName);
+      let dest = fs.createWriteStream(blobName);
 
       src.pipe(dest);
       // src.on("end", function () {
@@ -286,7 +296,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
   }
 
   async genetic() {
-    var start = new Date();
+    // let start = new Date();
 
     if (PICKED_GENES) {
       this.algorithm.population = this.generatePopulationFromPicked();
@@ -306,7 +316,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
       }
 
       this.finalFitvalue = 0;
-      var end = new Date();
+      // let end = new Date();
       this.showCompositionInfo();
       // await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     } catch (error) {
@@ -330,30 +340,30 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     MAX_FIT_VALUE = maxFitValue;
     POPULATION_SIZE = populationSize;
     MUTATION_CHANCE = mutationChance;
-    CURRENT_EXECUTION = currentExecution;
+    // CURRENT_EXECUTION = currentExecution;
     ENEMY_GENES = enemyGenes;
     PICKED_GENES = pickedGenes;
 
-    filePathReports =
-      'app/reports/' +
-      strategy +
-      '/PS-' +
-      populationSize +
-      '__MC-' +
-      mutationChance +
-      '__MG-' +
-      maxGenerations +
-      '.csv';
-    filePathTimeReports =
-      'app/time-reports/' +
-      strategy +
-      '/PS-' +
-      populationSize +
-      '__MC-' +
-      mutationChance +
-      '__MG-' +
-      maxGenerations +
-      '.csv';
+    // filePathReports =
+    //   'app/reports/' +
+    //   strategy +
+    //   '/PS-' +
+    //   populationSize +
+    //   '__MC-' +
+    //   mutationChance +
+    //   '__MG-' +
+    //   maxGenerations +
+    //   '.csv';
+    // filePathTimeReports =
+    //   'app/time-reports/' +
+    //   strategy +
+    //   '/PS-' +
+    //   populationSize +
+    //   '__MC-' +
+    //   mutationChance +
+    //   '__MG-' +
+    //   maxGenerations +
+    //   '.csv';
 
     POSSIBLE_GENES = Array.from({ length: totalChampions }, (v, k) => k + 1);
     let champions = POSSIBLE_GENES;
@@ -381,7 +391,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         .toString(36)
         .substring(2, 15);
 
-    // for (var execution = 1; execution <= MAX_EXECUTIONS; execution++) {
+    // for (let execution = 1; execution <= MAX_EXECUTIONS; execution++) {
     this.genetic(execution);
     // }
     return fileName;

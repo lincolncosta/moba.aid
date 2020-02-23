@@ -1,7 +1,7 @@
 const GeneticAlgorithm = require('./genetic-algorithm');
 const evolveGa = require('evolve-ga');
 const createCollage = require('@settlin/collage');
-const json = require('./assets/dota/champions.json');
+const json = require('./assets/league/champions.json');
 const fs = require('fs');
 // const uploadFile = require("./uploadFile");
 let generation = 1;
@@ -12,13 +12,13 @@ let totalChampions = 121;
 let POPULATION_SIZE;
 let MUTATION_CHANCE;
 let MAX_GENERATIONS;
-let MAX_EXECUTIONS = 3;
+// let MAX_EXECUTIONS = 3;
 let COMPOSITION_STRATEGY;
 let MAX_FIT_VALUE = 81.28;
-let CURRENT_EXECUTION;
-var fileName = '';
-let filePathReports = '';
-let filePathTimeReports = '';
+// let CURRENT_EXECUTION;
+let fileName = '';
+// let filePathReports = '';
+// let filePathTimeReports = '';
 
 class DotaAlgorithm extends GeneticAlgorithm {
   constructor() {
@@ -30,7 +30,6 @@ class DotaAlgorithm extends GeneticAlgorithm {
     this.fitnessFunction = this.fitnessFunction.bind(this);
     this.selectionFunction = this.selectionFunction.bind(this);
 
-    this.numberCompare = this.numberCompare.bind(this);
     this.validChromosome = this.validChromosome.bind(this);
     this.validCompositionFunction = this.validCompositionFunction.bind(this);
     this.validRolesFunction = this.validRolesFunction.bind(this);
@@ -170,14 +169,17 @@ class DotaAlgorithm extends GeneticAlgorithm {
   }
 
   fitnessFunction(chromosome) {
+    let self = this;
+    let fitvalueTeamFight = 0;
+    let fitvalueHardEngage = 0;
+    let fitvaluePusher = 0;
+    let multiplier = 1.0;
+
     allChromosomes.push(chromosome);
 
     switch (COMPOSITION_STRATEGY) {
       case 'hardengage':
-        var fitvalueHardEngage = 0;
         fitvalueHardEngage = this.validCompositionFunction(chromosome);
-        var multiplier = 1.0;
-        var self = this;
 
         chromosome.genes.map(function(gene) {
           json.map(champion => {
@@ -201,9 +203,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
 
         return fitvalueHardEngage;
       case 'teamfight':
-        var fitvalueTeamFight = this.validCompositionFunction(chromosome);
-        var multiplier = 1.0;
-        var self = this;
+        fitvalueTeamFight = this.validCompositionFunction(chromosome);
 
         chromosome.genes.map(function(gene) {
           json.map(champion => {
@@ -226,9 +226,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
 
         return fitvalueTeamFight;
       case 'pusher':
-        var fitvaluePusher = this.validCompositionFunction(chromosome);
-        var multiplier = 1.0;
-        var self = this;
+        fitvaluePusher = this.validCompositionFunction(chromosome);
 
         chromosome.genes.map(function(gene) {
           json.map(champion => {
@@ -306,29 +304,8 @@ class DotaAlgorithm extends GeneticAlgorithm {
     });
   }
 
-  writeSecondsOnFile(start, end, duration) {
-    return new Promise(function(resolve, reject) {
-      fs.appendFile(
-        filePathTimeReports,
-        CURRENT_EXECUTION + ';' + start + ';' + end + ';' + duration + ' \r\n',
-        function(err) {
-          if (err) {
-            // return console.log(err);
-          }
-
-          // console.log("The file was saved!");
-        },
-      );
-    });
-  }
-
-  // createReportFiles() {
-  //     fs.writeFile(filePathReports, "", function () { });
-  //     fs.writeFile(filePathTimeReports, "", function () { });
-  // }
-
   async genetic() {
-    var start = new Date();
+    // var start = new Date();
     this.algorithm.resetPopulation();
 
     try {
@@ -345,91 +322,12 @@ class DotaAlgorithm extends GeneticAlgorithm {
       }
 
       this.finalFitvalue = 0;
-      var end = new Date();
+      // var end = new Date();
       this.showCompositionInfo();
       // await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     } catch (error) {
       throw Error(error);
     }
-  }
-
-  numberCompare(a, b) {
-    return a - b;
-  }
-
-  writeFileHeader() {
-    return new Promise(function(resolve, reject) {
-      fs.appendFile(
-        filePathReports,
-        'execution;generation;chromosome;fitness \r\n',
-        function(err) {
-          if (err) {
-            return reject(err);
-          }
-
-          resolve(true);
-        },
-      );
-    });
-  }
-
-  writeFileSecondsHeader() {
-    return new Promise(function(resolve, reject) {
-      fs.appendFile(
-        filePathTimeReports,
-        'execution;start;end;duration \r\n',
-        function(err) {
-          if (err) {
-            return reject(err);
-          }
-
-          resolve(true);
-        },
-      );
-    });
-  }
-
-  writeGenerationsOnFile() {
-    return new Promise(function(resolve, reject) {
-      var self = this;
-      let chromosome = allChromosomes[0];
-      // allChromosomes.map((chromosome, self) => {
-      fs.appendFile(
-        filePathReports,
-        CURRENT_EXECUTION +
-          ';' +
-          generation +
-          ';' +
-          chromosome.genes.toString() +
-          ';' +
-          chromosome.fitness +
-          '\r\n',
-        function(err) {
-          if (err) {
-            return reject(err);
-          }
-
-          resolve(true);
-        },
-      );
-      // });
-    });
-  }
-
-  createReportFile() {
-    return new Promise(function(resolve, reject) {
-      fs.appendFile(filePathReports, '', function() {
-        resolve(true);
-      });
-    });
-  }
-
-  createTimeReportFile() {
-    return new Promise(function(resolve, reject) {
-      fs.appendFile(filePathTimeReports, '', function() {
-        resolve(true);
-      });
-    });
   }
 
   start(
@@ -446,28 +344,7 @@ class DotaAlgorithm extends GeneticAlgorithm {
     MAX_FIT_VALUE = maxFitValue;
     POPULATION_SIZE = populationSize;
     MUTATION_CHANCE = mutationChance;
-    CURRENT_EXECUTION = currentExecution;
-
-    filePathReports =
-      'app/reports/' +
-      strategy +
-      '/PS-' +
-      populationSize +
-      '__MC-' +
-      mutationChance +
-      '__MG-' +
-      maxGenerations +
-      '.csv';
-    filePathTimeReports =
-      'app/time-reports/' +
-      strategy +
-      '/PS-' +
-      populationSize +
-      '__MC-' +
-      mutationChance +
-      '__MG-' +
-      maxGenerations +
-      '.csv';
+    // CURRENT_EXECUTION = currentExecution;
 
     let possibleGenes = Array.from({ length: totalChampions }, (v, k) => k + 1);
     let champions = possibleGenes;
