@@ -1,6 +1,6 @@
 [
    {
-      "localized_name": "Aatrox",
+      "name": "Aatrox",
       "infos": {
          "attack": 8,
          "defense": 4,
@@ -29,7 +29,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Aatrox.png"
    },
    {
-      "localized_name": "Ahri",
+      "name": "Ahri",
       "infos": {
          "attack": 3,
          "defense": 4,
@@ -58,7 +58,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ahri.png"
    },
    {
-      "localized_name": "Akali",
+      "name": "Akali",
       "infos": {
          "attack": 5,
          "defense": 3,
@@ -87,7 +87,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Akali.png"
    },
    {
-      "localized_name": "Alistar",
+      "name": "Alistar",
       "infos": {
          "attack": 6,
          "defense": 9,
@@ -117,7 +117,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Alistar.png"
    },
    {
-      "localized_name": "Amumu",
+      "name": "Amumu",
       "infos": {
          "attack": 2,
          "defense": 6,
@@ -148,7 +148,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Amumu.png"
    },
    {
-      "localized_name": "Anivia",
+      "name": "Anivia",
       "infos": {
          "attack": 1,
          "defense": 4,
@@ -178,7 +178,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Anivia.png"
    },
    {
-      "localized_name": "Annie",
+      "name": "Annie",
       "infos": {
          "attack": 2,
          "defense": 3,
@@ -208,7 +208,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Annie.png"
    },
    {
-      "localized_name": "Ashe",
+      "name": "Ashe",
       "infos": {
          "attack": 7,
          "defense": 3,
@@ -236,7 +236,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ashe.png"
    },
    {
-      "localized_name": "Aurelion Sol",
+      "name": "Aurelion Sol",
       "infos": {
          "attack": 2,
          "defense": 3,
@@ -266,7 +266,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/AurelionSol.png"
    },
    {
-      "localized_name": "Azir",
+      "name": "Azir",
       "infos": {
          "attack": 6,
          "defense": 3,
@@ -296,7 +296,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Azir.png"
    },
    {
-      "localized_name": "Bard",
+      "name": "Bard",
       "infos": {
          "attack": 4,
          "defense": 4,
@@ -325,7 +325,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Bard.png"
    },
    {
-      "localized_name": "Blitzcrank",
+      "name": "Blitzcrank",
       "infos": {
          "attack": 4,
          "defense": 8,
@@ -354,7 +354,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Blitzcrank.png"
    },
    {
-      "localized_name": "Brand",
+      "name": "Brand",
       "infos": {
          "attack": 2,
          "defense": 2,
@@ -375,7 +375,7 @@
          "Support"
       ],
       "title": "the Burning Vengeance",
-      "description": "Once a tribesman of the icy Freljord localized_named Kegan Rodhe, the creature known as Brand is a lesson in the temptation of greater power. Seeking one of the legendary World Runes, Kegan betrayed his companions and seized it for himself\u2014and, in an instant, the...",
+      "description": "Once a tribesman of the icy Freljord named Kegan Rodhe, the creature known as Brand is a lesson in the temptation of greater power. Seeking one of the legendary World Runes, Kegan betrayed his companions and seized it for himself\u2014and, in an instant, the...",
       "counters": [
          42,
          78,
@@ -385,7 +385,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Brand.png"
    },
    {
-      "localized_name": "Braum",
+      "name": "Braum",
       "infos": {
          "attack": 3,
          "defense": 9,
@@ -415,7 +415,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Braum.png"
    },
    {
-      "localized_name": "Caitlyn",
+      "name": "Caitlyn",
       "infos": {
          "attack": 8,
          "defense": 2,
@@ -442,7 +442,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Caitlyn.png"
    },
    {
-      "localized_name": "Camille",
+      "name": "Camille",
       "infos": {
          "attack": 8,
          "defense": 6,
@@ -474,7 +474,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Camille.png"
    },
    {
-      "localized_name": "Cassiopeia",
+      "name": "Cassiopeia",
       "infos": {
          "attack": 2,
          "defense": 3,
@@ -502,7 +502,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Cassiopeia.png"
    },
    {
-      "localized_name": "Cho'Gath",
+      "name": "Cho'Gath",
       "infos": {
          "attack": 3,
          "defense": 7,
@@ -532,7 +532,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Chogath.png"
    },
    {
-      "localized_name": "Corki",
+      "name": "Corki",
       "infos": {
          "attack": 8,
          "defense": 3,
@@ -561,7 +561,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Corki.png"
    },
    {
-      "localized_name": "Darius",
+      "name": "Darius",
       "infos": {
          "attack": 9,
          "defense": 5,
@@ -589,7 +589,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Darius.png"
    },
    {
-      "localized_name": "Diana",
+      "name": "Diana",
       "infos": {
          "attack": 7,
          "defense": 6,
@@ -617,7 +617,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Diana.png"
    },
    {
-      "localized_name": "Draven",
+      "name": "Draven",
       "infos": {
          "attack": 9,
          "defense": 3,
@@ -644,7 +644,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Draven.png"
    },
    {
-      "localized_name": "Dr. Mundo",
+      "name": "Dr. Mundo",
       "infos": {
          "attack": 5,
          "defense": 7,
@@ -674,7 +674,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/DrMundo.png"
    },
    {
-      "localized_name": "Ekko",
+      "name": "Ekko",
       "infos": {
          "attack": 5,
          "defense": 3,
@@ -707,7 +707,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ekko.png"
    },
    {
-      "localized_name": "Elise",
+      "name": "Elise",
       "infos": {
          "attack": 6,
          "defense": 5,
@@ -734,7 +734,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Elise.png"
    },
    {
-      "localized_name": "Evelynn",
+      "name": "Evelynn",
       "infos": {
          "attack": 4,
          "defense": 2,
@@ -761,7 +761,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Evelynn.png"
    },
    {
-      "localized_name": "Ezreal",
+      "name": "Ezreal",
       "infos": {
          "attack": 7,
          "defense": 2,
@@ -790,7 +790,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ezreal.png"
    },
    {
-      "localized_name": "Fiddlesticks",
+      "name": "Fiddlesticks",
       "infos": {
          "attack": 2,
          "defense": 3,
@@ -821,7 +821,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Fiddlesticks.png"
    },
    {
-      "localized_name": "Fiora",
+      "name": "Fiora",
       "infos": {
          "attack": 10,
          "defense": 4,
@@ -848,7 +848,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Fiora.png"
    },
    {
-      "localized_name": "Fizz",
+      "name": "Fizz",
       "infos": {
          "attack": 6,
          "defense": 4,
@@ -875,7 +875,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Fizz.png"
    },
    {
-      "localized_name": "Galio",
+      "name": "Galio",
       "infos": {
          "attack": 1,
          "defense": 10,
@@ -907,7 +907,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Galio.png"
    },
    {
-      "localized_name": "Gangplank",
+      "name": "Gangplank",
       "infos": {
          "attack": 7,
          "defense": 6,
@@ -935,7 +935,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Gangplank.png"
    },
    {
-      "localized_name": "Garen",
+      "name": "Garen",
       "infos": {
          "attack": 7,
          "defense": 7,
@@ -965,7 +965,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Garen.png"
    },
    {
-      "localized_name": "Gnar",
+      "name": "Gnar",
       "infos": {
          "attack": 6,
          "defense": 5,
@@ -995,7 +995,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Gnar.png"
    },
    {
-      "localized_name": "Gragas",
+      "name": "Gragas",
       "infos": {
          "attack": 4,
          "defense": 7,
@@ -1028,7 +1028,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Gragas.png"
    },
    {
-      "localized_name": "Graves",
+      "name": "Graves",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -1055,7 +1055,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Graves.png"
    },
    {
-      "localized_name": "Hecarim",
+      "name": "Hecarim",
       "infos": {
          "attack": 8,
          "defense": 6,
@@ -1087,7 +1087,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Hecarim.png"
    },
    {
-      "localized_name": "Heimerdinger",
+      "name": "Heimerdinger",
       "infos": {
          "attack": 2,
          "defense": 6,
@@ -1120,7 +1120,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Heimerdinger.png"
    },
    {
-      "localized_name": "Illaoi",
+      "name": "Illaoi",
       "infos": {
          "attack": 8,
          "defense": 6,
@@ -1149,7 +1149,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Illaoi.png"
    },
    {
-      "localized_name": "Irelia",
+      "name": "Irelia",
       "infos": {
          "attack": 7,
          "defense": 4,
@@ -1179,7 +1179,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Irelia.png"
    },
    {
-      "localized_name": "Ivern",
+      "name": "Ivern",
       "infos": {
          "attack": 3,
          "defense": 5,
@@ -1207,7 +1207,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ivern.png"
    },
    {
-      "localized_name": "Janna",
+      "name": "Janna",
       "infos": {
          "attack": 3,
          "defense": 5,
@@ -1236,7 +1236,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Janna.png"
    },
    {
-      "localized_name": "Jarvan IV",
+      "name": "Jarvan IV",
       "infos": {
          "attack": 6,
          "defense": 8,
@@ -1266,7 +1266,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/JarvanIV.png"
    },
    {
-      "localized_name": "Jax",
+      "name": "Jax",
       "infos": {
          "attack": 7,
          "defense": 5,
@@ -1296,7 +1296,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Jax.png"
    },
    {
-      "localized_name": "Jayce",
+      "name": "Jayce",
       "infos": {
          "attack": 8,
          "defense": 4,
@@ -1326,7 +1326,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Jayce.png"
    },
    {
-      "localized_name": "Jhin",
+      "name": "Jhin",
       "infos": {
          "attack": 10,
          "defense": 2,
@@ -1351,7 +1351,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Jhin.png"
    },
    {
-      "localized_name": "Jinx",
+      "name": "Jinx",
       "infos": {
          "attack": 9,
          "defense": 2,
@@ -1379,7 +1379,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Jinx.png"
    },
    {
-      "localized_name": "Kai'Sa",
+      "name": "Kai'Sa",
       "roles": [],
       "sprite": {
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
@@ -1400,7 +1400,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kaisa.png"
    },
    {
-      "localized_name": "Kalista",
+      "name": "Kalista",
       "infos": {
          "attack": 8,
          "defense": 2,
@@ -1429,7 +1429,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kalista.png"
    },
    {
-      "localized_name": "Karma",
+      "name": "Karma",
       "infos": {
          "attack": 1,
          "defense": 7,
@@ -1459,7 +1459,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Karma.png"
    },
    {
-      "localized_name": "Karthus",
+      "name": "Karthus",
       "infos": {
          "attack": 2,
          "defense": 2,
@@ -1488,7 +1488,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Karthus.png"
    },
    {
-      "localized_name": "Kassadin",
+      "name": "Kassadin",
       "infos": {
          "attack": 3,
          "defense": 5,
@@ -1517,7 +1517,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kassadin.png"
    },
    {
-      "localized_name": "Katarina",
+      "name": "Katarina",
       "infos": {
          "attack": 4,
          "defense": 3,
@@ -1544,7 +1544,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Katarina.png"
    },
    {
-      "localized_name": "Kayle",
+      "name": "Kayle",
       "infos": {
          "attack": 6,
          "defense": 6,
@@ -1563,7 +1563,7 @@
          "Mid"
       ],
       "title": "The Judicator",
-      "description": "A great hero and the strongest among her kind, Kayle is an angelic warrior dedicated to purging those beyond redemption. After conflict divided her people, she took up her enchanted armor and flaming sword in the localized_name of order, disowning her very flesh...",
+      "description": "A great hero and the strongest among her kind, Kayle is an angelic warrior dedicated to purging those beyond redemption. After conflict divided her people, she took up her enchanted armor and flaming sword in the name of order, disowning her very flesh...",
       "counters": [
          105,
          86,
@@ -1573,7 +1573,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kayle.png"
    },
    {
-      "localized_name": "Kayn",
+      "name": "Kayn",
       "infos": {
          "attack": 10,
          "defense": 6,
@@ -1600,7 +1600,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kayn.png"
    },
    {
-      "localized_name": "Kennen",
+      "name": "Kennen",
       "infos": {
          "attack": 6,
          "defense": 4,
@@ -1631,7 +1631,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kennen.png"
    },
    {
-      "localized_name": "Kha'Zix",
+      "name": "Kha'Zix",
       "infos": {
          "attack": 9,
          "defense": 4,
@@ -1658,7 +1658,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Khazix.png"
    },
    {
-      "localized_name": "Kindred",
+      "name": "Kindred",
       "infos": {
          "attack": 8,
          "defense": 2,
@@ -1685,7 +1685,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kindred.png"
    },
    {
-      "localized_name": "Kled",
+      "name": "Kled",
       "infos": {
          "attack": 8,
          "defense": 2,
@@ -1715,7 +1715,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Kled.png"
    },
    {
-      "localized_name": "Kog'Maw",
+      "name": "Kog'Maw",
       "infos": {
          "attack": 8,
          "defense": 2,
@@ -1743,7 +1743,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/KogMaw.png"
    },
    {
-      "localized_name": "LeBlanc",
+      "name": "LeBlanc",
       "infos": {
          "attack": 1,
          "defense": 4,
@@ -1760,7 +1760,7 @@
          "Mid"
       ],
       "title": "the Deceiver",
-      "description": "Mysterious even to other members of the Black Rose cabal, LeBlanc is but one of many localized_names for a pale woman who has manipulated people and events since the earliest days of Noxus. Using her magic to mirror herself, the sorceress can appear to anyone...",
+      "description": "Mysterious even to other members of the Black Rose cabal, LeBlanc is but one of many names for a pale woman who has manipulated people and events since the earliest days of Noxus. Using her magic to mirror herself, the sorceress can appear to anyone...",
       "counters": [
          31,
          21,
@@ -1770,7 +1770,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Leblanc.png"
    },
    {
-      "localized_name": "Lee Sin",
+      "name": "Lee Sin",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -1800,7 +1800,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/LeeSin.png"
    },
    {
-      "localized_name": "Leona",
+      "name": "Leona",
       "infos": {
          "attack": 4,
          "defense": 8,
@@ -1831,7 +1831,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Leona.png"
    },
    {
-      "localized_name": "Lissandra",
+      "name": "Lissandra",
       "infos": {
          "attack": 2,
          "defense": 5,
@@ -1860,7 +1860,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lissandra.png"
    },
    {
-      "localized_name": "Lucian",
+      "name": "Lucian",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -1887,7 +1887,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lucian.png"
    },
    {
-      "localized_name": "Lulu",
+      "name": "Lulu",
       "infos": {
          "attack": 4,
          "defense": 5,
@@ -1914,7 +1914,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lulu.png"
    },
    {
-      "localized_name": "Lux",
+      "name": "Lux",
       "infos": {
          "attack": 2,
          "defense": 4,
@@ -1944,7 +1944,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Lux.png"
    },
    {
-      "localized_name": "Malphite",
+      "name": "Malphite",
       "infos": {
          "attack": 5,
          "defense": 9,
@@ -1978,7 +1978,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Malphite.png"
    },
    {
-      "localized_name": "Malzahar",
+      "name": "Malzahar",
       "infos": {
          "attack": 2,
          "defense": 2,
@@ -2008,7 +2008,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Malzahar.png"
    },
    {
-      "localized_name": "Maokai",
+      "name": "Maokai",
       "infos": {
          "attack": 3,
          "defense": 8,
@@ -2038,7 +2038,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Maokai.png"
    },
    {
-      "localized_name": "Master Yi",
+      "name": "Master Yi",
       "infos": {
          "attack": 10,
          "defense": 4,
@@ -2063,7 +2063,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/MasterYi.png"
    },
    {
-      "localized_name": "Miss Fortune",
+      "name": "Miss Fortune",
       "infos": {
          "attack": 8,
          "defense": 2,
@@ -2093,7 +2093,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/MissFortune.png"
    },
    {
-      "localized_name": "Wukong",
+      "name": "Wukong",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -2122,7 +2122,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/MonkeyKing.png"
    },
    {
-      "localized_name": "Mordekaiser",
+      "name": "Mordekaiser",
       "infos": {
          "attack": 4,
          "defense": 6,
@@ -2149,7 +2149,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Mordekaiser.png"
    },
    {
-      "localized_name": "Morgana",
+      "name": "Morgana",
       "infos": {
          "attack": 1,
          "defense": 6,
@@ -2178,7 +2178,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Morgana.png"
    },
    {
-      "localized_name": "Nami",
+      "name": "Nami",
       "infos": {
          "attack": 4,
          "defense": 3,
@@ -2208,7 +2208,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nami.png"
    },
    {
-      "localized_name": "Nasus",
+      "name": "Nasus",
       "infos": {
          "attack": 7,
          "defense": 5,
@@ -2235,7 +2235,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nasus.png"
    },
    {
-      "localized_name": "Nautilus",
+      "name": "Nautilus",
       "infos": {
          "attack": 4,
          "defense": 6,
@@ -2264,7 +2264,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nautilus.png"
    },
    {
-      "localized_name": "Neeko",
+      "name": "Neeko",
       "infos": {
          "attack": 1,
          "defense": 1,
@@ -2297,7 +2297,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Neeko.png"
    },
    {
-      "localized_name": "Nidalee",
+      "name": "Nidalee",
       "infos": {
          "attack": 5,
          "defense": 4,
@@ -2324,7 +2324,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nidalee.png"
    },
    {
-      "localized_name": "Nocturne",
+      "name": "Nocturne",
       "infos": {
          "attack": 9,
          "defense": 5,
@@ -2353,7 +2353,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nocturne.png"
    },
    {
-      "localized_name": "Nunu",
+      "name": "Nunu",
       "infos": {
          "attack": 4,
          "defense": 6,
@@ -2383,7 +2383,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nunu.png"
    },
    {
-      "localized_name": "Olaf",
+      "name": "Olaf",
       "infos": {
          "attack": 9,
          "defense": 5,
@@ -2413,7 +2413,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Olaf.png"
    },
    {
-      "localized_name": "Orianna",
+      "name": "Orianna",
       "infos": {
          "attack": 4,
          "defense": 3,
@@ -2443,7 +2443,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Orianna.png"
    },
    {
-      "localized_name": "Ornn",
+      "name": "Ornn",
       "infos": {
          "attack": 5,
          "defense": 9,
@@ -2474,7 +2474,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ornn.png"
    },
    {
-      "localized_name": "Pantheon",
+      "name": "Pantheon",
       "infos": {
          "attack": 9,
          "defense": 4,
@@ -2507,7 +2507,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pantheon.png"
    },
    {
-      "localized_name": "Poppy",
+      "name": "Poppy",
       "infos": {
          "attack": 6,
          "defense": 7,
@@ -2540,7 +2540,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Poppy.png"
    },
    {
-      "localized_name": "Pyke",
+      "name": "Pyke",
       "infos": {
          "attack": 9,
          "defense": 3,
@@ -2570,7 +2570,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pyke.png"
    },
    {
-      "localized_name": "Qiyana",
+      "name": "Qiyana",
       "infos": {
          "attack": 0,
          "defense": 2,
@@ -2599,7 +2599,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Qiyana.png"
    },
    {
-      "localized_name": "Quinn",
+      "name": "Quinn",
       "infos": {
          "attack": 9,
          "defense": 4,
@@ -2626,7 +2626,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Quinn.png"
    },
    {
-      "localized_name": "Rakan",
+      "name": "Rakan",
       "infos": {
          "attack": 2,
          "defense": 4,
@@ -2644,7 +2644,7 @@
          "Support"
       ],
       "title": "The Charmer",
-      "description": "As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his localized_name has long been synonymous with wild festivals, uncontrollable parties...",
+      "description": "As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his name has long been synonymous with wild festivals, uncontrollable parties...",
       "counters": [
          42,
          108,
@@ -2654,7 +2654,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rakan.png"
    },
    {
-      "localized_name": "Rammus",
+      "name": "Rammus",
       "infos": {
          "attack": 4,
          "defense": 10,
@@ -2683,7 +2683,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rammus.png"
    },
    {
-      "localized_name": "Rek'Sai",
+      "name": "Rek'Sai",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -2712,7 +2712,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/RekSai.png"
    },
    {
-      "localized_name": "Renekton",
+      "name": "Renekton",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -2742,7 +2742,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Renekton.png"
    },
    {
-      "localized_name": "Rengar",
+      "name": "Rengar",
       "infos": {
          "attack": 7,
          "defense": 4,
@@ -2769,7 +2769,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rengar.png"
    },
    {
-      "localized_name": "Riven",
+      "name": "Riven",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -2798,7 +2798,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Riven.png"
    },
    {
-      "localized_name": "Rumble",
+      "name": "Rumble",
       "infos": {
          "attack": 3,
          "defense": 6,
@@ -2830,7 +2830,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rumble.png"
    },
    {
-      "localized_name": "Ryze",
+      "name": "Ryze",
       "infos": {
          "attack": 2,
          "defense": 2,
@@ -2861,7 +2861,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ryze.png"
    },
    {
-      "localized_name": "Sejuani",
+      "name": "Sejuani",
       "infos": {
          "attack": 5,
          "defense": 7,
@@ -2892,7 +2892,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sejuani.png"
    },
    {
-      "localized_name": "Shaco",
+      "name": "Shaco",
       "infos": {
          "attack": 8,
          "defense": 4,
@@ -2921,7 +2921,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shaco.png"
    },
    {
-      "localized_name": "Shen",
+      "name": "Shen",
       "infos": {
          "attack": 3,
          "defense": 9,
@@ -2952,7 +2952,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shen.png"
    },
    {
-      "localized_name": "Shyvana",
+      "name": "Shyvana",
       "infos": {
          "attack": 8,
          "defense": 6,
@@ -2983,7 +2983,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shyvana.png"
    },
    {
-      "localized_name": "Singed",
+      "name": "Singed",
       "infos": {
          "attack": 4,
          "defense": 8,
@@ -3011,7 +3011,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Singed.png"
    },
    {
-      "localized_name": "Sion",
+      "name": "Sion",
       "infos": {
          "attack": 5,
          "defense": 9,
@@ -3041,7 +3041,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sion.png"
    },
    {
-      "localized_name": "Sivir",
+      "name": "Sivir",
       "infos": {
          "attack": 9,
          "defense": 3,
@@ -3071,7 +3071,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sivir.png"
    },
    {
-      "localized_name": "Skarner",
+      "name": "Skarner",
       "infos": {
          "attack": 7,
          "defense": 6,
@@ -3100,7 +3100,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Skarner.png"
    },
    {
-      "localized_name": "Sona",
+      "name": "Sona",
       "infos": {
          "attack": 5,
          "defense": 2,
@@ -3130,7 +3130,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sona.png"
    },
    {
-      "localized_name": "Soraka",
+      "name": "Soraka",
       "infos": {
          "attack": 2,
          "defense": 5,
@@ -3159,7 +3159,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Soraka.png"
    },
    {
-      "localized_name": "Swain",
+      "name": "Swain",
       "infos": {
          "attack": 2,
          "defense": 6,
@@ -3191,7 +3191,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Swain.png"
    },
    {
-      "localized_name": "Sylas",
+      "name": "Sylas",
       "infos": {
          "attack": 3,
          "defense": 4,
@@ -3224,7 +3224,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Swain.png"
    },
    {
-      "localized_name": "Syndra",
+      "name": "Syndra",
       "infos": {
          "attack": 2,
          "defense": 3,
@@ -3255,7 +3255,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Syndra.png"
    },
    {
-      "localized_name": "Tahm Kench",
+      "name": "Tahm Kench",
       "infos": {
          "attack": 3,
          "defense": 9,
@@ -3273,7 +3273,7 @@
          "Support"
       ],
       "title": "the River King",
-      "description": "Known by many localized_names throughout history, the demon Tahm Kench travels the waterways of Runeterra, feeding his insatiable appetite with the misery of others. Though he may appear singularly charming and proud, he swaggers through the physical realm like a...",
+      "description": "Known by many names throughout history, the demon Tahm Kench travels the waterways of Runeterra, feeding his insatiable appetite with the misery of others. Though he may appear singularly charming and proud, he swaggers through the physical realm like a...",
       "counters": [
          108,
          109,
@@ -3283,7 +3283,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/TahmKench.png"
    },
    {
-      "localized_name": "Taliyah",
+      "name": "Taliyah",
       "infos": {
          "attack": 1,
          "defense": 7,
@@ -3315,7 +3315,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Taliyah.png"
    },
    {
-      "localized_name": "Talon",
+      "name": "Talon",
       "infos": {
          "attack": 9,
          "defense": 3,
@@ -3340,7 +3340,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Talon.png"
    },
    {
-      "localized_name": "Taric",
+      "name": "Taric",
       "infos": {
          "attack": 4,
          "defense": 8,
@@ -3369,7 +3369,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Taric.png"
    },
    {
-      "localized_name": "Teemo",
+      "name": "Teemo",
       "infos": {
          "attack": 5,
          "defense": 3,
@@ -3396,7 +3396,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Teemo.png"
    },
    {
-      "localized_name": "Thresh",
+      "name": "Thresh",
       "infos": {
          "attack": 5,
          "defense": 6,
@@ -3425,7 +3425,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Thresh.png"
    },
    {
-      "localized_name": "Tristana",
+      "name": "Tristana",
       "infos": {
          "attack": 9,
          "defense": 3,
@@ -3455,7 +3455,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Tristana.png"
    },
    {
-      "localized_name": "Trundle",
+      "name": "Trundle",
       "infos": {
          "attack": 7,
          "defense": 6,
@@ -3485,7 +3485,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Trundle.png"
    },
    {
-      "localized_name": "Tryndamere",
+      "name": "Tryndamere",
       "infos": {
          "attack": 10,
          "defense": 5,
@@ -3510,7 +3510,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Tryndamere.png"
    },
    {
-      "localized_name": "Twisted Fate",
+      "name": "Twisted Fate",
       "infos": {
          "attack": 6,
          "defense": 2,
@@ -3537,7 +3537,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/TwistedFate.png"
    },
    {
-      "localized_name": "Twitch",
+      "name": "Twitch",
       "infos": {
          "attack": 9,
          "defense": 2,
@@ -3562,7 +3562,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Twitch.png"
    },
    {
-      "localized_name": "Udyr",
+      "name": "Udyr",
       "infos": {
          "attack": 8,
          "defense": 7,
@@ -3590,7 +3590,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Udyr.png"
    },
    {
-      "localized_name": "Urgot",
+      "name": "Urgot",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -3618,7 +3618,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Urgot.png"
    },
    {
-      "localized_name": "Varus",
+      "name": "Varus",
       "infos": {
          "attack": 7,
          "defense": 3,
@@ -3649,7 +3649,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Varus.png"
    },
    {
-      "localized_name": "Vayne",
+      "name": "Vayne",
       "infos": {
          "attack": 10,
          "defense": 1,
@@ -3675,7 +3675,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vayne.png"
    },
    {
-      "localized_name": "Veigar",
+      "name": "Veigar",
       "infos": {
          "attack": 2,
          "defense": 2,
@@ -3707,7 +3707,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Veigar.png"
    },
    {
-      "localized_name": "Vel'Koz",
+      "name": "Vel'Koz",
       "infos": {
          "attack": 2,
          "defense": 2,
@@ -3739,7 +3739,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Velkoz.png"
    },
    {
-      "localized_name": "Vi",
+      "name": "Vi",
       "infos": {
          "attack": 8,
          "defense": 5,
@@ -3767,7 +3767,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vi.png"
    },
    {
-      "localized_name": "Viktor",
+      "name": "Viktor",
       "infos": {
          "attack": 2,
          "defense": 4,
@@ -3798,7 +3798,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Viktor.png"
    },
    {
-      "localized_name": "Vladimir",
+      "name": "Vladimir",
       "infos": {
          "attack": 2,
          "defense": 6,
@@ -3829,7 +3829,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Vladimir.png"
    },
    {
-      "localized_name": "Volibear",
+      "name": "Volibear",
       "infos": {
          "attack": 7,
          "defense": 7,
@@ -3861,7 +3861,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Volibear.png"
    },
    {
-      "localized_name": "Warwick",
+      "name": "Warwick",
       "infos": {
          "attack": 9,
          "defense": 5,
@@ -3889,7 +3889,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Warwick.png"
    },
    {
-      "localized_name": "Xayah",
+      "name": "Xayah",
       "infos": {
          "attack": 10,
          "defense": 6,
@@ -3916,7 +3916,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Xayah.png"
    },
    {
-      "localized_name": "Xerath",
+      "name": "Xerath",
       "infos": {
          "attack": 1,
          "defense": 3,
@@ -3948,7 +3948,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Xerath.png"
    },
    {
-      "localized_name": "Xin Zhao",
+      "name": "Xin Zhao",
       "infos": {
          "attack": 8,
          "defense": 6,
@@ -3976,7 +3976,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/XinZhao.png"
    },
    {
-      "localized_name": "Yasuo",
+      "name": "Yasuo",
       "infos": {
          "attack": 8,
          "defense": 4,
@@ -4008,7 +4008,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yasuo.png"
    },
    {
-      "localized_name": "Yorick",
+      "name": "Yorick",
       "infos": {
          "attack": 6,
          "defense": 6,
@@ -4036,7 +4036,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yorick.png"
    },
    {
-      "localized_name": "Yuumi",
+      "name": "Yuumi",
       "infos": {
          "attack": 5,
          "defense": 1,
@@ -4067,7 +4067,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Yorick.png"
    },
    {
-      "localized_name": "Zac",
+      "name": "Zac",
       "infos": {
          "attack": 3,
          "defense": 7,
@@ -4098,7 +4098,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zac.png"
    },
    {
-      "localized_name": "Zed",
+      "name": "Zed",
       "infos": {
          "attack": 9,
          "defense": 2,
@@ -4123,7 +4123,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zed.png"
    },
    {
-      "localized_name": "Ziggs",
+      "name": "Ziggs",
       "infos": {
          "attack": 2,
          "defense": 4,
@@ -4143,7 +4143,7 @@
          "Mid"
       ],
       "title": "the Hexplosives Expert",
-      "description": "With a love of big bombs and short fuses, the yordle Ziggs is an explosive force of nature. As an inventor's assistant in Piltover, he was bored by his predictable life and befriended a mad, blue-haired bomber localized_named Jinx. After a wild night on the town...",
+      "description": "With a love of big bombs and short fuses, the yordle Ziggs is an explosive force of nature. As an inventor's assistant in Piltover, he was bored by his predictable life and befriended a mad, blue-haired bomber named Jinx. After a wild night on the town...",
       "counters": [
          19,
          2,
@@ -4153,7 +4153,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ziggs.png"
    },
    {
-      "localized_name": "Zilean",
+      "name": "Zilean",
       "infos": {
          "attack": 2,
          "defense": 5,
@@ -4185,7 +4185,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zilean.png"
    },
    {
-      "localized_name": "Zoe",
+      "name": "Zoe",
       "infos": {
          "attack": 1,
          "defense": 7,
@@ -4214,7 +4214,7 @@
       "icon": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zoe.png"
    },
    {
-      "localized_name": "Zyra",
+      "name": "Zyra",
       "infos": {
          "attack": 4,
          "defense": 3,

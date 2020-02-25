@@ -2,6 +2,7 @@ const express = require('express');
 const DotaAlgorithm = require('./dota-algorithm');
 const LeagueAlgorithm = require('./league-algorithm');
 const Champion = require('./models/Champion');
+const ChampionController = require('./controllers/ChampionController');
 
 const routes = express.Router();
 
@@ -122,5 +123,7 @@ routes.get('/champions', async (req, res) => {
   const data = await Champion.find();
   res.send(data).status(200);
 });
+
+routes.post('/champions', ChampionController.store);
 
 module.exports = routes;

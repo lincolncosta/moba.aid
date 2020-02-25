@@ -3,6 +3,7 @@ const evolveGa = require('evolve-ga');
 const createCollage = require('@settlin/collage');
 const json = require('./assets/league/champions.json');
 const fs = require('fs');
+const ChampionController = require('./controllers/ChampionController');
 // const uploadFile = require("./uploadFile");
 let generation = 1;
 let execution = 1;
