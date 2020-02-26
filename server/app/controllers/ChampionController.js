@@ -2,7 +2,6 @@ const Champion = require('../models/Champion');
 
 module.exports = {
     async index(req, res) {
-        console.log(req);
         const { id_ddragon } = req.query;
         let champions = null;
 

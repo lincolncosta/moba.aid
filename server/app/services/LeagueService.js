@@ -176,6 +176,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
         fitvalueHardEngage = (fitvalueHardEngage * multiplier) / MAX_FIT_VALUE;
 
+        console.log('finalFitvalue: ' + finalFitvalue);
         if (fitvalueHardEngage > finalFitvalue) {
           finalFitvalue = fitvalueHardEngage;
           this.finalChromosome = chromosome;
@@ -240,19 +241,15 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     }
   }
 
-  showCompositionInfo() {
+  async showCompositionInfo() {
     let championsIcons = [];
-    let parsedJson = JSON.parse(JSON.stringify(json));
 
     if (this.finalChromosome) {
-      this.finalChromosome.genes.forEach(function (item) {
-        let aux = parsedJson.find(function (champion) {
-          return champion.id === item;
-        });
-        if (aux) {
-          championsIcons.push(aux.icon);
-        }
-      });
+      let finalChampions = Champion.find({ id_ddragon: this.finalChromosome.genes });
+      finalChampions.map(champion => {
+        championsIcons.push(champion.icon);
+      })
+
     }
 
     let options = {
@@ -290,7 +287,21 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     });
   }
 
+  async run() {
+    return new Promise(async (resolve, reject) => {
+      for (let i = 0; i < this.algorithm.population.length; i++) {
+        this.algorithm.population[i].fitness = await this.fitnessFunction(this.algorithm.population[i]);
+        console.log('iterando');
+      }
+
+      console.log('retornando');
+      return resolve([...this.algorithm.population]);
+
+    })
+  }
+
   async genetic() {
+    this.finalFitvalue = 0;
     // let start = new Date();
 
     if (PICKED_GENES) {
@@ -303,16 +314,22 @@ class LeagueAlgorithm extends GeneticAlgorithm {
       // await this.writeFileHeader();
       // await this.writeFileSecondsHeader();
 
-      while (generation <= MAX_GENERATIONS) {
-        this.algorithm.run();
-        // await this.writeGenerationsOnFile();
-        allChromosomes = [];
-        generation++;
-      }
+      // while (generation <= MAX_GENERATIONS) {
+        await Promise.all([this.run()]).then(function(values) {
+          console.log(generation);
+          generation++;
+        });
 
-      this.finalFitvalue = 0;
+        // if(generation == MAX_GENERATIONS) {
+          console.log('showing comp info');
+          await this.showCompositionInfo();
+        // }
+        
+      // }
+
+      
       // let end = new Date();
-      this.showCompositionInfo();
+      
       // await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     } catch (error) {
       throw Error(error);
