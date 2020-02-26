@@ -146,9 +146,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
   async fitnessFunction(chromosome) {
     const champions = await Champion.find({ id_ddragon: chromosome.genes });
     let self = this;
-    let fitvalueTeamFight = 0;
-    let fitvalueHardEngage = 0;
-    let fitvaluePusher = 0;
+    let fitValue = 0
 
     if (!PICKED_GENES.every(v => chromosome.genes.includes(v))) {
       return 0;
@@ -158,7 +156,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
     switch (COMPOSITION_STRATEGY) {
       case 'hardengage':
-        fitvalueHardEngage = await this.validCompositionFunction(champions);
+        fitValue = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
         champions.map(async champion => {
@@ -173,69 +171,64 @@ class LeagueAlgorithm extends GeneticAlgorithm {
           }
         });
 
-
-        fitvalueHardEngage = (fitvalueHardEngage * multiplier) / MAX_FIT_VALUE;
-        if (fitvalueHardEngage > finalFitvalue) {
-          finalFitvalue = fitvalueHardEngage;
+        fitValue = (fitValue * multiplier) / MAX_FIT_VALUE;
+        if (fitValue > finalFitvalue) {
+          finalFitvalue = fitValue;
           this.finalChromosome = chromosome;
         }
 
         return fitvalueHardEngage;
       case 'teamfight':
-        fitvalueTeamFight = await this.validCompositionFunction(champions);
+        fitValue = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
-        champions.map(champion => {
-          if (gene === champion.id) {
-            multiplier = await self.validRolesFunction(
-              champion,
-              ['Area of Effect'],
-              multiplier,
-            );
+        champions.map(async champion => {
+          multiplier = await self.validRolesFunction(
+            champion,
+            ['Area of Effect'],
+            multiplier,
+          );
 
-            if (ENEMY_GENES.length) {
-              multiplier = await self.validCountersFunction(champion, multiplier);
-            }
+          if (ENEMY_GENES.length) {
+            multiplier = await self.validCountersFunction(champion, multiplier);
           }
+
         });
 
 
-        fitvalueTeamFight = (fitvalueTeamFight * multiplier) / MAX_FIT_VALUE;
+        fitValue = (fitValue * multiplier) / MAX_FIT_VALUE;
 
-        if (fitvalueTeamFight > finalFitvalue) {
-          finalFitvalue = fitvalueTeamFight;
+        if (fitValue > finalFitvalue) {
+          finalFitvalue = fitValue;
           this.finalChromosome = chromosome;
         }
 
-        return fitvalueTeamFight;
+        return fitValue;
       case 'pusher':
-        fitvaluePusher = await this.validCompositionFunction(champions);
+        fitValue = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
-        chromosome.genes.map(function (gene) {
-          json.map(champion => {
-            if (gene === champion.id) {
-              multiplier = await self.validRolesFunction(
-                champion,
-                ['Poke', 'Waveclear'],
-                multiplier,
-              );
+        champions.map(async champion => {
+          multiplier = await self.validRolesFunction(
+            champion,
+            ['Poke', 'Waveclear'],
+            multiplier,
+          );
 
-              if (ENEMY_GENES.length) {
-                multiplier = await self.validCountersFunction(champion, multiplier);
-              }
-            }
-          });
+          if (ENEMY_GENES.length) {
+            multiplier = await self.validCountersFunction(champion, multiplier);
+          }
+
         });
 
-        fitvaluePusher = (fitvaluePusher * multiplier) / MAX_FIT_VALUE;
+        fitValue = (fitValue * multiplier) / MAX_FIT_VALUE;
 
-        if (fitvaluePusher > finalFitvalue) {
-          finalFitvalue = fitvaluePusher;
+        if (fitValue > finalFitvalue) {
+          finalFitvalue = fitValue;
           this.finalChromosome = chromosome;
         }
 
-        return fitvaluePusher;
+        return fitValue;
     }
   }
 
