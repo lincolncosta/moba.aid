@@ -187,14 +187,14 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
         champions.map(champion => {
           if (gene === champion.id) {
-            multiplier = self.validRolesFunction(
+            multiplier = await self.validRolesFunction(
               champion,
               ['Area of Effect'],
               multiplier,
             );
 
             if (ENEMY_GENES.length) {
-              multiplier = self.validCountersFunction(champion, multiplier);
+              multiplier = await self.validCountersFunction(champion, multiplier);
             }
           }
         });
@@ -215,14 +215,14 @@ class LeagueAlgorithm extends GeneticAlgorithm {
         chromosome.genes.map(function (gene) {
           json.map(champion => {
             if (gene === champion.id) {
-              multiplier = self.validRolesFunction(
+              multiplier = await self.validRolesFunction(
                 champion,
                 ['Poke', 'Waveclear'],
                 multiplier,
               );
 
               if (ENEMY_GENES.length) {
-                multiplier = self.validCountersFunction(champion, multiplier);
+                multiplier = await self.validCountersFunction(champion, multiplier);
               }
             }
           });
