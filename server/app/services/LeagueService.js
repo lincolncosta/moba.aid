@@ -314,18 +314,18 @@ class LeagueAlgorithm extends GeneticAlgorithm {
       // await this.writeFileHeader();
       // await this.writeFileSecondsHeader();
 
-      // while (generation <= MAX_GENERATIONS) {
+      while (generation <= MAX_GENERATIONS) {
         await Promise.all([this.run()]).then(function(values) {
           console.log(generation);
           generation++;
         });
 
-        // if(generation == MAX_GENERATIONS) {
+        if(generation == MAX_GENERATIONS) {
           console.log('showing comp info');
           await this.showCompositionInfo();
-        // }
+        }
         
-      // }
+      }
 
       
       // let end = new Date();
