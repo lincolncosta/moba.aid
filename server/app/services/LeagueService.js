@@ -176,7 +176,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
         fitvalueHardEngage = (fitvalueHardEngage * multiplier) / MAX_FIT_VALUE;
 
-        console.log('finalFitvalue: ' + finalFitvalue);
+        // console.log('finalFitvalue: ' + finalFitvalue);
         if (fitvalueHardEngage > finalFitvalue) {
           finalFitvalue = fitvalueHardEngage;
           this.finalChromosome = chromosome;
@@ -244,9 +244,11 @@ class LeagueAlgorithm extends GeneticAlgorithm {
   async showCompositionInfo() {
     let championsIcons = [];
 
+    console.log(this.finalChromosome);
     if (this.finalChromosome) {
-      let finalChampions = Champion.find({ id_ddragon: this.finalChromosome.genes });
+      let finalChampions = await Champion.find({ id_ddragon: this.finalChromosome.genes });
       finalChampions.map(champion => {
+        console.log(champion.icon);
         championsIcons.push(champion.icon);
       })
 
@@ -259,6 +261,8 @@ class LeagueAlgorithm extends GeneticAlgorithm {
       imageWidth: 120,
       imageHeight: 120,
     };
+
+    console.log(options);
 
     createCollage(options).then(canvas => {
       let src = canvas.jpegStream();
@@ -291,10 +295,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     return new Promise(async (resolve, reject) => {
       for (let i = 0; i < this.algorithm.population.length; i++) {
         this.algorithm.population[i].fitness = await this.fitnessFunction(this.algorithm.population[i]);
-        console.log('iterando');
+        // console.log('iterando');
       }
 
-      console.log('retornando');
+      // console.log('retornando');
       return resolve([...this.algorithm.population]);
 
     })
@@ -316,12 +320,12 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
       while (generation <= MAX_GENERATIONS) {
         await Promise.all([this.run()]).then(function(values) {
-          console.log(generation);
+          // console.log(generation);
           generation++;
         });
 
         if(generation == MAX_GENERATIONS) {
-          console.log('showing comp info');
+          // console.log('showing comp info');
           await this.showCompositionInfo();
         }
         
