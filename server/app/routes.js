@@ -91,6 +91,8 @@ routes.get('/league', (req, res) => {
     });
   }
 
+  console.log(population_size);
+
   let fileName = LeagueAlgorithm.start(
     strategy,
     max_fit_value,
