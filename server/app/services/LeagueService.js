@@ -1,8 +1,9 @@
-const GeneticAlgorithm = require('./genetic-algorithm');
+const GeneticAlgorithm = require('../genetic-algorithm');
 const evolveGa = require('evolve-ga');
 const createCollage = require('@settlin/collage');
-const json = require('./assets/league/champions.json');
+const json = require('../assets/league/champions.json');
 const fs = require('fs');
+const Champion = require('../models/Champion');
 // const uploadFile = require("./uploadFile");
 let generation = 1;
 let execution = 1;
@@ -45,7 +46,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     );
   }
 
-  validCompositionFunction(chromosome) {
+  async validCompositionFunction(champions) {
     let winrateComposition = 0;
 
     let hasCarry = false;
@@ -63,53 +64,50 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     let hasJungle = false;
     let winrateJungle = 0;
 
-    chromosome.genes.map(gene => {
-      json.map(function(champion) {
-        if (gene === champion.id) {
-          Object.entries(champion.infos.winrate).forEach(([role, winrate]) => {
-            if (role === 'top' && !hasTop) {
-              hasTop = true;
-              winrateTop = winrate;
-              return;
-            }
-
-            if (role === 'jungler' && !hasJungle) {
-              hasJungle = true;
-              winrateJungle = winrate;
-              return;
-            }
-
-            if (role === 'mid' && !hasMid) {
-              hasMid = true;
-              winrateMid = winrate;
-              return;
-            }
-
-            if (role === 'carry' && !hasCarry) {
-              hasCarry = true;
-              winrateCarry = winrate;
-              return;
-            }
-
-            if (role === 'support' && !hasSupp) {
-              hasSupp = true;
-              winrateSupp = winrate;
-              return;
-            }
-          });
+    champions.map(champion => {
+      Object.entries(champion.infos[0].winrate).forEach(([role, winrate]) => {
+        if (role === 'top' && !hasTop) {
+          hasTop = true;
+          winrateTop = winrate;
+          return;
         }
 
-        if (hasCarry && hasSupp && hasMid && hasTop && hasJungle) {
-          winrateComposition =
-            (winrateCarry +
-              winrateSupp +
-              winrateMid +
-              winrateTop +
-              winrateJungle) /
-            5;
+        if (role === 'jungler' && !hasJungle) {
+          hasJungle = true;
+          winrateJungle = winrate;
+          return;
+        }
+
+        if (role === 'mid' && !hasMid) {
+          hasMid = true;
+          winrateMid = winrate;
+          return;
+        }
+
+        if (role === 'carry' && !hasCarry) {
+          hasCarry = true;
+          winrateCarry = winrate;
+          return;
+        }
+
+        if (role === 'support' && !hasSupp) {
+          hasSupp = true;
+          winrateSupp = winrate;
+          return;
         }
       });
-    });
+    })
+
+
+    if (hasCarry && hasSupp && hasMid && hasTop && hasJungle) {
+      winrateComposition =
+        (winrateCarry +
+          winrateSupp +
+          winrateMid +
+          winrateTop +
+          winrateJungle) /
+        5;
+    }
 
     return winrateComposition;
   }
@@ -146,6 +144,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
   }
 
   async fitnessFunction(chromosome) {
+    const champions = await Champion.find({ id_ddragon: chromosome.genes });
     let self = this;
     let fitvalueTeamFight = 0;
     let fitvalueHardEngage = 0;
@@ -159,24 +158,21 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
     switch (COMPOSITION_STRATEGY) {
       case 'hardengage':
-        fitvalueHardEngage = this.validCompositionFunction(chromosome);
+        fitvalueHardEngage = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
-        chromosome.genes.map(function(gene) {
-          json.map(champion => {
-            if (gene === champion.id) {
-              multiplier = self.validRolesFunction(
-                champion,
-                ['Hard Engage'],
-                multiplier,
-              );
+        champions.map(champion => {
+          multiplier = self.validRolesFunction(
+            champion,
+            ['Hard Engage'],
+            multiplier,
+          );
 
-              if (ENEMY_GENES.length) {
-                multiplier = self.validCountersFunction(champion, multiplier);
-              }
-            }
-          });
+          if (ENEMY_GENES.length) {
+            multiplier = self.validCountersFunction(champion, multiplier);
+          }
         });
+
 
         fitvalueHardEngage = (fitvalueHardEngage * multiplier) / MAX_FIT_VALUE;
 
@@ -187,24 +183,23 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
         return fitvalueHardEngage;
       case 'teamfight':
-        fitvalueTeamFight = this.validCompositionFunction(chromosome);
+        fitvalueTeamFight = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
-        chromosome.genes.map(function(gene) {
-          json.map(champion => {
-            if (gene === champion.id) {
-              multiplier = self.validRolesFunction(
-                champion,
-                ['Area of Effect'],
-                multiplier,
-              );
+        champions.map(champion => {
+          if (gene === champion.id) {
+            multiplier = self.validRolesFunction(
+              champion,
+              ['Area of Effect'],
+              multiplier,
+            );
 
-              if (ENEMY_GENES.length) {
-                multiplier = self.validCountersFunction(champion, multiplier);
-              }
+            if (ENEMY_GENES.length) {
+              multiplier = self.validCountersFunction(champion, multiplier);
             }
-          });
+          }
         });
+
 
         fitvalueTeamFight = (fitvalueTeamFight * multiplier) / MAX_FIT_VALUE;
 
@@ -215,10 +210,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
         return fitvalueTeamFight;
       case 'pusher':
-        fitvaluePusher = this.validCompositionFunction(chromosome);
+        fitvaluePusher = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
-        chromosome.genes.map(function(gene) {
+        chromosome.genes.map(function (gene) {
           json.map(champion => {
             if (gene === champion.id) {
               multiplier = self.validRolesFunction(
@@ -250,8 +245,8 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     let parsedJson = JSON.parse(JSON.stringify(json));
 
     if (this.finalChromosome) {
-      this.finalChromosome.genes.forEach(function(item) {
-        let aux = parsedJson.find(function(champion) {
+      this.finalChromosome.genes.forEach(function (item) {
+        let aux = parsedJson.find(function (champion) {
           return champion.id === item;
         });
         if (aux) {

@@ -1,6 +1,6 @@
 const express = require('express');
 const DotaAlgorithm = require('./dota-algorithm');
-const LeagueAlgorithm = require('./league-algorithm');
+const LeagueAlgorithm = require('./services/LeagueService');
 const ChampionController = require('./controllers/ChampionController');
 
 const routes = express.Router();
