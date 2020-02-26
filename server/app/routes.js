@@ -110,13 +110,13 @@ routes.get('/league', (req, res) => {
 
 routes.get('/randomic', (req, res) => {
   // Desenvolver geração randômica.++
-    // let { strategy, max_fit_value, current_execution, bannedChampions, pickedChampions } = req.query;
+  // let { strategy, max_fit_value, current_execution, bannedChampions, pickedChampions } = req.query;
 
-    console.log('recebido');
+  console.log('recebido');
   // LeagueRandomicAlgorithm.start();
 
-    return res.json('Geração randômica finalizada.');
-})
+  return res.json('Geração randômica finalizada.');
+});
 
 routes.get('/champions', ChampionController.index);
 

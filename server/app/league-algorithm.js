@@ -3,7 +3,6 @@ const evolveGa = require('evolve-ga');
 const createCollage = require('@settlin/collage');
 const json = require('./assets/league/champions.json');
 const fs = require('fs');
-const ChampionController = require('./controllers/ChampionController');
 // const uploadFile = require("./uploadFile");
 let generation = 1;
 let execution = 1;
@@ -146,7 +145,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     return +(0.1 + multiplier).toFixed(12);
   }
 
-  fitnessFunction(chromosome) {
+  async fitnessFunction(chromosome) {
     let self = this;
     let fitvalueTeamFight = 0;
     let fitvalueHardEngage = 0;
