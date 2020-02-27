@@ -38,3 +38,13 @@ yarn start
 ## Resultados
 
 Os resultados obtidos após a execução da abordagem estarão disponíveis nas pastas `reports` e `time-reports`. A primeira conterá informações a respeito de cada uma das gerações e execuções e a segunda conterá informações a respeito da duração de processamento em cada uma dessas etapas. 
+
+## Contribuidores
+
+| [<img src="https://avatars1.githubusercontent.com/u/5794419?s=460&v=4" width="115"><br><sub>@eliocosta</sub>](https://github.com/eliocosta) | [<img src="https://avatars0.githubusercontent.com/u/13510169?s=460&v=4" width="115"><br><sub>@santospatrick</sub>](https://github.com/santospatrick) |
+| :---: |  :---: |  :---: |  :---: |  :---: |  :---: | 
+
+## Autores
+
+| [<img src="https://avatars0.githubusercontent.com/u/26147019?s=460&v=4" width=115><br><sub>@tekpixo</sub>](https://github.com/tekpixo) | [<img src="https://avatars2.githubusercontent.com/u/8319539?s=460&v=4" width=115><br><sub>@fcarlosmonteiro</sub>](https://github.com/fcarlosmonteiro) |
+| :---: | :---: |
