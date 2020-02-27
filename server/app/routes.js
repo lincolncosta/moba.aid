@@ -1,6 +1,6 @@
 const express = require('express');
 const DotaAlgorithm = require('./dota-algorithm');
-const LeagueAlgorithm = require('./league-algorithm');
+const LeagueAlgorithm = require('./services/LeagueService');
 const ChampionController = require('./controllers/ChampionController');
 
 const routes = express.Router();
@@ -91,6 +91,8 @@ routes.get('/league', (req, res) => {
     });
   }
 
+  console.log(population_size);
+
   let fileName = LeagueAlgorithm.start(
     strategy,
     max_fit_value,
@@ -110,13 +112,13 @@ routes.get('/league', (req, res) => {
 
 routes.get('/randomic', (req, res) => {
   // Desenvolver geração randômica.++
-    // let { strategy, max_fit_value, current_execution, bannedChampions, pickedChampions } = req.query;
+  // let { strategy, max_fit_value, current_execution, bannedChampions, pickedChampions } = req.query;
 
-    console.log('recebido');
+  console.log('recebido');
   // LeagueRandomicAlgorithm.start();
 
-    return res.json('Geração randômica finalizada.');
-})
+  return res.json('Geração randômica finalizada.');
+});
 
 routes.get('/champions', ChampionController.index);
 

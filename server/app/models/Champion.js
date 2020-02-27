@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const Champion = new mongoose.Schema({
   name: String,
-  description: String,
   infos: Array,
   roles: [String],
   lanes: [String],
@@ -10,7 +9,7 @@ const Champion = new mongoose.Schema({
   description: String,
   counters: [Number],
   id_ddragon: Number,
-  icon: String
+  icon: String,
 });
 
 module.exports = mongoose.model('Champion', Champion);

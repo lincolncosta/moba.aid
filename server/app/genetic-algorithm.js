@@ -9,12 +9,12 @@ class GeneticAlgorithm {
   mutationFunction(chromosome, possibleGenes) {
     var mutatedGenes = chromosome.genes.slice();
     var geneToMutateIndex = Math.floor(Math.random() * mutatedGenes.length);
-    var possibleGenesFiltered = possibleGenes.filter(function(gene) {
+    var possibleGenesFiltered = possibleGenes.filter(function (gene) {
       return gene !== mutatedGenes[geneToMutateIndex];
     });
     mutatedGenes[geneToMutateIndex] =
       possibleGenesFiltered[
-        Math.floor(Math.random() * possibleGenesFiltered.length)
+      Math.floor(Math.random() * possibleGenesFiltered.length)
       ];
     var aux = [];
     aux[1] = {
@@ -63,7 +63,7 @@ class GeneticAlgorithm {
 
   selectionFunction(chromosomes) {
     chromosomes = chromosomes
-      .sort(function(a, b) {
+      .sort(function (a, b) {
         return b.fitness - a.fitness;
       })
       .slice(0, Math.ceil(chromosomes.length / 2));
@@ -79,8 +79,8 @@ class GeneticAlgorithm {
     var control = false;
     var genes = chromosome.genes;
 
-    genes.forEach(function(item) {
-      var filteredArray = genes.filter(function(itemFilter) {
+    genes.forEach(function (item) {
+      var filteredArray = genes.filter(function (itemFilter) {
         return item === itemFilter;
       });
       if (filteredArray.length > 1) {

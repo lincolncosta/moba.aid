@@ -1,9 +1,9 @@
-const GeneticAlgorithm = require('./genetic-algorithm');
+const GeneticAlgorithm = require('../genetic-algorithm');
 const evolveGa = require('evolve-ga');
 const createCollage = require('@settlin/collage');
-const json = require('./assets/league/champions.json');
+const json = require('../assets/league/champions.json');
 const fs = require('fs');
-const ChampionController = require('./controllers/ChampionController');
+const Champion = require('../models/Champion');
 // const uploadFile = require("./uploadFile");
 let generation = 1;
 let execution = 1;
@@ -46,7 +46,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     );
   }
 
-  validCompositionFunction(chromosome) {
+  async validCompositionFunction(champions) {
     let winrateComposition = 0;
 
     let hasCarry = false;
@@ -64,58 +64,55 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     let hasJungle = false;
     let winrateJungle = 0;
 
-    chromosome.genes.map(gene => {
-      json.map(function(champion) {
-        if (gene === champion.id) {
-          Object.entries(champion.infos.winrate).forEach(([role, winrate]) => {
-            if (role === 'top' && !hasTop) {
-              hasTop = true;
-              winrateTop = winrate;
-              return;
-            }
-
-            if (role === 'jungler' && !hasJungle) {
-              hasJungle = true;
-              winrateJungle = winrate;
-              return;
-            }
-
-            if (role === 'mid' && !hasMid) {
-              hasMid = true;
-              winrateMid = winrate;
-              return;
-            }
-
-            if (role === 'carry' && !hasCarry) {
-              hasCarry = true;
-              winrateCarry = winrate;
-              return;
-            }
-
-            if (role === 'support' && !hasSupp) {
-              hasSupp = true;
-              winrateSupp = winrate;
-              return;
-            }
-          });
+    champions.map(champion => {
+      Object.entries(champion.infos[0].winrate).forEach(([role, winrate]) => {
+        if (role === 'top' && !hasTop) {
+          hasTop = true;
+          winrateTop = winrate;
+          return;
         }
 
-        if (hasCarry && hasSupp && hasMid && hasTop && hasJungle) {
-          winrateComposition =
-            (winrateCarry +
-              winrateSupp +
-              winrateMid +
-              winrateTop +
-              winrateJungle) /
-            5;
+        if (role === 'jungler' && !hasJungle) {
+          hasJungle = true;
+          winrateJungle = winrate;
+          return;
+        }
+
+        if (role === 'mid' && !hasMid) {
+          hasMid = true;
+          winrateMid = winrate;
+          return;
+        }
+
+        if (role === 'carry' && !hasCarry) {
+          hasCarry = true;
+          winrateCarry = winrate;
+          return;
+        }
+
+        if (role === 'support' && !hasSupp) {
+          hasSupp = true;
+          winrateSupp = winrate;
+          return;
         }
       });
-    });
+    })
+
+
+    if (hasCarry && hasSupp && hasMid && hasTop && hasJungle) {
+      winrateComposition =
+        (winrateCarry +
+          winrateSupp +
+          winrateMid +
+          winrateTop +
+          winrateJungle) /
+        5;
+    }
 
     return winrateComposition;
   }
 
-  validRolesFunction(champion, strategies, multiplier) {
+  async validRolesFunction(champion, strategies, multiplier) {
     if (!champion.roles) {
       return multiplier;
     }
@@ -130,7 +127,7 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     return +(0.1 + multiplier).toFixed(12);
   }
 
-  validCountersFunction(champion, multiplier) {
+  async validCountersFunction(champion, multiplier) {
     if (!champion.counters) {
       return multiplier;
     }
@@ -146,11 +143,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     return +(0.1 + multiplier).toFixed(12);
   }
 
-  fitnessFunction(chromosome) {
+  async fitnessFunction(chromosome) {
+    const champions = await Champion.find({ id_ddragon: chromosome.genes });
     let self = this;
-    let fitvalueTeamFight = 0;
-    let fitvalueHardEngage = 0;
-    let fitvaluePusher = 0;
+    let fitValue = 0
 
     if (!PICKED_GENES.every(v => chromosome.genes.includes(v))) {
       return 0;
@@ -160,105 +156,91 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
     switch (COMPOSITION_STRATEGY) {
       case 'hardengage':
-        fitvalueHardEngage = this.validCompositionFunction(chromosome);
+        fitValue = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
-        chromosome.genes.map(function(gene) {
-          json.map(champion => {
-            if (gene === champion.id) {
-              multiplier = self.validRolesFunction(
-                champion,
-                ['Hard Engage'],
-                multiplier,
-              );
+        champions.map(async champion => {
+          multiplier = await self.validRolesFunction(
+            champion,
+            ['Hard Engage'],
+            multiplier,
+          );
 
-              if (ENEMY_GENES.length) {
-                multiplier = self.validCountersFunction(champion, multiplier);
-              }
-            }
-          });
+          if (ENEMY_GENES.length) {
+            multiplier = await self.validCountersFunction(champion, multiplier);
+          }
         });
 
-        fitvalueHardEngage = (fitvalueHardEngage * multiplier) / MAX_FIT_VALUE;
-
-        if (fitvalueHardEngage > finalFitvalue) {
-          finalFitvalue = fitvalueHardEngage;
+        fitValue = (fitValue * multiplier) / MAX_FIT_VALUE;
+        if (fitValue > finalFitvalue) {
+          finalFitvalue = fitValue;
           this.finalChromosome = chromosome;
         }
 
         return fitvalueHardEngage;
       case 'teamfight':
-        fitvalueTeamFight = this.validCompositionFunction(chromosome);
+        fitValue = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
-        chromosome.genes.map(function(gene) {
-          json.map(champion => {
-            if (gene === champion.id) {
-              multiplier = self.validRolesFunction(
-                champion,
-                ['Area of Effect'],
-                multiplier,
-              );
+        champions.map(async champion => {
+          multiplier = await self.validRolesFunction(
+            champion,
+            ['Area of Effect'],
+            multiplier,
+          );
 
-              if (ENEMY_GENES.length) {
-                multiplier = self.validCountersFunction(champion, multiplier);
-              }
-            }
-          });
+          if (ENEMY_GENES.length) {
+            multiplier = await self.validCountersFunction(champion, multiplier);
+          }
+
         });
 
-        fitvalueTeamFight = (fitvalueTeamFight * multiplier) / MAX_FIT_VALUE;
 
-        if (fitvalueTeamFight > finalFitvalue) {
-          finalFitvalue = fitvalueTeamFight;
+        fitValue = (fitValue * multiplier) / MAX_FIT_VALUE;
+
+        if (fitValue > finalFitvalue) {
+          finalFitvalue = fitValue;
           this.finalChromosome = chromosome;
         }
 
-        return fitvalueTeamFight;
+        return fitValue;
       case 'pusher':
-        fitvaluePusher = this.validCompositionFunction(chromosome);
+        fitValue = await this.validCompositionFunction(champions);
         multiplier = 1.0;
 
-        chromosome.genes.map(function(gene) {
-          json.map(champion => {
-            if (gene === champion.id) {
-              multiplier = self.validRolesFunction(
-                champion,
-                ['Poke', 'Waveclear'],
-                multiplier,
-              );
+        champions.map(async champion => {
+          multiplier = await self.validRolesFunction(
+            champion,
+            ['Poke', 'Waveclear'],
+            multiplier,
+          );
 
-              if (ENEMY_GENES.length) {
-                multiplier = self.validCountersFunction(champion, multiplier);
-              }
-            }
-          });
+          if (ENEMY_GENES.length) {
+            multiplier = await self.validCountersFunction(champion, multiplier);
+          }
+
         });
 
-        fitvaluePusher = (fitvaluePusher * multiplier) / MAX_FIT_VALUE;
+        fitValue = (fitValue * multiplier) / MAX_FIT_VALUE;
 
-        if (fitvaluePusher > finalFitvalue) {
-          finalFitvalue = fitvaluePusher;
+        if (fitValue > finalFitvalue) {
+          finalFitvalue = fitValue;
           this.finalChromosome = chromosome;
         }
 
-        return fitvaluePusher;
+        return fitValue;
     }
   }
 
-  showCompositionInfo() {
+  async showCompositionInfo() {
     let championsIcons = [];
-    let parsedJson = JSON.parse(JSON.stringify(json));
 
     if (this.finalChromosome) {
-      this.finalChromosome.genes.forEach(function(item) {
-        let aux = parsedJson.find(function(champion) {
-          return champion.id === item;
-        });
-        if (aux) {
-          championsIcons.push(aux.icon);
-        }
-      });
+      let finalChampions = await Champion.find({ id_ddragon: this.finalChromosome.genes });
+      finalChampions.map(champion => {
+        championsIcons.push(champion.icon);
+      })
+
     }
 
     let options = {
@@ -281,7 +263,32 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     });
   }
 
-  generatePopulationFromPicked() {
+  generateGenes() {
+    return [...Array(CHROMOSOME_LENGTH)].map(() => {
+      return POSSIBLE_GENES[Math.floor(Math.random() * POSSIBLE_GENES.length)];
+    })
+  }
+
+  async generatePopulation() {
+    let self = this;
+
+    return [...Array(POPULATION_SIZE)].map(() => {
+      let possibleChromosome = {
+        fitness: 0,
+        genes: self.generateGenes()
+      }
+      let isUniqueGenes = [...new Set(possibleChromosome.genes)].length === CHROMOSOME_LENGTH;
+
+      while (!isUniqueGenes) {
+        possibleChromosome.genes = self.generateGenes();
+        isUniqueGenes = [...new Set(possibleChromosome.genes)].length === CHROMOSOME_LENGTH;
+      }
+
+      return possibleChromosome;
+    });
+  }
+
+  async generatePopulationFromPicked() {
     return [...Array(POPULATION_SIZE)].map(() => {
       return {
         fitness: 0,
@@ -296,11 +303,25 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     });
   }
 
+  async run() {
+    return new Promise(async (resolve, reject) => {
+      for (let i = 0; i < this.algorithm.population.length; i++) {
+        this.algorithm.population[i].fitness = await this.fitnessFunction(this.algorithm.population[i]);
+      }
+
+      return resolve([...this.algorithm.population]);
+
+    })
+  }
+
   async genetic() {
+    this.finalFitvalue = 0;
     // let start = new Date();
 
-    if (PICKED_GENES) {
-      this.algorithm.population = this.generatePopulationFromPicked();
+    if (PICKED_GENES.length > 0) {
+      this.algorithm.population = await this.generatePopulationFromPicked();
+    } else {
+      this.algorithm.population = await this.generatePopulation();
     }
 
     try {
@@ -310,15 +331,19 @@ class LeagueAlgorithm extends GeneticAlgorithm {
       // await this.writeFileSecondsHeader();
 
       while (generation <= MAX_GENERATIONS) {
-        this.algorithm.run();
-        // await this.writeGenerationsOnFile();
-        allChromosomes = [];
-        generation++;
+        await Promise.all([this.run()]).then(function (values) {
+          generation++;
+        });
+
+        if (generation == MAX_GENERATIONS) {
+          await this.showCompositionInfo();
+        }
+
       }
 
-      this.finalFitvalue = 0;
+
       // let end = new Date();
-      this.showCompositionInfo();
+
       // await this.writeSecondsOnFile(start, end, end.getTime() - start.getTime());
     } catch (error) {
       throw Error(error);
@@ -336,10 +361,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     pickedGenes,
     enemyGenes,
   ) {
-    MAX_GENERATIONS = maxGenerations;
-    COMPOSITION_STRATEGY = strategy;
+    MAX_GENERATIONS = Number(maxGenerations);
+    COMPOSITION_STRATEGY = String(strategy);
     MAX_FIT_VALUE = maxFitValue;
-    POPULATION_SIZE = populationSize;
+    POPULATION_SIZE = Number(populationSize);
     MUTATION_CHANCE = mutationChance;
     // CURRENT_EXECUTION = currentExecution;
     ENEMY_GENES = enemyGenes;

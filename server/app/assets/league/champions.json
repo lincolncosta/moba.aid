@@ -1380,6 +1380,15 @@
    },
    {
       "name": "Kai'Sa",
+      "infos": {
+         "attack": 9,
+         "defense": 2,
+         "magic": 4,
+         "difficulty": 6,
+         "winrate": {
+            "carry": 49.6
+         }
+      },
       "roles": [],
       "sprite": {
          "url": "http://ddragon.leagueoflegends.com/cdn/9.19.1/img/sprite/champion1.png",
