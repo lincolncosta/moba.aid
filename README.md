@@ -42,7 +42,7 @@ Os resultados obtidos após a execução da abordagem estarão disponíveis nas 
 ## Contribuidores
 
 | [<img src="https://avatars1.githubusercontent.com/u/5794419?s=460&v=4" width="115"><br><sub>@eliocosta</sub>](https://github.com/eliocosta) | [<img src="https://avatars0.githubusercontent.com/u/13510169?s=460&v=4" width="115"><br><sub>@santospatrick</sub>](https://github.com/santospatrick) |
-| :---: |  :---: |  :---: |  :---: |  :---: |  :---: | 
+| :---: |  :---: |  
 
 ## Autores
 
