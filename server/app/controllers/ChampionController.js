@@ -2,16 +2,7 @@ const Champion = require('../models/Champion');
 
 module.exports = {
     async index(req, res) {
-        console.log(req);
-        const { id_ddragon } = req.query;
-        let champions = null;
-
-        if (id_ddragon) {
-            champions = await Champion.findOne({ id_ddragon });
-        } else {
-            champions = await Champion.find();
-        }
-
+        const champions = await Champion.find();
         return res.json(champions);
     },
 
