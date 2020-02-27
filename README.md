@@ -41,10 +41,10 @@ Os resultados obtidos após a execução da abordagem estarão disponíveis nas 
 
 ## Contribuidores
 
-| [<img src="https://avatars1.githubusercontent.com/u/5794419?s=460&v=4" width="115"><br><sub>@eliocosta</sub>](https://github.com/eliocosta) | [<img src="https://avatars0.githubusercontent.com/u/13510169?s=460&v=4" width="115"><br><sub>@santospatrick</sub>](https://github.com/santospatrick) |
-| :---: |  :---: |  
+| [<img src="https://avatars1.githubusercontent.com/u/5794419?s=460&v=4" width="115"><br><sub>@eliocosta</sub>](https://github.com/eliocosta) |
+| :---: |    
 
 ## Autores
 
-| [<img src="https://avatars0.githubusercontent.com/u/26147019?s=460&v=4" width=115><br><sub>@tekpixo</sub>](https://github.com/tekpixo) | [<img src="https://avatars2.githubusercontent.com/u/8319539?s=460&v=4" width=115><br><sub>@fcarlosmonteiro</sub>](https://github.com/fcarlosmonteiro) |
-| :---: | :---: |
+| [<img src="https://avatars0.githubusercontent.com/u/26147019?s=460&v=4" width=115><br><sub>@tekpixo</sub>](https://github.com/tekpixo) | [<img src="https://avatars2.githubusercontent.com/u/8319539?s=460&v=4" width=115><br><sub>@fcarlosmonteiro</sub>](https://github.com/fcarlosmonteiro) | [<img src="https://avatars0.githubusercontent.com/u/13510169?s=460&v=4" width="115"><br><sub>@santospatrick</sub>](https://github.com/santospatrick) |
+| :---: | :---: | :---: |
