@@ -1,6 +1,6 @@
 <h1 align="center">Moba AID 🎮</h1>
 
-<div style="text-align:center"><img src="./assets/teamfight.png" /></div>
+<div align="center"><img src="./assets/teamfight.png" /></div>
 
 Artigo relacionado: https://ieeexplore.ieee.org/document/8924849
 
