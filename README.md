@@ -2,8 +2,6 @@
 
 <div align="center"><img src="./assets/teamfight.png" /></div>
 
-Artigo relacionado: https://ieeexplore.ieee.org/document/8924849
-
 ## Informações gerais
 
 Os parâmetros utilizados para calcular o fitness máximo foram os seguintes:
@@ -52,6 +50,9 @@ Os resultados obtidos após a execução da abordagem estarão disponíveis nas 
 | :---: | :---: | :---: |
 
 ## Citação do artigo publicado no SBgames 2019
+
+Artigo: https://ieeexplore.ieee.org/document/8924849
+
 
 ```
 @INPROCEEDINGS{Costa2019, 
