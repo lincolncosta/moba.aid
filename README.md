@@ -50,3 +50,15 @@ Os resultados obtidos após a execução da abordagem estarão disponíveis nas 
 
 | [<img src="https://avatars0.githubusercontent.com/u/26147019?s=460&v=4" width=115><br><sub>@tekpixo</sub>](https://github.com/tekpixo) | [<img src="https://avatars2.githubusercontent.com/u/8319539?s=460&v=4" width=115><br><sub>@fcarlosmonteiro</sub>](https://github.com/fcarlosmonteiro) | [<img src="https://avatars0.githubusercontent.com/u/13510169?s=460&v=4" width="115"><br><sub>@santospatrick</sub>](https://github.com/santospatrick) |
 | :---: | :---: | :---: |
+
+## Citação do artigo publicado no SBgames 2019
+
+```
+@INPROCEEDINGS{Costa2019, 
+author={L. M. {Costa} and A. C. C. {Souza} and F. C. M. {Souza}}, 
+booktitle={2019 18th Brazilian Symposium on Computer Games and Digital Entertainment (SBGames)}, 
+title={An Approach for Team Composition in League of Legends using Genetic Algorithm}, 
+year={2019}, 
+pages={52-61}
+}
+```
