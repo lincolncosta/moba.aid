@@ -33,21 +33,4 @@ module.exports = {
 
     return res.json(champion);
   },
-
-  async update(req, res) {
-    const { name, infos } = req.body;
-
-    await Champion.updateOne(
-      {
-        name: name,
-      },
-      {
-        $set: {
-          infos: infos,
-        },
-      },
-    );
-
-    return res.json({ message: 'Champion updated' });
-  },
 };
