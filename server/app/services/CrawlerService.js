@@ -2,8 +2,6 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const Champion = require('../models/Champion');
 
-const LOL = 'lol';
-const DOTA = 'dota';
 // Mapeando as roles existentes no ChampionGG em comparação com o MOBA AID.
 const rolesMap = {
   top: 'top',
@@ -28,47 +26,45 @@ class CrawlerService {
     );
   }
 
-  async start(game) {
-    if (game.trim().toLowerCase() == LOL) {
-      const champions = await Champion.find();
+  async updateInfosLeague() {
+    const champions = await Champion.find();
 
-      champions.map(async champion => {
-        let championWinRates = champion.infos[0].winrate;
+    champions.map(async champion => {
+      let championWinRates = champion.infos[0].winrate;
 
-        axios(process.env.SCRAPY_BASE_URL + champion.name).then(
-          async response => {
-            const html = response.data;
-            const $ = cheerio.load(html);
-            const statsTable = $('#statistics-win-rate-row td').eq(1);
+      axios(process.env.SCRAPY_BASE_URL + champion.name).then(
+        async response => {
+          const html = response.data;
+          const $ = cheerio.load(html);
+          const statsTable = $('#statistics-win-rate-row td').eq(1);
 
-            let splitedPath = response.request.path.split('/');
-            let role = splitedPath[splitedPath.length - 1]
-              .slice(0, -1)
-              .toLowerCase();
-            let winrate = Number(
-              statsTable
-                .text()
-                .trim()
-                .slice(0, -1),
-            );
+          let splitedPath = response.request.path.split('/');
+          let role = splitedPath[splitedPath.length - 1]
+            .slice(0, -1)
+            .toLowerCase();
+          let winrate = Number(
+            statsTable
+              .text()
+              .trim()
+              .slice(0, -1),
+          );
 
-            championWinRates = {};
+          championWinRates = {};
 
-            rolesMapKeys.map(role => {
-              championWinRates[role] = 0;
-            });
+          rolesMapKeys.map(role => {
+            championWinRates[role] = 0;
+          });
 
-            championWinRates[rolesMap[role]] = winrate;
+          championWinRates[rolesMap[role]] = winrate;
 
-            this.updateChampion(champion);
-          },
-        );
-      });
-    }
+          await this.updateChampion(champion);
+        },
+      );
+    });
+  }
 
-    if (game.trim().toLowerCase() == DOTA) {
-      // TO-DO.
-    }
+  async updateInfosDota() {
+    // TO-DO.
   }
 
   async sleep(milliseconds) {

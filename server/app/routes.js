@@ -11,10 +11,14 @@ routes.get('/', (req, res) => {
   res.sendStatus(200);
 });
 
-routes.get('/update-infos', (req, res) => {
-  let { game } = req.query;
+routes.get('/update-infos-league', async (req, res) => {
+  await CrawlerService.updateInfosLeague();
 
-  CrawlerService.start(game);
+  res.sendStatus(200);
+});
+
+routes.get('/update-infos-dota', async (req, res) => {
+  await CrawlerService.updateInfosDota();
 
   res.sendStatus(200);
 });
