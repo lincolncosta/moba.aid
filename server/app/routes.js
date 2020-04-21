@@ -2,11 +2,22 @@ const express = require('express');
 const DotaAlgorithm = require('./dota-algorithm');
 const LeagueAlgorithm = require('./services/LeagueService');
 const ChampionController = require('./controllers/ChampionController');
+const CrawlerService = require('./services/CrawlerService');
 
 const routes = express.Router();
 
 // Health Check
 routes.get('/', (req, res) => {
+  res.sendStatus(200);
+});
+
+routes.get('/update-infos', (req, res) => {
+  let { game } = req.query;
+
+  console.log(game);
+
+  CrawlerService.start(game);
+
   res.sendStatus(200);
 });
 
