@@ -14,8 +14,6 @@ routes.get('/', (req, res) => {
 routes.get('/update-infos', (req, res) => {
   let { game } = req.query;
 
-  console.log(game);
-
   CrawlerService.start(game);
 
   res.sendStatus(200);
