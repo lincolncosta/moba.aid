@@ -5,16 +5,18 @@
   "main": "genetic-algorithm.js",
   "prettier": "@santospatrick/prettier-config",
   "dependencies": {
-    "@settlin/collage": "^1.4.3",
-    "@types/node": "^12.0.12",
-    "azure-storage": "^2.10.3",
-    "child_process": "^1.0.2",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "evolve-ga": "^2.0.1",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.2",
-    "nodemon": "^1.19.2"
+    "@settlin/collage": "~1.4.3",
+    "@types/node": "~12.0.12",
+    "axios": "~0.19.2",
+    "azure-storage": "~2.10.3",
+    "cheerio": "~1.0.0-rc.3",
+    "child_process": "~1.0.2",
+    "cors": "~2.8.5",
+    "dotenv": "~8.2.0",
+    "evolve-ga": "~2.0.1",
+    "express": "~4.17.1",
+    "mongoose": "~5.9.2",
+    "nodemon": "~1.19.2"
   },
   "scripts": {
     "start": "nodemon ./app/server.js",
@@ -36,14 +38,14 @@
   },
   "homepage": "https://github.com/tekpixo/mobator#readme",
   "devDependencies": {
-    "@santospatrick/prettier-config": "^1.0.1",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.7",
-    "prettier": "^1.19.1"
+    "@santospatrick/prettier-config": "~1.0.1",
+    "babel-eslint": "~10.0.3",
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "~6.10.0",
+    "eslint-plugin-prettier": "~3.1.2",
+    "husky": "~4.2.3",
+    "lint-staged": "~10.0.7",
+    "prettier": "~1.19.1"
   },
   "husky": {
     "hooks": {

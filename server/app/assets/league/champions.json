@@ -7,7 +7,7 @@
          "magic": 3,
          "difficulty": 4,
          "winrate": {
-            "top": 48.49
+            "top": 49.96
          }
       },
       "roles": [
@@ -19,7 +19,6 @@
          "Top"
       ],
       "title": "the Darkin Blade",
-      "description": "One of the ancient darkin, Aatrox was once a peerless swordmaster who reveled in the bloody chaos of the battlefield. Trapped within his own blade by the magic of his foes, he waited out the millennia for a suitable host to wield him\u2014this mortal warrior...",
       "counters": [
          69,
          70,
@@ -36,7 +35,7 @@
          "magic": 8,
          "difficulty": 5,
          "winrate": {
-            "mid": 51.99
+            "mid": 50.82
          }
       },
       "roles": [
@@ -47,8 +46,7 @@
       "lanes": [
          "Mid"
       ],
-      "title": "the Nine-Tailed Fox",
-      "description": "Innately connected to the latent power of Runeterra, Ahri is a vastaya who can reshape magic into orbs of raw energy. She revels in toying with her prey by manipulating their emotions before devouring their life essence. Despite her predatory nature...",
+      "title": "the Nine-Tailed Fox",      
       "counters": [
          144,
          88,
@@ -65,8 +63,8 @@
          "magic": 8,
          "difficulty": 7,
          "winrate": {
-            "top": 47.36,
-            "mid": 46.8
+            "top": 45.02,
+            "mid": 43.20
          }
       },
       "roles": [
@@ -76,8 +74,7 @@
          "Top",
          "Mid"
       ],
-      "title": "the Fist of Shadow",
-      "description": "A prodigy in the fighting arts, Akali is a member of the martial order known as the Kinkou. She succeeds her mother as the Fist of Shadow, entrusted with the sacred duty to end those who would bring imbalance to her homeland. While some find her methods...",
+      "title": "the Fist of Shadow",      
       "counters": [
          54,
          69,
@@ -94,7 +91,7 @@
          "magic": 5,
          "difficulty": 7,
          "winrate": {
-            "support": 47.08
+            "support": 51.20
          }
       },
       "roles": [
@@ -106,8 +103,7 @@
       "lanes": [
          "Support"
       ],
-      "title": "the Minotaur",
-      "description": "Always a mighty warrior with a fearsome reputation, Alistar seeks revenge for the death of his clan at the hands of the Noxian empire. Though he was enslaved and forced into the life of a gladiator, his unbreakable will was what kept him from truly...",
+      "title": "the Minotaur",      
       "counters": [
          91,
          28,
@@ -124,7 +120,7 @@
          "magic": 8,
          "difficulty": 3,
          "winrate": {
-            "jungler": 48.31
+            "jungler": 51.61
          }
       },
       "roles": [
@@ -137,8 +133,7 @@
       "lanes": [
          "Jungler"
       ],
-      "title": "the Sad Mummy",
-      "description": "Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his touch is death, his affection ruin. Those who claim to have seen him describe...",
+      "title": "the Sad Mummy",      
       "counters": [
          73,
          51,
@@ -155,7 +150,7 @@
          "magic": 10,
          "difficulty": 10,
          "winrate": {
-            "mid": 51.72
+            "mid": 50.99
          }
       },
       "roles": [
@@ -167,8 +162,7 @@
       "lanes": [
          "Mid"
       ],
-      "title": "the Cryophoenix",
-      "description": "Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect the Freljord. A demigod born of unforgiving ice and bitter winds, she wields those elemental powers to thwart any who dare disturb her homeland...",
+      "title": "the Cryophoenix",      
       "counters": [
          88,
          136,
@@ -185,8 +179,7 @@
          "magic": 10,
          "difficulty": 6,
          "winrate": {
-            "mid": 52.2,
-            "support": 52.05
+            "mid": 51.90
          }
       },
       "roles": [
@@ -197,8 +190,7 @@
          "Mid",
          "Support"
       ],
-      "title": "the Dark Child",
-      "description": "Dangerous, yet disarmingly precocious, Annie is a child mage with immense pyromantic power. Even in the shadows of the mountains north of Noxus, she is a magical outlier. Her natural affinity for fire manifested early in life through unpredictable...",
+      "title": "the Dark Child",      
       "counters": [
          6,
          69,
@@ -215,7 +207,7 @@
          "magic": 2,
          "difficulty": 4,
          "winrate": {
-            "carry": 54.78
+            "carry": 50.85
          }
       },
       "roles": [
@@ -225,8 +217,7 @@
       "lanes": [
          "Carry"
       ],
-      "title": "the Frost Archer",
-      "description": "Iceborn warmother of the Avarosan tribe, Ashe commands the most populous horde in the north. Stoic, intelligent, and idealistic, yet uncomfortable with her role as leader, she taps into the ancestral magics of her lineage to wield a bow of True Ice...",
+      "title": "the Frost Archer",      
       "counters": [
          123,
          22,
@@ -243,7 +234,7 @@
          "magic": 8,
          "difficulty": 7,
          "winrate": {
-            "mid": 55.01
+            "mid": 52.75
          }
       },
       "roles": [
@@ -255,8 +246,7 @@
       "lanes": [
          "Mid"
       ],
-      "title": "The Star Forger",
-      "description": "Aurelion Sol once graced the vast emptiness of the cosmos with celestial wonders of his own devising. Now, he is forced to wield his awesome power at the behest of a space-faring empire that tricked him into servitude. Desiring a return to his...",
+      "title": "The Star Forger",      
       "counters": [
          143,
          122,
@@ -273,7 +263,7 @@
          "magic": 8,
          "difficulty": 9,
          "winrate": {
-            "mid": 46.23
+            "mid": 44.81
          }
       },
       "roles": [
@@ -285,8 +275,7 @@
       "lanes": [
          "Mid"
       ],
-      "title": "the Emperor of the Sands",
-      "description": "Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn as an Ascended...",
+      "title": "the Emperor of the Sands",      
       "counters": [
          136,
          19,
@@ -303,7 +292,7 @@
          "magic": 5,
          "difficulty": 9,
          "winrate": {
-            "support": 52.79
+            "support": 51.88
          }
       },
       "roles": [
@@ -314,8 +303,7 @@
       "lanes": [
          "Support"
       ],
-      "title": "the Wandering Caretaker",
-      "description": "A traveler from beyond the stars, Bard is an agent of serendipity who fights to maintain a balance where life can endure the indifference of chaos. Many Runeterrans sing songs that ponder his extraordinary nature, yet they all agree that the cosmic...",
+      "title": "the Wandering Caretaker",      
       "counters": [
          105,
          109,
@@ -332,7 +320,7 @@
          "magic": 5,
          "difficulty": 4,
          "winrate": {
-            "mid": 52.33
+            "mid": 50.86
          }
       },
       "roles": [
@@ -343,8 +331,7 @@
       "lanes": [
          "Support"
       ],
-      "title": "the Great Steam Golem",
-      "description": "Blitzcrank is an enormous, near-indestructible automaton from Zaun, originally built to dispose of hazardous waste. However, he found this primary purpose too restricting, and modified his own form to better serve the fragile people of the Sump...",
+      "title": "the Great Steam Golem",      
       "counters": [
          105,
          116,
@@ -361,8 +348,7 @@
          "magic": 9,
          "difficulty": 4,
          "winrate": {
-            "mid": 44.44,
-            "support": 47.9
+            "support": 49.93
          }
       },
       "roles": [
@@ -374,8 +360,7 @@
          "Mid",
          "Support"
       ],
-      "title": "the Burning Vengeance",
-      "description": "Once a tribesman of the icy Freljord named Kegan Rodhe, the creature known as Brand is a lesson in the temptation of greater power. Seeking one of the legendary World Runes, Kegan betrayed his companions and seized it for himself\u2014and, in an instant, the...",
+      "title": "the Burning Vengeance",      
       "counters": [
          42,
          78,
@@ -392,7 +377,7 @@
          "magic": 4,
          "difficulty": 3,
          "winrate": {
-            "support": 46.66
+            "support": 47.84
          }
       },
       "roles": [
@@ -404,8 +389,7 @@
       "lanes": [
          "Support"
       ],
-      "title": "the Heart of the Freljord",
-      "description": "Blessed with massive biceps and an even bigger heart, Braum is a beloved hero of the Freljord. Every mead hall north of Frostheld toasts his legendary strength, said to have felled a forest of oaks in a single night, and punched an entire mountain into...",
+      "title": "the Heart of the Freljord",      
       "counters": [
          105,
          109,
@@ -422,7 +406,7 @@
          "magic": 2,
          "difficulty": 6,
          "winrate": {
-            "mid": 50.37
+            "carry": 50.57
          }
       },
       "roles": [
@@ -431,8 +415,7 @@
       "lanes": [
          "Carry"
       ],
-      "title": "the Sheriff of Piltover",
-      "description": "Renowned as its finest peacekeeper, Caitlyn is also Piltover's best shot at ridding the city of its elusive criminal elements. She is often paired with Vi, acting as a cool counterpoint to her partner's more impetuous nature. Even though she carries a...",
+      "title": "the Sheriff of Piltover",      
       "counters": [
          123,
          90,
@@ -449,9 +432,7 @@
          "magic": 3,
          "difficulty": 4,
          "winrate": {
-            "top": 50.05,
-            "jungler": 47.65,
-            "mid": 50.04
+            "top": 49.88
          }
       },
       "roles": [
@@ -463,8 +444,7 @@
          "Jungler",
          "Mid"
       ],
-      "title": "the Steel Shadow",
-      "description": "Weaponized to operate outside the boundaries of the law, Camille is the Principal Intelligencer of Clan Ferros\u2014an elegant and elite agent who ensures the Piltover machine and its Zaunite underbelly runs smoothly. Adaptable and precise, she views sloppy...",
+      "title": "the Steel Shadow",      
       "counters": [
          38,
          121,
@@ -481,7 +461,8 @@
          "magic": 9,
          "difficulty": 10,
          "winrate": {
-            "mid": 51.72
+            "mid": 51.87,
+            "carry": 51.67
          }
       },
       "roles": [
@@ -491,8 +472,7 @@
       "lanes": [
          "Mid"
       ],
-      "title": "the Serpent's Embrace",
-      "description": "Cassiopeia is a deadly creature bent on manipulating others to her sinister will. Youngest and most beautiful daughter of the noble Du Couteau family of Noxus, she ventured deep into the crypts beneath Shurima in search of ancient power. There, she was...",
+      "title": "the Serpent's Embrace",      
       "counters": [
          75,
          9,
@@ -509,8 +489,8 @@
          "magic": 7,
          "difficulty": 5,
          "winrate": {
-            "top": 49.7,
-            "mid": 50.64
+            "top": 48.77,
+            "mid": 49.80
          }
       },
       "roles": [
@@ -522,7 +502,6 @@
          "Mid"
       ],
       "title": "the Terror of the Void",
-      "description": "From the moment Cho'Gath first emerged into the harsh light of Runeterra's sun, the beast was driven by the most pure and insatiable hunger. A perfect expression of the Void's desire to consume all life, Cho'Gath's complex biology quickly converts...",
       "counters": [
          17,
          79,
