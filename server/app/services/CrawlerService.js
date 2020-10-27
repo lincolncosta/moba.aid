@@ -14,6 +14,8 @@ const rolesMapKeys = Object.values(rolesMap);
 
 class CrawlerService {
   async updateChampion(champion) {
+    delete champion.updatedAt;
+
     await Champion.updateOne(
       {
         name: champion.name,
@@ -27,13 +29,13 @@ class CrawlerService {
   }
 
   async updateInfosLeague() {
-    const champions = await Champion.find();
+    const champions = await Champion.find({}).sort([['updatedAt', 'asc']]);
 
     champions.map(async champion => {
       let championWinRates = champion.infos[0].winrate;
 
-      axios(process.env.SCRAPY_BASE_URL + champion.name).then(
-        async response => {
+      axios(process.env.SCRAPY_BASE_URL + champion.name.replace(' ', ''))
+        .then(async response => {
           const html = response.data;
           const $ = cheerio.load(html);
           const statsTable = $('#statistics-win-rate-row td').eq(1);
@@ -58,8 +60,10 @@ class CrawlerService {
           championWinRates[rolesMap[role]] = winrate;
 
           await this.updateChampion(champion);
-        },
-      );
+        })
+        .catch(e => {
+          console.log(e);
+        });
     });
   }
 
