@@ -1,7 +1,7 @@
 const GeneticAlgorithm = require('./genetic-algorithm');
 const evolveGa = require('evolve-ga');
 const createCollage = require('@settlin/collage');
-const json = require('./assets/league/champions.json');
+const json = require('./assets/dota/champions.json');
 const fs = require('fs');
 // const uploadFile = require("./uploadFile");
 let generation = 1;
@@ -272,7 +272,6 @@ class DotaAlgorithm extends GeneticAlgorithm {
     var parsedJson = JSON.parse(JSON.stringify(json));
 
     if (this.finalChromosome) {
-      console.log(this.finalChromosome);
       this.finalChromosome.genes.forEach(function(item) {
         var aux = parsedJson.find(function(champion) {
           // console.log(champion);

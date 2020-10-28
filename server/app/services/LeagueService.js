@@ -1,7 +1,6 @@
 const GeneticAlgorithm = require('../genetic-algorithm');
 const evolveGa = require('evolve-ga');
 const createCollage = require('@settlin/collage');
-const json = require('../assets/league/champions.json');
 const fs = require('fs');
 const Champion = require('../models/Champion');
 // const uploadFile = require("./uploadFile");
@@ -13,7 +12,6 @@ let ENEMY_GENES = [];
 let PICKED_GENES = [];
 let totalChampions = 146;
 let CHROMOSOME_LENGTH = 5;
-let multiplier = 1.0;
 let POPULATION_SIZE;
 let MUTATION_CHANCE;
 let MAX_GENERATIONS;
@@ -96,16 +94,11 @@ class LeagueAlgorithm extends GeneticAlgorithm {
           return;
         }
       });
-    })
-
+    });
 
     if (hasCarry && hasSupp && hasMid && hasTop && hasJungle) {
       winrateComposition =
-        (winrateCarry +
-          winrateSupp +
-          winrateMid +
-          winrateTop +
-          winrateJungle) /
+        (winrateCarry + winrateSupp + winrateMid + winrateTop + winrateJungle) /
         5;
     }
 
@@ -149,7 +142,10 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     let multiplier = 1.0;
     let fitValue = await this.validCompositionFunction(champions);
 
-    if (!PICKED_GENES.every(v => chromosome.genes.includes(v)) || fitValue == 0) {
+    if (
+      !PICKED_GENES.every(v => chromosome.genes.includes(v)) ||
+      fitValue == 0
+    ) {
       return 0;
     }
 
@@ -187,8 +183,13 @@ class LeagueAlgorithm extends GeneticAlgorithm {
           if (ENEMY_GENES.length) {
             multiplier = await self.validCountersFunction(champion, multiplier);
           }
-
         });
+
+        fitValue = (fitValue * multiplier) / MAX_FIT_VALUE;
+        if (fitValue > finalFitvalue) {
+          finalFitvalue = fitValue;
+          this.finalChromosome = chromosome;
+        }
 
         return fitValue;
       case 'pusher':
@@ -202,7 +203,6 @@ class LeagueAlgorithm extends GeneticAlgorithm {
           if (ENEMY_GENES.length) {
             multiplier = await self.validCountersFunction(champion, multiplier);
           }
-
         });
 
         fitValue = (fitValue * multiplier) / MAX_FIT_VALUE;
@@ -214,44 +214,45 @@ class LeagueAlgorithm extends GeneticAlgorithm {
 
         return fitValue;
     }
-    
   }
 
   async showCompositionInfo() {
     let championsIcons = [];
 
     if (this.finalChromosome) {
-      let finalChampions = await Champion.find({ id_ddragon: this.finalChromosome.genes });
+      let finalChampions = await Champion.find({
+        id_ddragon: this.finalChromosome.genes,
+      });
+
       finalChampions.map(champion => {
         championsIcons.push(champion.icon);
-      })
+      });
 
+      let options = {
+        sources: championsIcons,
+        width: 5,
+        height: 1,
+        imageWidth: 120,
+        imageHeight: 120,
+      };
+
+      createCollage(options).then(canvas => {
+        let src = canvas.jpegStream();
+        const blobName = `${fileName}.png`;
+        let dest = fs.createWriteStream(blobName);
+
+        src.pipe(dest);
+        // src.on("end", function () {
+        //     uploadFile(blobName);
+        // });
+      });
     }
-
-    let options = {
-      sources: championsIcons,
-      width: 5,
-      height: 1,
-      imageWidth: 120,
-      imageHeight: 120,
-    };
-
-    createCollage(options).then(canvas => {
-      let src = canvas.jpegStream();
-      const blobName = `${fileName}.png`;
-      let dest = fs.createWriteStream(blobName);
-
-      src.pipe(dest);
-      // src.on("end", function () {
-      //     uploadFile(blobName);
-      // });
-    });
   }
 
   generateGenes() {
     return [...Array(CHROMOSOME_LENGTH)].map(() => {
       return POSSIBLE_GENES[Math.floor(Math.random() * POSSIBLE_GENES.length)];
-    })
+    });
   }
 
   async generatePopulation() {
@@ -260,13 +261,15 @@ class LeagueAlgorithm extends GeneticAlgorithm {
     return [...Array(POPULATION_SIZE)].map(() => {
       let possibleChromosome = {
         fitness: 0,
-        genes: self.generateGenes()
-      }
-      let isUniqueGenes = [...new Set(possibleChromosome.genes)].length === CHROMOSOME_LENGTH;
+        genes: self.generateGenes(),
+      };
+      let isUniqueGenes =
+        [...new Set(possibleChromosome.genes)].length === CHROMOSOME_LENGTH;
 
       while (!isUniqueGenes) {
         possibleChromosome.genes = self.generateGenes();
-        isUniqueGenes = [...new Set(possibleChromosome.genes)].length === CHROMOSOME_LENGTH;
+        isUniqueGenes =
+          [...new Set(possibleChromosome.genes)].length === CHROMOSOME_LENGTH;
       }
 
       return possibleChromosome;
@@ -291,12 +294,13 @@ class LeagueAlgorithm extends GeneticAlgorithm {
   async run() {
     return new Promise(async (resolve, reject) => {
       for (let i = 0; i < this.algorithm.population.length; i++) {
-        this.algorithm.population[i].fitness = await this.fitnessFunction(this.algorithm.population[i]);
+        this.algorithm.population[i].fitness = await this.fitnessFunction(
+          this.algorithm.population[i],
+        );
       }
 
       return resolve([...this.algorithm.population]);
-
-    })
+    });
   }
 
   async genetic() {
@@ -316,16 +320,14 @@ class LeagueAlgorithm extends GeneticAlgorithm {
       // await this.writeFileSecondsHeader();
 
       while (generation <= MAX_GENERATIONS) {
-        await Promise.all([this.run()]).then(function (values) {
+        await Promise.all([this.run()]).then(function(values) {
           generation++;
         });
 
-        if (generation == MAX_GENERATIONS) {
+        if (generation > MAX_GENERATIONS) {
           await this.showCompositionInfo();
         }
-
       }
-
 
       // let end = new Date();
 
