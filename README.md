@@ -51,7 +51,7 @@ Os resultados obtidos após a execução da abordagem estarão disponíveis nas 
 
 ## Citação do artigo publicado no SBgames 2019
 
-Artigo: https://ieeexplore.ieee.org/document/8924849
+Artigo: https://www.researchgate.net/publication/337260793_An_Approach_for_Team_Composition_in_League_of_Legends_using_Genetic_Algorithm
 
 
 ```
