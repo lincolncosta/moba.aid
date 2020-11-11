@@ -1,35 +1,39 @@
-import pandas
 import random
 from random import randint
 import numpy as np
+import pandas as pd
 
-df = pandas.read_csv('assets/data/bd_norm.csv')
+df = pd.read_csv('../assets/dataset/dataset.csv')
 
-# types of occupation
-analista_req = df.loc[df.occupation == 'analista de requisitos']
-devs_back = df.loc[df.occupation == 'desenvolvedor back-end']
-devs_front = df.loc[df.occupation == 'desenvolvedor front-end']
-testers = df.loc[df.occupation == 'teste']
-scrum_masters = df.loc[df.occupation == 'scrum master']
+# types of role
+top = df.loc[df.lanes.str.contains('Top')]
+jungler = df.loc[df.lanes.str.contains('Jungler')]
+mid = df.loc[df.lanes.str.contains('Mid')]
+carry = df.loc[df.lanes.str.contains('Carry')]
+support = df.loc[df.lanes.str.contains('Support')]
 
 # get pandas and reordena indices
-analista_req.index = range(len(analista_req.index))
-devs_back.index = range(len(devs_back.index))
-devs_front.index = range(len(devs_front.index))
-testers.index = range(len(testers.index))
-scrum_masters.index = range(len(scrum_masters.index))
+top.index = range(len(top.index))
+jungler.index = range(len(jungler.index))
+mid.index = range(len(mid.index))
+carry.index = range(len(carry.index))
+support.index = range(len(support.index))
 
 # method to create the solutions without repetitions
+
+
 def create_individual():
-    chromosome = [analista_req['id'][randint(0, len(analista_req)-1)],
-                  devs_back['id'][randint(0, len(devs_back)-1)],
-                  devs_front['id'][randint(0, len(devs_front)-1)],
-                  testers['id'][randint(0, len(testers)-1)],
-                  scrum_masters['id'][randint(0, len(scrum_masters)-1)]]
+    chromosome = [top['id'][randint(0, len(top)-1)],
+                  jungler['id'][randint(0, len(jungler)-1)],
+                  mid['id'][randint(0, len(mid)-1)],
+                  carry['id'][randint(0, len(carry)-1)],
+                  support['id'][randint(0, len(support)-1)]]
     return chromosome
 
 # method to create the population
-def create_population():
+
+
+def create_population(POP_SIZE):
     population = []
     for x in range(POP_SIZE):
         individual = create_individual()

@@ -4,9 +4,28 @@ import numpy as np
 import os.path
 import time
 from FitnessFunction import fitness_function
-from CreateSolution import create_population
+from CreateIndividual import create_population
 from Utils import *
+import random
+from random import randint
+import pandas as pd
+import sys
 
+df = pd.read_csv('../assets/dataset/dataset.csv')
+
+# types of role
+top = df.loc[df.lanes.str.contains('Top')]
+jungler = df.loc[df.lanes.str.contains('Jungler')]
+mid = df.loc[df.lanes.str.contains('Mid')]
+carry = df.loc[df.lanes.str.contains('Carry')]
+support = df.loc[df.lanes.str.contains('Support')]
+
+# get pandas and reordena indices
+top.index = range(len(top.index))
+jungler.index = range(len(jungler.index))
+mid.index = range(len(mid.index))
+carry.index = range(len(carry.index))
+support.index = range(len(support.index))
 
 # ((max_exp (1) + max_dev (1)) / min_rework (0,3)) * GENOME_SIZE
 MAX_TEAM_FITNESS = 37.4
@@ -20,11 +39,14 @@ LINES_PLOT = 50  # line plots
 
 INDIVIDUAL_MEMORY = []  # to store the best individual of each generation
 TER_MEMORIA = False  # false to use the max number of generation true to use memory
+COMPOSITION_STRATEGY = sys.argv[1]
 
 # selection method
+
+
 def selection_method(population):
     tournament = [random.choice(population) for i in range(MAX_TOURNAMENT)]
-    fitnesses = [fitness_function(tournament[i])
+    fitnesses = [fitness_function(tournament[i], COMPOSITION_STRATEGY)
                  for i in range(MAX_TOURNAMENT)]
     return tournament[fitnesses.index(max(fitnesses))]
 
@@ -38,6 +60,8 @@ def crossover(pai1, pai2):
     return [filho1, filho2]
 
 # mutation one point
+
+
 def mutation(individual):
     if random.random() <= PROB_MUTATION:
         individual = mutation_traditional(individual)
@@ -48,13 +72,13 @@ def mutation(individual):
 def mutation_traditional(individual):
     for i in range(GENOME_SIZE):
         if i == 0:
-            individual[0] = analista_req['id'][randint(0, len(analista_req)-1)]
+            individual[0] = top['id'][randint(0, len(top)-1)]
         elif i == 1:
-            individual[1] = devs_back['id'][randint(0, len(devs_back)-1)]
+            individual[1] = jungler['id'][randint(0, len(jungler)-1)]
         elif i == 2:
-            individual[2] = devs_front['id'][randint(0, len(devs_front)-1)]
+            individual[2] = mid['id'][randint(0, len(mid)-1)]
         else:
-            individual[3] = testers['id'][randint(0, len(testers)-1)]
+            individual[3] = carry['id'][randint(0, len(carry)-1)]
     return (individual)
 
 
@@ -65,20 +89,22 @@ def store_individual(individual):
     INDIVIDUAL_MEMORY.append(individual)
 
 # check if the fitness function is increasing
+
+
 def check_evolution():
     return INDIVIDUAL_MEMORY.count(INDIVIDUAL_MEMORY[0]) == len(INDIVIDUAL_MEMORY) and len(INDIVIDUAL_MEMORY) == MEMORY_SIZE
 
 
 historicos = []
-times=[]
+times = []
 best_global_individual = []
 best_global_fit = 0
 
 for w in range(LINES_PLOT):
-    population = create_population()
-    
-    start_time=0
-    total_time=0
+    population = create_population(POP_SIZE)
+
+    start_time = 0
+    total_time = 0
     start_time = time.time()
 
     hist_geracoes = []  # plot axis x
@@ -92,8 +118,8 @@ for w in range(LINES_PLOT):
 
         for individual in population:
 
-            fit = fitness_function(individual)
-            # print(fit)
+            fit = fitness_function(individual, COMPOSITION_STRATEGY)
+            print(fit)
             if fit > fit_best_individual:
                 fit_best_individual = fit
                 best_individual = individual
@@ -133,12 +159,12 @@ for w in range(LINES_PLOT):
 
         population = next_generation
 
-    total_time=(time.time() - start_time)
+    total_time = (time.time() - start_time)
     times.append(total_time)
     print("--- %s seconds ---" % total_time)
-    
+
     historicos.append([hist_fitness, hist_geracoes])
-    
+
     print("-------------------------------------------------------------------------------------------")
     print("The best global individual: ", best_global_individual,
           " fitness value: ", best_global_fit)
