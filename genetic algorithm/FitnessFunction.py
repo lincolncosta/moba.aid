@@ -19,7 +19,14 @@ def fitness_function(champions, strategy):
 
 
 def max_fit_roles_by_strategy(strategy):
-    return 1, []
+    if(strategy.lower() == 'teamfight'):
+        return 1, ['Area of Effect']
+
+    if(strategy.lower() == 'hardengage'):
+        return 1, ['Hard Engage', 'Crowd Control']
+
+    if(strategy.lower() == 'poke'):
+        return 1, ['Poke', 'Waveclear']
 
 
 def valid_composition_calculate_initial_fitness(champions):
@@ -76,7 +83,7 @@ def valid_roles_calculate_multiplier(champions, goal_roles):
 
     for champion in champions:
         for goal_role in goal_roles:
-            if goal_role in champion.roles:
+            if goal_role in df.loc[df.id == champion]['roles']:
                 multiplier += 0.1
                 continue
 
