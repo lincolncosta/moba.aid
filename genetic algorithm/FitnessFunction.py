@@ -2,9 +2,7 @@ import pandas as pd
 from collections import Counter
 
 
-# ((max_exp (1) + max_dev (1)) / min_rework (0,3)) * GENOME_SIZE
 MAX_FIT_VALUE = 1
-
 df = pd.read_csv('../assets/dataset/dataset.csv')
 
 
