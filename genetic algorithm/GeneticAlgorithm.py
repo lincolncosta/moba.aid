@@ -119,7 +119,6 @@ for w in range(LINES_PLOT):
         for individual in population:
 
             fit = fitness_function(individual, COMPOSITION_STRATEGY)
-            print(fit)
             if fit > fit_best_individual:
                 fit_best_individual = fit
                 best_individual = individual
