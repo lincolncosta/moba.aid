@@ -172,10 +172,10 @@ for w in range(LINES_PLOT):
     print("-------------------------------------------------------------------------------------------")
 
     save_results(historicos)
-    save_time(times)
+    save_time([times])
 
 
-generate_team_picture(best_global_individual)
+generate_team_picture(best_global_individual,best_global_fit)
 
 
 # GERAR O GRAFICO COM TODOS OS RESULTADOS

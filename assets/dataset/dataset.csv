@@ -1,153 +1,153 @@
 id,roles,lanes,name,icon,top,jungler,mid,carry,support
-1,"[""Tank"",""Crowd Control""]","[""Top"",""Mid""]",Aatrox,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Aatrox.png,49.53,,51.29,,
-2,"[""Crowd Control"",""Hard Engage"",""Waveclear""]","[""Mid""]",Ahri,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ahri.png,,,52.34,,
-3,"[""Crowd Control""]","[""Top"",""Mid""]",Akali,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Akali.png,47.35,,47.1,,
-4,"[""Tank"",""Hard Engage"",""Crowd Control"",""Disengage""]","[""Support""]",Alistar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Alistar.png,,,,,52.27
-5,"[""Tank"",""Hard Engage"",""Crowd Control"",""Disengage"",""Area of Effect""]","[""Jungler""]",Amumu,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Amumu.png,,52.69,,,
-6,"[""Waveclear"",""Crowd Control"",""Disengage"",""Area of Effect""]","[""Mid""]",Anivia,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Anivia.png,,,50.89,,
-7,"[""Hard Engage"",""Crowd Control""]","[""Mid"",""Support""]",Annie,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Annie.png,,,53.95,,51.99
-8,"[""Waveclear"",""Crowd Control""]","[""Carry""]",Aphelios,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Aphelios.png,,,,48.33,
-9,"[""Hard Engage"",""Crowd Control""]","[""Carry""]",Ashe,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ashe.png,,,,51.01,
-10,"[""Disengage"",""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Mid""]",Aurelion Sol,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/AurelionSol.png,,,51.32,,
-11,"[""Poke"",""Hard Engage"",""Crowd Control"",""Waveclear""]","[""Mid""]",Azir,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Azir.png,,,47.3,,
-12,"[""Disengage"",""Hard Engage"",""Crowd Control""]","[""Support""]",Bard,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Bard.png,,,,,52.3
-13,"[""Tank"",""Hard Engage"",""Crowd Control""]","[""Support""]",Blitzcrank,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Blitzcrank.png,,,,,50.08
-14,"[""Waveclear"",""Crowd Control"",""Area of Effect""]","[""Mid"",""Support""]",Brand,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Brand.png,,,51.65,,50.5
-15,"[""Tank"",""Hard Engage"",""Disengage"",""Crowd Control""]","[""Support""]",Braum,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Braum.png,,,,,50.21
-16,"[""Poke""]","[""Carry""]",Caitlyn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Caitlyn.png,,,,48.84,
-17,"[""Hard Engage"",""Crowd Control""]","[""Top"",""Mid""]",Camille,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Camille.png,50.9,,53.01,,
-18,"[""Disengage"",""Crowd Control""]","[""Top"",""Mid"",""Carry""]",Cassiopeia,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Cassiopeia.png,54.22,,52.49,50.7,
-19,"[""Tank"",""Crowd Control""]",[],Cho'Gath,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Chogath.png,,,,,
-20,"[""Poke"",""Waveclear"",""Disengage""]",[],Corki,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Corki.png,,,,,
-21,"[""Tank"",""Crowd Control""]","[""Top""]",Darius,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Darius.png,50.45,,,,
-22,"[""Crowd Control""]","[""Mid""]",Diana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Diana.png,,,51.05,,
-23,"[""""]","[""Jungler""]",Dr Mundo,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/DrMundo.png,,52.4,,,
-24,"[""Tank"",""Crowd Control""]","[""Carry""]",Draven,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Draven.png,,,,51.01,
-25,"[""Waveclear"",""Hard Engage"",""Disengage"",""Crowd Control"",""Area of Effect""]","[""Mid"",""Jungler""]",Ekko,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ekko.png,,50.17,49.91,,
-26,"[""Crowd Control""]","[""Jungler""]",Elise,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Elise.png,,50.42,,,
-27,"[""Crowd Control""]","[""Jungler""]",Evelynn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Evelynn.png,,50.42,,,
-28,"[""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Carry""]",Ezreal,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ezreal.png,,,,50.07,
-29,"[""Poke""]","[""Jungler""]",Fiddlesticks,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Fiddlesticks.png,,52.84,,,
-30,"[""Crowd Control""]","[""Top""]",Fiora,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Fiora.png,51.13,,,,
-31,"[""Crowd Control""]","[""Mid""]",Fizz,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Fizz.png,,,51.67,,
-32,"[""Tank"",""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Support"",""Mid""]",Galio,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Galio.png,,,52.78,,51.88
-33,"[""Poke"",""Waveclear""]","[""Top""]",Gangplank,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Gangplank.png,47.96,,,,
-34,"[""Tank"",""Crowd Control""]","[""Top"",""Mid""]",Garen,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Garen.png,50.09,,51.66,,
-35,"[""Tank"",""Hard Engage"",""Disengage"",""Crowd Control"",""Area of Effect""]","[""Top""]",Gnar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Gnar.png,49.15,,,,
-36,"[""Tank"",""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Jungler""]",Gragas,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Gragas.png,,48.38,,,
-37,"[""Waveclear""]","[""Jungler""]",Graves,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Graves.png,,49.34,,,
-38,"[""Waveclear"",""Poke"",""Crowd Control""]","[""Top"",""Jungler""]",Hecarim,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Hecarim.png,51.24,50.77,,,
-39,"[""Tank"",""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Top"",""Mid"", ""Carry""]",Heimerdinger,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Heimerdinger.png,50.23,,50,48.05,
-40,"[""Tank"",""Hard Engage"",""Area of Effect""]","[""Top""]",Illaoi,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Illaoi.png,49.83,,,,
-41,"[""Disengage"",""Crowd Control"",""Poke""]","[""Top"", ""Mid""]",Irelia,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Irelia.png,48.31,,46.94,,
-42,"[""Hard Engage"",""Crowd Control""]","[""Jungler""]",Ivern,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ivern.png,,52.45,,,
-43,"[""Tank"",""Crowd Control""]","[""Support""]",Janna,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Janna.png,,,,,51.91
-44,"[""Tank"",""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Jungler""]",Jarvan IV,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/JarvanIV.png,,49.05,,,
-45,"[""Tank"",""Crowd Control""]","[""Top"",""Jungler""]",Jax,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Jax.png,50.33,51.19,,,
-46,"[""Poke"",""Crowd Control""]","[""Top"",""Mid""]",Jayce,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Jayce.png,47.64,,48.14,,
-47,[],"[""Carry""]",Jhin,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Jhin.png,,,,51.05,
-48,"[""Waveclear"",""Disengage""]","[""Carry""]",Jinx,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Jinx.png,,,,51.15,
-49,[],"[""Carry""]",Kai'Sa,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kaisa.png,,,,48.41,
-50,"[""Hard Engage"",""Crowd Control"",""Disengage""]","[""Carry""]",Kalista,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kalista.png,,,,48.08,
-51,"[""Poke"",""Area of Effect""]","[""Support""]",Karma,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Karma.png,,,,,48.16
-52,"[""Poke"",""Waveclear"",""Area of Effect""]","[""Jungler""]",Karthus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Karthus.png,,52.85,,,
-53,"[""Area of Effect""]","[""Mid""]",Kassadin,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kassadin.png,,,50.53,,
-54,"[""""]","[""Mid""]",Katarina,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Katarina.png,,,50.04,,
-55,"[""""]","[""Top""]",Kayle,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kayle.png,50.63,,,,
-56,"[""Crowd Control""]","[""Jungler""]",Kayn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kayn.png,,51.24,,,
-57,"[""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Top"",""Mid""]",Kennen,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kennen.png,48.48,,66.04,,
-58,"[""""]","[""Jungler""]",Kha'Zix,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Khazix.png,,52.08,,,
-59,"[""Poke"",""Waveclear""]","[""Jungler""]",Kindred,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kindred.png,,48.53,,,
-60,"[""Hard Engage"",""Crowd Control""]","[""Top""]",Kled,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kled.png,50.64,,,,
-61,"[""""]","[""Carry""]",Kog'Maw,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/KogMaw.png,,,,48.13,
-62,"[""Crowd Control""]","[""Mid""]",LeBlanc,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Leblanc.png,,,48.33,,
-63,"[""Tank"",""Hard Engage"",""Disengage"",""Crowd Control""]","[""Jungler""]",Lee Sin,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/LeeSin.png,,48.25,,,
-64,"[""Waveclear"",""Hard Engage"",""Crowd Control""]","[""Mid""]",Leona,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Leona.png,,,,,51.68
-65,"[""Tank"",""Hard Engage"",""Disengage"",""Crowd Control"",""Area of Effect""]","[""Jungler""]",Lillia,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lilia.png,,50.29,,,
-66,"[""Tank"",""Hard Engage"",""Disengage"",""Crowd Control"",""Area of Effect""]","[""Mid""]",Lissandra,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lissandra.png,,,49.63,,
-67,"[""Crowd Control""]","[""Top"",""Mid"",""Carry""]",Lucian,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lucian.png,48.5,,47.67,48.75,
-68,"[""Waveclear""]","[""Top"",""Support""]",Lulu,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lulu.png,51.4,,,,50.69
-69,"[""Poke"",""Waveclear""]","[""Mid"",""Support""]",Lux,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lux.png,,,49.87,,49.55
-70,"[""Hard Engage"",""Tank"",""Crowd Control"",""Area of Effect""]","[""Top"",""Support"",""Mid""]",Malphite,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Malphite.png,51.26,,50.37,,44.06
-71,"[""Waveclear"",""Crowd Control""]","[""Mid""]",Malzahar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Malzahar.png,,,50.3,,
-72,"[""Tank"",""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Top"",""Support""]",Maokai,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Maokai.png,52.45,,,,53.31
-73,[],"[""Top"", ""Jungler""]",Master Yi,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/MasterYi.png,43.43,51.22,,,
+1,"[""Pusher"",""Burst Damage"",""Debuff""]","[""Top"",""Mid""]",Aatrox,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Aatrox.png,49.53,,51.29,,
+2,"[""Hard Engage"",""Burst Damage""]","[""Mid""]",Ahri,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ahri.png,,,52.34,,
+3,"[""Burst Damage"",""Flank""]","[""Top"",""Mid""]",Akali,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Akali.png,47.35,,47.1,,
+4,"[""Hard Engage"",""Debuff"",""Disengage""]","[""Support""]",Alistar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Alistar.png,,,,,52.27
+5,"[""Hard Engage"",""Debuff"",""Area of Effect"",""Waveclear""]","[""Jungler""]",Amumu,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Amumu.png,,52.69,,,
+6,"[""Waveclear"",""Debuff"",""Disengage"",""Area of Effect""]","[""Mid""]",Anivia,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Anivia.png,,,50.89,,
+7,"[""Hard Engage"",""Debuff"",""Burst Damage"",""Area of Effect""]","[""Mid"",""Support""]",Annie,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Annie.png,,,53.95,,51.99
+8,"[""Waveclear"",""Debuff"",""Area of Effect""]","[""Carry""]",Aphelios,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Aphelios.png,,,,48.33,
+9,"[""Hard Engage"",""Debuff""]","[""Carry""]",Ashe,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ashe.png,,,,51.01,
+10,"[""Disengage"",""Hard Engage"",""Debuff"",""Area of Effect"",""Waveclear"",""Pusher""]","[""Mid""]",Aurelion Sol,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/AurelionSol.png,,,51.32,,
+11,"[""Disengage"",""Debuff"",""Waveclear"",""Area of Effect"",""Poke""]","[""Mid""]",Azir,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Azir.png,,,47.3,,
+12,"[""Disengage"",""Hard Engage"",""Debuff""]","[""Support""]",Bard,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Bard.png,,,,,52.3
+13,"[""Hard Engage"",""Debuff""]","[""Support""]",Blitzcrank,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Blitzcrank.png,,,,,50.08
+14,"[""Burst Damage"",""Debuff"",""Area of Effect""]","[""Mid"",""Support""]",Brand,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Brand.png,,,51.65,,50.5
+15,"[""Hard Engage"",""Disengage"",""Debuff""]","[""Support""]",Braum,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Braum.png,,,,,50.21
+16,"[""Waveclear"",""Debuff""]","[""Carry""]",Caitlyn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Caitlyn.png,,,,48.84,
+17,"[""Hard Engage"",""Debuff"",""Pusher""]","[""Top"",""Mid""]",Camille,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Camille.png,50.9,,53.01,,
+18,"[""Waveclear"",""Debuff"",""Burst Damage"",""Disengage""]","[""Top"",""Mid"",""Carry""]",Cassiopeia,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Cassiopeia.png,54.22,,52.49,50.7,
+19,"[""Debuff"",""Area of Effect"",""Pusher""]",[],Cho'Gath,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Chogath.png,,,,,
+20,"[""Poke"",""Waveclear""]",[],Corki,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Corki.png,,,,,
+21,"[""Pusher"",""Debuff""]","[""Top""]",Darius,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Darius.png,50.45,,,,
+22,"[""Debuff"",""Hard Engage"",""Waveclear"",""Pusher"",""Flank""]","[""Mid""]",Diana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Diana.png,,,51.05,,
+23,"[""Pusher""]","[""Jungler""]",Dr Mundo,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/DrMundo.png,,52.4,,,
+24,"[""Burst Damage""]","[""Carry""]",Draven,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Draven.png,,,,51.01,
+25,"[""Waveclear"",""Debuff"",""Area of Effect"",""Burst Damage"",""Flank""]","[""Mid"",""Jungler""]",Ekko,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ekko.png,,50.17,49.91,,
+26,"[""Burst Damage"",""Flank""]","[""Jungler""]",Elise,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Elise.png,,50.42,,,
+27,"[""Burst Damage"",""Flank""]","[""Jungler""]",Evelynn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Evelynn.png,,50.42,,,
+28,"[""Poke""]","[""Carry""]",Ezreal,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ezreal.png,,,,50.07,
+29,"[""Hard Engage"",""Debuff"",""Area of Effect"",""Flank""]","[""Jungler""]",Fiddlesticks,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Fiddlesticks.png,,52.84,,,
+30,"[""Pusher"",""Burst Damage""]","[""Top""]",Fiora,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Fiora.png,51.13,,,,
+31,"[""Burst Damage"",""Flank"",""Pusher""]","[""Mid""]",Fizz,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Fizz.png,,,51.67,,
+32,"[""Hard Engage"",""Debuff"",""Area of Effect""]","[""Support"",""Mid""]",Galio,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Galio.png,,,52.78,,51.88
+33,"[""Burst Damage"",""Waveclear""]","[""Top""]",Gangplank,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Gangplank.png,47.96,,,,
+34,"[""Pusher"",""Waveclear""]","[""Top"",""Mid""]",Garen,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Garen.png,50.09,,51.66,,
+35,"[""Pusher"",""Hard Engage"",""Debuff"",""Area of Effect""]","[""Top""]",Gnar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Gnar.png,49.15,,,,
+36,"[""Hard Engage"",""Disengage"",""Area of Effect"",""Debuff""]","[""Jungler""]",Gragas,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Gragas.png,,48.38,,,
+37,"[""Flank""]","[""Jungler""]",Graves,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Graves.png,,49.34,,,
+38,"[""Waveclear"",""Hard Engage"",""Debuff""]","[""Top"",""Jungler""]",Hecarim,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Hecarim.png,51.24,50.77,,,
+39,"[""Poke"",""Debuff"",""Area of Effect"",""Pusher""]","[""Top"",""Mid"", ""Carry""]",Heimerdinger,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Heimerdinger.png,50.23,,50,48.05,
+40,"[""Waveclear"",""Area of Effect"",""Pusher""]","[""Top""]",Illaoi,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Illaoi.png,49.83,,,,
+41,"[""Waveclear"",""Pusher"",""Hard Engage"",""Debuff"",""Flank"",""Burst Damage""]","[""Top"", ""Mid""]",Irelia,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Irelia.png,48.31,,46.94,,
+42,"[""Hard Engage"",""Debuff""]","[""Jungler""]",Ivern,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ivern.png,,52.45,,,
+43,"[""Disengage"",""Debuff""]","[""Support""]",Janna,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Janna.png,,,,,51.91
+44,"[""Hard Engage"",""Debuff"",""Area of Effect"", ""Disengage""]","[""Jungler""]",Jarvan IV,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/JarvanIV.png,,49.05,,,
+45,"[""Pusher"",""Debuff"",""Hard Engage"",""Burst Damage""]","[""Top"",""Jungler""]",Jax,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Jax.png,50.33,51.19,,,
+46,"[""Poke"",""Pusher""]","[""Top"",""Mid""]",Jayce,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Jayce.png,47.64,,48.14,,
+47,"[""""]","[""Carry""]",Jhin,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Jhin.png,,,,51.05,
+48,"[""Waveclear""]","[""Carry""]",Jinx,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Jinx.png,,,,51.15,
+49,"[""""]","[""Carry""]",Kai'Sa,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kaisa.png,,,,48.41,
+50,"[""Hard Engage"",""Debuff"",""Disengage""]","[""Carry""]",Kalista,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kalista.png,,,,48.08,
+51,"[""Poke"",""Area of Effect"",""Pusher""]","[""Support""]",Karma,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Karma.png,,,,,48.16
+52,"[""Poke"",""Waveclear"",""Area of Effect"",""Burst Damage""]","[""Jungler""]",Karthus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Karthus.png,,52.85,,,
+53,"[""Burst Damage"",""Pusher""]","[""Mid""]",Kassadin,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kassadin.png,,,50.53,,
+54,"[""Waveclear"",""Area of Effect"",""Burst Damage""]","[""Mid""]",Katarina,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Katarina.png,,,50.04,,
+55,"[""Waveclear"",""Area of Effect"",""Pusher""]","[""Top""]",Kayle,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kayle.png,50.63,,,,
+56,"[""Debuff"",""Burst Damage"",""Pusher"",""Flank"",""Waveclear""]","[""Jungler""]",Kayn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kayn.png,,51.24,,,
+57,"[""Hard Engage"",""Debuff"",""Area of Effect"",""Pusher"",""Waveclear""]","[""Top"",""Mid""]",Kennen,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kennen.png,48.48,,66.04,,
+58,"[""Burst Damage"",""Flank""]","[""Jungler""]",Kha'Zix,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Khazix.png,,52.08,,,
+59,"[""Waveclear"",""Disengage"",""Debuff"",""Flank""]","[""Jungler""]",Kindred,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kindred.png,,48.53,,,
+60,"[""Hard Engage"",""Debuff"",""Pusher"",""Waveclear""]","[""Top""]",Kled,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Kled.png,50.64,,,,
+61,"[""Burst Damage""]","[""Carry""]",Kog'Maw,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/KogMaw.png,,,,48.13,
+62,"[""Flank"",""Burst Damage"",""Pusher""]","[""Mid""]",LeBlanc,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Leblanc.png,,,48.33,,
+63,"[""Hard Engage"",""Disengage"",""Waveclear"",""Flank""]","[""Jungler""]",Lee Sin,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/LeeSin.png,,48.25,,,
+64,"[Hard Engage"",""Debuff""]","[""Mid""]",Leona,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Leona.png,,,,,51.68
+65,"[""Debuff"",""Area of Effect"",""Burst Damage""]","[""Jungler""]",Lillia,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lilia.png,,50.29,,,
+66,"[""Hard Engage"",""Debuff,""Area of Effect""]","[""Mid""]",Lissandra,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lissandra.png,,,49.63,,
+67,"[""Waveclear""]","[""Top"",""Mid"",""Carry""]",Lucian,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lucian.png,48.5,,47.67,48.75,
+68,"[""Debuff"",""Disengage""]","[""Top"",""Support""]",Lulu,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lulu.png,51.4,,,,50.69
+69,"[""Poke"",""Waveclear"",""Area of Effect""]","[""Mid"",""Support""]",Lux,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Lux.png,,,49.87,,49.55
+70,"[""Hard Engage"",""Debuff"",""Area of Effect""]","[""Top"",""Support"",""Mid""]",Malphite,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Malphite.png,51.26,,50.37,,44.06
+71,"[""Waveclear"",""Debuff"",""Hard Engage"",""Pusher""]","[""Mid""]",Malzahar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Malzahar.png,,,50.3,,
+72,"[""Hard Engage"",""Debuff"",""Area of Effect"",""Disengage""]","[""Top"",""Support""]",Maokai,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Maokai.png,52.45,,,,53.31
+73,"[""Waveclear"",""Pusher"",""Flank""]","[""Top"", ""Jungler""]",Master Yi,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/MasterYi.png,43.43,51.22,,,
 74,"[""Area of Effect""]","[""Carry"",""Support""]",Miss Fortune,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/MissFortune.png,,,,52.52,45.12
-75,"[""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Top""]",Mordekaiser,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Mordekaiser.png,47.75,,,,
-76,[],"[""Support""]",Morgana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Morgana.png,,,,,49.17
-77,"[""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Support""]",Nami,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nami.png,,,,,49.72
-78,"[""Hard Engage"",""Disengage"",""Crowd Control"",""Area of Effect""]","[""Top""]",Nasus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nasus.png,51.2,,,,
-79,"[""Tank""]","[""Support""]",Nautilus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nautilus.png,,,,,48.72
-80,"[""Hard Engage"",""Tank"",""Crowd Control""]","[""Mid"",""Support""]",Neeko,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Neeko.png,,,51.56,,49.39
-81,"[""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Jungler""]",Nidalee,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nidalee.png,,48.63,,,
-82,"[""Poke""]","[""Jungler"",""Mid""]",Nocturne,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nocturne.png,,47.59,51.19,,
-83,"[""Hard Engage"",""Disengage"",""Crowd Control""]","[""Jungler"",""Mid""]",Nunu,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nunu.png,,52.67,51.6,,
-84,"[""Tank"",""Crowd Control""]","[""Jungler"",""Top""]",Olaf,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Olaf.png,50.54,52.33,,,
-85,"[""Tank"",""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Mid""]",Orianna,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Orianna.png,,,49.47,,
-86,"[""Hard Engage"",""Waveclear"",""Crowd Control"",""Area of Effect""]","[""Top""]",Ornn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ornn.png,49.32,,,,
-87,"[""Tank"",""Hard Engage"",""Crowd Control""]","[""Support""]",Pantheon,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Pantheon.png,,,,,48.92
-88,"[""Hard Engage"",""Tank"",""Crowd Control""]","[""Top"",""Jungler""]",Poppy,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Poppy.png,51.83,52.44,,,
-89,"[""Hard Engage"",""Crowd Control"",""Area of Effect""]","[""Mid"",""Support""]",Pyke,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Pyke.png,,,50.53,,48.56
-90,"[""Hard Engage"",""Crowd Control""]","[""Mid""]",Qiyana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Qiyana.png,,,49.3,,
-91,[],"[""Top""]",Quinn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Quinn.png,51.76,,,,
-92,"[""Crowd Control""]","[""Support""]",Rakan,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Rakan.png,,,,,52.03
-93,"[""Hard Engage"",""Crowd Control""]","[""Jungler""]",Rammus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Rammus.png,,52.18,,,
-94,"[""Hard Engage"",""Tank"",""Crowd Control""]","[""Jungler""]",Rek'Sai,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/RekSai.png,,52.41,,,
-95,"[""Hard Engage"",""Tank"",""Crowd Control""]","[""Top"",""Mid""]",Renekton,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Renekton.png,49.5,,50.14,,
-96,[],"[""Top"",""Jungler""]",Rengar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Rengar.png,49.87,48.81,,,
-97,"[""Tank"",""Crowd Control""]","[""Top"",""Mid""]",Riven,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Riven.png,50.07,,48.71,,
-98,"[""Crowd Control""]","[""Top"",""Mid""]",Rumble,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Rumble.png,51.04,,52.09,,
-99,"[""Hard Engage"",""Waveclear"",""Crowd Control"",""Area of Effect""]","[""Top"",""Mid""]",Ryze,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ryze.png,48.22,,49.77,,
-100,"[""Waveclear"",""Crowd Control"",""Area of Effect""]","[""Carry""]",Samira,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Samira.png,,,,,48.77
-101,"[""Waveclear"",""Crowd Control"",""Area of Effect""]","[""Jungler""]",Sejuani,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sejuani.png,,49.88,,,
-102,"[""""]","[""Support"",""Carry""]",Senna,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Senna.png,,,,49.92,49.05
-103,"[""Hard Engage"",""Disengage"",""Crowd Control"",""Tank"",""Area of Effect""]","[""Support"",""Mid""]",Seraphine,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Seraphine.png,,,48.17,,49.5
-104,"[""Hard Engage"",""Disengage"",""Crowd Control"",""Tank"",""Area of Effect""]","[""Top"",""Support"",""Mid""]",Sett,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sett.png,49.64,,49.87,,46.41
-105,"[""Hard Engage"",""Disengage"",""Crowd Control"",""Tank"",""Area of Effect""]","[""Mid"",""Support""]",Shaco,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Shaco.png,,50.97,,,51.19
-106,"[""Hard Engage"",""Disengage"",""Crowd Control"",""Tank"",""Area of Effect""]","[""Top"",""Jungler"",""Support""]",Shen,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Shen.png,51.15,47.1,,,48.69
-107,"[""Hard Engage"",""Crowd Control"",""Tank""]","[""Jungler""]",Shyvana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Shyvana.png,,51.4,,,
-108,"[""Hard Engage"",""Crowd Control"",""Tank""]","[""Top""]",Singed,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Singed.png,51.47,,,,
-109,"[""Crowd Control"",""Tank""]","[""Top""]",Sion,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sion.png,50.9,,,,
-110,"[""Hard Engage"",""Crowd Control"",""Tank"",""Area of Effect""]","[""Carry""]",Sivir,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sivir.png,,,,,50.57
-111,"[""Hard Engage"",""Waveclear"",""Disengage"",""Area of Effect""]","[""Jungler""]",Skarner,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Skarner.png,,55.16,,,
-112,"[""Hard Engage"",""Crowd Control"",""Tank""]","[""Support""]",Sona,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sona.png,,,,,52.48
-113,"[""Poke"",""Crowd Control"",""Area of Effect""]","[""Support""]",Soraka,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Soraka.png,,,,,51.64
-114,"[""Crowd Control"",""Poke"",""Disengage"",""Area of Effect""]","[""Support"",""Mid"",""Carry""]",Swain,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Swain.png,,,55.17,54.77,50.37
-115,"[""Crowd Control"",""Hard Engage"",""Tank"",""Area of Effect""]","[""Top"",""Jungler"",""Mid""]",Sylas,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sylas.png,50.08,47.8,49.2,,
-116,"[""Crowd Control"",""Hard Engage"",""Waveclear""]","[""Mid""]",Syndra,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Syndra.png,,,47.39,,
-117,"[""Disengage"",""Crowd Control"",""Waveclear"",""Poke"",""Hard Engage""]","[""Support""]",Tahm Kench,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/TahmKench.png,,,,,47.25
-118,"[""Area of Effect"",""Crowd Control""]","[""Jungler""]",Taliyah,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Taliyah.png,,48.48,,,
-119,"[""Disengage""]","[""Mid""]",Talon,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Talon.png,,,51.64,,
-120,"[""Disengage"",""Crowd Control""]","[""Support""]",Taric,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Taric.png,,,,,52.39
-121,"[""Crowd Control"",""Area of Effect""]","[""Top""]",Teemo,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Teemo.png,50.8,,,,
-122,"[""Crowd Control""]","[""Support""]",Thresh,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Thresh.png,,,,,49
-123,"[""Tank"",""Crowd Control"",""Hard Engage"",""Disengage"",""Area of Effect""]","[""Carry""]",Tristana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Tristana.png,,,,50.48,
-124,"[""Disengage""]",[],Trundle,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Trundle.png,,,,,
-125,"[""Tank"",""Crowd Control""]","[""Top""]",Tryndamere,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Tryndamere.png,49.36,,,,
-126,[],"[""Mid""]",Twisted Fate,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/TwistedFate.png,,,48.27,,
-127,[],"[""Carry""]",Twitch,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Twitch.png,,,,50.46,
-128,"[""Crowd Control""]","[""Jungler""]",Udyr,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Udyr.png,,50.63,,,
-129,"[""Tank"",""Crowd Control""]","[""Top""]",Urgot,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Urgot.png,51.19,,,,
-130,"[""Crowd Control"",""Hard Engage""]","[""Carry""]",Varus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Varus.png,,,,,48.17
-131,"[""Poke"",""Crowd Control"",""Waveclear"",""Hard Engage"",""Area of Effect""]","[""Top"",""Carry""]",Vayne,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Vayne.png,50.28,,,,50.15
-132,[],"[""Mid"",""Support""]",Veigar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Veigar.png,,,51.06,,49.07
-133,"[""Poke"",""Crowd Control"",""Waveclear"",""Area of Effect""]","[""Mid"",""Support""]",VelKoz,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/VelKoz.png,,,49.84,,50.44
-134,"[""Poke"",""Crowd Control"",""Waveclear"",""Area of Effect""]","[""Jungler""]",Vi,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Vi.png,,52.49,,,
-135,"[""Hard Engage"",""Crowd Control""]","[""Mid""]",Viktor,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Viktor.png,,,48.96,,
-136,"[""Crowd Control"",""Waveclear"",""Area of Effect""]","[""Top"",""Mid""]",Vladimir,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Vladimir.png,50.44,,50.25,,
-137,"[""Tank"",""Waveclear"",""Area of Effect""]","[""Top"",""Jungler""]",Volibear,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Volibear.png,52,50.42,,,
-138,"[""Tank"",""Crowd Control"",""Area of Effect""]","[""Top"",""Jungler""]",Warwick,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Warwick.png,48.48,52.09,,,
-139,"[""Tank"",""Crowd Control""]","[""Top"",""Jungler""]",Wukong,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/MonkeyKing.png,"51.58",51.36,,,
-140,"[""Crowd Control"",""Disengage""]","[""Carry""]",Xayah,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Xayah.png,,,,48.98,
-141,"[""Waveclear""]","[""Mid"",""Support""]",Xerath,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Xerath.png,,,49.17,,48.86
-142,"[""Poke"",""Crowd Control"",""Waveclear"",""Area of Effect""]","[""Jungler""]",Xin Zhao,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/XinZhao.png,,50.17,,,
-143,"[""Waveclear"",""Crowd Control""]","[""Mid"",""Top"",""Carry""]",Yasuo,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Yasuo.png,48.97,,50.26,,49.36
-144,"[""Waveclear"",""Crowd Control""]","[""Mid"",""Top""]",Yone,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Yone.png,48.41,,49.69,,
-145,"[""Tank"",""Crowd Control""]","[""Top""]",Yorick,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Yorick.png,50.41,,,,
-146,"[""Poke"",""Crowd Control"",""Disengage"",""Hard Engage"",""Area of Effect""]","[""Support""]",Yuumi,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Yuumi.png,,,,,50.19
-147,"[""Crowd Control"",""Tank"",""Disengage"",""Hard Engage"",""Area of Effect""]","[""Top"",""Jungler"",""Support""]",Zac,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zac.png,49.82,51.56,,,48.75
-148,[],"[""Mid""]",Zed,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zed.png,,,50.85,,
-149,"[""Poke"",""Crowd Control"",""Waveclear"",""Area of Effect""]","[""Mid""]",Ziggs,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ziggs.png,,,37.01,,
-150,"[""Waveclear"",""Crowd Control"",""Poke"",""Area of Effect""]","[""Support"",""Mid""]",Zilean,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zilean.png,,,52.79,,51.51
-151,"[""Crowd Control"",""Poke"",""Area of Effect""]","[""Mid""]",Zoe,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zoe.png,,,49.33,,
-152,"[""Waveclear"",""Crowd Control"",""Poke"",""Area of Effect""]","[""Support""]",Zyra,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zyra.png,,,,,50.68
+75,"[""Waveclear"",""Debuff"",""Area of Effect"",""Pusher""]","[""Top""]",Mordekaiser,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Mordekaiser.png,47.75,,,,
+76,"[""Debuff"",""Area of Effect""]","[""Support""]",Morgana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Morgana.png,,,,,49.17
+77,"[""Hard Engage"",""Debuff"",""Area of Effect"",""Disengage""]","[""Support""]",Nami,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nami.png,,,,,49.72
+78,"[""Pusher"",""Disengage"",""Debuff"",""Area of Effect""]","[""Top""]",Nasus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nasus.png,51.2,,,,
+79,"[""Hard Engage"",""Disengage"",""Debuff"",""Area of Effect""]","[""Support""]",Nautilus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nautilus.png,,,,,48.72
+80,"[""Hard Engage"",""Debuff"",""Disengage""]","[""Mid"",""Support""]",Neeko,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Neeko.png,,,51.56,,49.39
+81,"[""Burst Damage"",""Flank"",""Poke""]","[""Jungler""]",Nidalee,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nidalee.png,,48.63,,,
+82,"[""Hard Engage"",""Debuff"",""Burst Damage""]","[""Jungler"",""Mid""]",Nocturne,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nocturne.png,,47.59,51.19,,
+83,"[""Hard Engage"",""Disengage"",""Debuff"",""Area of Effect""]","[""Jungler"",""Mid""]",Nunu,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Nunu.png,,52.67,51.6,,
+84,"[""Hard Engage"",""Pusher""]","[""Jungler"",""Top""]",Olaf,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Olaf.png,50.54,52.33,,,
+85,"[""Waveclear"",""Debuff"",""Area of Effect"",""Burst Damage""]","[""Mid""]",Orianna,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Orianna.png,,,49.47,,
+86,"[""Hard Engage"",""Waveclear"",""Debuff"",""Area of Effect"",""Disengage""]","[""Top""]",Ornn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ornn.png,49.32,,,,
+87,"[""Hard Engage"",""Debuff"",""Area of Effect""]","[""Support""]",Pantheon,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Pantheon.png,,,,,48.92
+88,"[""Disengage"",""Debuff""]","[""Top"",""Jungler""]",Poppy,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Poppy.png,51.83,52.44,,,
+89,"[""Flank"",""Debuff"",""Area of Effect"",""Burst Damage""]","[""Mid"",""Support""]",Pyke,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Pyke.png,,,50.53,,48.56
+90,"[""Burst Damage"",""Waveclear"",""Debuff"",""Flank""]","[""Mid""]",Qiyana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Qiyana.png,,,49.3,,
+91,"[""Pusher"",""Burst Damage""]","[""Top""]",Quinn,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Quinn.png,51.76,,,,
+92,"[""Hard Engage"",""Debuff"",""Area of Effect""]","[""Support""]",Rakan,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Rakan.png,,,,,52.03
+93,"[""Hard Engage"",""Debuff""]","[""Jungler""]",Rammus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Rammus.png,,52.18,,,
+94,"""Debuff"", ""Flank""]","[""Jungler""]",Rek'Sai,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/RekSai.png,,52.41,,,
+95,"[""Area of Effect"",""Pusher""]","[""Top"",""Mid""]",Renekton,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Renekton.png,49.5,,50.14,,
+96,"[""Burst Damage"",""Flank""]","[""Top"",""Jungler""]",Rengar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Rengar.png,49.87,48.81,,,
+97,"[""Burst Damage"",""Debuff""]","[""Top"",""Mid""]",Riven,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Riven.png,50.07,,48.71,,
+98,"[""Area of Effect"",""Waveclear""]","[""Top"",""Mid""]",Rumble,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Rumble.png,51.04,,52.09,,
+99,"[""Hard Engage"",""Disengage"",""Waveclear"",""Area of Effect"",""Flank""]","[""Top"",""Mid""]",Ryze,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ryze.png,48.22,,49.77,,
+100,"[""Waveclear"",""Area of Effect""]","[""Carry""]",Samira,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Samira.png,,,,,48.77
+101,"[""Debuff"",""Area of Effect"",""Hard Engage"",""Disengage""]","[""Jungler""]",Sejuani,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sejuani.png,,49.88,,,
+102,"[""Debuff"",""Disengage""]","[""Support"",""Carry""]",Senna,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Senna.png,,,,49.92,49.05
+103,"[""Hard Engage"",""Disengage"",""Debuff"",""Area of Effect""]","[""Support"",""Mid""]",Seraphine,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Seraphine.png,,,48.17,,49.5
+104,"[""Hard Engage"",""Disengage"",""Debuff"",""Area of Effect""]","[""Top"",""Support"",""Mid""]",Sett,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sett.png,49.64,,49.87,,46.41
+105,"[""Burst Damage"",""Area of Effect"",""Flank"",""Debuff""]","[""Mid"",""Support""]",Shaco,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Shaco.png,,50.97,,,51.19
+106,"[""Hard Engage"",""Debuff"",""Area of Effect"",""Pusher""]","[""Top"",""Jungler"",""Support""]",Shen,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Shen.png,51.15,47.1,,,48.69
+107,"[""Hard Engage"",""Waveclear"",""Flank""]","[""Jungler""]",Shyvana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Shyvana.png,,51.4,,,
+108,"[""Debuff"",""Hard Engage"",""Pusher"",""Area of Effect""]","[""Top""]",Singed,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Singed.png,51.47,,,,
+109,"[""Debuff"",""Hard Engage"",""Pusher"",""Area of Effect""]","[""Top""]",Sion,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sion.png,50.9,,,,
+110,"[""Hard Engage"",""Waveclear"",""Disengage""]","[""Carry""]",Sivir,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sivir.png,,,,,50.57
+111,"[""Hard Engage"",""Waveclear""]","[""Jungler""]",Skarner,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Skarner.png,,55.16,,,
+112,"[""Hard Engage"",""Debuff"",""Area of Effect"",""Disengage"",""Poke""]","[""Support""]",Sona,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sona.png,,,,,52.48
+113,"[""Poke"",""Debuff"",""Area of Effect""]","[""Support""]",Soraka,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Soraka.png,,,,,51.64
+114,"[""Debuff"",""Hard Engage"",""Area of Effect"",""Waveclear""]","[""Support"",""Mid"",""Carry""]",Swain,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Swain.png,,,55.17,54.77,50.37
+115,"[""Debuff"",""Hard Engage"",""Pusher"",""Area of Effect"",""Waveclear""]","[""Top"",""Jungler"",""Mid""]",Sylas,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Sylas.png,50.08,47.8,49.2,,
+116,"[""Debuff"",""Burst Damage"",""Waveclear""]","[""Mid""]",Syndra,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Syndra.png,,,47.39,,
+117,"[""Disengage"",""Debuff"",""Hard Engage""]","[""Support""]",Tahm Kench,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/TahmKench.png,,,,,47.25
+118,"[""Area of Effect"",""Debuff"",""Flank""]","[""Jungler""]",Taliyah,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Taliyah.png,,48.48,,,
+119,"[""Burst Damage"",""Flank""]","[""Mid""]",Talon,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Talon.png,,,51.64,,
+120,"[""Disengage"",""Debuff"",""Area of Effect""]","[""Support""]",Taric,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Taric.png,,,,,52.39
+121,"[""Debuff"",""Area of Effect"",""Flank""]","[""Top""]",Teemo,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Teemo.png,50.8,,,,
+122,"[""Debuff"",""Disengage"",""Hard Engage"",""Area of Effect""]","[""Support""]",Thresh,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Thresh.png,,,,,49
+123,"[""Disengage"",""Area of Effect"",""Waveclear""]","[""Carry""]",Tristana,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Tristana.png,,,,50.48,
+124,"[""Disengage"",""Debuff""]",[],Trundle,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Trundle.png,,,,,
+125,"[""Pusher""]","[""Top""]",Tryndamere,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Tryndamere.png,49.36,,,,
+126,"[""Debuff"",""Pusher"",""Waveclear""]","[""Mid""]",Twisted Fate,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/TwistedFate.png,,,48.27,,
+127,"[""Burst Damage"",""Flank""]","[""Carry""]",Twitch,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Twitch.png,,,,50.46,
+128,"[""Debuff"",""Pusher"",""Waveclear""]","[""Jungler""]",Udyr,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Udyr.png,,50.63,,,
+129,"[""Debuff"",""Pusher""]","[""Top""]",Urgot,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Urgot.png,51.19,,,,
+130,"[""Debuff"",""Hard Engage"",""Disengage"",""Poke""]","[""Carry""]",Varus,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Varus.png,,,,,48.17
+131,"[""Flank""]","[""Top"",""Carry""]",Vayne,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Vayne.png,50.28,,,,50.15
+132,"[""Hard Engage"",""Debuff"",""Disengage"",""Area of Effect"",""Burst Damage""]","[""Mid"",""Support""]",Veigar,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Veigar.png,,,51.06,,49.07
+133,"[""Poke"",""Debuff"",""Waveclear"",""Area of Effect"",""Burst Damage""]","[""Mid"",""Support""]",VelKoz,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/VelKoz.png,,,49.84,,50.44
+134,"[""Hard Engage"",""Debuff""]","[""Jungler""]",Vi,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Vi.png,,52.49,,,
+135,"[""Area of Effect"",""Debuff"",""Burst Damage""]","[""Mid""]",Viktor,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Viktor.png,,,48.96,,
+136,"[""Burst Damage"",""Waveclear"",""Area of Effect"",""Flank""]","[""Top"",""Mid""]",Vladimir,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Vladimir.png,50.44,,50.25,,
+137,"[""Pusher"",""Waveclear"",""Area of Effect"",""Debuff"",""Hard Engage""]","[""Top"",""Jungler""]",Volibear,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Volibear.png,52,50.42,,,
+138,"[""Debuff"",""Area of Effect""]","[""Top"",""Jungler""]",Warwick,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Warwick.png,48.48,52.09,,,
+139,"[""Area of Effect"",""Debuff"",""Hard Engage"",""Pusher"",""Flank""]","[""Top"",""Jungler""]",Wukong,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/MonkeyKing.png,51.58,51.36,,,
+140,"[""Debuff"",""Disengage""]","[""Carry""]",Xayah,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Xayah.png,,,,48.98,
+141,"[""Waveclear"",""Poke"",""Debuff"",""Area of Effect""]","[""Mid"",""Support""]",Xerath,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Xerath.png,,,49.17,,48.86
+142,"[""Debuff"",""Flank""]","[""Jungler""]",Xin Zhao,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/XinZhao.png,,50.17,,,
+143,"[""Waveclear"",""Pusher"",""Burst Damage""]","[""Mid"",""Top"",""Carry""]",Yasuo,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Yasuo.png,48.97,,50.26,,49.36
+144,"[""Waveclear"",""Pusher"",""Burst Damage""]","[""Mid"",""Top""]",Yone,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Yone.png,48.41,,49.69,,
+145,"[""Pusher"",""Debuff""]","[""Top""]",Yorick,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Yorick.png,50.41,,,,
+146,"[""Poke"",""Debuff"",""Disengage"",""Hard Engage"",""Area of Effect""]","[""Support""]",Yuumi,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Yuumi.png,,,,,50.19
+147,"[""Debuff"",""Disengage"",""Hard Engage"",""Area of Effect""]","[""Top"",""Jungler"",""Support""]",Zac,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zac.png,49.82,51.56,,,48.75
+148,"[""Pusher"",""Burst Damage"",""Flank""]","[""Mid""]",Zed,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zed.png,,,50.85,,
+149,"[""Poke"",""Waveclear"",""Area of Effect""]","[""Mid""]",Ziggs,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Ziggs.png,,,37.01,,
+150,"[""Waveclear"",""Debuff"",""Poke"",""Area of Effect""]","[""Support"",""Mid""]",Zilean,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zilean.png,,,52.79,,51.51
+151,"[""Debuff"",""Poke"",""Burst Damage"",""Flank""]","[""Mid""]",Zoe,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zoe.png,,,49.33,,
+152,"[""Waveclear"",""Debuff"",""Poke"",""Area of Effect""]","[""Support""]",Zyra,http://ddragon.leagueoflegends.com/cdn/10.22.1/img/champion/Zyra.png,,,,,50.68

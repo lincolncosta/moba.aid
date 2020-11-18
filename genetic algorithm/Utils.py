@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 from PIL import Image
 import csv
+import os
 
 
-def generate_plots(labelGraph1, labelGraph2, valuesGraph1, valuesGraph2, labelX, labelY):
+def generate_plots(labelGraph1, labelGraph2, valuesGraph1, valuesGraph2, labelX, labelY, MAX_GENERATIONS):
     fig, ax = plt.subplots()
     plt.plot(range(0, MAX_GENERATIONS + 1), valuesGraph1, label=labelGraph1)
     plt.plot(range(0, MAX_GENERATIONS + 1), valuesGraph2, label=labelGraph2)
@@ -13,10 +14,12 @@ def generate_plots(labelGraph1, labelGraph2, valuesGraph1, valuesGraph2, labelX,
 
     fig.savefig("plot.pdf")
 
+
 def save_time(times):
-	with open('result_time.csv', 'wb') as myfile:
-		wr = csv.writer(myfile, quoting=csv.QUOTE_ALL,delimiter='\n')
-		wr.writerow(times)
+    with open('result_time.csv', 'wb') as myfile:
+        wr = csv.writer(myfile, quoting=csv.QUOTE_ALL, delimiter='\n')
+        wr.writerow(times)
+
 
 def save_results(historicos):
     csvfile = open('result.csv', 'w')
@@ -25,11 +28,13 @@ def save_results(historicos):
         csvwriter.writerow(item[0])
     csvfile.close()
 
+
 def print_population(population, POP_SIZE):
     fitnesses = [fitness_function(population[i]) for i in range(POP_SIZE)]
     print(list(zip(population, fitnesses)))
 
-def generate_team_picture(best_global_individual):
+
+def generate_team_picture(best_global_individual, best_global_fit):
     images = []
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
