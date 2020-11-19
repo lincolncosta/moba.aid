@@ -21,13 +21,13 @@ def max_fit_roles_by_strategy(strategy):
         return 1, ['Area of Effect']
 
     if(strategy.lower() == 'hardengage'):
-        return 1, ['Hard Engage', 'Crowd Control']
+        return 1, ['Hard Engage', 'Debuff']
 
     if(strategy.lower() == 'poke'):
         return 1, ['Poke', 'Disengage']
 
     if(strategy.lower() == 'pickoff'):
-        return 1, ['Burst Damage', 'Hard Engage']
+        return 1, ['Burst Damage', 'Flank']
 
     if(strategy.lower() == 'splitpush'):
         return 1, ['Waveclear', 'Burst Damage', 'Pusher']
