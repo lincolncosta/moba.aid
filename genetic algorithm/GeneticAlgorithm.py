@@ -27,15 +27,13 @@ mid.index = range(len(mid.index))
 carry.index = range(len(carry.index))
 support.index = range(len(support.index))
 
-# ((max_exp (1) + max_dev (1)) / min_rework (0,3)) * GENOME_SIZE
-MAX_TEAM_FITNESS = 37.4
 POP_SIZE = 30  # population
 GENOME_SIZE = 5  # number of genes
 MAX_TOURNAMENT = 3  # selection method
-MAX_GENERATIONS = 3  # number of generation
+MAX_GENERATIONS = 1000  # number of generation
 PROB_MUTATION = 0.3  # mutation
 MEMORY_SIZE = 20  # check if fitness is increasing
-LINES_PLOT = 4  # line plots
+LINES_PLOT = 1  # line plots
 
 INDIVIDUAL_MEMORY = []  # to store the best individual of each generation
 TER_MEMORIA = False  # false to use the max number of generation true to use memory

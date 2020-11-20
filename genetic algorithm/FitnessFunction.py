@@ -18,19 +18,19 @@ def fitness_function(champions, strategy):
 
 def max_fit_roles_by_strategy(strategy):
     if(strategy.lower() == 'teamfight'):
-        return 1, ['Area of Effect']
+        return 58.716, ['Area of Effect']
 
     if(strategy.lower() == 'hardengage'):
-        return 1, ['Hard Engage', 'Debuff']
+        return 63.056, ['Hard Engage', 'Debuff']
 
     if(strategy.lower() == 'poke'):
-        return 1, ['Poke', 'Disengage']
+        return 58.87, ['Poke', 'Disengage']
 
     if(strategy.lower() == 'pickoff'):
-        return 1, ['Burst Damage', 'Flank']
+        return 60.51, ['Burst Damage', 'Flank']
 
     if(strategy.lower() == 'splitpush'):
-        return 1, ['Waveclear', 'Burst Damage', 'Pusher']
+        return 62.498, ['Waveclear', 'Disengage', 'Pusher']
 
 def valid_composition_calculate_initial_fitness(champions):
     fitness = 0
