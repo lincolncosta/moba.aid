@@ -7,8 +7,10 @@ df = pd.read_csv('../assets/dataset/dataset.csv')
 
 
 def fitness_function(champions, strategy):
+
     MAX_FIT_VALUE, goal_roles = max_fit_roles_by_strategy(strategy)
     fit_value = valid_composition_calculate_initial_fitness(champions)
+    fit_value = valid_damage_type_fitness(champions, fit_value)
     multiplier = valid_roles_calculate_multiplier(champions, goal_roles)
 
     fit_value = (fit_value * multiplier) / MAX_FIT_VALUE
@@ -18,19 +20,40 @@ def fitness_function(champions, strategy):
 
 def max_fit_roles_by_strategy(strategy):
     if(strategy.lower() == 'teamfight'):
-        return 58.716, ['Area of Effect']
+        return 64.23, ['Area of Effect', 'Hard Engage', 'Disengage']
 
-    if(strategy.lower() == 'hardengage'):
-        return 63.056, ['Hard Engage', 'Debuff']
-
-    if(strategy.lower() == 'poke'):
-        return 58.87, ['Poke', 'Disengage']
+    if(strategy.lower() == 'siege'):
+        return 62.24, ['Poke', 'Disengage', 'Wave Clear']
 
     if(strategy.lower() == 'pickoff'):
-        return 60.51, ['Burst Damage', 'Flank']
+        return 62.02, ['Hard Engage', 'Burst Damage']
 
     if(strategy.lower() == 'splitpush'):
-        return 62.498, ['Waveclear', 'Disengage', 'Pusher']
+        return 67.47, ['Burst Damage', 'Flank', 'Pusher', 'Wave Clear', 'Disengage']
+
+    if(strategy.lower() == 'skirmish'):
+        return 64.65, ['Debuff', 'Mobility', 'Burst Damage']
+
+
+def valid_damage_type_fitness(champions, fit_value):
+    for champion in champions:
+        damage = df.loc[df.id == champion].damage.to_string()
+        counterAP = 0
+        counterAD = 0
+
+        if(damage == 'AP'):
+            counterAP += 1
+        elif(damage == 'AD'):
+            counterAD += 1
+        elif(damage == 'Hybrid'):
+            counterAP += 1
+            counterAD += 1
+
+    if (counterAD < 2 or counterAP < 2):
+        fit_value = fit_value - ((fit_value / 100) * 10)
+
+    return fit_value
+
 
 def valid_composition_calculate_initial_fitness(champions):
     fitness = 0

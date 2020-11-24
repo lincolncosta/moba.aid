@@ -22,12 +22,20 @@ support.index = range(len(support.index))
 # method to create the solutions without repetitions
 
 
+def check_duplicated(chromosome):
+    chromosome_set = set(chromosome)
+    return len(chromosome) != len(chromosome_set)
+
+
 def create_individual():
-    chromosome = [top['id'][randint(0, len(top)-1)],
-                  jungler['id'][randint(0, len(jungler)-1)],
-                  mid['id'][randint(0, len(mid)-1)],
-                  carry['id'][randint(0, len(carry)-1)],
-                  support['id'][randint(0, len(support)-1)]]
+    has_duplicated = True
+    while(has_duplicated):
+        chromosome = [top['id'][randint(0, len(top)-1)],
+                      jungler['id'][randint(0, len(jungler)-1)],
+                      mid['id'][randint(0, len(mid)-1)],
+                      carry['id'][randint(0, len(carry)-1)],
+                      support['id'][randint(0, len(support)-1)]]
+        has_duplicated = check_duplicated(chromosome)
     return chromosome
 
 # method to create the population

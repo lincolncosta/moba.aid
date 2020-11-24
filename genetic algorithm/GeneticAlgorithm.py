@@ -30,7 +30,7 @@ support.index = range(len(support.index))
 POP_SIZE = 30  # population
 GENOME_SIZE = 5  # number of genes
 MAX_TOURNAMENT = 3  # selection method
-MAX_GENERATIONS = 1000  # number of generation
+MAX_GENERATIONS = 500  # number of generation
 PROB_MUTATION = 0.3  # mutation
 MEMORY_SIZE = 20  # check if fitness is increasing
 LINES_PLOT = 1  # line plots
@@ -162,12 +162,12 @@ for w in range(LINES_PLOT):
 
     historicos.append([hist_fitness, hist_geracoes])
 
-    print("-------------------------------------------------------------------------------------------")
-    print("The best global individual: ", best_global_individual,
-          " fitness value: ", best_global_fit)
-    print("Formed Team Profile: |", df.iloc[best_global_individual[0], 6], "|", df.iloc[best_global_individual[1],
-                                                                                        6], "|", df.iloc[best_global_individual[2], 6], "|", df.iloc[best_global_individual[3], 6])
-    print("-------------------------------------------------------------------------------------------")
+    # print("-------------------------------------------------------------------------------------------")
+    # print("The best global individual: ", best_global_individual,
+        #   " fitness value: ", best_global_fit)
+    # print("Formed Team Profile: |", df.iloc[best_global_individual[0], 6], "|", df.iloc[best_global_individual[1],
+                                                                                        # 6], "|", df.iloc[best_global_individual[2], 6], "|", df.iloc[best_global_individual[3], 6])
+    # print("-------------------------------------------------------------------------------------------")
 
 
 save_results(historicos)
