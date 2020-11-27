@@ -1,6 +1,6 @@
 <h1 align="center">Moba AID 🎮</h1>
 
-<div align="center"><img src="./assets/pickoff.png" /></div>
+<div align="center"><img src="./assets/pickoff.jpg" /></div>
 
 ## Informações gerais
 
