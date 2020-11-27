@@ -12,7 +12,6 @@ def fitness_function(champions, strategy):
     fit_value = valid_composition_calculate_initial_fitness(
         champions, goal_roles)
     fit_value = valid_damage_type_fitness(champions, fit_value)
-    # multiplier = valid_roles_calculate_multiplier(champions, goal_roles)
 
     normalized_fit_value = fit_value / MAX_FIT_VALUE
 

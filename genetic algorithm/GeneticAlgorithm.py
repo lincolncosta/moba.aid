@@ -30,10 +30,10 @@ support.index = range(len(support.index))
 POP_SIZE = 30  # population
 GENOME_SIZE = 5  # number of genes
 MAX_TOURNAMENT = 3  # selection method
-MAX_GENERATIONS = 100  # number of generation
+MAX_GENERATIONS = 1000  # number of generation
 PROB_MUTATION = 0.3  # mutation
 MEMORY_SIZE = 20  # check if fitness is increasing
-LINES_PLOT = 1  # line plots
+LINES_PLOT = 30  # line plots
 
 INDIVIDUAL_MEMORY = []  # to store the best individual of each generation
 TER_MEMORIA = False  # false to use the max number of generation true to use memory
@@ -108,6 +108,9 @@ for w in range(LINES_PLOT):
     hist_geracoes = []  # plot axis x
     hist_fitness = []  # plot axis y
 
+    exec_best_individual = []
+    exec_fit_best_individual = 0
+
     # start ag
     for num_generation in range(MAX_GENERATIONS):
 
@@ -164,14 +167,14 @@ for w in range(LINES_PLOT):
 
     # print("-------------------------------------------------------------------------------------------")
     # print("The best global individual: ", best_global_individual,
-        #   " fitness value: ", best_global_fit)
+    #   " fitness value: ", best_global_fit)
     # print("Formed Team Profile: |", df.iloc[best_global_individual[0], 6], "|", df.iloc[best_global_individual[1],
-                                                                                        # 6], "|", df.iloc[best_global_individual[2], 6], "|", df.iloc[best_global_individual[3], 6])
+    # 6], "|", df.iloc[best_global_individual[2], 6], "|", df.iloc[best_global_individual[3], 6])
     # print("-------------------------------------------------------------------------------------------")
 
 
-save_results(historicos)
-save_time([times])
+save_results(historicos, COMPOSITION_STRATEGY)
+save_time([times], COMPOSITION_STRATEGY)
 generate_team_picture(best_global_individual,
                       best_global_fit, COMPOSITION_STRATEGY)
 

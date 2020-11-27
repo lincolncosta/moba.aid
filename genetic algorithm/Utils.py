@@ -20,16 +20,16 @@ def generate_plots(labelGraph1, labelGraph2, valuesGraph1, valuesGraph2, labelX,
     fig.savefig("plot.pdf")
 
 
-def save_time(times):
-    csvfile = open('result-time.csv', 'w')
+def save_time(times, strategy):
+    csvfile = open('result-time-{}.csv'.format(strategy), 'w')
     csvwriter = csv.writer(csvfile)
     for item in times:
         csvwriter.writerow(item)
     csvfile.close()
 
 
-def save_results(historicos):
-    csvfile = open('result.csv', 'w')
+def save_results(historicos, strategy):
+    csvfile = open('result.-{}csv'.format(strategy), 'w')
     csvwriter = csv.writer(csvfile)
     for item in historicos:
         csvwriter.writerow(item[0])
