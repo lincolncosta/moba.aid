@@ -21,7 +21,7 @@ def generate_plots(labelGraph1, labelGraph2, valuesGraph1, valuesGraph2, labelX,
 
 
 def save_time(times, strategy):
-    csvfile = open('result-time-{}.csv'.format(strategy), 'w')
+    csvfile = open('{}/result-time.csv'.format(strategy), 'w')
     csvwriter = csv.writer(csvfile)
     for item in times:
         csvwriter.writerow(item)
@@ -29,7 +29,7 @@ def save_time(times, strategy):
 
 
 def save_results(historicos, strategy):
-    csvfile = open('result.-{}csv'.format(strategy), 'w')
+    csvfile = open('{}/result.csv'.format(strategy), 'w')
     csvwriter = csv.writer(csvfile)
     for item in historicos:
         csvwriter.writerow(item[0])
