@@ -123,3 +123,7 @@ def valid_roles_calculate_multiplier(winrate, champion, goal_roles):
             continue
 
     return winrate * multiplier
+
+def counter_multiplier(multiplier):
+    # TO-DO FEATURE: Implementar verificador de counter.
+    return multiplier

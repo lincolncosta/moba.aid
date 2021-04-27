@@ -99,6 +99,7 @@ best_global_individual = []
 best_global_fit = 0
 
 for w in range(LINES_PLOT):
+    # TO-DO FEATURE: Receber dicionário com campeões já selecionados pela equipe.
     population = create_population(POP_SIZE)
 
     start_time = 0

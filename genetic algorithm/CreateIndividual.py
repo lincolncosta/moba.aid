@@ -27,10 +27,11 @@ def check_duplicated(chromosome):
     return len(chromosome) != len(chromosome_set)
 
 
-def create_individual():
+def create_individual(PICKED_HEROES={}):
     has_duplicated = True
+
     while(has_duplicated):
-        chromosome = [top['id'][randint(0, len(top)-1)],
+        chromosome = [PICKED_HEROES['top'] if 'top' in PICKED_HEROES else top['id'][randint(0, len(top)-1)],
                       jungler['id'][randint(0, len(jungler)-1)],
                       mid['id'][randint(0, len(mid)-1)],
                       carry['id'][randint(0, len(carry)-1)],
@@ -41,7 +42,7 @@ def create_individual():
 # method to create the population
 
 
-def create_population(POP_SIZE):
+def create_population(POP_SIZE, PICKED_HEROES={}):
     population = []
     for x in range(POP_SIZE):
         individual = create_individual()
