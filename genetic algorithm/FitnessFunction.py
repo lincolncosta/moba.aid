@@ -6,11 +6,11 @@ MAX_FIT_VALUE = 1
 df = pd.read_csv('../assets/dataset/dataset.csv')
 
 
-def fitness_function(champions, strategy):
+def fitness_function(champions, strategy, ENEMY_HEROES):
 
     MAX_FIT_VALUE, goal_roles = max_fit_roles_by_strategy(strategy)
     fit_value = valid_composition_calculate_initial_fitness(
-        champions, goal_roles)
+        champions, goal_roles, ENEMY_HEROES)
     fit_value = valid_damage_type_fitness(champions, fit_value)
 
     normalized_fit_value = fit_value / MAX_FIT_VALUE
@@ -55,7 +55,7 @@ def valid_damage_type_fitness(champions, fit_value):
     return fit_value
 
 
-def valid_composition_calculate_initial_fitness(champions, goal_roles):
+def valid_composition_calculate_initial_fitness(champions, goal_roles, ENEMY_HEROES):
     fitness = 0
     hasCarry = False
     hasSupp = False
@@ -65,13 +65,16 @@ def valid_composition_calculate_initial_fitness(champions, goal_roles):
 
     for champion in champions:
         lanes = df.loc[df.id == champion].lanes.to_string()
+        counters = df.loc[df.id == champion].counters.to_string()
+        championCountersMultiplier = calculate_multiplier_by_enemy_heroes(
+            counters, ENEMY_HEROES)
 
         if ('Top' in lanes and not hasTop):
             hasTop = True
             winrateTop = pd.to_numeric(
                 df.loc[df.id == champion]['top']).values[0]
             winrateTop = valid_roles_calculate_multiplier(
-                winrateTop, champion, goal_roles)
+                winrateTop * championCountersMultiplier, champion, goal_roles)
             continue
 
         if ('Jungler' in lanes and not hasJungle):
@@ -79,7 +82,7 @@ def valid_composition_calculate_initial_fitness(champions, goal_roles):
             winrateJungle = pd.to_numeric(
                 df.loc[df.id == champion]['jungler']).values[0]
             winrateJungle = valid_roles_calculate_multiplier(
-                winrateJungle, champion, goal_roles)
+                winrateJungle * championCountersMultiplier, champion, goal_roles)
             continue
 
         if ('Mid' in lanes and not hasMid):
@@ -87,7 +90,7 @@ def valid_composition_calculate_initial_fitness(champions, goal_roles):
             winrateMid = pd.to_numeric(
                 df.loc[df.id == champion]['mid']).values[0]
             winrateMid = valid_roles_calculate_multiplier(
-                winrateMid, champion, goal_roles)
+                winrateMid * championCountersMultiplier, champion, goal_roles)
             continue
 
         if ('Carry' in lanes and not hasCarry):
@@ -95,7 +98,7 @@ def valid_composition_calculate_initial_fitness(champions, goal_roles):
             winrateCarry = pd.to_numeric(
                 df.loc[df.id == champion]['carry']).values[0]
             winrateCarry = valid_roles_calculate_multiplier(
-                winrateCarry, champion, goal_roles)
+                winrateCarry * championCountersMultiplier, champion, goal_roles)
             continue
 
         if ('Support' in lanes and not hasSupp):
@@ -103,7 +106,7 @@ def valid_composition_calculate_initial_fitness(champions, goal_roles):
             winrateSupp = pd.to_numeric(
                 df.loc[df.id == champion]['support']).values[0]
             winrateSupp = valid_roles_calculate_multiplier(
-                winrateSupp, champion, goal_roles)
+                winrateSupp * championCountersMultiplier, champion, goal_roles)
             continue
 
     if (hasCarry and hasSupp and hasMid and hasTop and hasJungle):
@@ -124,6 +127,10 @@ def valid_roles_calculate_multiplier(winrate, champion, goal_roles):
 
     return winrate * multiplier
 
-def counter_multiplier(multiplier):
-    # TO-DO FEATURE: Implementar verificador de counter.
+
+def calculate_multiplier_by_enemy_heroes(counters, ENEMY_HEROES):
+    multiplier = 1
+    for enemy_hero in ENEMY_HEROES:
+        if str(enemy_hero) in counters:
+            multiplier += 0.1
     return multiplier

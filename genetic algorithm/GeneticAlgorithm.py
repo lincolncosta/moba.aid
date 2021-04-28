@@ -120,7 +120,7 @@ for w in range(LINES_PLOT):
 
         for individual in population:
 
-            fit = fitness_function(individual, COMPOSITION_STRATEGY)
+            fit = fitness_function(individual, COMPOSITION_STRATEGY, ENEMY_HEROES=[])
             if fit > fit_best_individual:
                 fit_best_individual = fit
                 best_individual = individual
