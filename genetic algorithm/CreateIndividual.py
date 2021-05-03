@@ -45,7 +45,7 @@ def create_individual(PICKED_HEROES):
 # method to create the population
 
 
-def create_population(POP_SIZE, PICKED_HEROES={}):
+def create_population(POP_SIZE, PICKED_HEROES):
     population = []
     PICKED_HEROES = {'top': 5}
     for x in range(POP_SIZE):

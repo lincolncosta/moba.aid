@@ -8,6 +8,7 @@ from CreateIndividual import create_population
 from Utils import *
 import random
 from random import randint
+import itertools
 import pandas as pd
 import sys
 
@@ -42,9 +43,9 @@ COMPOSITION_STRATEGY = sys.argv[1]
 # selection method
 
 
-def selection_method(population):
+def selection_method(population, ENEMY_HEROES):
     tournament = [random.choice(population) for i in range(MAX_TOURNAMENT)]
-    fitnesses = [fitness_function(tournament[i], COMPOSITION_STRATEGY)
+    fitnesses = [fitness_function(tournament[i], COMPOSITION_STRATEGY, ENEMY_HEROES)
                  for i in range(MAX_TOURNAMENT)]
     return tournament[fitnesses.index(max(fitnesses))]
 
@@ -98,9 +99,14 @@ times = []
 best_global_individual = []
 best_global_fit = 0
 
+# NOVOS PARÂMETROS
+ENEMY_HEROES = [1]
+NEEDED_RETURN_SIZE = 2
+PICKED_HEROES = {'top': 5}
+
 for w in range(LINES_PLOT):
     # TO-DO FEATURE: Receber dicionário com campeões já selecionados pela equipe.
-    population = create_population(POP_SIZE)
+    population = create_population(POP_SIZE, PICKED_HEROES)
 
     start_time = 0
     total_time = 0
@@ -115,18 +121,27 @@ for w in range(LINES_PLOT):
     # start ag
     for num_generation in range(MAX_GENERATIONS):
 
+        nextPicks = []
         best_individual = []
         fit_best_individual = 0
 
         for individual in population:
 
-            fit = fitness_function(individual, COMPOSITION_STRATEGY, ENEMY_HEROES=[])
+            fit, orderCompositionDict = fitness_function(
+                individual, COMPOSITION_STRATEGY, ENEMY_HEROES)
             if fit > fit_best_individual:
                 fit_best_individual = fit
                 best_individual = individual
             if fit > best_global_fit:
                 best_global_fit = fit
                 best_global_individual = individual
+                if PICKED_HEROES != [] and len(orderCompositionDict) != 0:
+                    for lane, champion in PICKED_HEROES.items():
+                        orderCompositionDict.pop(lane, None)
+
+                    nextPicks = list(dict(itertools.islice(
+                        orderCompositionDict.items(), NEEDED_RETURN_SIZE)).values())
+                    # TO=DO FEATURE: Retornar nextPicks para o usuário quando a API for desenvolvida.
 
         # print_population(population,POP_SIZE)
 
@@ -150,8 +165,8 @@ for w in range(LINES_PLOT):
         for i in range(int(POP_SIZE/2)):
             # selection individuols more apts
             # prisoners_dilemma(population)
-            pai1 = selection_method(population)
-            pai2 = selection_method(population)
+            pai1 = selection_method(population, ENEMY_HEROES)
+            pai2 = selection_method(population, ENEMY_HEROES)
             # produce new individuols
             filhos = crossover(pai1, pai2)
             # perform mutation
