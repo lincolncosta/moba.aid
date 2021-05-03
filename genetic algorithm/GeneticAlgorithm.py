@@ -172,6 +172,7 @@ for w in range(LINES_PLOT):
             # perform mutation
             next_generation.append(mutation(filhos[0]))
             next_generation.append(mutation(filhos[1]))
+            # TO-DO FEATURE: Incluir verificador que obrigue que PICKED_HEROES estejam presentes nos processos de cruzamento e mutação.
 
         population = next_generation
 
