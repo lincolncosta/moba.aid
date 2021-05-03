@@ -99,7 +99,7 @@ times = []
 best_global_individual = []
 best_global_fit = 0
 
-# NOVOS PARÂMETROS
+# # TO-DO FEATURE: Receber os três parâmetros abaixos da API
 ENEMY_HEROES = [1]
 NEEDED_RETURN_SIZE = 2
 PICKED_HEROES = {'top': 5}
@@ -141,7 +141,7 @@ for w in range(LINES_PLOT):
 
                     nextPicks = list(dict(itertools.islice(
                         orderCompositionDict.items(), NEEDED_RETURN_SIZE)).values())
-                    # TO=DO FEATURE: Retornar nextPicks para o usuário quando a API for desenvolvida.
+                    # TO-DO FEATURE: Retornar nextPicks para o usuário quando a API for desenvolvida.
 
         # print_population(population,POP_SIZE)
 
