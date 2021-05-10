@@ -12,7 +12,7 @@ import itertools
 import pandas as pd
 import sys
 
-df = pd.read_csv('../assets/dataset/dataset.csv')
+df = pd.read_csv('assets/dataset/dataset.csv')
 
 # types of role
 top = df.loc[df.lanes.str.contains('Top')]
@@ -31,14 +31,15 @@ support.index = range(len(support.index))
 POP_SIZE = 30  # population
 GENOME_SIZE = 5  # number of genes
 MAX_TOURNAMENT = 3  # selection method
-MAX_GENERATIONS = 1000  # number of generation
+MAX_GENERATIONS = 50  # number of generation
 PROB_MUTATION = 0.3  # mutation
 MEMORY_SIZE = 20  # check if fitness is increasing
 LINES_PLOT = 30  # line plots
 
 INDIVIDUAL_MEMORY = []  # to store the best individual of each generation
 TER_MEMORIA = False  # false to use the max number of generation true to use memory
-COMPOSITION_STRATEGY = sys.argv[1]
+COMPOSITION_STRATEGY = ''
+NEXT_PICKS = []
 
 # selection method
 
@@ -87,38 +88,28 @@ def store_individual(individual):
         del INDIVIDUAL_MEMORY[0]
     INDIVIDUAL_MEMORY.append(individual)
 
-# check if the fitness function is increasing
-
 
 def check_evolution():
     return INDIVIDUAL_MEMORY.count(INDIVIDUAL_MEMORY[0]) == len(INDIVIDUAL_MEMORY) and len(INDIVIDUAL_MEMORY) == MEMORY_SIZE
 
 
-historicos = []
-times = []
-best_global_individual = []
-best_global_fit = 0
+def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}):
 
-# # TO-DO FEATURE: Receber os três parâmetros abaixos da API
-ENEMY_HEROES = [1]
-NEEDED_RETURN_SIZE = 2
-PICKED_HEROES = {'top': 5}
+    global NEXT_PICKS
+    global COMPOSITION_STRATEGY
 
-for w in range(LINES_PLOT):
-    # TO-DO FEATURE: Receber dicionário com campeões já selecionados pela equipe.
+    COMPOSITION_STRATEGY = strategy
+    best_global_individual = []
+    best_global_fit = 0
+
+    print('Executando GA')
+
     population = create_population(POP_SIZE, PICKED_HEROES)
-
-    start_time = 0
-    total_time = 0
-    start_time = time.time()
-
-    hist_geracoes = []  # plot axis x
-    hist_fitness = []  # plot axis y
 
     exec_best_individual = []
     exec_fit_best_individual = 0
 
-    # start ag
+    # Starting GA
     for num_generation in range(MAX_GENERATIONS):
 
         nextPicks = []
@@ -139,17 +130,14 @@ for w in range(LINES_PLOT):
                     for lane, champion in PICKED_HEROES.items():
                         orderCompositionDict.pop(lane, None)
 
-                    nextPicks = list(dict(itertools.islice(
-                        orderCompositionDict.items(), NEEDED_RETURN_SIZE)).values())
+                    NEXT_PICKS = dict(itertools.islice(
+                        orderCompositionDict.items(), NEEDED_RETURN_SIZE))
                     # TO-DO FEATURE: Retornar nextPicks para o usuário quando a API for desenvolvida.
 
         # print_population(population,POP_SIZE)
 
         print("The best: ", best_individual,
               " fitness value: ", fit_best_individual)
-
-        hist_geracoes.append(num_generation)
-        hist_fitness.append(fit_best_individual)
 
         # insert the best individual into the list
         store_individual(best_individual)
@@ -176,50 +164,4 @@ for w in range(LINES_PLOT):
 
         population = next_generation
 
-    total_time = (time.time() - start_time)
-    times.append(total_time)
-    print("--- %s seconds ---" % total_time)
-
-    historicos.append([hist_fitness, hist_geracoes])
-
-    # print("-------------------------------------------------------------------------------------------")
-    # print("The best global individual: ", best_global_individual,
-    #   " fitness value: ", best_global_fit)
-    # print("Formed Team Profile: |", df.iloc[best_global_individual[0], 6], "|", df.iloc[best_global_individual[1],
-    # 6], "|", df.iloc[best_global_individual[2], 6], "|", df.iloc[best_global_individual[3], 6])
-    # print("-------------------------------------------------------------------------------------------")
-
-
-save_results(historicos, COMPOSITION_STRATEGY)
-save_time([times], COMPOSITION_STRATEGY)
-generate_team_picture(best_global_individual,
-                      best_global_fit, COMPOSITION_STRATEGY)
-
-
-# GERAR O GRAFICO COM TODOS OS RESULTADOS
-fig, ax = plt.subplots()
-for i, item in enumerate(historicos):
-    ax.plot(item[1], item[0], '-',
-            label='Fitness X Generation (' + str(i+1) + ')')
-ax.legend()
-plt.ylabel('Fitness')
-plt.xlabel('Generation')
-plt.grid(True)
-plt.show()
-
-# mean plot
-if TER_MEMORIA == False:
-    medias = []
-    for i in range(MAX_GENERATIONS):
-        valores = []
-        for j, item in enumerate(historicos):
-            valores.append(item[0][i])
-        medias.append(np.mean(valores))
-    # plot
-    fig, ax = plt.subplots()
-    ax.plot(range(MAX_GENERATIONS), medias, '-', label='Fitness X Generation')
-    ax.legend()
-    plt.ylabel('Fitness')
-    plt.xlabel('Generation')
-    plt.grid(True)
-    plt.show()
+    return NEXT_PICKS

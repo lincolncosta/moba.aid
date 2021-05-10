@@ -3,7 +3,7 @@ from random import randint
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv('../assets/dataset/dataset.csv')
+df = pd.read_csv('assets/dataset/dataset.csv')
 
 # types of role
 top = df.loc[df.lanes.str.contains('Top')]

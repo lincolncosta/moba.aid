@@ -2,7 +2,7 @@ import pandas as pd
 import csv
 
 
-df = pd.read_csv('../assets/dataset/dataset.csv')
+df = pd.read_csv('assets/dataset/dataset.csv')
 
 
 def calcBonificador(winrate, roles, strategy):

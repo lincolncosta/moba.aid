@@ -6,7 +6,7 @@ import pandas as pd
 import requests
 
 
-df = pd.read_csv('../assets/dataset/dataset.csv')
+df = pd.read_csv('assets/dataset/dataset.csv')
 
 
 def generate_plots(labelGraph1, labelGraph2, valuesGraph1, valuesGraph2, labelX, labelY, MAX_GENERATIONS):
