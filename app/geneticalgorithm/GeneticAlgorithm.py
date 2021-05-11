@@ -28,7 +28,6 @@ MAX_TOURNAMENT = 3  # selection method
 MAX_GENERATIONS = 50  # number of generation
 PROB_MUTATION = 0.3  # mutation
 MAX_EXECUTION_WITHOUT_IMPROV = 5
-EXECUTION_WITHOUT_IMPROV_COUNTER = 0
 COMPOSITION_STRATEGY = ''
 NEXT_PICKS = []
 
@@ -73,16 +72,16 @@ def mutation_traditional(individual):
     return (individual)
 
 
-def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}):
+def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=[]):
 
     global NEXT_PICKS
     global COMPOSITION_STRATEGY
-    global EXECUTION_WITHOUT_IMPROV_COUNTER
+    EXECUTION_WITHOUT_IMPROV_COUNTER = 0
 
     COMPOSITION_STRATEGY = strategy
     best_global_fit = 0
 
-    population = create_population(POP_SIZE, PICKED_HEROES)
+    population = create_population(POP_SIZE, PICKED_HEROES, BANNED_HEROES)
 
     # Starting GA
     for num_generation in range(MAX_GENERATIONS):
@@ -130,8 +129,8 @@ def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}):
             # perform mutation
             next_generation.append(mutation(filhos[0]))
             next_generation.append(mutation(filhos[1]))
-            # TO-DO FEATURE: Incluir verificador que obrigue que PICKED_HEROES estejam presentes nos processos de cruzamento e mutação.
+            # TO-DO FEATURE: Incluir verificador que obrigue que PICKED_HEROES estejam presentes nos processos de cruzamento e mutação,
+            # ao mesmo tempo que garanta que BANNED_HEROES não estejam nesses processos.
 
         population = next_generation
-
     return NEXT_PICKS

@@ -17,6 +17,7 @@ class StartRequest(BaseModel):
     strategy: str
     NEEDED_RETURN_SIZE: int
     ENEMY_HEROES: Optional[t.List] = []
+    BANNED_HEROES: Optional[t.List] = []
     PICKED_HEROES: Optional[t.Dict] = {}
 
 class OptimizedTeam(BaseModel):
@@ -24,7 +25,7 @@ class OptimizedTeam(BaseModel):
     jungle:Optional[int]
     mid: Optional[int]
     carry: Optional[int]
-    support: Optional[int]
+    supp: Optional[int]
 
 @app.get("/")
 def health_check():
@@ -36,7 +37,7 @@ def health_check():
 )
 def run_ga(startRequest: StartRequest):
     next_picks = GAService.run_ga(startRequest.strategy, startRequest.NEEDED_RETURN_SIZE,
-                                  startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES)    
+                                  startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)    
     team = OptimizedTeam()
 
     for lane, championId in next_picks.items():                                  

@@ -1,4 +1,4 @@
-from random import randint
+from random import choice
 import pandas as pd
 
 df = pd.read_csv('assets/dataset/dataset.csv')
@@ -23,28 +23,25 @@ def check_duplicated(chromosome):
     return len(chromosome) != len(chromosome_set)
 
 
-def create_individual(PICKED_HEROES):
+def create_individual(PICKED_HEROES, BANNED_HEROES):
     has_duplicated = True
 
-    while(has_duplicated):
-        chromosome = [PICKED_HEROES['top'] if 'top' in PICKED_HEROES else top['id'][randint(0, len(top)-1)],
-                      PICKED_HEROES['jungler'] if 'jungler' in PICKED_HEROES else jungler['id'][randint(
-                          0, len(jungler)-1)],
-                      PICKED_HEROES['mid'] if 'mid' in PICKED_HEROES else mid['id'][randint(
-                          0, len(mid)-1)],
-                      PICKED_HEROES['carry'] if 'carry' in PICKED_HEROES else carry['id'][randint(
-                          0, len(carry)-1)],
-                      PICKED_HEROES['support'] if 'support' in PICKED_HEROES else support['id'][randint(0, len(support)-1)]]
+    while(has_duplicated):        
+        chromosome = [PICKED_HEROES['top'] if 'top' in PICKED_HEROES else top['id'][choice([i for i in range(0,len(top)) if i not in BANNED_HEROES])],
+                      PICKED_HEROES['jungler'] if 'jungler' in PICKED_HEROES else jungler['id'][choice([i for i in range(0,len(jungler)) if i not in BANNED_HEROES])],
+                      PICKED_HEROES['mid'] if 'mid' in PICKED_HEROES else mid['id'][choice([i for i in range(0,len(mid)) if i not in BANNED_HEROES])],
+                      PICKED_HEROES['carry'] if 'carry' in PICKED_HEROES else carry['id'][choice([i for i in range(0,len(carry)) if i not in BANNED_HEROES])],
+                      PICKED_HEROES['support'] if 'support' in PICKED_HEROES else support['id'][choice([i for i in range(0,len(support)) if i not in BANNED_HEROES])]]
         has_duplicated = check_duplicated(chromosome)
     return chromosome
 
 
-def create_population(POP_SIZE, PICKED_HEROES):
+def create_population(POP_SIZE, PICKED_HEROES, BANNED_HEROES):
     population = []
     PICKED_HEROES = {'top': 5}
     for x in range(POP_SIZE):
-        individual = create_individual(PICKED_HEROES)
+        individual = create_individual(PICKED_HEROES, BANNED_HEROES)
         while individual in population:
-            individual = create_individual(PICKED_HEROES)
+            individual = create_individual(PICKED_HEROES, BANNED_HEROES)
         population.append(individual)
     return population
