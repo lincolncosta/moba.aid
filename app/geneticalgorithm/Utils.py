@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 from PIL import Image
 import csv
-import os
 import pandas as pd
 import requests
 
@@ -34,11 +33,6 @@ def save_results(historicos, strategy):
     for item in historicos:
         csvwriter.writerow(item[0])
     csvfile.close()
-
-
-def print_population(population, POP_SIZE):
-    fitnesses = [fitness_function(population[i]) for i in range(POP_SIZE)]
-    print(list(zip(population, fitnesses)))
 
 
 def generate_team_picture(best_global_individual, best_global_fit, strategy):

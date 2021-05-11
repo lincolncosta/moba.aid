@@ -1,6 +1,4 @@
-import random
 from random import randint
-import numpy as np
 import pandas as pd
 
 df = pd.read_csv('assets/dataset/dataset.csv')
@@ -18,8 +16,6 @@ jungler.index = range(len(jungler.index))
 mid.index = range(len(mid.index))
 carry.index = range(len(carry.index))
 support.index = range(len(support.index))
-
-# method to create the solutions without repetitions
 
 
 def check_duplicated(chromosome):
@@ -41,8 +37,6 @@ def create_individual(PICKED_HEROES):
                       PICKED_HEROES['support'] if 'support' in PICKED_HEROES else support['id'][randint(0, len(support)-1)]]
         has_duplicated = check_duplicated(chromosome)
     return chromosome
-
-# method to create the population
 
 
 def create_population(POP_SIZE, PICKED_HEROES):

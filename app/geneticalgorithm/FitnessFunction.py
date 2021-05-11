@@ -1,5 +1,4 @@
 import pandas as pd
-from collections import Counter
 
 
 MAX_FIT_VALUE = 1

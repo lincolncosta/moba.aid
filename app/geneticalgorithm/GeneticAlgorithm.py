@@ -1,8 +1,3 @@
-# this script was developed by Vinicius Tonello and Francisco Carlos Souza
-
-import numpy as np
-import os.path
-import time
 from FitnessFunction import fitness_function
 from CreateIndividual import create_population
 from Utils import *
@@ -10,7 +5,6 @@ import random
 from random import randint
 import itertools
 import pandas as pd
-import sys
 
 df = pd.read_csv('assets/dataset/dataset.csv')
 
@@ -33,11 +27,8 @@ GENOME_SIZE = 5  # number of genes
 MAX_TOURNAMENT = 3  # selection method
 MAX_GENERATIONS = 50  # number of generation
 PROB_MUTATION = 0.3  # mutation
-MEMORY_SIZE = 20  # check if fitness is increasing
-LINES_PLOT = 30  # line plots
-
-INDIVIDUAL_MEMORY = []  # to store the best individual of each generation
-TER_MEMORIA = False  # false to use the max number of generation true to use memory
+MAX_EXECUTION_WITHOUT_IMPROV = 5
+EXECUTION_WITHOUT_IMPROV_COUNTER = 0
 COMPOSITION_STRATEGY = ''
 NEXT_PICKS = []
 
@@ -82,39 +73,27 @@ def mutation_traditional(individual):
     return (individual)
 
 
-# method to store individual
-def store_individual(individual):
-    if len(INDIVIDUAL_MEMORY) == MEMORY_SIZE:
-        del INDIVIDUAL_MEMORY[0]
-    INDIVIDUAL_MEMORY.append(individual)
-
-
-def check_evolution():
-    return INDIVIDUAL_MEMORY.count(INDIVIDUAL_MEMORY[0]) == len(INDIVIDUAL_MEMORY) and len(INDIVIDUAL_MEMORY) == MEMORY_SIZE
-
-
 def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}):
 
     global NEXT_PICKS
     global COMPOSITION_STRATEGY
+    global EXECUTION_WITHOUT_IMPROV_COUNTER
 
     COMPOSITION_STRATEGY = strategy
-    best_global_individual = []
     best_global_fit = 0
 
-    print('Executando GA')
-
     population = create_population(POP_SIZE, PICKED_HEROES)
-
-    exec_best_individual = []
-    exec_fit_best_individual = 0
 
     # Starting GA
     for num_generation in range(MAX_GENERATIONS):
 
-        nextPicks = []
+        if (MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER):
+            return NEXT_PICKS
+
         best_individual = []
         fit_best_individual = 0
+
+        current_best_fit = best_global_fit
 
         for individual in population:
 
@@ -125,27 +104,18 @@ def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}):
                 best_individual = individual
             if fit > best_global_fit:
                 best_global_fit = fit
-                best_global_individual = individual
                 if PICKED_HEROES != [] and len(orderCompositionDict) != 0:
                     for lane, champion in PICKED_HEROES.items():
                         orderCompositionDict.pop(lane, None)
 
                     NEXT_PICKS = dict(itertools.islice(
                         orderCompositionDict.items(), NEEDED_RETURN_SIZE))
-                    # TO-DO FEATURE: Retornar nextPicks para o usuário quando a API for desenvolvida.
-
-        # print_population(population,POP_SIZE)
 
         print("The best: ", best_individual,
               " fitness value: ", fit_best_individual)
 
-        # insert the best individual into the list
-        store_individual(best_individual)
-        # print(INDIVIDUAL_MEMORY)
-
-        if TER_MEMORIA:
-            if check_evolution():
-                break
+        if current_best_fit == best_global_fit:
+            EXECUTION_WITHOUT_IMPROV_COUNTER = EXECUTION_WITHOUT_IMPROV_COUNTER + 1
 
         next_generation = []
 
