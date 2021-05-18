@@ -37,7 +37,7 @@ def health_check():
 )
 def run_ga(startRequest: StartRequest):
     next_picks = GAService.run_ga(startRequest.strategy, startRequest.NEEDED_RETURN_SIZE,
-                                  startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)    
+                                  startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)
     team = OptimizedTeam()
 
     for lane, championId in next_picks.items():                                  
