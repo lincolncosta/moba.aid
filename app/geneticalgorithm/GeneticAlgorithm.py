@@ -14,15 +14,14 @@ MAX_TOURNAMENT = 3  # selection method
 MAX_GENERATIONS = 50  # number of generation
 PROB_MUTATION = 0.3  # mutation
 MAX_EXECUTION_WITHOUT_IMPROV = 5
-COMPOSITION_STRATEGY = ''
 NEXT_PICKS = []
 
 # selection method
 
 
 def selection_method(population, ENEMY_HEROES):
-    tournament = [random.choice(population) for i in range(MAX_TOURNAMENT)]
-    fitnesses = [fitness_function(tournament[i], COMPOSITION_STRATEGY, ENEMY_HEROES)
+    tournament = [random.choice(population) for _ in range(MAX_TOURNAMENT)]
+    fitnesses = [fitness_function(tournament[i], ENEMY_HEROES)
                  for i in range(MAX_TOURNAMENT)]
     return tournament[fitnesses.index(max(fitnesses))]
 
@@ -60,13 +59,11 @@ def mutation_traditional(individual):
     return (individual)
 
 
-def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=[]):
+def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=[]):
 
     global NEXT_PICKS
-    global COMPOSITION_STRATEGY
     EXECUTION_WITHOUT_IMPROV_COUNTER = 0
 
-    COMPOSITION_STRATEGY = strategy
     best_global_fit = 0
 
     population = create_population(POP_SIZE, PICKED_HEROES, BANNED_HEROES)
@@ -76,7 +73,7 @@ def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANN
 
         if (MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER):
             orderCompositionDict = order_next_picks(
-                best_individual[0], best_individual[1], best_individual[2], best_individual[3], best_individual[4], COMPOSITION_STRATEGY, ENEMY_HEROES)
+                best_individual[0], best_individual[1], best_individual[2], best_individual[3], best_individual[4], ENEMY_HEROES)
             NEXT_PICKS = dict(itertools.islice(
                 orderCompositionDict.items(), NEEDED_RETURN_SIZE))
             return NEXT_PICKS
@@ -89,7 +86,7 @@ def run_ga(strategy, NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANN
         for individual in population:
 
             fit = fitness_function(
-                individual, COMPOSITION_STRATEGY, ENEMY_HEROES)
+                individual, ENEMY_HEROES)
             if fit > fit_best_individual:
                 fit_best_individual = fit
                 best_individual = individual

@@ -4,11 +4,9 @@ from Dataset import Dataset
 MAX_FIT_VALUE = 1
 
 
-def fitness_function(champions, strategy, ENEMY_HEROES):
-    MAX_FIT_VALUE, goal_roles = max_fit_roles_by_strategy(strategy)
+def fitness_function(champions, ENEMY_HEROES):
     fit_value = valid_composition_calculate_initial_fitness(
-        champions, goal_roles, ENEMY_HEROES)
-    fit_value = valid_damage_type_fitness(champions, fit_value)
+        champions, ENEMY_HEROES)
 
     normalized_fit_value = fit_value / MAX_FIT_VALUE
     return normalized_fit_value
@@ -72,39 +70,31 @@ def orderCompositionWinrate(winrateTop, winrateJungle, winrateMid, winrateCarry,
     return sortedCompositionDict
 
 
-def calculate_winrate_by_champion(idChampion, lane, goal_roles, ENEMY_HEROES):
-    counters = Dataset.df.loc[Dataset.df.id ==
-                              idChampion].counters.to_string()
-    countersMultiplier = calculate_multiplier_by_enemy_heroes(
-        counters, ENEMY_HEROES)
-    winrate = pd.to_numeric(
-        Dataset.df.loc[Dataset.df.id == idChampion][lane]).values[0]
-    winrate = valid_roles_calculate_multiplier(
-        winrate * countersMultiplier, idChampion, goal_roles)
+def calculate_winrate_by_champion(idChampion, lane):
+    winrate = Dataset.df[(Dataset.df['id'] == idChampion) & (
+        Dataset.df['lanes'] == lane)].winrate.values[0]
 
     return winrate
 
 
-def order_next_picks(idTop, idJungle, idMid, idCarry, idSupp, strategy, ENEMY_HEROES):
-
-    MAX_FIT_VALUE, goal_roles = max_fit_roles_by_strategy(strategy)
+def order_next_picks(idTop, idJungle, idMid, idCarry, idSupp, ENEMY_HEROES):
 
     winrateTop = calculate_winrate_by_champion(
-        idTop, 'top', goal_roles, ENEMY_HEROES)
+        idTop, 'top')
     winrateJungle = calculate_winrate_by_champion(
-        idJungle, 'jungler', goal_roles, ENEMY_HEROES)
+        idJungle, 'jungle')
     winrateMid = calculate_winrate_by_champion(
-        idMid, 'mid', goal_roles, ENEMY_HEROES)
+        idMid, 'mid')
     winrateCarry = calculate_winrate_by_champion(
-        idCarry, 'carry', goal_roles, ENEMY_HEROES)
+        idCarry, 'adc')
     winrateSupp = calculate_winrate_by_champion(
-        idSupp, 'support', goal_roles, ENEMY_HEROES)
+        idSupp, 'support')
 
     return orderCompositionWinrate(winrateTop, winrateJungle, winrateMid,
                                    winrateCarry, winrateSupp, idTop, idJungle, idMid, idCarry, idSupp)
 
 
-def valid_composition_calculate_initial_fitness(champions, goal_roles, ENEMY_HEROES):
+def valid_composition_calculate_initial_fitness(champions, ENEMY_HEROES):
     fitness = 0
     hasCarry = False
     hasSupp = False
@@ -114,49 +104,54 @@ def valid_composition_calculate_initial_fitness(champions, goal_roles, ENEMY_HER
 
     for champion in champions:
         lanes = Dataset.df.loc[Dataset.df.id == champion].lanes.to_string()
-        counters = Dataset.df.loc[Dataset.df.id ==
-                                  champion].counters.to_string()
-        championCountersMultiplier = calculate_multiplier_by_enemy_heroes(
-            counters, ENEMY_HEROES)
 
-        if (not hasTop and 'Top' in lanes):
+        if (not hasTop and 'top' in lanes.lower()):
             hasTop = True
-            winrateTop = pd.to_numeric(
-                Dataset.df.loc[Dataset.df.id == champion]['top']).values[0]
-            winrateTop = valid_roles_calculate_multiplier(
-                winrateTop * championCountersMultiplier, champion, goal_roles)
+            topInfos = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'top')]
+            winrateTop = topInfos.winrate.values[0]
+            winrateTop = calculate_multiplier_by_enemy_heroes(winrateTop, topInfos.counters, ENEMY_HEROES)
+            winrateTop = calculate_multiplier_by_tier(winrateTop, topInfos.tier.values[0])
             continue
 
-        if (not hasJungle and 'Jungler' in lanes):
+        if (not hasJungle and 'jungle' in lanes.lower()):
             hasJungle = True
-            winrateJungle = pd.to_numeric(
-                Dataset.df.loc[Dataset.df.id == champion]['jungler']).values[0]
-            winrateJungle = valid_roles_calculate_multiplier(
-                winrateJungle * championCountersMultiplier, champion, goal_roles)
+            jungleInfos = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'jungle')]
+            winrateJungle = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'jungle')].winrate.values[0]
+            winrateJungle = calculate_multiplier_by_enemy_heroes(winrateJungle, jungleInfos.counters, ENEMY_HEROES)
+            winrateJungle = calculate_multiplier_by_tier(winrateJungle, topInfos.tier.values[0])
             continue
 
-        if (not hasMid and 'Mid' in lanes):
+        if (not hasMid and 'mid' in lanes.lower()):
             hasMid = True
-            winrateMid = pd.to_numeric(
-                Dataset.df.loc[Dataset.df.id == champion]['mid']).values[0]
-            winrateMid = valid_roles_calculate_multiplier(
-                winrateMid * championCountersMultiplier, champion, goal_roles)
+            midInfos = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'jungle')]
+            winrateMid = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'mid')].winrate.values[0]
+            winrateMid = calculate_multiplier_by_enemy_heroes(winrateMid, midInfos.counters, ENEMY_HEROES)
+            winrateMid = calculate_multiplier_by_tier(winrateMid, topInfos.tier.values[0])
             continue
 
-        if (not hasCarry and 'Carry' in lanes):
+        if (not hasCarry and 'adc' in lanes.lower()):
             hasCarry = True
-            winrateCarry = pd.to_numeric(
-                Dataset.df.loc[Dataset.df.id == champion]['carry']).values[0]
-            winrateCarry = valid_roles_calculate_multiplier(
-                winrateCarry * championCountersMultiplier, champion, goal_roles)
+            carryInfos = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'jungle')]
+            winrateCarry = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'adc')].winrate.values[0]
+            winrateCarry = calculate_multiplier_by_enemy_heroes(winrateCarry, carryInfos.counters, ENEMY_HEROES)
+            winrateCarry = calculate_multiplier_by_tier(winrateCarry, topInfos.tier.values[0])
             continue
 
-        if (not hasSupp and 'Support' in lanes):
+        if (not hasSupp and 'support' in lanes.lower()):
             hasSupp = True
-            winrateSupp = pd.to_numeric(
-                Dataset.df.loc[Dataset.df.id == champion]['support']).values[0]
-            winrateSupp = valid_roles_calculate_multiplier(
-                winrateSupp * championCountersMultiplier, champion, goal_roles)
+            suppInfos = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'jungle')]
+            winrateSupp = Dataset.df[(Dataset.df['id'] == champion) & (
+                Dataset.df['lanes'] == 'support')].winrate.values[0]
+            winrateSupp = calculate_multiplier_by_enemy_heroes(winrateSupp, suppInfos.counters, ENEMY_HEROES)
+            winrateSupp = calculate_multiplier_by_tier(winrateSupp, topInfos.tier.values[0])
             continue
 
     if (hasCarry and hasSupp and hasMid and hasTop and hasJungle):
@@ -166,21 +161,29 @@ def valid_composition_calculate_initial_fitness(champions, goal_roles, ENEMY_HER
     return fitness
 
 
-def valid_roles_calculate_multiplier(winrate, champion, goal_roles):
+def calculate_multiplier_by_tier(winrate, tier):
 
     multiplier = 1
 
-    for goal_role in goal_roles:
-        if goal_role in Dataset.df.loc[Dataset.df.id == champion].roles.to_string():
-            multiplier += 0.1
-            continue
+    if tier == 0:
+        return winrate * multiplier
+    elif tier == 5:
+        multiplier += 0.05
+    elif tier == 4:
+        multiplier += 0.1
+    elif tier == 3:
+        multiplier += 0.15
+    elif tier == 2:
+        multiplier += 0.2
+    elif tier == 1:
+        multiplier += 0.25    
 
     return winrate * multiplier
 
 
-def calculate_multiplier_by_enemy_heroes(counters, ENEMY_HEROES):
+def calculate_multiplier_by_enemy_heroes(winrate, counters, ENEMY_HEROES):
     multiplier = 1
     for enemy_hero in ENEMY_HEROES:
         if str(enemy_hero) in counters:
             multiplier += 0.1
-    return multiplier
+    return winrate * multiplier

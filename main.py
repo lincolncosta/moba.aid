@@ -14,7 +14,6 @@ app = FastAPI()
 
 
 class StartRequest(BaseModel):
-    strategy: str
     NEEDED_RETURN_SIZE: int
     ENEMY_HEROES: Optional[t.List] = []
     BANNED_HEROES: Optional[t.List] = []
@@ -36,7 +35,7 @@ def health_check():
     response_model=OptimizedTeam
 )
 def run_ga(startRequest: StartRequest):
-    next_picks = GAService.run_ga(startRequest.strategy, startRequest.NEEDED_RETURN_SIZE,
+    next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,
                                   startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)
     team = OptimizedTeam()
 
