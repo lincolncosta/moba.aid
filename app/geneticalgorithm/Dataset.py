@@ -2,6 +2,7 @@ import pandas as pd
 
 class Dataset:
     df = pd.read_csv('assets/dataset/dataset_11.10.csv')
+    df_sinergy = pd.read_csv('assets/dataset/dataset_sinergies_11.10.csv')
 
     # types of role
     top = df.loc[df.lanes.str.lower() == 'top']

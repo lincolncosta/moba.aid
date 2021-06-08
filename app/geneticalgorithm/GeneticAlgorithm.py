@@ -6,6 +6,7 @@ from Dataset import Dataset
 import random
 from random import randint
 import itertools
+import time
 
 
 POP_SIZE = 30  # population
@@ -63,7 +64,8 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
 
     global NEXT_PICKS
     EXECUTION_WITHOUT_IMPROV_COUNTER = 0
-
+    start_time = time.time()
+    execution_time = 0
     best_global_fit = 0
 
     population = create_population(POP_SIZE, PICKED_HEROES, BANNED_HEROES)
@@ -71,7 +73,7 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
     # Início do AG
     for _ in range(MAX_GENERATIONS):
 
-        if (MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER):
+        if MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER or execution_time >= 15:
             orderCompositionDict = order_next_picks(
                 best_individual[0], best_individual[1], best_individual[2], best_individual[3], best_individual[4], ENEMY_HEROES)
             NEXT_PICKS = dict(itertools.islice(
@@ -113,5 +115,6 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
             # ao mesmo tempo que garanta que BANNED_HEROES não estejam nesses processos.
 
         population = next_generation
+        execution_time = time.time() - start_time
 
     return NEXT_PICKS
