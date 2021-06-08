@@ -32,7 +32,7 @@ def save_results(historicos, strategy):
     csvfile.close()
 
 
-def generate_team_picture(best_global_individual, best_global_fit, strategy):
+def generate_team_picture(best_global_individual, best_global_fit):
     images = []
 
     for im in best_global_individual:
@@ -49,4 +49,4 @@ def generate_team_picture(best_global_individual, best_global_fit, strategy):
         new_im.paste(im, (x_offset, 0))
         x_offset += im.size[0]
 
-    new_im.save('team-fit-' + strategy + '.jpg')
+    new_im.save('team-fit-' + str(best_global_fit) + '.jpg')

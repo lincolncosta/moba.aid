@@ -1,4 +1,3 @@
-import pandas as pd
 from Dataset import Dataset
 
 MAX_FIT_VALUE = 1

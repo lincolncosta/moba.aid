@@ -17,8 +17,6 @@ PROB_MUTATION = 0.3  # mutation
 MAX_EXECUTION_WITHOUT_IMPROV = 5
 NEXT_PICKS = []
 
-# selection method
-
 
 def selection_method(population, ENEMY_HEROES):
     tournament = [random.choice(population) for _ in range(MAX_TOURNAMENT)]
@@ -27,15 +25,11 @@ def selection_method(population, ENEMY_HEROES):
     return tournament[fitnesses.index(max(fitnesses))]
 
 
-# crossover one point
-# [0,1,2,3] + [6,7,8,9] -> [0,1,8,9] - [6,7,2,3] (SE O CORTE FOR NO MEIO)
 def crossover(pai1, pai2):
     corte = randint(1, GENOME_SIZE-1)
     filho1 = pai1[:corte] + pai2[corte:]
     filho2 = pai2[:corte] + pai1[corte:]
     return [filho1, filho2]
-
-# mutation one point
 
 
 def mutation(individual):
@@ -102,8 +96,7 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
 
         # Inicia seleção, crossover e mutação
         for _ in range(int(POP_SIZE/2)):
-            # selection individuols more apts
-            # prisoners_dilemma(population)
+            # Seleciona indivíduos mais aptos
             pai1 = selection_method(population, ENEMY_HEROES)
             pai2 = selection_method(population, ENEMY_HEROES)
             # Produz novos indivíduos
