@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath('app/geneticalgorithm'))
 
 import GeneticAlgorithm as GAService
 
-app = FastAPI()
+app = FastAPI(title="MOBA AID", docs_url="/api/docs", openapi_url="/api")
 
 
 class StartRequest(BaseModel):
@@ -28,13 +28,19 @@ class OptimizedTeam(BaseModel):
 
 @app.get("/")
 def health_check():
-    return {"Hello": "World"}
+    """
+    Health check and last release info.
+    """
+    return {"MOBA AID is working fine. Last updated on 09/06/2021."}
 
 
 @app.post("/ga",
     response_model=OptimizedTeam
 )
 def run_ga(startRequest: StartRequest):
+    """
+    Executes GA to suggest your draft next step.
+    """
     next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,
                                   startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)
     team = OptimizedTeam()
