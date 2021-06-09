@@ -27,19 +27,19 @@ class OptimizedTeam(BaseModel):
     supp: Optional[int]
 
 @app.get("/")
-def health_check():
+def info():
     """
     Health check and last release info.
     """
     return {"MOBA AID is working fine. Last updated on 09/Jun/2021."}
 
 
-@app.post("/ga",
+@app.post("/suggest",
     response_model=OptimizedTeam
 )
-def run_ga(startRequest: StartRequest):
+def suggest(startRequest: StartRequest):
     """
-    Executes GA to suggest your draft next step.
+    Executes Genetic Algorithm to suggest your draft next step.
     """
     next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,
                                   startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)
