@@ -31,7 +31,7 @@ def info():
     """
     Health check and last release info.
     """
-    return {"MOBA AID is working fine. Last updated on 09/Jun/2021."}
+    return {"MOBA AID is working fine. Last updated on 15:15 09/Jun/2021."}
 
 
 @app.post("/suggest",
@@ -41,6 +41,7 @@ def suggest(startRequest: StartRequest):
     """
     Executes Genetic Algorithm to suggest your draft next step.
     """
+    startRequest.BANNED_HEROES.append(list(startRequest.ENEMY_HEROES.values()))
     next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,
                                   startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)
     team = OptimizedTeam()
