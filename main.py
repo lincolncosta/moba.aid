@@ -41,7 +41,7 @@ def suggest(startRequest: StartRequest):
     """
     Executes Genetic Algorithm to suggest your draft next step.
     """
-    startRequest.BANNED_HEROES.append(list(startRequest.ENEMY_HEROES.values()))
+    startRequest.BANNED_HEROES.append(startRequest.ENEMY_HEROES)
     next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,
                                   startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)
     team = OptimizedTeam()
