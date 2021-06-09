@@ -1,10 +1,10 @@
-app/hillclimbing
-assets/dataset/dataset-processado.csv
-assets/dataset/dataset.csv
+/app/hillclimbing
+/assets/dataset/dataset-processado.csv
+/assets/dataset/dataset.csv
 
 *.json
 *.jpg
 
-processors/
+/processors/
 
 README.md
