@@ -1,4 +1,6 @@
 app/hillclimbing
+assets/dataset/dataset-processado.csv
+assets/dataset/dataset.csv
 
 *.json
 *.jpg
