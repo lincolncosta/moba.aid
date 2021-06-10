@@ -4,7 +4,6 @@ import typing as t
 
 from typing import Optional
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 sys.path.append(os.path.abspath('app/geneticalgorithm'))
@@ -12,7 +11,6 @@ sys.path.append(os.path.abspath('app/geneticalgorithm'))
 import GeneticAlgorithm as GAService
 
 app = FastAPI(title="MOBA AID", docs_url="/api/docs", openapi_url="/api")
-
 
 class StartRequest(BaseModel):
     NEEDED_RETURN_SIZE: int
@@ -45,7 +43,7 @@ def suggest(startRequest: StartRequest):
     Executes Genetic Algorithm to suggest your draft next step.
     """
 
-    if startRequest.NEEDED_RETURN_SIZE > 5 or startRequest.NEEDED_RETURN_SIZE < 1:        
+    if startRequest.NEEDED_RETURN_SIZE > 5 or startRequest.NEEDED_RETURN_SIZE < 1:
         raise HTTPException(
             status_code=400,
             detail="NEEDED_RETURN_SIZE must be a value between 1 and 5.",
@@ -53,17 +51,54 @@ def suggest(startRequest: StartRequest):
                 "X-Error": "Incorrect value for NEEDED_RETURN_SIZE."},
         )
 
-    lanes = ['top', 'jungle', 'mid', 'adc', 'support']
-    lanes_picked = list(startRequest.PICKED_HEROES.keys())
-    diff_lanes_len = len(list((set(lanes_picked) - set(lanes))))
+    if(startRequest.ENEMY_HEROES):
+        non_numeric_enemy_len = len(
+            [s for s in startRequest.ENEMY_HEROES if not str(s).isdigit()])
 
-    if diff_lanes_len > 0:
-        raise HTTPException(
-            status_code=400,
-            detail="PICKED_HEROES keys must be a top, jungle, mid, adc or support.",
-            headers={
-                "X-Error": "Incorrect key for PICKED_HEROES."},
-        )
+        if non_numeric_enemy_len > 0:
+            raise HTTPException(
+                status_code=400,
+                detail="ENEMY_HEROES values must be an integer according to the champions id.",
+                headers={
+                    "X-Error": "Incorrect value for ENEMY_HEROES."},
+            )
+
+    if(startRequest.PICKED_HEROES):
+        lanes = ['top', 'jungle', 'mid', 'adc', 'support']
+        lanes_picked = list(startRequest.PICKED_HEROES.keys())
+        diff_lanes_len = len(list((set(lanes_picked) - set(lanes))))
+
+        if diff_lanes_len > 0:
+            raise HTTPException(
+                status_code=400,
+                detail="PICKED_HEROES keys must be top, jungle, mid, adc or support.",
+                headers={
+                    "X-Error": "Incorrect key for PICKED_HEROES."},
+            )
+
+        picked_list = list(startRequest.PICKED_HEROES.values())
+        non_numeric_picked_len = len(
+            [s for s in picked_list if not str(s).isdigit()])
+
+        if non_numeric_picked_len > 0:
+            raise HTTPException(
+                status_code=400,
+                detail="PICKED_HEROES values must be an integer according to the champions id.",
+                headers={
+                    "X-Error": "Incorrect value for PICKED_HEROES."},
+            )
+
+    if(startRequest.BANNED_HEROES):
+        non_numeric_banned_len = len(
+            [s for s in startRequest.BANNED_HEROES if not str(s).isdigit()])
+
+        if non_numeric_banned_len > 0:
+            raise HTTPException(
+                status_code=400,
+                detail="BANNED_HEROES values must be an integer according to the champions id.",
+                headers={
+                    "X-Error": "Incorrect value for BANNED_HEROES."},
+            )
 
     startRequest.BANNED_HEROES.append(startRequest.ENEMY_HEROES)
     next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,
