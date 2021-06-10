@@ -26,23 +26,7 @@ class OptimizedTeam(BaseModel):
     adc: Optional[int]
     supp: Optional[int]
 
-
-@app.get("/")
-def info():
-    """
-    Health check and last release info.
-    """
-    return {"MOBA AID is working fine. Last updated on 15:47 10/Jun/2021."}
-
-
-@app.post("/suggest",
-          response_model=OptimizedTeam
-          )
-def suggest(startRequest: StartRequest):
-    """
-    Executes Genetic Algorithm to suggest your draft next step.
-    """
-
+def validate_request_params(startRequest):
     if startRequest.NEEDED_RETURN_SIZE > 5 or startRequest.NEEDED_RETURN_SIZE < 1:
         raise HTTPException(
             status_code=400,
@@ -99,6 +83,24 @@ def suggest(startRequest: StartRequest):
                 headers={
                     "X-Error": "Incorrect value for BANNED_HEROES."},
             )
+
+@app.get("/")
+def info():
+    """
+    Health check and last release info.
+    """
+    return {"MOBA AID is working fine. Last updated on 16:10 10/Jun/2021."}
+
+
+@app.post("/suggest",
+          response_model=OptimizedTeam
+          )
+def suggest(startRequest: StartRequest):
+    """
+    Executes Genetic Algorithm to suggest your draft next step.
+    """
+
+    validate_request_params(startRequest)
 
     startRequest.BANNED_HEROES.append(startRequest.ENEMY_HEROES)
     next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,

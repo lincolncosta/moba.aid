@@ -5,6 +5,7 @@ from Utils import *
 from Dataset import Dataset
 import random
 from random import randint
+from random import choice
 import itertools
 import time
 
@@ -12,9 +13,7 @@ import time
 POP_SIZE = 30  # population
 GENOME_SIZE = 5  # number of genes
 MAX_TOURNAMENT = 3  # selection method
-MAX_GENERATIONS = 50  # number of generation
 PROB_MUTATION = 0.3  # mutation
-MAX_EXECUTION_WITHOUT_IMPROV = 5
 NEXT_PICKS = []
 
 
@@ -32,25 +31,25 @@ def crossover(pai1, pai2):
     return [filho1, filho2]
 
 
-def mutation(individual):
+def mutation(individual, PICKED_HEROES, BANNED_HEROES):
     if random.random() <= PROB_MUTATION:
-        individual = mutation_traditional(individual)
+        individual = mutation_traditional(individual, PICKED_HEROES, BANNED_HEROES)
 
     return(individual)
 
 
-def mutation_traditional(individual):
+def mutation_traditional(individual, PICKED_HEROES, BANNED_HEROES):
     for i in range(GENOME_SIZE):
         if i == 0:
-            individual[0] = Dataset.top['id'][randint(0, len(Dataset.top)-1)]
+            individual[0] = PICKED_HEROES['top'] if 'top' in PICKED_HEROES else Dataset.top['id'][choice([i for i in range(0, len(Dataset.top)) if i not in BANNED_HEROES])]
         elif i == 1:
-            individual[1] = Dataset.jungler['id'][randint(
-                0, len(Dataset.jungler)-1)]
+            PICKED_HEROES['jungler'] if 'jungler' in PICKED_HEROES else Dataset.jungler['id'][choice([i for i in range(0, len(Dataset.jungler)) if i not in BANNED_HEROES])]
         elif i == 2:
-            individual[2] = Dataset.mid['id'][randint(0, len(Dataset.mid)-1)]
-        else:
-            individual[3] = Dataset.adc['id'][randint(
-                0, len(Dataset.adc)-1)]
+            PICKED_HEROES['mid'] if 'mid' in PICKED_HEROES else Dataset.mid['id'][choice([i for i in range(0, len(Dataset.mid)) if i not in BANNED_HEROES])]
+        elif i == 3:
+            PICKED_HEROES['adc'] if 'adc' in PICKED_HEROES else Dataset.adc['id'][choice([i for i in range(0, len(Dataset.adc)) if i not in BANNED_HEROES])]
+        elif i == 4:
+            PICKED_HEROES['support'] if 'support' in PICKED_HEROES else Dataset.support['id'][choice([i for i in range(0, len(Dataset.support)) if i not in BANNED_HEROES])]
     return (individual)
 
 
@@ -65,21 +64,11 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
     population = create_population(POP_SIZE, PICKED_HEROES, BANNED_HEROES)
 
     # Início do AG
-    for _ in range(MAX_GENERATIONS):
-        if MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER or execution_time >= 3:
-            orderCompositionDict = order_next_picks(
-                best_individual[0], best_individual[1], best_individual[2], best_individual[3], best_individual[4], ENEMY_HEROES)
-            for lane in PICKED_HEROES.keys():
-                del orderCompositionDict[lane]
-            NEXT_PICKS = dict(itertools.islice(
-                orderCompositionDict.items(), NEEDED_RETURN_SIZE))
-            return NEXT_PICKS
-
+    while execution_time < 15:        
         best_individual = []
         fit_best_individual = 0
 
         current_best_fit = best_global_fit
-
         for individual in population:
 
             fit = fitness_function(
@@ -103,12 +92,16 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
             # Produz novos indivíduos
             filhos = crossover(pai1, pai2)
             # Executa mutação
-            next_generation.append(mutation(filhos[0]))
-            next_generation.append(mutation(filhos[1]))
-            # TO-DO FEATURE: Incluir verificador que obrigue que PICKED_HEROES estejam presentes nos processos de cruzamento e mutação,
-            # ao mesmo tempo que garanta que BANNED_HEROES não estejam nesses processos.
+            next_generation.append(mutation(filhos[0], PICKED_HEROES, BANNED_HEROES))
+            next_generation.append(mutation(filhos[1], PICKED_HEROES, BANNED_HEROES))
+            # TO-DO FEATURE: Incluir verificador que obrigue que PICKED_HEROES estejam presentes nos processos de cruzamento.
 
         population = next_generation
         execution_time = time.time() - start_time
 
+    orderCompositionDict = order_next_picks(best_individual[0], best_individual[1], best_individual[2], best_individual[3], best_individual[4], ENEMY_HEROES)
+    for lane in PICKED_HEROES.keys():
+        del orderCompositionDict[lane]
+    NEXT_PICKS = dict(itertools.islice(
+        orderCompositionDict.items(), NEEDED_RETURN_SIZE))
     return NEXT_PICKS
