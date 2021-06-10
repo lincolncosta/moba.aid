@@ -3,7 +3,8 @@ import os
 import typing as t
 
 from typing import Optional
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
 sys.path.append(os.path.abspath('app/geneticalgorithm'))
@@ -19,34 +20,45 @@ class StartRequest(BaseModel):
     BANNED_HEROES: Optional[t.List] = []
     PICKED_HEROES: Optional[t.Dict] = {}
 
+
 class OptimizedTeam(BaseModel):
     top: Optional[int]
-    jungle:Optional[int]
+    jungle: Optional[int]
     mid: Optional[int]
     carry: Optional[int]
     supp: Optional[int]
+
 
 @app.get("/")
 def info():
     """
     Health check and last release info.
     """
-    return {"MOBA AID is working fine. Last updated on 15:15 09/Jun/2021."}
+    return {"MOBA AID is working fine. Last updated on 12:50 10/Jun/2021."}
 
 
 @app.post("/suggest",
-    response_model=OptimizedTeam
-)
+          response_model=OptimizedTeam
+          )
 def suggest(startRequest: StartRequest):
     """
     Executes Genetic Algorithm to suggest your draft next step.
     """
+
+    if startRequest.NEEDED_RETURN_SIZE > 5 or startRequest.NEEDED_RETURN_SIZE < 1:        
+        raise HTTPException(
+            status_code=400,
+            detail="NEEDED_RETURN_SIZE must be a value between 1 and 5.",
+            headers={
+                "X-Error": "Incorrect value for NEEDED_RETURN_SIZE."},
+        )
+
     startRequest.BANNED_HEROES.append(startRequest.ENEMY_HEROES)
     next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,
                                   startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)
     team = OptimizedTeam()
 
-    for lane, championId in next_picks.items():                                  
+    for lane, championId in next_picks.items():
         setattr(team, lane, championId)
 
     return team
