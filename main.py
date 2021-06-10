@@ -23,7 +23,7 @@ class OptimizedTeam(BaseModel):
     top: Optional[int]
     jungle: Optional[int]
     mid: Optional[int]
-    carry: Optional[int]
+    adc: Optional[int]
     supp: Optional[int]
 
 
@@ -32,7 +32,7 @@ def info():
     """
     Health check and last release info.
     """
-    return {"MOBA AID is working fine. Last updated on 14:40 10/Jun/2021."}
+    return {"MOBA AID is working fine. Last updated on 15:47 10/Jun/2021."}
 
 
 @app.post("/suggest",

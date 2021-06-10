@@ -16,8 +16,8 @@ def create_individual(PICKED_HEROES, BANNED_HEROES):
                           [i for i in range(0, len(Dataset.jungler)) if i not in BANNED_HEROES])],
                       PICKED_HEROES['mid'] if 'mid' in PICKED_HEROES else Dataset.mid['id'][choice(
                           [i for i in range(0, len(Dataset.mid)) if i not in BANNED_HEROES])],
-                      PICKED_HEROES['carry'] if 'carry' in PICKED_HEROES else Dataset.carry['id'][choice(
-                          [i for i in range(0, len(Dataset.carry)) if i not in BANNED_HEROES])],
+                      PICKED_HEROES['adc'] if 'adc' in PICKED_HEROES else Dataset.adc['id'][choice(
+                          [i for i in range(0, len(Dataset.adc)) if i not in BANNED_HEROES])],
                       PICKED_HEROES['support'] if 'support' in PICKED_HEROES else Dataset.support['id'][choice([i for i in range(0, len(Dataset.support)) if i not in BANNED_HEROES])]]
         has_duplicated = check_duplicated(chromosome)
     return chromosome

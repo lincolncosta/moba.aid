@@ -90,10 +90,10 @@ def valid_composition_calculate_initial_fitness(champions, goal_roles):
                 winrateMid, champion, goal_roles)
             continue
 
-        if ('Carry' in lanes and not hasCarry):
+        if ('adc' in lanes and not hasCarry):
             hasCarry = True
             winrateCarry = pd.to_numeric(
-                df.loc[df.id == champion]['carry']).values[0]
+                df.loc[df.id == champion]['adc']).values[0]
             winrateCarry = valid_roles_calculate_multiplier(
                 winrateCarry, champion, goal_roles)
             continue

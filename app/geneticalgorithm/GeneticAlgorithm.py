@@ -49,8 +49,8 @@ def mutation_traditional(individual):
         elif i == 2:
             individual[2] = Dataset.mid['id'][randint(0, len(Dataset.mid)-1)]
         else:
-            individual[3] = Dataset.carry['id'][randint(
-                0, len(Dataset.carry)-1)]
+            individual[3] = Dataset.adc['id'][randint(
+                0, len(Dataset.adc)-1)]
     return (individual)
 
 
@@ -66,9 +66,11 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
 
     # Início do AG
     for _ in range(MAX_GENERATIONS):
-        if MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER or execution_time >= 13:
+        if MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER or execution_time >= 3:
             orderCompositionDict = order_next_picks(
                 best_individual[0], best_individual[1], best_individual[2], best_individual[3], best_individual[4], ENEMY_HEROES)
+            for lane in PICKED_HEROES.keys():
+                del orderCompositionDict[lane]
             NEXT_PICKS = dict(itertools.islice(
                 orderCompositionDict.items(), NEEDED_RETURN_SIZE))
             return NEXT_PICKS

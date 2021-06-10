@@ -10,7 +10,7 @@ df = pd.read_csv('assets/dataset/dataset.csv')
 top = df.loc[df.lanes.str.contains('Top')]
 jungler = df.loc[df.lanes.str.contains('Jungler')]
 mid = df.loc[df.lanes.str.contains('Mid')]
-carry = df.loc[df.lanes.str.contains('Carry')]
+carry = df.loc[df.lanes.str.contains('adc')]
 support = df.loc[df.lanes.str.contains('Support')]
 
 # get pandas and reordena indices
