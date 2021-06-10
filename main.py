@@ -53,6 +53,18 @@ def suggest(startRequest: StartRequest):
                 "X-Error": "Incorrect value for NEEDED_RETURN_SIZE."},
         )
 
+    lanes = ['top', 'jungle', 'mid', 'adc', 'support']
+    lanes_picked = list(startRequest.PICKED_HEROES.keys())
+    diff_lanes_len = len(list((set(lanes_picked) - set(lanes))))
+
+    if diff_lanes_len > 0:
+        raise HTTPException(
+            status_code=400,
+            detail="PICKED_HEROES keys must be a top, jungle, mid, adc or support.",
+            headers={
+                "X-Error": "Incorrect key for PICKED_HEROES."},
+        )
+
     startRequest.BANNED_HEROES.append(startRequest.ENEMY_HEROES)
     next_picks = GAService.run_ga(startRequest.NEEDED_RETURN_SIZE,
                                   startRequest.ENEMY_HEROES, startRequest.PICKED_HEROES, startRequest.BANNED_HEROES)

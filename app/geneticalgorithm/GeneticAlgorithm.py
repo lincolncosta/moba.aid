@@ -88,7 +88,7 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
                 best_individual = individual
             if fit > best_global_fit:
                 best_global_fit = fit
-
+        
         if current_best_fit == best_global_fit:
             EXECUTION_WITHOUT_IMPROV_COUNTER = EXECUTION_WITHOUT_IMPROV_COUNTER + 1
 

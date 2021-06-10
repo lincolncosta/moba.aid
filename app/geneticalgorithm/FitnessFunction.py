@@ -83,48 +83,44 @@ def valid_composition_calculate_initial_fitness(champions, ENEMY_HEROES):
             hasJungle = True
             jungleInfos = Dataset.df[(Dataset.df['id'] == champion) & (
                 Dataset.df['lanes'] == 'jungle')]
-            winrateJungle = Dataset.df[(Dataset.df['id'] == champion) & (
-                Dataset.df['lanes'] == 'jungle')].winrate.values[0]
+            winrateJungle = jungleInfos.winrate.values[0]
             winrateJungle = calculate_multiplier_by_enemy_heroes(
                 winrateJungle, jungleInfos.counters, ENEMY_HEROES)
             winrateJungle = calculate_multiplier_by_tier(
-                winrateJungle, topInfos.tier.values[0])
+                winrateJungle, jungleInfos.tier.values[0])
             continue
 
         if (not hasMid and 'mid' in lanes.lower()):
             hasMid = True
             midInfos = Dataset.df[(Dataset.df['id'] == champion) & (
-                Dataset.df['lanes'] == 'jungle')]
-            winrateMid = Dataset.df[(Dataset.df['id'] == champion) & (
-                Dataset.df['lanes'] == 'mid')].winrate.values[0]
+                Dataset.df['lanes'] == 'mid')]
+            winrateMid = midInfos.winrate.values[0]
             winrateMid = calculate_multiplier_by_enemy_heroes(
                 winrateMid, midInfos.counters, ENEMY_HEROES)
             winrateMid = calculate_multiplier_by_tier(
-                winrateMid, topInfos.tier.values[0])
+                winrateMid, midInfos.tier.values[0])
             continue
 
         if (not hasCarry and 'adc' in lanes.lower()):
             hasCarry = True
             carryInfos = Dataset.df[(Dataset.df['id'] == champion) & (
-                Dataset.df['lanes'] == 'jungle')]
-            winrateCarry = Dataset.df[(Dataset.df['id'] == champion) & (
-                Dataset.df['lanes'] == 'adc')].winrate.values[0]
+                Dataset.df['lanes'] == 'adc')]
+            winrateCarry = carryInfos.winrate.values[0]
             winrateCarry = calculate_multiplier_by_enemy_heroes(
                 winrateCarry, carryInfos.counters, ENEMY_HEROES)
             winrateCarry = calculate_multiplier_by_tier(
-                winrateCarry, topInfos.tier.values[0])
+                winrateCarry, carryInfos.tier.values[0])
             continue
 
         if (not hasSupp and 'support' in lanes.lower()):
             hasSupp = True
             suppInfos = Dataset.df[(Dataset.df['id'] == champion) & (
-                Dataset.df['lanes'] == 'jungle')]
-            winrateSupp = Dataset.df[(Dataset.df['id'] == champion) & (
-                Dataset.df['lanes'] == 'support')].winrate.values[0]
+                Dataset.df['lanes'] == 'support')]
+            winrateSupp = suppInfos.winrate.values[0]
             winrateSupp = calculate_multiplier_by_enemy_heroes(
                 winrateSupp, suppInfos.counters, ENEMY_HEROES)
             winrateSupp = calculate_multiplier_by_tier(
-                winrateSupp, topInfos.tier.values[0])
+                winrateSupp, suppInfos.tier.values[0])
             continue
 
     if (hasCarry and hasSupp and hasMid and hasTop and hasJungle):
