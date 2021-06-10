@@ -40,7 +40,7 @@ def calculate_winrate_by_champion(idChampion, lane):
     return winrate
 
 
-def order_next_picks(idTop, idJungle, idMid, idCarry, idSupp, ENEMY_HEROES):
+def order_next_picks(idTop, idJungle, idMid, idCarry, idSupp):
 
     winrateTop = calculate_winrate_by_champion(
         idTop, 'top')
