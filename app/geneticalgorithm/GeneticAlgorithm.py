@@ -67,7 +67,7 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
     # Início do AG
     for _ in range(MAX_GENERATIONS):
 
-        if MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER or execution_time >= 25:
+        if MAX_EXECUTION_WITHOUT_IMPROV == EXECUTION_WITHOUT_IMPROV_COUNTER or execution_time >= 15:
             orderCompositionDict = order_next_picks(
                 best_individual[0], best_individual[1], best_individual[2], best_individual[3], best_individual[4], ENEMY_HEROES)
             NEXT_PICKS = dict(itertools.islice(
