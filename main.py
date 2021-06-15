@@ -4,6 +4,7 @@ import typing as t
 
 from typing import Optional
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 sys.path.append(os.path.abspath('app/geneticalgorithm'))
@@ -11,6 +12,17 @@ sys.path.append(os.path.abspath('app/geneticalgorithm'))
 import GeneticAlgorithm as GAService
 
 app = FastAPI(title="MOBA AID", docs_url="/api/docs", openapi_url="/api")
+
+origins = [
+    "http://localhost:3000",
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class StartRequest(BaseModel):
     NEEDED_RETURN_SIZE: int
@@ -89,7 +101,7 @@ def info():
     """
     Health check and last release info.
     """
-    return {"MOBA AID is working fine. Last updated on 16:10 10/Jun/2021."}
+    return {"MOBA AID is working fine. Last updated on 10:00 15/Jun/2021."}
 
 
 @app.post("/suggest",
