@@ -15,7 +15,10 @@ app = FastAPI(title="MOBA AID", docs_url="/api/docs", openapi_url="/api")
 
 origins = [
     "http://localhost:3000",
+    "https://moba-aid.vercel.app",
 ]
+
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -23,6 +26,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 class StartRequest(BaseModel):
     NEEDED_RETURN_SIZE: int
@@ -37,6 +41,7 @@ class OptimizedTeam(BaseModel):
     mid: Optional[int]
     adc: Optional[int]
     support: Optional[int]
+
 
 def validate_request_params(startRequest):
     if startRequest.NEEDED_RETURN_SIZE > 5 or startRequest.NEEDED_RETURN_SIZE < 1:
@@ -95,6 +100,7 @@ def validate_request_params(startRequest):
                 headers={
                     "X-Error": "Incorrect value for BANNED_HEROES."},
             )
+
 
 @app.get("/")
 def info():
