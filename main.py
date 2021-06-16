@@ -36,7 +36,7 @@ class OptimizedTeam(BaseModel):
     jungle: Optional[int]
     mid: Optional[int]
     adc: Optional[int]
-    supp: Optional[int]
+    support: Optional[int]
 
 def validate_request_params(startRequest):
     if startRequest.NEEDED_RETURN_SIZE > 5 or startRequest.NEEDED_RETURN_SIZE < 1:
@@ -101,7 +101,7 @@ def info():
     """
     Health check and last release info.
     """
-    return {"MOBA AID is working fine. Last updated on 10:00 15/Jun/2021."}
+    return {"MOBA AID is working fine. Last updated on 09:00 16/Jun/2021."}
 
 
 @app.post("/suggest",

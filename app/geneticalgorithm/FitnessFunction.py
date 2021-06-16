@@ -18,7 +18,7 @@ def orderCompositionWinrate(winrateTop, winrateJungle, winrateMid, winrateCarry,
         'jungle': winrateJungle,
         'mid': winrateMid,
         'adc': winrateCarry,
-        'supp': winrateSupp
+        'support': winrateSupp
     }
 
     sortedCompositionDict = dict(
@@ -28,7 +28,7 @@ def orderCompositionWinrate(winrateTop, winrateJungle, winrateMid, winrateCarry,
     sortedCompositionDict['jungle'] = idJungle
     sortedCompositionDict['mid'] = idMid
     sortedCompositionDict['adc'] = idCarry
-    sortedCompositionDict['supp'] = idSupp
+    sortedCompositionDict['support'] = idSupp
 
     return sortedCompositionDict
 
