@@ -64,7 +64,7 @@ def run_ga(NEEDED_RETURN_SIZE, ENEMY_HEROES=[], PICKED_HEROES={}, BANNED_HEROES=
     population = create_population(POP_SIZE, PICKED_HEROES, BANNED_HEROES)
 
     # Início do AG
-    while execution_time < 15:        
+    while execution_time < 10:        
         best_individual = []
         fit_best_individual = 0
 

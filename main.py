@@ -107,7 +107,7 @@ def info():
     """
     Health check and last release info.
     """
-    return {"MOBA AID is working fine. Last updated on 09:00 16/Jun/2021."}
+    return {"MOBA AID is working fine. Last updated on 16:00 12/Jul/2021."}
 
 
 @app.post("/suggest",
