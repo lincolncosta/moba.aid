@@ -3,4 +3,4 @@ fastapi-utils==0.2.1
 uvicorn==0.11.8
 pandas==1.2.4
 matplotlib==3.4.2
-requests==2.25.1
+requests==2.31.0
